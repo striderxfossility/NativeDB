@@ -108,9 +108,9 @@ class PlayerPuppet extends BaseSchema
             Field::getArray('bossThatTargetsPlayer', 'entEntityID', '', true),
             Field::getArray('choiceTokenTextLayerId', 'Uint32', '', true),
             Field::getArray('choiceTokenTextDrawn', 'Bool', '', true),
-            Field::getArray('bossThatTargetsPlayer ', ' entEntityID', '', true),
-            Field::getArray('choiceTokenTextLayerId ', ' Uint32', '', true),
-            Field::getArray('choiceTokenTextDrawn ', ' Bool', '', true)
+            Field::getArray('bossThatTargetsPlayer', ' entEntityID', '', true),
+            Field::getArray('choiceTokenTextLayerId', ' Uint32', '', true),
+            Field::getArray('choiceTokenTextDrawn', ' Bool', '', true)
         ];
     }
 }

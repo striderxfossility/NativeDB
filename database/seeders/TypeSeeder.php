@@ -5,7 +5,7 @@ namespace Database\Seeders;
 use Illuminate\Database\Seeder;
 use App\Models\Type;
 use App\Schema\BaseSchema;
-use App\Schema\PlayerPuppet;
+use App\Models\Field;
 
 class TypeSeeder extends Seeder
 {
@@ -17,11 +17,21 @@ class TypeSeeder extends Seeder
             'code'      => $schema->code
         ]);
 
-        $type->fields()->createMany($schema->fields);
+        for ($i=0; $i < count($schema->fields); $i++) { 
+            $schema->fields[$i]['type_id'] = $type->id;
+        }
+
+        $chunks = array_chunk($schema->fields, 1000);
+        foreach($chunks as $chunk)
+        {
+            Field::insert($chunk);
+        }
+        
     }
 
     public function run()
     {
-        $this->create(new PlayerPuppet());
+        $this->create(new \App\Schema\gameFPPCameraComponent());
+        $this->create(new \App\Schema\PlayerPuppet());
     }
 }
