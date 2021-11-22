@@ -4,9 +4,9 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Model\Field;
+use App\Model\Type;
 
-class Type extends Model
+class Field extends Model
 {
     use HasFactory;
 
@@ -15,8 +15,8 @@ class Type extends Model
         return $this->belongsTo(Type::class);
     }
 
-    public function fields()
+    public function returnType()
     {
-        return $this->hasMany(Field::class);
+        return $this->belongsTo(Type::class);
     }
 }
