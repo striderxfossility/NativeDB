@@ -18,5 +18,6 @@ class TypeSeeder extends Seeder
 
     public function run()
     {
+        $this->create('', 'PlayerPuppet', 'local playerPuppet = Game:GetPlayer()');
     }
 }
