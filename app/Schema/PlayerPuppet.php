@@ -4,6 +4,7 @@ namespace App\Schema;
 
 use App\Models\Type;
 use App\Models\Field;
+use App\Models\Method;
 
 class PlayerPuppet extends BaseSchema
 {
@@ -111,6 +112,10 @@ class PlayerPuppet extends BaseSchema
             Field::getArray('bossThatTargetsPlayer', ' entEntityID', '', true),
             Field::getArray('choiceTokenTextLayerId', ' Uint32', '', true),
             Field::getArray('choiceTokenTextDrawn', ' Bool', '', true)
+        ];
+        $this->methods = 
+        [
+            Method::getArray('CanApplyBreathingEffect', 'player : whandle:PlayerPuppet', 'Bool', 0, true)
         ];
     }
 }

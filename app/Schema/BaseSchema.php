@@ -7,6 +7,6 @@ class BaseSchema
     public int      $headType;
     public string   $name;
     public string   $code = '';
-    public array    $fields;
-    public array    $methods;
+    public array    $fields = [];
+    public array    $methods = [];
 }

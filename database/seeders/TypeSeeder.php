@@ -6,6 +6,7 @@ use Illuminate\Database\Seeder;
 use App\Models\Type;
 use App\Schema\BaseSchema;
 use App\Models\Field;
+use App\Models\Method;
 
 class TypeSeeder extends Seeder
 {
@@ -21,12 +22,21 @@ class TypeSeeder extends Seeder
             $schema->fields[$i]['type_id'] = $type->id;
         }
 
+        for ($i=0; $i < count($schema->methods); $i++) { 
+            $schema->methods[$i]['type_id'] = $type->id;
+        }
+
         $chunks = array_chunk($schema->fields, 1000);
         foreach($chunks as $chunk)
         {
             Field::insert($chunk);
         }
-        
+
+        $chunks = array_chunk($schema->methods, 1000);
+        foreach($chunks as $chunk)
+        {
+            Method::insert($chunk);
+        }
     }
 
     public function run()
