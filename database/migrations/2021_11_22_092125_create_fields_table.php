@@ -20,6 +20,7 @@ class CreateFieldsTable extends Migration
             $table->string('name');
             $table->string('return');
             $table->integer('return_type');
+            $table->text('code');
             $table->timestamps();
         });
     }

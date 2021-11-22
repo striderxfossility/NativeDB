@@ -4,20 +4,24 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Seeder;
 use App\Models\Type;
+use App\Schema\BaseSchema;
+use App\Schema\PlayerPuppet;
 
 class TypeSeeder extends Seeder
 {
-    private function create(string $headType, string $name, string $code = '')
+    private function create(BaseSchema $schema)
     {
-        Type::create([
-            'type_id'   => Type::whereName($headType)->first() ? Type::whereName($headType)->first()->id : 0,
-            'name'      => $name,
-            'code'      => $code
+        $type = Type::create([
+            'type_id'   => $schema->headType,
+            'name'      => $schema->name,
+            'code'      => $schema->code
         ]);
+
+        $type->fields()->createMany($schema->fields);
     }
 
     public function run()
     {
-        $this->create('', 'PlayerPuppet', 'local playerPuppet = Game:GetPlayer()');
+        $this->create(new PlayerPuppet());
     }
 }
