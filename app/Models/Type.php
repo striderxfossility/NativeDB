@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Field;
+use App\Models\Method;
 
 class Type extends Model
 {
@@ -26,5 +27,10 @@ class Type extends Model
     public function fields()
     {
         return $this->hasMany(Field::class);
+    }
+
+    public function methods()
+    {
+        return $this->hasMany(Method::class);
     }
 }

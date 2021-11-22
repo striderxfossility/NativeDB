@@ -8,4 +8,5 @@ class BaseSchema
     public string   $name;
     public string   $code = '';
     public array    $fields;
+    public array    $methods;
 }
