@@ -1,0 +1,81 @@
+{
+    "name": "laravel/laravel",
+    "type": "project",
+    "description": "The Laravel Framework.",
+    "keywords": ["framework", "laravel"],
+    "license": "MIT",
+    "require": {
+        "php": "^7.3|^8.0",
+        "barryvdh/laravel-dompdf": "^0.9.0",
+        "dacastro4/laravel-gmail": "^5.1",
+        "dompdf/dompdf": "^1.0",
+        "fakerphp/faker": "^1.9.1",
+        "fruitcake/laravel-cors": "^2.0",
+        "genealabs/laravel-model-caching": "^0.11.3",
+        "guzzlehttp/guzzle": "^7.0.1",
+        "laravel/framework": "^8.65",
+        "laravel/sanctum": "^2.11",
+        "laravel/tinker": "^2.5",
+        "maatwebsite/excel": "^3.1",
+        "phpoffice/phpspreadsheet": "^1.15",
+        "predis/predis": "^1.1",
+        "psr/log": "^1.0",
+        "pusher/pusher-php-server": "^7.0",
+        "renatomarinho/laravel-page-speed": "^2.0",
+        "romanzipp/laravel-queue-monitor": "^2.2"
+    },
+    "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.6",
+        "beyondcode/laravel-dump-server": "^1.7",
+        "beyondcode/laravel-query-detector": "^1.5",
+        "facade/ignition": "^2.5",
+        "laravel/breeze": "^1.4",
+        "laravel/sail": "^1.0.1",
+        "laravel/telescope": "^4.6",
+        "mockery/mockery": "^1.4.4",
+        "nunomaduro/collision": "^5.10",
+        "phpunit/phpunit": "^9.5.10",
+        "rap2hpoutre/laravel-log-viewer": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/",
+            "Database\\Factories\\": "database/factories/",
+            "Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ],
+        "post-update-cmd": [
+            "@php artisan vendor:publish --tag=laravel-assets --ansi"
+        ],
+        "post-root-package-install": [
+            "@php -r \"file_exists('.env') || copy('.env.example', '.env');\""
+        ],
+        "post-create-project-cmd": [
+            "@php artisan key:generate --ansi"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "dont-discover": [
+                "laravel/telescope"
+            ]
+        }
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "preferred-install": "dist",
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
