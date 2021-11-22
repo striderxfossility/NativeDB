@@ -3,6 +3,7 @@
 namespace App\Schema;
 
 use App\Models\Type;
+use App\Models\Field;
 
 class PlayerPuppet extends BaseSchema
 {
@@ -13,13 +14,14 @@ class PlayerPuppet extends BaseSchema
         $this->code       = 'local value = Game:GetPlayer()';
         $this->fields     = 
         [
-            [
-                'name'          => 'quickSlotsManager',
-                'return'        => 'handle',
-                'return_type'   => Type::getType('QuickSlotsManager'),
-                'code'          => $this->code . '.quickSlotsManager',
-                'private'       => true
-            ]
+            Field::getArray('quickSlotsManager', 'handle', 'QuickSlotsManager', true),
+            Field::getArray('inspectionComponent', 'handle', 'InspectionComponent', true),
+            Field::getArray('Phone', 'handle', 'PlayerPhone', false),
+            Field::getArray('fppCameraComponent', 'handle', 'gameFPPCameraComponent', true),
+            Field::getArray('primaryTargetingComponent', 'handle', 'gameTargetingComponent', true),
+            Field::getArray('DEBUG_Visualizer', 'handle', 'DEBUG_VisualizerComponent', false),
+            Field::getArray('Debug_DamageInputRec', 'handle', 'DEBUG_DamageInputReceiver', true),
+            Field::getArray('highDamageThreshold', 'Float', '', false),
         ];
     }
 }
