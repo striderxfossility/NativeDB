@@ -17,6 +17,7 @@ class CreateTypesTable extends Migration
             $table->id();
             $table->integer('type_id')->nullable();
             $table->string('name');
+            $table->integer('flags');
             $table->text('code')->default('');
             $table->timestamps();
         });

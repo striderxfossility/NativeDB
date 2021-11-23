@@ -4,7 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use App\Models\Field;
+use App\Models\Prop;
 use App\Models\Method;
 
 class Type extends Model
@@ -24,9 +24,9 @@ class Type extends Model
         return $this->belongsTo(Type::class);
     }
 
-    public function fields()
+    public function props()
     {
-        return $this->hasMany(Field::class);
+        return $this->hasMany(Prop::class);
     }
 
     public function methods()
