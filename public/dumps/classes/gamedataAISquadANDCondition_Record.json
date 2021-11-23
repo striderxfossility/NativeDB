@@ -1,0 +1,81 @@
+{
+  "parent": "gamedataAITicketCheck_Record",
+  "name": "gamedataAISquadANDCondition_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AND",
+      "shortName": "AND",
+      "index": 7487,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketCheck_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ANDContains",
+      "shortName": "ANDContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7491,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketCheck_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetANDCount",
+      "shortName": "GetANDCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7488,
+      "flags": 1
+    },
+    {
+      "fullName": "GetANDItem",
+      "shortName": "GetANDItem",
+      "return": {
+        "type": "whandle:gamedataAITicketCheck_Record",
+        "flags": 64
+      },
+      "index": 7489,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetANDItemHandle",
+      "shortName": "GetANDItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketCheck_Record",
+        "flags": 64
+      },
+      "index": 7490,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

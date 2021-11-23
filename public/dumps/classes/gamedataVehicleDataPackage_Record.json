@@ -1,0 +1,469 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleDataPackage_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AdditionalAnimFeatures",
+      "shortName": "AdditionalAnimFeatures",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 8522,
+      "flags": 1
+    },
+    {
+      "fullName": "AdditionalAnimFeaturesContains",
+      "shortName": "AdditionalAnimFeaturesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8525,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "AnimVars",
+      "shortName": "AnimVars",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 8518,
+      "flags": 1
+    },
+    {
+      "fullName": "AnimVarsContains",
+      "shortName": "AnimVarsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8521,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "BarnDoorsTailgate",
+      "shortName": "BarnDoorsTailgate",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8550,
+      "flags": 1
+    },
+    {
+      "fullName": "Body_dump_close_trunk_delay",
+      "shortName": "Body_dump_close_trunk_delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8547,
+      "flags": 1
+    },
+    {
+      "fullName": "BoneNames",
+      "shortName": "BoneNames",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 8526,
+      "flags": 1
+    },
+    {
+      "fullName": "BoneNamesContains",
+      "shortName": "BoneNamesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8529,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "CanStoreBody",
+      "shortName": "CanStoreBody",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8549,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableSwitchSeats",
+      "shortName": "DisableSwitchSeats",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8557,
+      "flags": 1
+    },
+    {
+      "fullName": "Entering",
+      "shortName": "Entering",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8543,
+      "flags": 1
+    },
+    {
+      "fullName": "ExitDelay",
+      "shortName": "ExitDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8539,
+      "flags": 1
+    },
+    {
+      "fullName": "FppCameraOverride",
+      "shortName": "FppCameraOverride",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8530,
+      "flags": 1
+    },
+    {
+      "fullName": "FromCombat",
+      "shortName": "FromCombat",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8532,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAdditionalAnimFeaturesCount",
+      "shortName": "GetAdditionalAnimFeaturesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8523,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAdditionalAnimFeaturesItem",
+      "shortName": "GetAdditionalAnimFeaturesItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8524,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetAnimVarsCount",
+      "shortName": "GetAnimVarsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8519,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAnimVarsItem",
+      "shortName": "GetAnimVarsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8520,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetBoneNamesCount",
+      "shortName": "GetBoneNamesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8527,
+      "flags": 1
+    },
+    {
+      "fullName": "GetBoneNamesItem",
+      "shortName": "GetBoneNamesItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8528,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasSiren",
+      "shortName": "HasSiren",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8548,
+      "flags": 1
+    },
+    {
+      "fullName": "HasSpoiler",
+      "shortName": "HasSpoiler",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8552,
+      "flags": 1
+    },
+    {
+      "fullName": "HasTurboCharger",
+      "shortName": "HasTurboCharger",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8551,
+      "flags": 1
+    },
+    {
+      "fullName": "InteractiveHood",
+      "shortName": "InteractiveHood",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8556,
+      "flags": 1
+    },
+    {
+      "fullName": "InteractiveTrunk",
+      "shortName": "InteractiveTrunk",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8553,
+      "flags": 1
+    },
+    {
+      "fullName": "KnockOffForce",
+      "shortName": "KnockOffForce",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8537,
+      "flags": 1
+    },
+    {
+      "fullName": "Normal_open",
+      "shortName": "Normal_open",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8540,
+      "flags": 1
+    },
+    {
+      "fullName": "Open_close_duration",
+      "shortName": "Open_close_duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8546,
+      "flags": 1
+    },
+    {
+      "fullName": "ParkingAngle",
+      "shortName": "ParkingAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8533,
+      "flags": 1
+    },
+    {
+      "fullName": "SeatingTemplateOverride",
+      "shortName": "SeatingTemplateOverride",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8531,
+      "flags": 1
+    },
+    {
+      "fullName": "SlideDuration",
+      "shortName": "SlideDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8541,
+      "flags": 1
+    },
+    {
+      "fullName": "SlidingRearDoors",
+      "shortName": "SlidingRearDoors",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8554,
+      "flags": 1
+    },
+    {
+      "fullName": "SpeedToClose",
+      "shortName": "SpeedToClose",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8542,
+      "flags": 1
+    },
+    {
+      "fullName": "SpoilerSpeedToDeploy",
+      "shortName": "SpoilerSpeedToDeploy",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8535,
+      "flags": 1
+    },
+    {
+      "fullName": "SpoilerSpeedToRetract",
+      "shortName": "SpoilerSpeedToRetract",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8544,
+      "flags": 1
+    },
+    {
+      "fullName": "Stealing",
+      "shortName": "Stealing",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8536,
+      "flags": 1
+    },
+    {
+      "fullName": "Stealing_open",
+      "shortName": "Stealing_open",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8545,
+      "flags": 1
+    },
+    {
+      "fullName": "SupportsCombat",
+      "shortName": "SupportsCombat",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8555,
+      "flags": 1
+    },
+    {
+      "fullName": "SwitchSeats",
+      "shortName": "SwitchSeats",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8534,
+      "flags": 1
+    },
+    {
+      "fullName": "ToCombat",
+      "shortName": "ToCombat",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8538,
+      "flags": 1
+    },
+    {
+      "fullName": "VehSeatSet",
+      "shortName": "VehSeatSet",
+      "return": {
+        "type": "whandle:gamedataVehicleSeatSet_Record",
+        "flags": 64
+      },
+      "index": 8516,
+      "flags": 1
+    },
+    {
+      "fullName": "VehSeatSetHandle",
+      "shortName": "VehSeatSetHandle",
+      "return": {
+        "type": "handle:gamedataVehicleSeatSet_Record",
+        "flags": 64
+      },
+      "index": 8517,
+      "flags": 1
+    }
+  ]
+}

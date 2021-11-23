@@ -1,0 +1,191 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionSetTargetByTag_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AllowedOffMeshTags",
+      "shortName": "AllowedOffMeshTags",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 7797,
+      "flags": 1
+    },
+    {
+      "fullName": "AllowedOffMeshTagsContains",
+      "shortName": "AllowedOffMeshTagsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7800,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "AvoidSelectingSameTarget",
+      "shortName": "AvoidSelectingSameTarget",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7807,
+      "flags": 1
+    },
+    {
+      "fullName": "AvoidSelectingSameTargetMethod",
+      "shortName": "AvoidSelectingSameTargetMethod",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7805,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7806,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAllowedOffMeshTagsCount",
+      "shortName": "GetAllowedOffMeshTagsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7798,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAllowedOffMeshTagsItem",
+      "shortName": "GetAllowedOffMeshTagsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7799,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LineOfSightTarget",
+      "shortName": "LineOfSightTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7795,
+      "flags": 1
+    },
+    {
+      "fullName": "LineOfSightTargetHandle",
+      "shortName": "LineOfSightTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7796,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeFromObj",
+      "shortName": "RangeFromObj",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 7804,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeFromOwner",
+      "shortName": "RangeFromOwner",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 7803,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeObj",
+      "shortName": "RangeObj",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7791,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeObjHandle",
+      "shortName": "RangeObjHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7792,
+      "flags": 1
+    },
+    {
+      "fullName": "SelectionMethod",
+      "shortName": "SelectionMethod",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7801,
+      "flags": 1
+    },
+    {
+      "fullName": "Tag",
+      "shortName": "Tag",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7802,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7793,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7794,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,264 @@
+{
+  "parent": "IScriptable",
+  "name": "gameItemData",
+  "flags": 3,
+  "funcs": [
+    {
+      "fullName": "GetID",
+      "shortName": "GetID",
+      "return": {
+        "type": "gameItemID",
+        "flags": 64
+      },
+      "index": 10433,
+      "flags": 1
+    },
+    {
+      "fullName": "GetItemPart",
+      "shortName": "GetItemPart",
+      "index": 10447,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gameInnerItemData",
+          "name": "part",
+          "flags": 640
+        },
+        {
+          "type": "TweakDBID",
+          "name": "slotId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetItemParts",
+      "shortName": "GetItemParts",
+      "index": 10448,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:gameInnerItemData",
+          "name": "parts",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "GetItemType",
+      "shortName": "GetItemType",
+      "return": {
+        "type": "gamedataItemType",
+        "flags": 64
+      },
+      "index": 10450,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLocalizedItemType",
+      "shortName": "GetLocalizedItemType",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 10451,
+      "flags": 1
+    },
+    {
+      "fullName": "GetName",
+      "shortName": "GetName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 10434,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNameAsString",
+      "shortName": "GetNameAsString",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 10435,
+      "flags": 1
+    },
+    {
+      "fullName": "GetQuantity",
+      "shortName": "GetQuantity",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 10436,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatValueByType",
+      "shortName": "GetStatValueByType",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 10444,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gamedataStatType",
+          "name": "type",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatsObjectID",
+      "shortName": "GetStatsObjectID",
+      "return": {
+        "type": "gameStatsObjectID",
+        "flags": 64
+      },
+      "index": 10445,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTemporaryStatBundle",
+      "shortName": "GetTemporaryStatBundle",
+      "return": {
+        "type": "handle:gameStatsBundleHandler",
+        "flags": 64
+      },
+      "index": 10449,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTimestamp",
+      "shortName": "GetTimestamp",
+      "return": {
+        "type": "GameTime",
+        "flags": 64
+      },
+      "index": 10442,
+      "flags": 1
+    },
+    {
+      "fullName": "HasAttachmentSlot",
+      "shortName": "HasAttachmentSlot",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10437,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "slotID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasPartInSlot",
+      "shortName": "HasPartInSlot",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10446,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "slotID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasPlacementSlot",
+      "shortName": "HasPlacementSlot",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10438,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "slotID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasStatData",
+      "shortName": "HasStatData",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10443,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gamedataStatType",
+          "name": "type",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasTag",
+      "shortName": "HasTag",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10439,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveDynamicTag",
+      "shortName": "RemoveDynamicTag",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10441,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetDynamicTag",
+      "shortName": "SetDynamicTag",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10440,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

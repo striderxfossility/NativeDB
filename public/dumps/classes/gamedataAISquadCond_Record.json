@@ -1,0 +1,155 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAISquadCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetHasTicketsCount",
+      "shortName": "GetHasTicketsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8408,
+      "flags": 1
+    },
+    {
+      "fullName": "GetHasTicketsItem",
+      "shortName": "GetHasTicketsItem",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8409,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetHasTicketsItemHandle",
+      "shortName": "GetHasTicketsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8410,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTicketsConditionCheckCount",
+      "shortName": "GetTicketsConditionCheckCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8413,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTicketsConditionCheckItem",
+      "shortName": "GetTicketsConditionCheckItem",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8414,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTicketsConditionCheckItemHandle",
+      "shortName": "GetTicketsConditionCheckItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8415,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasTickets",
+      "shortName": "HasTickets",
+      "index": 8407,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "HasTicketsContains",
+      "shortName": "HasTicketsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8411,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "TicketsConditionCheck",
+      "shortName": "TicketsConditionCheck",
+      "index": 8412,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "TicketsConditionCheckContains",
+      "shortName": "TicketsConditionCheckContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8416,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

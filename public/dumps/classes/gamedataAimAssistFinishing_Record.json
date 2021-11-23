@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAimAssistFinishing_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "InputHistoryTime",
+      "shortName": "InputHistoryTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6328,
+      "flags": 1
+    },
+    {
+      "fullName": "IsEnabled",
+      "shortName": "IsEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6331,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxCorrectionAngle",
+      "shortName": "MaxCorrectionAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6329,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxCorrectionPitch",
+      "shortName": "MaxCorrectionPitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6330,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxCorrectionYaw",
+      "shortName": "MaxCorrectionYaw",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6326,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxTime",
+      "shortName": "MaxTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6325,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityDecreaseActivationFactor",
+      "shortName": "VelocityDecreaseActivationFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6327,
+      "flags": 1
+    }
+  ]
+}

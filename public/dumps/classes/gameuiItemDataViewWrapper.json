@@ -1,0 +1,118 @@
+{
+  "parent": "gameuiBaseItemDataSource",
+  "name": "gameuiItemDataViewWrapper",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "AddSkipTag",
+      "shortName": "AddSkipTag",
+      "index": 12028,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "DisableSorting",
+      "shortName": "DisableSorting",
+      "index": 12036,
+      "flags": 1
+    },
+    {
+      "fullName": "EnableSorting",
+      "shortName": "EnableSorting",
+      "index": 12035,
+      "flags": 1
+    },
+    {
+      "fullName": "Filter",
+      "shortName": "Filter",
+      "index": 12032,
+      "flags": 1
+    },
+    {
+      "fullName": "IsSortingEnabled",
+      "shortName": "IsSortingEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12037,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveSkipTag",
+      "shortName": "RemoveSkipTag",
+      "index": 12029,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ResetItemTypesForSorting",
+      "shortName": "ResetItemTypesForSorting",
+      "index": 12034,
+      "flags": 1
+    },
+    {
+      "fullName": "ResetSkipTags",
+      "shortName": "ResetSkipTags",
+      "index": 12031,
+      "flags": 1
+    },
+    {
+      "fullName": "SetItemTypesForSorting",
+      "shortName": "SetItemTypesForSorting",
+      "index": 12033,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:gamedataItemType",
+          "name": "types",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetSkipTags",
+      "shortName": "SetSkipTags",
+      "index": 12030,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:CName",
+          "name": "tags",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetSource",
+      "shortName": "SetSource",
+      "index": 12027,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gameuiBaseItemDataSource",
+          "name": "source",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Sort",
+      "shortName": "Sort",
+      "index": 12038,
+      "flags": 1
+    }
+  ]
+}

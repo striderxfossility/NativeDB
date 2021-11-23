@@ -1,0 +1,81 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataStatsList_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetStatsCount",
+      "shortName": "GetStatsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3796,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatsItem",
+      "shortName": "GetStatsItem",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 3797,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatsItemHandle",
+      "shortName": "GetStatsItemHandle",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 3798,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Stats",
+      "shortName": "Stats",
+      "index": 3795,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStat_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatsContains",
+      "shortName": "StatsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3799,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStat_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

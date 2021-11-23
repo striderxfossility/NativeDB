@@ -1,0 +1,177 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleWeapon_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttackRange",
+      "shortName": "AttackRange",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6814,
+      "flags": 1
+    },
+    {
+      "fullName": "CanFiendlyFire",
+      "shortName": "CanFiendlyFire",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6821,
+      "flags": 1
+    },
+    {
+      "fullName": "CycleTime",
+      "shortName": "CycleTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6813,
+      "flags": 1
+    },
+    {
+      "fullName": "GenericShoot",
+      "shortName": "GenericShoot",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6820,
+      "flags": 1
+    },
+    {
+      "fullName": "GenericTick",
+      "shortName": "GenericTick",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6819,
+      "flags": 1
+    },
+    {
+      "fullName": "Item",
+      "shortName": "Item",
+      "return": {
+        "type": "whandle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 6807,
+      "flags": 1
+    },
+    {
+      "fullName": "ItemHandle",
+      "shortName": "ItemHandle",
+      "return": {
+        "type": "handle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 6808,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxPitch",
+      "shortName": "MaxPitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6812,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxYaw",
+      "shortName": "MaxYaw",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6811,
+      "flags": 1
+    },
+    {
+      "fullName": "MinPitch",
+      "shortName": "MinPitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6818,
+      "flags": 1
+    },
+    {
+      "fullName": "MinYaw",
+      "shortName": "MinYaw",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6810,
+      "flags": 1
+    },
+    {
+      "fullName": "SingleProjectileCycleTime",
+      "shortName": "SingleProjectileCycleTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6816,
+      "flags": 1
+    },
+    {
+      "fullName": "SingleShotProjectiles",
+      "shortName": "SingleShotProjectiles",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6815,
+      "flags": 1
+    },
+    {
+      "fullName": "Slot",
+      "shortName": "Slot",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 6805,
+      "flags": 1
+    },
+    {
+      "fullName": "SlotHandle",
+      "shortName": "SlotHandle",
+      "return": {
+        "type": "handle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 6806,
+      "flags": 1
+    },
+    {
+      "fullName": "WeaponShootAnimEvent",
+      "shortName": "WeaponShootAnimEvent",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6809,
+      "flags": 1
+    },
+    {
+      "fullName": "WholeBurstProjectiles",
+      "shortName": "WholeBurstProjectiles",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6817,
+      "flags": 1
+    }
+  ]
+}

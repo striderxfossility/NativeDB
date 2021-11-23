@@ -1,0 +1,399 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionShootWithWeapon_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AimingDelay",
+      "shortName": "AimingDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8459,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8456,
+      "flags": 1
+    },
+    {
+      "fullName": "DualWieldShootingStyle",
+      "shortName": "DualWieldShootingStyle",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8454,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPauseConditionCount",
+      "shortName": "GetPauseConditionCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8445,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPauseConditionItem",
+      "shortName": "GetPauseConditionItem",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 8446,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPauseConditionItemHandle",
+      "shortName": "GetPauseConditionItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 8447,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetShootingPatternPackagesCount",
+      "shortName": "GetShootingPatternPackagesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8440,
+      "flags": 1
+    },
+    {
+      "fullName": "GetShootingPatternPackagesItem",
+      "shortName": "GetShootingPatternPackagesItem",
+      "return": {
+        "type": "whandle:gamedataAIPatternsPackage_Record",
+        "flags": 64
+      },
+      "index": 8441,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetShootingPatternPackagesItemHandle",
+      "shortName": "GetShootingPatternPackagesItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIPatternsPackage_Record",
+        "flags": 64
+      },
+      "index": 8442,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetWeaponSlotsCount",
+      "shortName": "GetWeaponSlotsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8450,
+      "flags": 1
+    },
+    {
+      "fullName": "GetWeaponSlotsItem",
+      "shortName": "GetWeaponSlotsItem",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 8451,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetWeaponSlotsItemHandle",
+      "shortName": "GetWeaponSlotsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 8452,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Instigator",
+      "shortName": "Instigator",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8431,
+      "flags": 1
+    },
+    {
+      "fullName": "InstigatorHandle",
+      "shortName": "InstigatorHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8432,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxNumberOfShots",
+      "shortName": "MaxNumberOfShots",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8462,
+      "flags": 1
+    },
+    {
+      "fullName": "NumberOfShots",
+      "shortName": "NumberOfShots",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8461,
+      "flags": 1
+    },
+    {
+      "fullName": "PauseCondition",
+      "shortName": "PauseCondition",
+      "index": 8444,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIActionCondition_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "PauseConditionCheckInterval",
+      "shortName": "PauseConditionCheckInterval",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8457,
+      "flags": 1
+    },
+    {
+      "fullName": "PauseConditionContains",
+      "shortName": "PauseConditionContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8448,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIActionCondition_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PredictionTime",
+      "shortName": "PredictionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8460,
+      "flags": 1
+    },
+    {
+      "fullName": "RangedAttack",
+      "shortName": "RangedAttack",
+      "return": {
+        "type": "whandle:gamedataRangedAttack_Record",
+        "flags": 64
+      },
+      "index": 8435,
+      "flags": 1
+    },
+    {
+      "fullName": "RangedAttackHandle",
+      "shortName": "RangedAttackHandle",
+      "return": {
+        "type": "handle:gamedataRangedAttack_Record",
+        "flags": 64
+      },
+      "index": 8436,
+      "flags": 1
+    },
+    {
+      "fullName": "ShootingPatternPackages",
+      "shortName": "ShootingPatternPackages",
+      "index": 8439,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIPatternsPackage_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ShootingPatternPackagesContains",
+      "shortName": "ShootingPatternPackagesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8443,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIPatternsPackage_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8433,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8434,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetOffset",
+      "shortName": "TargetOffset",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 8455,
+      "flags": 1
+    },
+    {
+      "fullName": "TbhCoefficient",
+      "shortName": "TbhCoefficient",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8458,
+      "flags": 1
+    },
+    {
+      "fullName": "TriggerMode",
+      "shortName": "TriggerMode",
+      "return": {
+        "type": "whandle:gamedataTriggerMode_Record",
+        "flags": 64
+      },
+      "index": 8437,
+      "flags": 1
+    },
+    {
+      "fullName": "TriggerModeHandle",
+      "shortName": "TriggerModeHandle",
+      "return": {
+        "type": "handle:gamedataTriggerMode_Record",
+        "flags": 64
+      },
+      "index": 8438,
+      "flags": 1
+    },
+    {
+      "fullName": "WeaponSlots",
+      "shortName": "WeaponSlots",
+      "index": 8449,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAttachmentSlot_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "WeaponSlotsContains",
+      "shortName": "WeaponSlotsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8453,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAttachmentSlot_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

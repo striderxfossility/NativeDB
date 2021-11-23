@@ -1,0 +1,114 @@
+{
+  "name": "gameEffectExecutionScriptContext",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetGameEffectSystem",
+      "shortName": "GetGameEffectSystem",
+      "index": 9877,
+      "flags": 3
+    },
+    {
+      "fullName": "GetHitNormal",
+      "shortName": "GetHitNormal",
+      "return": {
+        "type": "Vector4",
+        "flags": 64
+      },
+      "index": 9875,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetHitPosition",
+      "shortName": "GetHitPosition",
+      "return": {
+        "type": "Vector4",
+        "flags": 64
+      },
+      "index": 9874,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetHitThroughTechSurface",
+      "shortName": "GetHitThroughTechSurface",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9876,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTarget",
+      "shortName": "GetTarget",
+      "return": {
+        "type": "handle:entEntity",
+        "flags": 64
+      },
+      "index": 9872,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTargetNode",
+      "shortName": "GetTargetNode",
+      "return": {
+        "type": "worldGlobalNodeID",
+        "flags": 64
+      },
+      "index": 9873,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTimeDelta",
+      "shortName": "GetTimeDelta",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9871,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gameEffectExecutionScriptContext",
+          "name": "applierCtx",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

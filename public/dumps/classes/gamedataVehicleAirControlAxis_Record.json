@@ -1,0 +1,167 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleAirControlAxis_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AngleCorrectionFactorMax",
+      "shortName": "AngleCorrectionFactorMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7566,
+      "flags": 1
+    },
+    {
+      "fullName": "AngleCorrectionFactorMin",
+      "shortName": "AngleCorrectionFactorMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7570,
+      "flags": 1
+    },
+    {
+      "fullName": "AngleCorrectionThresholdMax",
+      "shortName": "AngleCorrectionThresholdMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7561,
+      "flags": 1
+    },
+    {
+      "fullName": "AngleCorrectionThresholdMin",
+      "shortName": "AngleCorrectionThresholdMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7563,
+      "flags": 1
+    },
+    {
+      "fullName": "BrakeMultiplierWhenNoInput",
+      "shortName": "BrakeMultiplierWhenNoInput",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7569,
+      "flags": 1
+    },
+    {
+      "fullName": "ControlAxis",
+      "shortName": "ControlAxis",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7559,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxAngleCompensation",
+      "shortName": "MaxAngleCompensation",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7571,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxAngleToCompensateThreshold",
+      "shortName": "MaxAngleToCompensateThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7573,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxVelocityCompensation",
+      "shortName": "MaxVelocityCompensation",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7567,
+      "flags": 1
+    },
+    {
+      "fullName": "Multiplier",
+      "shortName": "Multiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7568,
+      "flags": 1
+    },
+    {
+      "fullName": "StabilizeAxis",
+      "shortName": "StabilizeAxis",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7574,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityDampingFactorMax",
+      "shortName": "VelocityDampingFactorMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7564,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityDampingFactorMin",
+      "shortName": "VelocityDampingFactorMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7562,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityDampingThresholdMax",
+      "shortName": "VelocityDampingThresholdMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7565,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityDampingThresholdMin",
+      "shortName": "VelocityDampingThresholdMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7560,
+      "flags": 1
+    },
+    {
+      "fullName": "ZeroAngleThreshold",
+      "shortName": "ZeroAngleThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7572,
+      "flags": 1
+    }
+  ]
+}

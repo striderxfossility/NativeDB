@@ -1,0 +1,147 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionCreateGameEffect_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ColliderBoxSize",
+      "shortName": "ColliderBoxSize",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 8427,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8430,
+      "flags": 1
+    },
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8429,
+      "flags": 1
+    },
+    {
+      "fullName": "EffectName",
+      "shortName": "EffectName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8426,
+      "flags": 1
+    },
+    {
+      "fullName": "EffectTag",
+      "shortName": "EffectTag",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8425,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionObj",
+      "shortName": "PositionObj",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8417,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionObjHandle",
+      "shortName": "PositionObjHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8418,
+      "flags": 1
+    },
+    {
+      "fullName": "Range",
+      "shortName": "Range",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8428,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationObj",
+      "shortName": "RotationObj",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8421,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationObjHandle",
+      "shortName": "RotationObjHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8422,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8423,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8424,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetPositionObj",
+      "shortName": "TargetPositionObj",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8419,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetPositionObjHandle",
+      "shortName": "TargetPositionObjHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8420,
+      "flags": 1
+    }
+  ]
+}

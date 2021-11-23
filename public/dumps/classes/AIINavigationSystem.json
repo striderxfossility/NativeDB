@@ -1,0 +1,25 @@
+{
+  "parent": "gameIGameSystem",
+  "name": "AIINavigationSystem",
+  "flags": 3,
+  "funcs": [
+    {
+      "fullName": "GetResult",
+      "shortName": "GetResult",
+      "index": 9447,
+      "flags": 1
+    },
+    {
+      "fullName": "StartPathfinding",
+      "shortName": "StartPathfinding",
+      "index": 9445,
+      "flags": 1
+    },
+    {
+      "fullName": "StopPathfinding",
+      "shortName": "StopPathfinding",
+      "index": 9446,
+      "flags": 1
+    }
+  ]
+}

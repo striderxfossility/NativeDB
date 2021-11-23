@@ -1,0 +1,207 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataDistrictPreventionData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "BlinkThreshold",
+      "shortName": "BlinkThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6482,
+      "flags": 1
+    },
+    {
+      "fullName": "DamagePercentThreshold",
+      "shortName": "DamagePercentThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6483,
+      "flags": 1
+    },
+    {
+      "fullName": "DeescalationZeroTime",
+      "shortName": "DeescalationZeroTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6479,
+      "flags": 1
+    },
+    {
+      "fullName": "ExteriorSpawnDelay",
+      "shortName": "ExteriorSpawnDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6478,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat1",
+      "shortName": "Heat1",
+      "return": {
+        "type": "whandle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6471,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat1Handle",
+      "shortName": "Heat1Handle",
+      "return": {
+        "type": "handle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6472,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat2",
+      "shortName": "Heat2",
+      "return": {
+        "type": "whandle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6469,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat2Handle",
+      "shortName": "Heat2Handle",
+      "return": {
+        "type": "handle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6470,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat3",
+      "shortName": "Heat3",
+      "return": {
+        "type": "whandle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6473,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat3Handle",
+      "shortName": "Heat3Handle",
+      "return": {
+        "type": "handle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6474,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat4",
+      "shortName": "Heat4",
+      "return": {
+        "type": "whandle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6465,
+      "flags": 1
+    },
+    {
+      "fullName": "Heat4Handle",
+      "shortName": "Heat4Handle",
+      "return": {
+        "type": "handle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6466,
+      "flags": 1
+    },
+    {
+      "fullName": "InputLockOverrideThreshold",
+      "shortName": "InputLockOverrideThreshold",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6475,
+      "flags": 1
+    },
+    {
+      "fullName": "InputLockTime",
+      "shortName": "InputLockTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6476,
+      "flags": 1
+    },
+    {
+      "fullName": "InteriorSpawnDelay",
+      "shortName": "InteriorSpawnDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6481,
+      "flags": 1
+    },
+    {
+      "fullName": "NonAggressiveReactionMultipler",
+      "shortName": "NonAggressiveReactionMultipler",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6477,
+      "flags": 1
+    },
+    {
+      "fullName": "Recon",
+      "shortName": "Recon",
+      "return": {
+        "type": "whandle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6467,
+      "flags": 1
+    },
+    {
+      "fullName": "ReconHandle",
+      "shortName": "ReconHandle",
+      "return": {
+        "type": "handle:gamedataPreventionHeatData_Record",
+        "flags": 64
+      },
+      "index": 6468,
+      "flags": 1
+    },
+    {
+      "fullName": "SafeDistance",
+      "shortName": "SafeDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6480,
+      "flags": 1
+    },
+    {
+      "fullName": "SpawnOriginMaxDistance",
+      "shortName": "SpawnOriginMaxDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6484,
+      "flags": 1
+    }
+  ]
+}

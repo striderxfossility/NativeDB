@@ -1,0 +1,181 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataStim_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Aggressive",
+      "shortName": "Aggressive",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7550,
+      "flags": 1
+    },
+    {
+      "fullName": "Category",
+      "shortName": "Category",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7546,
+      "flags": 1
+    },
+    {
+      "fullName": "Fear",
+      "shortName": "Fear",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7549,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTagsCount",
+      "shortName": "GetTagsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7543,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTagsItem",
+      "shortName": "GetTagsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7544,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Interval",
+      "shortName": "Interval",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7547,
+      "flags": 1
+    },
+    {
+      "fullName": "IsReactionStim",
+      "shortName": "IsReactionStim",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7551,
+      "flags": 1
+    },
+    {
+      "fullName": "Priority",
+      "shortName": "Priority",
+      "return": {
+        "type": "whandle:gamedataStimPriority_Record",
+        "flags": 64
+      },
+      "index": 7540,
+      "flags": 1
+    },
+    {
+      "fullName": "PriorityHandle",
+      "shortName": "PriorityHandle",
+      "return": {
+        "type": "handle:gamedataStimPriority_Record",
+        "flags": 64
+      },
+      "index": 7541,
+      "flags": 1
+    },
+    {
+      "fullName": "Propagation",
+      "shortName": "Propagation",
+      "return": {
+        "type": "whandle:gamedataStimPropagation_Record",
+        "flags": 64
+      },
+      "index": 7536,
+      "flags": 1
+    },
+    {
+      "fullName": "PropagationHandle",
+      "shortName": "PropagationHandle",
+      "return": {
+        "type": "handle:gamedataStimPropagation_Record",
+        "flags": 64
+      },
+      "index": 7537,
+      "flags": 1
+    },
+    {
+      "fullName": "Radius",
+      "shortName": "Radius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7548,
+      "flags": 1
+    },
+    {
+      "fullName": "Tags",
+      "shortName": "Tags",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 7542,
+      "flags": 1
+    },
+    {
+      "fullName": "TagsContains",
+      "shortName": "TagsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7545,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 7538,
+      "flags": 1
+    },
+    {
+      "fullName": "TypeHandle",
+      "shortName": "TypeHandle",
+      "return": {
+        "type": "handle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 7539,
+      "flags": 1
+    }
+  ]
+}

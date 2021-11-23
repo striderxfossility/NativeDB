@@ -1,0 +1,229 @@
+{
+  "parent": "gameuiWidgetGameController",
+  "name": "CursorGameController",
+  "flags": 4,
+  "props": [
+    {
+      "type": "whandle:CursorRootController",
+      "name": "cursorRoot",
+      "flags": 4297130016
+    },
+    {
+      "type": "CName",
+      "name": "currentContext",
+      "flags": 4297130016
+    },
+    {
+      "type": "inkMargin",
+      "name": "margin",
+      "flags": 4297130016
+    },
+    {
+      "type": "handle:MenuCursorUserData",
+      "name": "data",
+      "flags": 4431347744
+    },
+    {
+      "type": "Bool",
+      "name": "isCursorVisible",
+      "flags": 4297130016
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "OnCursorSpawned",
+      "shortName": "OnCursorSpawned",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "handle:inkWidget",
+          "name": "widget",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "userData",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnHold",
+      "shortName": "OnHold",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "handle:inkPointerEvent",
+          "name": "evt",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnInitialize",
+      "shortName": "OnInitialize",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264
+    },
+    {
+      "fullName": "OnRelease",
+      "shortName": "OnRelease",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "handle:inkPointerEvent",
+          "name": "evt",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnSetCursorContext",
+      "shortName": "OnSetCursorContext",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "CName",
+          "name": "context",
+          "flags": 128
+        },
+        {
+          "type": "handle:inkUserData",
+          "name": "data",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnSetCursorPosition",
+      "shortName": "OnSetCursorPosition",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "Vector2",
+          "name": "pos",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnSetCursorType",
+      "shortName": "OnSetCursorType",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "CName",
+          "name": "type",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnSetCursorVisibility",
+      "shortName": "OnSetCursorVisibility",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isVisible",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnUnitialize",
+      "shortName": "OnUnitialize",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264
+    },
+    {
+      "fullName": "DoesActionMatch;inkPointerEventarray<CName>",
+      "shortName": "DoesActionMatch",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 132,
+      "params": [
+        {
+          "type": "handle:inkPointerEvent",
+          "name": "evt",
+          "flags": 128
+        },
+        {
+          "type": "array:CName",
+          "name": "actionsList",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ProcessCursorContext;CNameinkUserDataBool",
+      "shortName": "ProcessCursorContext",
+      "flags": 132,
+      "params": [
+        {
+          "type": "CName",
+          "name": "context",
+          "flags": 128
+        },
+        {
+          "type": "handle:inkUserData",
+          "name": "data",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateFillPercent;Float",
+      "shortName": "UpdateFillPercent",
+      "flags": 516,
+      "params": [
+        {
+          "type": "Float",
+          "name": "percent",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

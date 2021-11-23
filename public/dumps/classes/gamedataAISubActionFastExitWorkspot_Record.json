@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionFastExitWorkspot_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4672,
+      "flags": 1
+    },
+    {
+      "fullName": "DestinationObj",
+      "shortName": "DestinationObj",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4670,
+      "flags": 1
+    },
+    {
+      "fullName": "DestinationObjHandle",
+      "shortName": "DestinationObjHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4671,
+      "flags": 1
+    },
+    {
+      "fullName": "PlaySlowExitIfFailed",
+      "shortName": "PlaySlowExitIfFailed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4673,
+      "flags": 1
+    },
+    {
+      "fullName": "StayInWorkspotIfFailed",
+      "shortName": "StayInWorkspotIfFailed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4674,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4668,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4669,
+      "flags": 1
+    }
+  ]
+}

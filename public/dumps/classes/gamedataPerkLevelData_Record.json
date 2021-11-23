@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataPerkLevelData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DataPackage",
+      "shortName": "DataPackage",
+      "return": {
+        "type": "whandle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 8872,
+      "flags": 1
+    },
+    {
+      "fullName": "DataPackageHandle",
+      "shortName": "DataPackageHandle",
+      "return": {
+        "type": "handle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 8873,
+      "flags": 1
+    },
+    {
+      "fullName": "Loc_desc_key",
+      "shortName": "Loc_desc_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8871,
+      "flags": 1
+    },
+    {
+      "fullName": "Loc_name_key",
+      "shortName": "Loc_name_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8870,
+      "flags": 1
+    },
+    {
+      "fullName": "UiData",
+      "shortName": "UiData",
+      "return": {
+        "type": "whandle:gamedataPerkLevelUIData_Record",
+        "flags": 64
+      },
+      "index": 8874,
+      "flags": 1
+    },
+    {
+      "fullName": "UiDataHandle",
+      "shortName": "UiDataHandle",
+      "return": {
+        "type": "handle:gamedataPerkLevelUIData_Record",
+        "flags": 64
+      },
+      "index": 8875,
+      "flags": 1
+    }
+  ]
+}

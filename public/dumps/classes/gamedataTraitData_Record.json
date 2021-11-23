@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataTraitData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DataPackage",
+      "shortName": "DataPackage",
+      "return": {
+        "type": "whandle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 6124,
+      "flags": 1
+    },
+    {
+      "fullName": "DataPackageHandle",
+      "shortName": "DataPackageHandle",
+      "return": {
+        "type": "handle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 6125,
+      "flags": 1
+    },
+    {
+      "fullName": "Loc_desc_key",
+      "shortName": "Loc_desc_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6121,
+      "flags": 1
+    },
+    {
+      "fullName": "Loc_name_key",
+      "shortName": "Loc_name_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6120,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffect",
+      "shortName": "StatusEffect",
+      "return": {
+        "type": "whandle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 6122,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectHandle",
+      "shortName": "StatusEffectHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 6123,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataCoverSelectionParameters_Record",
+  "name": "gamedataFriendlyTargetDistanceCoverSelectionParameters_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DistanceToFriendlyTargetMultiplier",
+      "shortName": "DistanceToFriendlyTargetMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7868,
+      "flags": 1
+    },
+    {
+      "fullName": "FriendlyTargetMaxDistance",
+      "shortName": "FriendlyTargetMaxDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7865,
+      "flags": 1
+    },
+    {
+      "fullName": "FriendlyTargetMinDistance",
+      "shortName": "FriendlyTargetMinDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7867,
+      "flags": 1
+    },
+    {
+      "fullName": "FriendlyTargetPreferredDistance",
+      "shortName": "FriendlyTargetPreferredDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7864,
+      "flags": 1
+    },
+    {
+      "fullName": "FriendlyTargetZLimit",
+      "shortName": "FriendlyTargetZLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7866,
+      "flags": 1
+    },
+    {
+      "fullName": "SpatialHintMults",
+      "shortName": "SpatialHintMults",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 7863,
+      "flags": 1
+    }
+  ]
+}

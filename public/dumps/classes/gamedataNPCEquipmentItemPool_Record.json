@@ -1,0 +1,81 @@
+{
+  "parent": "gamedataNPCEquipmentGroupEntry_Record",
+  "name": "gamedataNPCEquipmentItemPool_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetPoolCount",
+      "shortName": "GetPoolCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3526,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPoolItem",
+      "shortName": "GetPoolItem",
+      "return": {
+        "type": "whandle:gamedataNPCEquipmentItemsPoolEntry_Record",
+        "flags": 64
+      },
+      "index": 3527,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPoolItemHandle",
+      "shortName": "GetPoolItemHandle",
+      "return": {
+        "type": "whandle:gamedataNPCEquipmentItemsPoolEntry_Record",
+        "flags": 64
+      },
+      "index": 3528,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Pool",
+      "shortName": "Pool",
+      "index": 3525,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataNPCEquipmentItemsPoolEntry_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "PoolContains",
+      "shortName": "PoolContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3529,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataNPCEquipmentItemsPoolEntry_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

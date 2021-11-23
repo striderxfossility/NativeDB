@@ -1,0 +1,215 @@
+{
+  "parent": "gamedataNPCEquipmentGroupEntry_Record",
+  "name": "gamedataNPCEquipmentItem_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "EquipCondition",
+      "shortName": "EquipCondition",
+      "index": 3757,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIActionCondition_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "EquipConditionContains",
+      "shortName": "EquipConditionContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3761,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIActionCondition_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "EquipSlot",
+      "shortName": "EquipSlot",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 3755,
+      "flags": 1
+    },
+    {
+      "fullName": "EquipSlotHandle",
+      "shortName": "EquipSlotHandle",
+      "return": {
+        "type": "handle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 3756,
+      "flags": 1
+    },
+    {
+      "fullName": "GetEquipConditionCount",
+      "shortName": "GetEquipConditionCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3758,
+      "flags": 1
+    },
+    {
+      "fullName": "GetEquipConditionItem",
+      "shortName": "GetEquipConditionItem",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 3759,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetEquipConditionItemHandle",
+      "shortName": "GetEquipConditionItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 3760,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetUnequipConditionCount",
+      "shortName": "GetUnequipConditionCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3763,
+      "flags": 1
+    },
+    {
+      "fullName": "GetUnequipConditionItem",
+      "shortName": "GetUnequipConditionItem",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 3764,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetUnequipConditionItemHandle",
+      "shortName": "GetUnequipConditionItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIActionCondition_Record",
+        "flags": 64
+      },
+      "index": 3765,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Item",
+      "shortName": "Item",
+      "return": {
+        "type": "whandle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 3753,
+      "flags": 1
+    },
+    {
+      "fullName": "ItemHandle",
+      "shortName": "ItemHandle",
+      "return": {
+        "type": "handle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 3754,
+      "flags": 1
+    },
+    {
+      "fullName": "OnBodySlot",
+      "shortName": "OnBodySlot",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 3751,
+      "flags": 1
+    },
+    {
+      "fullName": "OnBodySlotHandle",
+      "shortName": "OnBodySlotHandle",
+      "return": {
+        "type": "handle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 3752,
+      "flags": 1
+    },
+    {
+      "fullName": "UnequipCondition",
+      "shortName": "UnequipCondition",
+      "index": 3762,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIActionCondition_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "UnequipConditionContains",
+      "shortName": "UnequipConditionContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3766,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIActionCondition_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

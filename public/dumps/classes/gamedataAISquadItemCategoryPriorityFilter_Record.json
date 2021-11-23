@@ -1,0 +1,81 @@
+{
+  "parent": "gamedataAISquadItemPriorityFilter_Record",
+  "name": "gamedataAISquadItemCategoryPriorityFilter_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Categories",
+      "shortName": "Categories",
+      "index": 6837,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataItemCategory_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "CategoriesContains",
+      "shortName": "CategoriesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6841,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataItemCategory_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCategoriesCount",
+      "shortName": "GetCategoriesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6838,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCategoriesItem",
+      "shortName": "GetCategoriesItem",
+      "return": {
+        "type": "whandle:gamedataItemCategory_Record",
+        "flags": 64
+      },
+      "index": 6839,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCategoriesItemHandle",
+      "shortName": "GetCategoriesItemHandle",
+      "return": {
+        "type": "whandle:gamedataItemCategory_Record",
+        "flags": 64
+      },
+      "index": 6840,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

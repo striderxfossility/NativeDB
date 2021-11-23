@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIVelocityDotCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DotRange",
+      "shortName": "DotRange",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 6637,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionTarget",
+      "shortName": "PositionTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6635,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionTargetHandle",
+      "shortName": "PositionTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6636,
+      "flags": 1
+    },
+    {
+      "fullName": "TimePeriod",
+      "shortName": "TimePeriod",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6638,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityTarget",
+      "shortName": "VelocityTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6633,
+      "flags": 1
+    },
+    {
+      "fullName": "VelocityTargetHandle",
+      "shortName": "VelocityTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6634,
+      "flags": 1
+    }
+  ]
+}

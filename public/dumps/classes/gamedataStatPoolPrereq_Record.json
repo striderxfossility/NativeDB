@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataIPrereq_Record",
+  "name": "gamedataStatPoolPrereq_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ComparePercentage",
+      "shortName": "ComparePercentage",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6288,
+      "flags": 1
+    },
+    {
+      "fullName": "ComparisonType",
+      "shortName": "ComparisonType",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6283,
+      "flags": 1
+    },
+    {
+      "fullName": "ListenConstantly",
+      "shortName": "ListenConstantly",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6287,
+      "flags": 1
+    },
+    {
+      "fullName": "SkipOnApply",
+      "shortName": "SkipOnApply",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6286,
+      "flags": 1
+    },
+    {
+      "fullName": "StatPoolType",
+      "shortName": "StatPoolType",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6284,
+      "flags": 1
+    },
+    {
+      "fullName": "ValueToCheck",
+      "shortName": "ValueToCheck",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6285,
+      "flags": 1
+    }
+  ]
+}

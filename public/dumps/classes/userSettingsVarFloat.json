@@ -1,0 +1,70 @@
+{
+  "parent": "userSettingsVar",
+  "name": "userSettingsVarFloat",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetDefaultValue",
+      "shortName": "GetDefaultValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1850,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMaxValue",
+      "shortName": "GetMaxValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1852,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMinValue",
+      "shortName": "GetMinValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1851,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStepValue",
+      "shortName": "GetStepValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1853,
+      "flags": 1
+    },
+    {
+      "fullName": "GetValue",
+      "shortName": "GetValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1849,
+      "flags": 1
+    },
+    {
+      "fullName": "SetValue",
+      "shortName": "SetValue",
+      "index": 1848,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

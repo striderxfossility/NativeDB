@@ -1,0 +1,115 @@
+{
+  "name": "entEntityID",
+  "flags": 2,
+  "props": [
+    {
+      "type": "Uint64",
+      "name": "hash",
+      "flags": 6895452160
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "GetHash",
+      "shortName": "GetHash",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 9188,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsDefined",
+      "shortName": "IsDefined",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9183,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsDynamic",
+      "shortName": "IsDynamic",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9184,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStatic",
+      "shortName": "IsStatic",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9185,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ToDebugString",
+      "shortName": "ToDebugString",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 9186,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ToDebugStringDecimal",
+      "shortName": "ToDebugStringDecimal",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 9187,
+      "flags": 3,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAimAssistBulletMagnetism_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "IsEnabled",
+      "shortName": "IsEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6199,
+      "flags": 1
+    },
+    {
+      "fullName": "MagPointOffset",
+      "shortName": "MagPointOffset",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6198,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHighAngularVelocity",
+      "shortName": "TargetHighAngularVelocity",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6195,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetSearchAnglePitch",
+      "shortName": "TargetSearchAnglePitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6197,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetSearchAngleYaw",
+      "shortName": "TargetSearchAngleYaw",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6196,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAIActionSlideData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DirectionAngle",
+      "shortName": "DirectionAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6307,
+      "flags": 1
+    },
+    {
+      "fullName": "DisablePositionSlideAgainstNpc",
+      "shortName": "DisablePositionSlideAgainstNpc",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6315,
+      "flags": 1
+    },
+    {
+      "fullName": "Distance",
+      "shortName": "Distance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6306,
+      "flags": 1
+    },
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6311,
+      "flags": 1
+    },
+    {
+      "fullName": "FinalRotationAngle",
+      "shortName": "FinalRotationAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6304,
+      "flags": 1
+    },
+    {
+      "fullName": "OffsetAroundTarget",
+      "shortName": "OffsetAroundTarget",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6303,
+      "flags": 1
+    },
+    {
+      "fullName": "OffsetToTarget",
+      "shortName": "OffsetToTarget",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6308,
+      "flags": 1
+    },
+    {
+      "fullName": "OverrideOffsetToTargetFromWeapon",
+      "shortName": "OverrideOffsetToTargetFromWeapon",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6316,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionPredictionTime",
+      "shortName": "PositionPredictionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6312,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionSpeed",
+      "shortName": "PositionSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6305,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationSpeed",
+      "shortName": "RotationSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6310,
+      "flags": 1
+    },
+    {
+      "fullName": "SlideStartDelay",
+      "shortName": "SlideStartDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6309,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6301,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6302,
+      "flags": 1
+    },
+    {
+      "fullName": "UsePositionSlide",
+      "shortName": "UsePositionSlide",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6314,
+      "flags": 1
+    },
+    {
+      "fullName": "UseRotationSlide",
+      "shortName": "UseRotationSlide",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6317,
+      "flags": 1
+    },
+    {
+      "fullName": "ZAlignmentCollisionThreshold",
+      "shortName": "ZAlignmentCollisionThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6313,
+      "flags": 1
+    }
+  ]
+}

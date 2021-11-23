@@ -1,0 +1,217 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataStatusEffectPlayerData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AirRecoveryAnimDuration",
+      "shortName": "AirRecoveryAnimDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5133,
+      "flags": 1
+    },
+    {
+      "fullName": "BlockMovement",
+      "shortName": "BlockMovement",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5143,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraInputInterference",
+      "shortName": "CameraInputInterference",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5149,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraShakeStrength",
+      "shortName": "CameraShakeStrength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5138,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableCrouch",
+      "shortName": "DisableCrouch",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5145,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableDodge",
+      "shortName": "DisableDodge",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5150,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableJump",
+      "shortName": "DisableJump",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5142,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableSprint",
+      "shortName": "DisableSprint",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5147,
+      "flags": 1
+    },
+    {
+      "fullName": "ForceSafeWeapon",
+      "shortName": "ForceSafeWeapon",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5146,
+      "flags": 1
+    },
+    {
+      "fullName": "ForceUnequipWeapon",
+      "shortName": "ForceUnequipWeapon",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5144,
+      "flags": 1
+    },
+    {
+      "fullName": "ImpulseDistance",
+      "shortName": "ImpulseDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5134,
+      "flags": 1
+    },
+    {
+      "fullName": "JamWeapon",
+      "shortName": "JamWeapon",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5148,
+      "flags": 1
+    },
+    {
+      "fullName": "LandAnimDuration",
+      "shortName": "LandAnimDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5140,
+      "flags": 1
+    },
+    {
+      "fullName": "Priority",
+      "shortName": "Priority",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5135,
+      "flags": 1
+    },
+    {
+      "fullName": "RecoveryAnimDuration",
+      "shortName": "RecoveryAnimDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5136,
+      "flags": 1
+    },
+    {
+      "fullName": "RotateToSource",
+      "shortName": "RotateToSource",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5141,
+      "flags": 1
+    },
+    {
+      "fullName": "ScaleImpulseDistance",
+      "shortName": "ScaleImpulseDistance",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5151,
+      "flags": 1
+    },
+    {
+      "fullName": "StartupAnimDuration",
+      "shortName": "StartupAnimDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5137,
+      "flags": 1
+    },
+    {
+      "fullName": "StartupAnimInterruptPoint",
+      "shortName": "StartupAnimInterruptPoint",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5139,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectVariation",
+      "shortName": "StatusEffectVariation",
+      "return": {
+        "type": "whandle:gamedataStatusEffectVariation_Record",
+        "flags": 64
+      },
+      "index": 5131,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectVariationHandle",
+      "shortName": "StatusEffectVariationHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectVariation_Record",
+        "flags": 64
+      },
+      "index": 5132,
+      "flags": 1
+    }
+  ]
+}

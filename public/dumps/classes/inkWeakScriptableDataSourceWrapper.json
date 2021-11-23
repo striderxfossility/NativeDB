@@ -1,0 +1,93 @@
+{
+  "parent": "inkBaseWeakScriptableDataSource",
+  "name": "inkWeakScriptableDataSourceWrapper",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "AppendItem",
+      "shortName": "AppendItem",
+      "index": 1524,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:IScriptable",
+          "name": "data",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Clear",
+      "shortName": "Clear",
+      "index": 1528,
+      "flags": 1
+    },
+    {
+      "fullName": "GetArray",
+      "shortName": "GetArray",
+      "return": {
+        "type": "array:whandle:IScriptable",
+        "flags": 64
+      },
+      "index": 1529,
+      "flags": 1
+    },
+    {
+      "fullName": "InsertItemAt",
+      "shortName": "InsertItemAt",
+      "index": 1525,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Uint32",
+          "name": "index",
+          "flags": 128
+        },
+        {
+          "type": "whandle:IScriptable",
+          "name": "data",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveItem",
+      "shortName": "RemoveItem",
+      "index": 1526,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:IScriptable",
+          "name": "data",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveItemAt",
+      "shortName": "RemoveItemAt",
+      "index": 1527,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Uint32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Reset",
+      "shortName": "Reset",
+      "index": 1530,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:IScriptable",
+          "name": "scriptables",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

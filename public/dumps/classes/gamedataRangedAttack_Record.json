@@ -1,0 +1,87 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataRangedAttack_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "NPCAttack",
+      "shortName": "NPCAttack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6748,
+      "flags": 1
+    },
+    {
+      "fullName": "NPCAttackHandle",
+      "shortName": "NPCAttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6749,
+      "flags": 1
+    },
+    {
+      "fullName": "NPCTimeDilated",
+      "shortName": "NPCTimeDilated",
+      "return": {
+        "type": "whandle:gamedataAttack_Projectile_Record",
+        "flags": 64
+      },
+      "index": 6752,
+      "flags": 1
+    },
+    {
+      "fullName": "NPCTimeDilatedHandle",
+      "shortName": "NPCTimeDilatedHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Projectile_Record",
+        "flags": 64
+      },
+      "index": 6753,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayerAttack",
+      "shortName": "PlayerAttack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6746,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayerAttackHandle",
+      "shortName": "PlayerAttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6747,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayerTimeDilated",
+      "shortName": "PlayerTimeDilated",
+      "return": {
+        "type": "whandle:gamedataAttack_Projectile_Record",
+        "flags": 64
+      },
+      "index": 6750,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayerTimeDilatedHandle",
+      "shortName": "PlayerTimeDilatedHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Projectile_Record",
+        "flags": 64
+      },
+      "index": 6751,
+      "flags": 1
+    }
+  ]
+}

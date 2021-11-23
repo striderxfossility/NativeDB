@@ -1,0 +1,220 @@
+{
+  "parent": "gameIGameSystem",
+  "name": "gameuiICharacterCustomizationSystem",
+  "flags": 67,
+  "funcs": [
+    {
+      "fullName": "ApplyChangeToOption",
+      "shortName": "ApplyChangeToOption",
+      "index": 9500,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameuiCharacterCustomizationOption",
+          "name": "option",
+          "flags": 128
+        },
+        {
+          "type": "Uint32",
+          "name": "newValue",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ApplyUIPreset",
+      "shortName": "ApplyUIPreset",
+      "index": 9499,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "presetName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ClearState",
+      "shortName": "ClearState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9492,
+      "flags": 1
+    },
+    {
+      "fullName": "FinalizeState",
+      "shortName": "FinalizeState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9491,
+      "flags": 1
+    },
+    {
+      "fullName": "GetArmsOptions",
+      "shortName": "GetArmsOptions",
+      "return": {
+        "type": "array:handle:gameuiCharacterCustomizationOption",
+        "flags": 64
+      },
+      "index": 9496,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "presetName",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetBodyOptions",
+      "shortName": "GetBodyOptions",
+      "return": {
+        "type": "array:handle:gameuiCharacterCustomizationOption",
+        "flags": 64
+      },
+      "index": 9495,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "presetName",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetHeadOptions",
+      "shortName": "GetHeadOptions",
+      "return": {
+        "type": "array:handle:gameuiCharacterCustomizationOption",
+        "flags": 64
+      },
+      "index": 9494,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "presetName",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetState",
+      "shortName": "GetState",
+      "return": {
+        "type": "handle:gameuiICharacterCustomizationState",
+        "flags": 64
+      },
+      "index": 9493,
+      "flags": 1
+    },
+    {
+      "fullName": "GetUnitedOptions",
+      "shortName": "GetUnitedOptions",
+      "return": {
+        "type": "array:handle:gameuiCharacterCustomizationOption",
+        "flags": 64
+      },
+      "index": 9497,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "head",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "body",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "arms",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "headPreset",
+          "flags": 1152
+        },
+        {
+          "type": "CName",
+          "name": "bodyPreset",
+          "flags": 1152
+        },
+        {
+          "type": "CName",
+          "name": "armsPreset",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "HasCharacterCustomizationComponent",
+      "shortName": "HasCharacterCustomizationComponent",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9502,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:entEntity",
+          "name": "entity",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "InitializeState",
+      "shortName": "InitializeState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9490,
+      "flags": 1
+    },
+    {
+      "fullName": "IsNudityAllowed",
+      "shortName": "IsNudityAllowed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9489,
+      "flags": 1
+    },
+    {
+      "fullName": "IsTransgenderAllowed",
+      "shortName": "IsTransgenderAllowed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9488,
+      "flags": 1
+    },
+    {
+      "fullName": "RandomizeOptions",
+      "shortName": "RandomizeOptions",
+      "index": 9498,
+      "flags": 1
+    },
+    {
+      "fullName": "TriggerVoiceToneSample",
+      "shortName": "TriggerVoiceToneSample",
+      "index": 9501,
+      "flags": 1
+    }
+  ]
+}

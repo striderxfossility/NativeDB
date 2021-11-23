@@ -1,0 +1,37 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleImpactTraffic_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "MaxThreshold",
+      "shortName": "MaxThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6535,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxTimerStunned",
+      "shortName": "MaxTimerStunned",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6536,
+      "flags": 1
+    },
+    {
+      "fullName": "MinThreshold",
+      "shortName": "MinThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6534,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleWheelsFrictionPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AudioMaterialCoeff",
+      "shortName": "AudioMaterialCoeff",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9025,
+      "flags": 1
+    },
+    {
+      "fullName": "DisplayName",
+      "shortName": "DisplayName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 9016,
+      "flags": 1
+    },
+    {
+      "fullName": "FrictionCurveSet",
+      "shortName": "FrictionCurveSet",
+      "return": {
+        "type": "redResourceReferenceScriptToken",
+        "flags": 64
+      },
+      "index": 9017,
+      "flags": 1
+    },
+    {
+      "fullName": "FrictionLatMultiplier",
+      "shortName": "FrictionLatMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9024,
+      "flags": 1
+    },
+    {
+      "fullName": "FrictionLongMultiplier",
+      "shortName": "FrictionLongMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9021,
+      "flags": 1
+    },
+    {
+      "fullName": "LooseSurfaceLatResistanceCoeff",
+      "shortName": "LooseSurfaceLatResistanceCoeff",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9022,
+      "flags": 1
+    },
+    {
+      "fullName": "LooseSurfaceLatSpeedMax",
+      "shortName": "LooseSurfaceLatSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9020,
+      "flags": 1
+    },
+    {
+      "fullName": "LooseSurfaceLongDriveResistanceCoeff",
+      "shortName": "LooseSurfaceLongDriveResistanceCoeff",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9018,
+      "flags": 1
+    },
+    {
+      "fullName": "LooseSurfaceLongNonDriveResistanceCoeff",
+      "shortName": "LooseSurfaceLongNonDriveResistanceCoeff",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9023,
+      "flags": 1
+    },
+    {
+      "fullName": "LooseSurfaceLongSpeedMax",
+      "shortName": "LooseSurfaceLongSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9019,
+      "flags": 1
+    }
+  ]
+}

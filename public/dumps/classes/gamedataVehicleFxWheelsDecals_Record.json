@@ -1,0 +1,155 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleFxWheelsDecals_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetMaterialsCount",
+      "shortName": "GetMaterialsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8389,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMaterialsItem",
+      "shortName": "GetMaterialsItem",
+      "return": {
+        "type": "whandle:gamedataVehicleFxWheelsDecalsMaterial_Record",
+        "flags": 64
+      },
+      "index": 8390,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetMaterialsItemHandle",
+      "shortName": "GetMaterialsItemHandle",
+      "return": {
+        "type": "whandle:gamedataVehicleFxWheelsDecalsMaterial_Record",
+        "flags": 64
+      },
+      "index": 8391,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSmear_materialsCount",
+      "shortName": "GetSmear_materialsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8394,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSmear_materialsItem",
+      "shortName": "GetSmear_materialsItem",
+      "return": {
+        "type": "whandle:gamedataVehicleFxWheelsDecalsMaterialSmear_Record",
+        "flags": 64
+      },
+      "index": 8395,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSmear_materialsItemHandle",
+      "shortName": "GetSmear_materialsItemHandle",
+      "return": {
+        "type": "whandle:gamedataVehicleFxWheelsDecalsMaterialSmear_Record",
+        "flags": 64
+      },
+      "index": 8396,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Materials",
+      "shortName": "Materials",
+      "index": 8388,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataVehicleFxWheelsDecalsMaterial_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "MaterialsContains",
+      "shortName": "MaterialsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8392,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataVehicleFxWheelsDecalsMaterial_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Smear_materials",
+      "shortName": "Smear_materials",
+      "index": 8393,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataVehicleFxWheelsDecalsMaterialSmear_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "Smear_materialsContains",
+      "shortName": "Smear_materialsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8397,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataVehicleFxWheelsDecalsMaterialSmear_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

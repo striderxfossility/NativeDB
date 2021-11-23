@@ -1,0 +1,461 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataBaseObject_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Effectors",
+      "shortName": "Effectors",
+      "index": 4714,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataEffector_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "EffectorsContains",
+      "shortName": "EffectorsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4718,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataEffector_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetEffectorsCount",
+      "shortName": "GetEffectorsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4715,
+      "flags": 1
+    },
+    {
+      "fullName": "GetEffectorsItem",
+      "shortName": "GetEffectorsItem",
+      "return": {
+        "type": "whandle:gamedataEffector_Record",
+        "flags": 64
+      },
+      "index": 4716,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetEffectorsItemHandle",
+      "shortName": "GetEffectorsItemHandle",
+      "return": {
+        "type": "whandle:gamedataEffector_Record",
+        "flags": 64
+      },
+      "index": 4717,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetObjectActionsCount",
+      "shortName": "GetObjectActionsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4735,
+      "flags": 1
+    },
+    {
+      "fullName": "GetObjectActionsItem",
+      "shortName": "GetObjectActionsItem",
+      "return": {
+        "type": "whandle:gamedataObjectAction_Record",
+        "flags": 64
+      },
+      "index": 4736,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetObjectActionsItemHandle",
+      "shortName": "GetObjectActionsItemHandle",
+      "return": {
+        "type": "whandle:gamedataObjectAction_Record",
+        "flags": 64
+      },
+      "index": 4737,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifierGroupsCount",
+      "shortName": "GetStatModifierGroupsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4710,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatModifierGroupsItem",
+      "shortName": "GetStatModifierGroupsItem",
+      "return": {
+        "type": "whandle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 4711,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifierGroupsItemHandle",
+      "shortName": "GetStatModifierGroupsItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 4712,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersCount",
+      "shortName": "GetStatModifiersCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4725,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatModifiersItem",
+      "shortName": "GetStatModifiersItem",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 4726,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersItemHandle",
+      "shortName": "GetStatModifiersItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 4727,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatPoolsCount",
+      "shortName": "GetStatPoolsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4720,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatPoolsItem",
+      "shortName": "GetStatPoolsItem",
+      "return": {
+        "type": "whandle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 4721,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatPoolsItemHandle",
+      "shortName": "GetStatPoolsItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 4722,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetWeakspotsCount",
+      "shortName": "GetWeakspotsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4730,
+      "flags": 1
+    },
+    {
+      "fullName": "GetWeakspotsItem",
+      "shortName": "GetWeakspotsItem",
+      "return": {
+        "type": "whandle:gamedataWeakspot_Record",
+        "flags": 64
+      },
+      "index": 4731,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetWeakspotsItemHandle",
+      "shortName": "GetWeakspotsItemHandle",
+      "return": {
+        "type": "whandle:gamedataWeakspot_Record",
+        "flags": 64
+      },
+      "index": 4732,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ObjectActions",
+      "shortName": "ObjectActions",
+      "index": 4734,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataObjectAction_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ObjectActionsContains",
+      "shortName": "ObjectActionsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4738,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataObjectAction_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Savable",
+      "shortName": "Savable",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4739,
+      "flags": 1
+    },
+    {
+      "fullName": "StatModifierGroups",
+      "shortName": "StatModifierGroups",
+      "index": 4709,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatModifierGroup_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifierGroupsContains",
+      "shortName": "StatModifierGroupsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4713,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatModifierGroup_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiers",
+      "shortName": "StatModifiers",
+      "index": 4724,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatModifier_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiersContains",
+      "shortName": "StatModifiersContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4728,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatModifier_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StatPools",
+      "shortName": "StatPools",
+      "index": 4719,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatPool_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatPoolsContains",
+      "shortName": "StatPoolsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4723,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatPool_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Weakspots",
+      "shortName": "Weakspots",
+      "index": 4729,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataWeakspot_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "WeakspotsContains",
+      "shortName": "WeakspotsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4733,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataWeakspot_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

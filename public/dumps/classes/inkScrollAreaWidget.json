@@ -1,0 +1,148 @@
+{
+  "parent": "inkCompoundWidget",
+  "name": "inkScrollAreaWidget",
+  "flags": 2,
+  "props": [
+    {
+      "type": "Float",
+      "name": "horizontalScrolling",
+      "group": "Type related",
+      "flags": 6627016705
+    },
+    {
+      "type": "Float",
+      "name": "verticalScrolling",
+      "group": "Type related",
+      "flags": 6627016705
+    },
+    {
+      "type": "Bool",
+      "name": "constrainContentPosition",
+      "group": "Type related",
+      "flags": 6627016705
+    },
+    {
+      "type": "inkFitToContentDirection",
+      "name": "fitToContentDirection",
+      "group": "Type related",
+      "flags": 6627016705
+    },
+    {
+      "type": "Bool",
+      "name": "useInternalMask",
+      "group": "Type related",
+      "flags": 6627016705
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "GetContentSize",
+      "shortName": "GetContentSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 1543,
+      "flags": 1
+    },
+    {
+      "fullName": "GetHorizontalScrollPosition",
+      "shortName": "GetHorizontalScrollPosition",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1540,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRealHorizontalScrollPosition",
+      "shortName": "GetRealHorizontalScrollPosition",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1542,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRealVerticalScrollPosition",
+      "shortName": "GetRealVerticalScrollPosition",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1541,
+      "flags": 1
+    },
+    {
+      "fullName": "GetUseInternalMask",
+      "shortName": "GetUseInternalMask",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1545,
+      "flags": 1
+    },
+    {
+      "fullName": "GetVerticalScrollPosition",
+      "shortName": "GetVerticalScrollPosition",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1539,
+      "flags": 1
+    },
+    {
+      "fullName": "GetViewportSize",
+      "shortName": "GetViewportSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 1544,
+      "flags": 1
+    },
+    {
+      "fullName": "ScrollHorizontal",
+      "shortName": "ScrollHorizontal",
+      "index": 1538,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ScrollVertical",
+      "shortName": "ScrollVertical",
+      "index": 1537,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetUseInternalMask",
+      "shortName": "SetUseInternalMask",
+      "index": 1546,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "parent": "gamedataAISubActionSetTargetByTag_Record",
+  "name": "gamedataAISubActionSetItemAsTarget_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ItemCategory",
+      "shortName": "ItemCategory",
+      "return": {
+        "type": "whandle:gamedataItemCategory_Record",
+        "flags": 64
+      },
+      "index": 6320,
+      "flags": 1
+    },
+    {
+      "fullName": "ItemCategoryHandle",
+      "shortName": "ItemCategoryHandle",
+      "return": {
+        "type": "handle:gamedataItemCategory_Record",
+        "flags": 64
+      },
+      "index": 6321,
+      "flags": 1
+    },
+    {
+      "fullName": "ItemType",
+      "shortName": "ItemType",
+      "return": {
+        "type": "whandle:gamedataItemType_Record",
+        "flags": 64
+      },
+      "index": 6322,
+      "flags": 1
+    },
+    {
+      "fullName": "ItemTypeHandle",
+      "shortName": "ItemTypeHandle",
+      "return": {
+        "type": "handle:gamedataItemType_Record",
+        "flags": 64
+      },
+      "index": 6323,
+      "flags": 1
+    }
+  ]
+}

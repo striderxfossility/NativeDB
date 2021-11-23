@@ -1,0 +1,13 @@
+{
+  "parent": "gameIAutoSaveSystem",
+  "name": "gameAutoSaveSystem",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "RequestCheckpoint",
+      "shortName": "RequestCheckpoint",
+      "index": 10298,
+      "flags": 1
+    }
+  ]
+}

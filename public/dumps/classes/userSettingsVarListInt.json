@@ -1,0 +1,121 @@
+{
+  "parent": "userSettingsVar",
+  "name": "userSettingsVarListInt",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetDefaultIndex",
+      "shortName": "GetDefaultIndex",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1863,
+      "flags": 1
+    },
+    {
+      "fullName": "GetDefaultValue",
+      "shortName": "GetDefaultValue",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1859,
+      "flags": 1
+    },
+    {
+      "fullName": "GetDisplayValue",
+      "shortName": "GetDisplayValue",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 1865,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetIndex",
+      "shortName": "GetIndex",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1862,
+      "flags": 1
+    },
+    {
+      "fullName": "GetIndexFor",
+      "shortName": "GetIndexFor",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1861,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetValue",
+      "shortName": "GetValue",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1858,
+      "flags": 1
+    },
+    {
+      "fullName": "GetValueFor",
+      "shortName": "GetValueFor",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1857,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetValues",
+      "shortName": "GetValues",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 1860,
+      "flags": 1
+    },
+    {
+      "fullName": "SetIndex",
+      "shortName": "SetIndex",
+      "index": 1864,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataCPOLoadoutBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DisplayName",
+      "shortName": "DisplayName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6016,
+      "flags": 1
+    },
+    {
+      "fullName": "GetItemsCount",
+      "shortName": "GetItemsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6018,
+      "flags": 1
+    },
+    {
+      "fullName": "GetItemsItem",
+      "shortName": "GetItemsItem",
+      "return": {
+        "type": "whandle:gamedataInventoryItem_Record",
+        "flags": 64
+      },
+      "index": 6019,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetItemsItemHandle",
+      "shortName": "GetItemsItemHandle",
+      "return": {
+        "type": "whandle:gamedataInventoryItem_Record",
+        "flags": 64
+      },
+      "index": 6020,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Items",
+      "shortName": "Items",
+      "index": 6017,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataInventoryItem_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ItemsContains",
+      "shortName": "ItemsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6021,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataInventoryItem_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

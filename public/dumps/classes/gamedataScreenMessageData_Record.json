@@ -1,0 +1,305 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataScreenMessageData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AutoScroll",
+      "shortName": "AutoScroll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6780,
+      "flags": 1
+    },
+    {
+      "fullName": "BackgroundColor",
+      "shortName": "BackgroundColor",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 6764,
+      "flags": 1
+    },
+    {
+      "fullName": "BackgroundColorContains",
+      "shortName": "BackgroundColorContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6767,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "BackgroundOpacity",
+      "shortName": "BackgroundOpacity",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6778,
+      "flags": 1
+    },
+    {
+      "fullName": "BackgroundTextureID",
+      "shortName": "BackgroundTextureID",
+      "return": {
+        "type": "whandle:gamedataUIIcon_Record",
+        "flags": 64
+      },
+      "index": 6756,
+      "flags": 1
+    },
+    {
+      "fullName": "BackgroundTextureIDHandle",
+      "shortName": "BackgroundTextureIDHandle",
+      "return": {
+        "type": "handle:gamedataUIIcon_Record",
+        "flags": 64
+      },
+      "index": 6757,
+      "flags": 1
+    },
+    {
+      "fullName": "BottomMargin",
+      "shortName": "BottomMargin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6775,
+      "flags": 1
+    },
+    {
+      "fullName": "FontPath",
+      "shortName": "FontPath",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6755,
+      "flags": 1
+    },
+    {
+      "fullName": "FontSize",
+      "shortName": "FontSize",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6776,
+      "flags": 1
+    },
+    {
+      "fullName": "FontStyle",
+      "shortName": "FontStyle",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6769,
+      "flags": 1
+    },
+    {
+      "fullName": "FriendlyName",
+      "shortName": "FriendlyName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6754,
+      "flags": 1
+    },
+    {
+      "fullName": "GetBackgroundColorCount",
+      "shortName": "GetBackgroundColorCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6765,
+      "flags": 1
+    },
+    {
+      "fullName": "GetBackgroundColorItem",
+      "shortName": "GetBackgroundColorItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6766,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTextColorCount",
+      "shortName": "GetTextColorCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6761,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTextColorItem",
+      "shortName": "GetTextColorItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6762,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LeftMargin",
+      "shortName": "LeftMargin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6774,
+      "flags": 1
+    },
+    {
+      "fullName": "LocalizedDescription",
+      "shortName": "LocalizedDescription",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6770,
+      "flags": 1
+    },
+    {
+      "fullName": "LocalizedName",
+      "shortName": "LocalizedName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6772,
+      "flags": 1
+    },
+    {
+      "fullName": "MessageGroup",
+      "shortName": "MessageGroup",
+      "return": {
+        "type": "whandle:gamedataScreenMessagesList_Record",
+        "flags": 64
+      },
+      "index": 6758,
+      "flags": 1
+    },
+    {
+      "fullName": "MessageGroupHandle",
+      "shortName": "MessageGroupHandle",
+      "return": {
+        "type": "handle:gamedataScreenMessagesList_Record",
+        "flags": 64
+      },
+      "index": 6759,
+      "flags": 1
+    },
+    {
+      "fullName": "RightMargin",
+      "shortName": "RightMargin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6773,
+      "flags": 1
+    },
+    {
+      "fullName": "ScrollSpeed",
+      "shortName": "ScrollSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6779,
+      "flags": 1
+    },
+    {
+      "fullName": "TextColor",
+      "shortName": "TextColor",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 6760,
+      "flags": 1
+    },
+    {
+      "fullName": "TextColorContains",
+      "shortName": "TextColorContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6763,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "TextHorizontalAlignment",
+      "shortName": "TextHorizontalAlignment",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6771,
+      "flags": 1
+    },
+    {
+      "fullName": "TextVerticalAlignment",
+      "shortName": "TextVerticalAlignment",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6768,
+      "flags": 1
+    },
+    {
+      "fullName": "TopMargin",
+      "shortName": "TopMargin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6777,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,631 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataStatusEffect_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AIData",
+      "shortName": "AIData",
+      "return": {
+        "type": "whandle:gamedataStatusEffectAIData_Record",
+        "flags": 64
+      },
+      "index": 5636,
+      "flags": 1
+    },
+    {
+      "fullName": "AIDataHandle",
+      "shortName": "AIDataHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectAIData_Record",
+        "flags": 64
+      },
+      "index": 5637,
+      "flags": 1
+    },
+    {
+      "fullName": "AdditionalParam",
+      "shortName": "AdditionalParam",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5672,
+      "flags": 1
+    },
+    {
+      "fullName": "DebugTags",
+      "shortName": "DebugTags",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 5644,
+      "flags": 1
+    },
+    {
+      "fullName": "DebugTagsContains",
+      "shortName": "DebugTagsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5647,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "whandle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5640,
+      "flags": 1
+    },
+    {
+      "fullName": "DurationHandle",
+      "shortName": "DurationHandle",
+      "return": {
+        "type": "handle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5641,
+      "flags": 1
+    },
+    {
+      "fullName": "GameplayTags",
+      "shortName": "GameplayTags",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 5648,
+      "flags": 1
+    },
+    {
+      "fullName": "GameplayTagsContains",
+      "shortName": "GameplayTagsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5651,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetDebugTagsCount",
+      "shortName": "GetDebugTagsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5645,
+      "flags": 1
+    },
+    {
+      "fullName": "GetDebugTagsItem",
+      "shortName": "GetDebugTagsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5646,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGameplayTagsCount",
+      "shortName": "GetGameplayTagsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5649,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGameplayTagsItem",
+      "shortName": "GetGameplayTagsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5650,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetImmunityStatsCount",
+      "shortName": "GetImmunityStatsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5663,
+      "flags": 1
+    },
+    {
+      "fullName": "GetImmunityStatsItem",
+      "shortName": "GetImmunityStatsItem",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 5664,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetImmunityStatsItemHandle",
+      "shortName": "GetImmunityStatsItemHandle",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 5665,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPackagesCount",
+      "shortName": "GetPackagesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5668,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPackagesItem",
+      "shortName": "GetPackagesItem",
+      "return": {
+        "type": "whandle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 5669,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPackagesItemHandle",
+      "shortName": "GetPackagesItemHandle",
+      "return": {
+        "type": "whandle:gamedataGameplayLogicPackage_Record",
+        "flags": 64
+      },
+      "index": 5670,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSFXCount",
+      "shortName": "GetSFXCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5653,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSFXItem",
+      "shortName": "GetSFXItem",
+      "return": {
+        "type": "whandle:gamedataStatusEffectFX_Record",
+        "flags": 64
+      },
+      "index": 5654,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSFXItemHandle",
+      "shortName": "GetSFXItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatusEffectFX_Record",
+        "flags": 64
+      },
+      "index": 5655,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetVFXCount",
+      "shortName": "GetVFXCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5658,
+      "flags": 1
+    },
+    {
+      "fullName": "GetVFXItem",
+      "shortName": "GetVFXItem",
+      "return": {
+        "type": "whandle:gamedataStatusEffectFX_Record",
+        "flags": 64
+      },
+      "index": 5659,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetVFXItemHandle",
+      "shortName": "GetVFXItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatusEffectFX_Record",
+        "flags": 64
+      },
+      "index": 5660,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ImmunityStats",
+      "shortName": "ImmunityStats",
+      "index": 5662,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStat_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ImmunityStatsContains",
+      "shortName": "ImmunityStatsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5666,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStat_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsAffectedByTimeDilationNPC",
+      "shortName": "IsAffectedByTimeDilationNPC",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5678,
+      "flags": 1
+    },
+    {
+      "fullName": "IsAffectedByTimeDilationPlayer",
+      "shortName": "IsAffectedByTimeDilationPlayer",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5675,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxStacks",
+      "shortName": "MaxStacks",
+      "return": {
+        "type": "whandle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5630,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxStacksHandle",
+      "shortName": "MaxStacksHandle",
+      "return": {
+        "type": "handle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5631,
+      "flags": 1
+    },
+    {
+      "fullName": "Packages",
+      "shortName": "Packages",
+      "index": 5667,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataGameplayLogicPackage_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "PackagesContains",
+      "shortName": "PackagesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5671,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataGameplayLogicPackage_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PlayerData",
+      "shortName": "PlayerData",
+      "return": {
+        "type": "whandle:gamedataStatusEffectPlayerData_Record",
+        "flags": 64
+      },
+      "index": 5642,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayerDataHandle",
+      "shortName": "PlayerDataHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectPlayerData_Record",
+        "flags": 64
+      },
+      "index": 5643,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveAllStacksWhenDurationEnds",
+      "shortName": "RemoveAllStacksWhenDurationEnds",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5677,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveAllStacksWhenDurationEndsStatModifiers",
+      "shortName": "RemoveAllStacksWhenDurationEndsStatModifiers",
+      "return": {
+        "type": "whandle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5632,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveAllStacksWhenDurationEndsStatModifiersHandle",
+      "shortName": "RemoveAllStacksWhenDurationEndsStatModifiersHandle",
+      "return": {
+        "type": "handle:gamedataStatModifierGroup_Record",
+        "flags": 64
+      },
+      "index": 5633,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveOnStoryTier",
+      "shortName": "RemoveOnStoryTier",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5674,
+      "flags": 1
+    },
+    {
+      "fullName": "Replicated",
+      "shortName": "Replicated",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5679,
+      "flags": 1
+    },
+    {
+      "fullName": "SFX",
+      "shortName": "SFX",
+      "index": 5652,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatusEffectFX_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "SFXContains",
+      "shortName": "SFXContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5656,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatusEffectFX_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Savable",
+      "shortName": "Savable",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5676,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectType",
+      "shortName": "StatusEffectType",
+      "return": {
+        "type": "whandle:gamedataStatusEffectType_Record",
+        "flags": 64
+      },
+      "index": 5634,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectTypeHandle",
+      "shortName": "StatusEffectTypeHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectType_Record",
+        "flags": 64
+      },
+      "index": 5635,
+      "flags": 1
+    },
+    {
+      "fullName": "StopActiveSfxOnDeactivate",
+      "shortName": "StopActiveSfxOnDeactivate",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5673,
+      "flags": 1
+    },
+    {
+      "fullName": "UiData",
+      "shortName": "UiData",
+      "return": {
+        "type": "whandle:gamedataStatusEffectUIData_Record",
+        "flags": 64
+      },
+      "index": 5638,
+      "flags": 1
+    },
+    {
+      "fullName": "UiDataHandle",
+      "shortName": "UiDataHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectUIData_Record",
+        "flags": 64
+      },
+      "index": 5639,
+      "flags": 1
+    },
+    {
+      "fullName": "VFX",
+      "shortName": "VFX",
+      "index": 5657,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatusEffectFX_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "VFXContains",
+      "shortName": "VFXContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5661,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatusEffectFX_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

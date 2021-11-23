@@ -1,0 +1,151 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIReactionCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetStimTypeCount",
+      "shortName": "GetStimTypeCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4838,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStimTypeItem",
+      "shortName": "GetStimTypeItem",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 4839,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStimTypeItemHandle",
+      "shortName": "GetStimTypeItemHandle",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 4840,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "InvestigateController",
+      "shortName": "InvestigateController",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4844,
+      "flags": 1
+    },
+    {
+      "fullName": "Preset",
+      "shortName": "Preset",
+      "return": {
+        "type": "whandle:gamedataReactionPreset_Record",
+        "flags": 64
+      },
+      "index": 4833,
+      "flags": 1
+    },
+    {
+      "fullName": "PresetHandle",
+      "shortName": "PresetHandle",
+      "return": {
+        "type": "handle:gamedataReactionPreset_Record",
+        "flags": 64
+      },
+      "index": 4834,
+      "flags": 1
+    },
+    {
+      "fullName": "ReactionBehaviorName",
+      "shortName": "ReactionBehaviorName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4842,
+      "flags": 1
+    },
+    {
+      "fullName": "StimType",
+      "shortName": "StimType",
+      "index": 4837,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStimType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StimTypeContains",
+      "shortName": "StimTypeContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4841,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStimType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ThresholdValue",
+      "shortName": "ThresholdValue",
+      "return": {
+        "type": "whandle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 4835,
+      "flags": 1
+    },
+    {
+      "fullName": "ThresholdValueHandle",
+      "shortName": "ThresholdValueHandle",
+      "return": {
+        "type": "handle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 4836,
+      "flags": 1
+    },
+    {
+      "fullName": "ValidStimPosition",
+      "shortName": "ValidStimPosition",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4843,
+      "flags": 1
+    }
+  ]
+}

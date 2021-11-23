@@ -1,0 +1,231 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataLookAtPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttachLeftHandtoRightHand",
+      "shortName": "AttachLeftHandtoRightHand",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6964,
+      "flags": 1
+    },
+    {
+      "fullName": "AttachRightHandtoLeftHand",
+      "shortName": "AttachRightHandtoLeftHand",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6965,
+      "flags": 1
+    },
+    {
+      "fullName": "BackLimitDegrees",
+      "shortName": "BackLimitDegrees",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6956,
+      "flags": 1
+    },
+    {
+      "fullName": "BodyPart",
+      "shortName": "BodyPart",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6951,
+      "flags": 1
+    },
+    {
+      "fullName": "CalculatePositionInParentSpace",
+      "shortName": "CalculatePositionInParentSpace",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6962,
+      "flags": 1
+    },
+    {
+      "fullName": "FollowingSpeedFactorOverride",
+      "shortName": "FollowingSpeedFactorOverride",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6960,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLookAtPartsCount",
+      "shortName": "GetLookAtPartsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6947,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLookAtPartsItem",
+      "shortName": "GetLookAtPartsItem",
+      "return": {
+        "type": "whandle:gamedataLookAtPart_Record",
+        "flags": 64
+      },
+      "index": 6948,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetLookAtPartsItemHandle",
+      "shortName": "GetLookAtPartsItemHandle",
+      "return": {
+        "type": "whandle:gamedataLookAtPart_Record",
+        "flags": 64
+      },
+      "index": 6949,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HardLimitDegrees",
+      "shortName": "HardLimitDegrees",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6959,
+      "flags": 1
+    },
+    {
+      "fullName": "HardLimitDistance",
+      "shortName": "HardLimitDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6958,
+      "flags": 1
+    },
+    {
+      "fullName": "HasOutTransition",
+      "shortName": "HasOutTransition",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6963,
+      "flags": 1
+    },
+    {
+      "fullName": "LookAtParts",
+      "shortName": "LookAtParts",
+      "index": 6946,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataLookAtPart_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "LookAtPartsContains",
+      "shortName": "LookAtPartsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6950,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataLookAtPart_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Mode",
+      "shortName": "Mode",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6957,
+      "flags": 1
+    },
+    {
+      "fullName": "OutTransitionSpeed",
+      "shortName": "OutTransitionSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6961,
+      "flags": 1
+    },
+    {
+      "fullName": "Priority",
+      "shortName": "Priority",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6954,
+      "flags": 1
+    },
+    {
+      "fullName": "SoftLimitDegrees",
+      "shortName": "SoftLimitDegrees",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6952,
+      "flags": 1
+    },
+    {
+      "fullName": "Suppress",
+      "shortName": "Suppress",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6955,
+      "flags": 1
+    },
+    {
+      "fullName": "TransitionSpeed",
+      "shortName": "TransitionSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6953,
+      "flags": 1
+    }
+  ]
+}

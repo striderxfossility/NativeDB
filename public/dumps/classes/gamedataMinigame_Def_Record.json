@@ -1,0 +1,557 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataMinigame_Def_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AdditionalProgramsList",
+      "shortName": "AdditionalProgramsList",
+      "index": 7334,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataProgram_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "AdditionalProgramsListContains",
+      "shortName": "AdditionalProgramsListContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7338,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataProgram_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "BufferFullExitText",
+      "shortName": "BufferFullExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7354,
+      "flags": 1
+    },
+    {
+      "fullName": "BufferSize",
+      "shortName": "BufferSize",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7366,
+      "flags": 1
+    },
+    {
+      "fullName": "CanceledExitText",
+      "shortName": "CanceledExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7360,
+      "flags": 1
+    },
+    {
+      "fullName": "DefaultTrap",
+      "shortName": "DefaultTrap",
+      "return": {
+        "type": "whandle:gamedataMiniGame_Trap_Record",
+        "flags": 64
+      },
+      "index": 7327,
+      "flags": 1
+    },
+    {
+      "fullName": "DefaultTrapHandle",
+      "shortName": "DefaultTrapHandle",
+      "return": {
+        "type": "handle:gamedataMiniGame_Trap_Record",
+        "flags": 64
+      },
+      "index": 7328,
+      "flags": 1
+    },
+    {
+      "fullName": "ExtraDifficulty",
+      "shortName": "ExtraDifficulty",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7361,
+      "flags": 1
+    },
+    {
+      "fullName": "FailExitText",
+      "shortName": "FailExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7359,
+      "flags": 1
+    },
+    {
+      "fullName": "ForbiddenProgramsList",
+      "shortName": "ForbiddenProgramsList",
+      "index": 7339,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataProgram_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ForbiddenProgramsListContains",
+      "shortName": "ForbiddenProgramsListContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7343,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataProgram_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GenericExitText",
+      "shortName": "GenericExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7356,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAdditionalProgramsListCount",
+      "shortName": "GetAdditionalProgramsListCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7335,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAdditionalProgramsListItem",
+      "shortName": "GetAdditionalProgramsListItem",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7336,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetAdditionalProgramsListItemHandle",
+      "shortName": "GetAdditionalProgramsListItemHandle",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7337,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetForbiddenProgramsListCount",
+      "shortName": "GetForbiddenProgramsListCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7340,
+      "flags": 1
+    },
+    {
+      "fullName": "GetForbiddenProgramsListItem",
+      "shortName": "GetForbiddenProgramsListItem",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7341,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetForbiddenProgramsListItemHandle",
+      "shortName": "GetForbiddenProgramsListItemHandle",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7342,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGridSymbolsCount",
+      "shortName": "GetGridSymbolsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7350,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGridSymbolsItem",
+      "shortName": "GetGridSymbolsItem",
+      "return": {
+        "type": "whandle:gamedataRowSymbols_Record",
+        "flags": 64
+      },
+      "index": 7351,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGridSymbolsItemHandle",
+      "shortName": "GetGridSymbolsItemHandle",
+      "return": {
+        "type": "whandle:gamedataRowSymbols_Record",
+        "flags": 64
+      },
+      "index": 7352,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGridTrapsCount",
+      "shortName": "GetGridTrapsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7345,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGridTrapsItem",
+      "shortName": "GetGridTrapsItem",
+      "return": {
+        "type": "whandle:gamedataRowTraps_Record",
+        "flags": 64
+      },
+      "index": 7346,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGridTrapsItemHandle",
+      "shortName": "GetGridTrapsItemHandle",
+      "return": {
+        "type": "whandle:gamedataRowTraps_Record",
+        "flags": 64
+      },
+      "index": 7347,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetOverrideProgramsListCount",
+      "shortName": "GetOverrideProgramsListCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7330,
+      "flags": 1
+    },
+    {
+      "fullName": "GetOverrideProgramsListItem",
+      "shortName": "GetOverrideProgramsListItem",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7331,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetOverrideProgramsListItemHandle",
+      "shortName": "GetOverrideProgramsListItemHandle",
+      "return": {
+        "type": "whandle:gamedataProgram_Record",
+        "flags": 64
+      },
+      "index": 7332,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GreatSuccessExitText",
+      "shortName": "GreatSuccessExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7358,
+      "flags": 1
+    },
+    {
+      "fullName": "GridSize",
+      "shortName": "GridSize",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7362,
+      "flags": 1
+    },
+    {
+      "fullName": "GridSymbols",
+      "shortName": "GridSymbols",
+      "index": 7349,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataRowSymbols_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "GridSymbolsContains",
+      "shortName": "GridSymbolsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7353,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataRowSymbols_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GridTraps",
+      "shortName": "GridTraps",
+      "index": 7344,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataRowTraps_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "GridTrapsContains",
+      "shortName": "GridTrapsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7348,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataRowTraps_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "NoTraps",
+      "shortName": "NoTraps",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7369,
+      "flags": 1
+    },
+    {
+      "fullName": "OverlapProbability",
+      "shortName": "OverlapProbability",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7363,
+      "flags": 1
+    },
+    {
+      "fullName": "OverrideProgramsList",
+      "shortName": "OverrideProgramsList",
+      "index": 7329,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataProgram_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "OverrideProgramsListContains",
+      "shortName": "OverrideProgramsListContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7333,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataProgram_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SaveSeed",
+      "shortName": "SaveSeed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7368,
+      "flags": 1
+    },
+    {
+      "fullName": "SuccessExitText",
+      "shortName": "SuccessExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7357,
+      "flags": 1
+    },
+    {
+      "fullName": "TimeLimit",
+      "shortName": "TimeLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7365,
+      "flags": 1
+    },
+    {
+      "fullName": "TimeOutExitText",
+      "shortName": "TimeOutExitText",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7355,
+      "flags": 1
+    },
+    {
+      "fullName": "TrapsProbability",
+      "shortName": "TrapsProbability",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7364,
+      "flags": 1
+    },
+    {
+      "fullName": "UseProgression",
+      "shortName": "UseProgression",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7367,
+      "flags": 1
+    }
+  ]
+}

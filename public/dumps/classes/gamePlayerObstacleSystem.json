@@ -1,0 +1,179 @@
+{
+  "parent": "IScriptable",
+  "name": "gamePlayerObstacleSystem",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "DisableQueriesForOwner",
+      "shortName": "DisableQueriesForOwner",
+      "index": 10083,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToDisable_1",
+          "flags": 128
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToDisable_2",
+          "flags": 1152
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToDisable_3",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "EnableQueriesForOwner",
+      "shortName": "EnableQueriesForOwner",
+      "index": 10082,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToEnable_1",
+          "flags": 128
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToEnable_2",
+          "flags": 1152
+        },
+        {
+          "type": "gamePlayerObstacleSystemQueryType",
+          "name": "queryToEnable_3",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetCoverDirection",
+      "shortName": "GetCoverDirection",
+      "return": {
+        "type": "gamePlayerCoverDirection",
+        "flags": 64
+      },
+      "index": 10079,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCurrentClimbInfo",
+      "shortName": "GetCurrentClimbInfo",
+      "return": {
+        "type": "handle:gamePlayerClimbInfo",
+        "flags": 64
+      },
+      "index": 10080,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSlopeInfo",
+      "shortName": "GetSlopeInfo",
+      "return": {
+        "type": "handle:worldgeometryaverageNormalDetectionHelperResult",
+        "flags": 64
+      },
+      "index": 10081,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ManualLeanLeft",
+      "shortName": "ManualLeanLeft",
+      "index": 10078,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ManualLeanRight",
+      "shortName": "ManualLeanRight",
+      "index": 10077,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnAutoCoverActivation",
+      "shortName": "OnAutoCoverActivation",
+      "index": 10076,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnCoverDeactivation",
+      "shortName": "OnCoverDeactivation",
+      "index": 10075,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnEnterCrouch",
+      "shortName": "OnEnterCrouch",
+      "index": 10074,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "instigator",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

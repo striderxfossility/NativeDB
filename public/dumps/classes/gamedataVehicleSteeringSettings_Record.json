@@ -1,0 +1,87 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleSteeringSettings_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ErrorMagnitudeForFullSteering",
+      "shortName": "ErrorMagnitudeForFullSteering",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5319,
+      "flags": 1
+    },
+    {
+      "fullName": "ErrorMagnitudeForMildSteering",
+      "shortName": "ErrorMagnitudeForMildSteering",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5315,
+      "flags": 1
+    },
+    {
+      "fullName": "FullSteeringSpeed",
+      "shortName": "FullSteeringSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5318,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxTargetDistance",
+      "shortName": "MaxTargetDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5317,
+      "flags": 1
+    },
+    {
+      "fullName": "MildSteeringSpeed",
+      "shortName": "MildSteeringSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5316,
+      "flags": 1
+    },
+    {
+      "fullName": "MinTargetDistance",
+      "shortName": "MinTargetDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5314,
+      "flags": 1
+    },
+    {
+      "fullName": "SpeedForMaxDistance",
+      "shortName": "SpeedForMaxDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5312,
+      "flags": 1
+    },
+    {
+      "fullName": "SpeedForMinDistance",
+      "shortName": "SpeedForMinDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5313,
+      "flags": 1
+    }
+  ]
+}

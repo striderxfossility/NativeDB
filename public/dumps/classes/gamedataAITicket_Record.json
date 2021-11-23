@@ -1,0 +1,453 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAITicket_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ActivationCondition",
+      "shortName": "ActivationCondition",
+      "index": 8620,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketCondition_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ActivationConditionContains",
+      "shortName": "ActivationConditionContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8624,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketCondition_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ConditionSuccessDuration",
+      "shortName": "ConditionSuccessDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8638,
+      "flags": 1
+    },
+    {
+      "fullName": "Cooldowns",
+      "shortName": "Cooldowns",
+      "index": 8615,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIActionCooldown_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "CooldownsContains",
+      "shortName": "CooldownsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8619,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIActionCooldown_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "DeactivationCondition",
+      "shortName": "DeactivationCondition",
+      "index": 8625,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketCondition_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "DeactivationConditionCheckInterval",
+      "shortName": "DeactivationConditionCheckInterval",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8637,
+      "flags": 1
+    },
+    {
+      "fullName": "DeactivationConditionContains",
+      "shortName": "DeactivationConditionContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8629,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketCondition_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetActivationConditionCount",
+      "shortName": "GetActivationConditionCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8621,
+      "flags": 1
+    },
+    {
+      "fullName": "GetActivationConditionItem",
+      "shortName": "GetActivationConditionItem",
+      "return": {
+        "type": "whandle:gamedataAITicketCondition_Record",
+        "flags": 64
+      },
+      "index": 8622,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetActivationConditionItemHandle",
+      "shortName": "GetActivationConditionItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketCondition_Record",
+        "flags": 64
+      },
+      "index": 8623,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCooldownsCount",
+      "shortName": "GetCooldownsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8616,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCooldownsItem",
+      "shortName": "GetCooldownsItem",
+      "return": {
+        "type": "whandle:gamedataAIActionCooldown_Record",
+        "flags": 64
+      },
+      "index": 8617,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCooldownsItemHandle",
+      "shortName": "GetCooldownsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIActionCooldown_Record",
+        "flags": 64
+      },
+      "index": 8618,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetDeactivationConditionCount",
+      "shortName": "GetDeactivationConditionCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8626,
+      "flags": 1
+    },
+    {
+      "fullName": "GetDeactivationConditionItem",
+      "shortName": "GetDeactivationConditionItem",
+      "return": {
+        "type": "whandle:gamedataAITicketCondition_Record",
+        "flags": 64
+      },
+      "index": 8627,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetDeactivationConditionItemHandle",
+      "shortName": "GetDeactivationConditionItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketCondition_Record",
+        "flags": 64
+      },
+      "index": 8628,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSyncWithTicketsCount",
+      "shortName": "GetSyncWithTicketsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8611,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSyncWithTicketsItem",
+      "shortName": "GetSyncWithTicketsItem",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8612,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSyncWithTicketsItemHandle",
+      "shortName": "GetSyncWithTicketsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8613,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "MaxNumberOfTickets",
+      "shortName": "MaxNumberOfTickets",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8630,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxTicketDesyncTime",
+      "shortName": "MaxTicketDesyncTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8632,
+      "flags": 1
+    },
+    {
+      "fullName": "MinNumberOfTickets",
+      "shortName": "MinNumberOfTickets",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8631,
+      "flags": 1
+    },
+    {
+      "fullName": "MinTicketDesyncTime",
+      "shortName": "MinTicketDesyncTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8633,
+      "flags": 1
+    },
+    {
+      "fullName": "PercentageNumberOfTickets",
+      "shortName": "PercentageNumberOfTickets",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8634,
+      "flags": 1
+    },
+    {
+      "fullName": "ReleaseAll",
+      "shortName": "ReleaseAll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8640,
+      "flags": 1
+    },
+    {
+      "fullName": "RevokeOnTimeout",
+      "shortName": "RevokeOnTimeout",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8641,
+      "flags": 1
+    },
+    {
+      "fullName": "ScaleNumberOfTicketsFromWorkspots",
+      "shortName": "ScaleNumberOfTicketsFromWorkspots",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8639,
+      "flags": 1
+    },
+    {
+      "fullName": "StartCooldownOnFailure",
+      "shortName": "StartCooldownOnFailure",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8642,
+      "flags": 1
+    },
+    {
+      "fullName": "SyncTimeout",
+      "shortName": "SyncTimeout",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8636,
+      "flags": 1
+    },
+    {
+      "fullName": "SyncWithTickets",
+      "shortName": "SyncWithTickets",
+      "index": 8610,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAITicketType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "SyncWithTicketsContains",
+      "shortName": "SyncWithTicketsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8614,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAITicketType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "TicketType",
+      "shortName": "TicketType",
+      "return": {
+        "type": "whandle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8608,
+      "flags": 1
+    },
+    {
+      "fullName": "TicketTypeHandle",
+      "shortName": "TicketTypeHandle",
+      "return": {
+        "type": "handle:gamedataAITicketType_Record",
+        "flags": 64
+      },
+      "index": 8609,
+      "flags": 1
+    },
+    {
+      "fullName": "Timeout",
+      "shortName": "Timeout",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8635,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataEffector_Record",
+  "name": "gamedataForceDismembermentEffector_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "BodyPart",
+      "shortName": "BodyPart",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5275,
+      "flags": 1
+    },
+    {
+      "fullName": "DismembermentChance",
+      "shortName": "DismembermentChance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5276,
+      "flags": 1
+    },
+    {
+      "fullName": "IsCritical",
+      "shortName": "IsCritical",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5279,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldKillNPC",
+      "shortName": "ShouldKillNPC",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5277,
+      "flags": 1
+    },
+    {
+      "fullName": "SkipDeathAnim",
+      "shortName": "SkipDeathAnim",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5278,
+      "flags": 1
+    },
+    {
+      "fullName": "WoundType",
+      "shortName": "WoundType",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5274,
+      "flags": 1
+    }
+  ]
+}

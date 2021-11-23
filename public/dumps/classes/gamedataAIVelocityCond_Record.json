@@ -1,0 +1,47 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIVelocityCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Range",
+      "shortName": "Range",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 7828,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7826,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7827,
+      "flags": 1
+    },
+    {
+      "fullName": "TimePeriod",
+      "shortName": "TimePeriod",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7829,
+      "flags": 1
+    }
+  ]
+}

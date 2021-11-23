@@ -1,0 +1,257 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataMappinClampingSettings_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ClampSmoothing",
+      "shortName": "ClampSmoothing",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4182,
+      "flags": 1
+    },
+    {
+      "fullName": "ClampingRectangleLeftAndTop",
+      "shortName": "ClampingRectangleLeftAndTop",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4177,
+      "flags": 1
+    },
+    {
+      "fullName": "ClampingRectangleRightAndBottom",
+      "shortName": "ClampingRectangleRightAndBottom",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4174,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomLeftEllipse",
+      "shortName": "CustomBottomLeftEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4186,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomLeftEllipseOffset",
+      "shortName": "CustomBottomLeftEllipseOffset",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4179,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomLeftEllipseSize",
+      "shortName": "CustomBottomLeftEllipseSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4178,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomRightEllipse",
+      "shortName": "CustomBottomRightEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4188,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomRightEllipseOffset",
+      "shortName": "CustomBottomRightEllipseOffset",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4172,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomBottomRightEllipseSize",
+      "shortName": "CustomBottomRightEllipseSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4175,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopLeftEllipse",
+      "shortName": "CustomTopLeftEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4183,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopLeftEllipseOffset",
+      "shortName": "CustomTopLeftEllipseOffset",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4173,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopLeftEllipseSize",
+      "shortName": "CustomTopLeftEllipseSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4176,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopRightEllipse",
+      "shortName": "CustomTopRightEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4185,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopRightEllipseOffset",
+      "shortName": "CustomTopRightEllipseOffset",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4171,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomTopRightEllipseSize",
+      "shortName": "CustomTopRightEllipseSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4170,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableBottomLeftEllipse",
+      "shortName": "DisableBottomLeftEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4190,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableBottomRightEllipse",
+      "shortName": "DisableBottomRightEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4189,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableTopLeftEllipse",
+      "shortName": "DisableTopLeftEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4191,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableTopRightEllipse",
+      "shortName": "DisableTopRightEllipse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4187,
+      "flags": 1
+    },
+    {
+      "fullName": "EllipseOffset",
+      "shortName": "EllipseOffset",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4168,
+      "flags": 1
+    },
+    {
+      "fullName": "EllipseShapeSize",
+      "shortName": "EllipseShapeSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4180,
+      "flags": 1
+    },
+    {
+      "fullName": "EllipseSize",
+      "shortName": "EllipseSize",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 4169,
+      "flags": 1
+    },
+    {
+      "fullName": "MinimumClampPercent",
+      "shortName": "MinimumClampPercent",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4181,
+      "flags": 1
+    },
+    {
+      "fullName": "UseEllipseShape",
+      "shortName": "UseEllipseShape",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4192,
+      "flags": 1
+    },
+    {
+      "fullName": "UseSpecialShapeLogic",
+      "shortName": "UseSpecialShapeLogic",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4184,
+      "flags": 1
+    }
+  ]
+}

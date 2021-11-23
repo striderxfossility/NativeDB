@@ -1,0 +1,122 @@
+{
+  "parent": "AIIReactionSystem",
+  "name": "AIReactionSystem",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "AddFearSource",
+      "shortName": "AddFearSource",
+      "index": 11476,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "runner",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RegisterCommunityRunner",
+      "shortName": "RegisterCommunityRunner",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11479,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "runner",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RegisterReaction",
+      "shortName": "RegisterReaction",
+      "return": {
+        "type": "AIReactionCountOutcome",
+        "flags": 64
+      },
+      "index": 11481,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "reaction",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RegisterTrafficRunner",
+      "shortName": "RegisterTrafficRunner",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11477,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "runner",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnregisterCommunityRunner",
+      "shortName": "UnregisterCommunityRunner",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11480,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "runner",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnregisterReaction",
+      "shortName": "UnregisterReaction",
+      "return": {
+        "type": "AIReactionCountOutcome",
+        "flags": 64
+      },
+      "index": 11482,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "reaction",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnregisterTrafficRunner",
+      "shortName": "UnregisterTrafficRunner",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11478,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "runner",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

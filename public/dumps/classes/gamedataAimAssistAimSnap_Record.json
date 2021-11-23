@@ -1,0 +1,197 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAimAssistAimSnap_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AdjustPitch",
+      "shortName": "AdjustPitch",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6655,
+      "flags": 1
+    },
+    {
+      "fullName": "AdjustYaw",
+      "shortName": "AdjustYaw",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6657,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraInputMagToBreak",
+      "shortName": "CameraInputMagToBreak",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6644,
+      "flags": 1
+    },
+    {
+      "fullName": "CancelWithRecoil",
+      "shortName": "CancelWithRecoil",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6662,
+      "flags": 1
+    },
+    {
+      "fullName": "CheckRange",
+      "shortName": "CheckRange",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6661,
+      "flags": 1
+    },
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6646,
+      "flags": 1
+    },
+    {
+      "fullName": "EaseIn",
+      "shortName": "EaseIn",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6652,
+      "flags": 1
+    },
+    {
+      "fullName": "EaseOut",
+      "shortName": "EaseOut",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6653,
+      "flags": 1
+    },
+    {
+      "fullName": "EndOnAimingStopped",
+      "shortName": "EndOnAimingStopped",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6651,
+      "flags": 1
+    },
+    {
+      "fullName": "EndOnCameraInputApplied",
+      "shortName": "EndOnCameraInputApplied",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6656,
+      "flags": 1
+    },
+    {
+      "fullName": "EndOnTargetReached",
+      "shortName": "EndOnTargetReached",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6658,
+      "flags": 1
+    },
+    {
+      "fullName": "EndOnTimeExceeded",
+      "shortName": "EndOnTimeExceeded",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6659,
+      "flags": 1
+    },
+    {
+      "fullName": "EvaluateTargets",
+      "shortName": "EvaluateTargets",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6660,
+      "flags": 1
+    },
+    {
+      "fullName": "IsEnabled",
+      "shortName": "IsEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6654,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxDistance",
+      "shortName": "MaxDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6649,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxDuration",
+      "shortName": "MaxDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6647,
+      "flags": 1
+    },
+    {
+      "fullName": "MinDistance",
+      "shortName": "MinDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6648,
+      "flags": 1
+    },
+    {
+      "fullName": "Precision",
+      "shortName": "Precision",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6645,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetAngleDistanceFactor",
+      "shortName": "TargetAngleDistanceFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6650,
+      "flags": 1
+    }
+  ]
+}

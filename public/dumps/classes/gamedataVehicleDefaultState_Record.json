@@ -1,0 +1,217 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleDefaultState_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CloseAll",
+      "shortName": "CloseAll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4237,
+      "flags": 1
+    },
+    {
+      "fullName": "DisableAllInteractions",
+      "shortName": "DisableAllInteractions",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4234,
+      "flags": 1
+    },
+    {
+      "fullName": "Hood",
+      "shortName": "Hood",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4232,
+      "flags": 1
+    },
+    {
+      "fullName": "HoodHandle",
+      "shortName": "HoodHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4233,
+      "flags": 1
+    },
+    {
+      "fullName": "LockAll",
+      "shortName": "LockAll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4242,
+      "flags": 1
+    },
+    {
+      "fullName": "OpenAll",
+      "shortName": "OpenAll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4239,
+      "flags": 1
+    },
+    {
+      "fullName": "QuestLockAll",
+      "shortName": "QuestLockAll",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4235,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_back_left",
+      "shortName": "Seat_back_left",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4228,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_back_leftHandle",
+      "shortName": "Seat_back_leftHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4229,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_back_right",
+      "shortName": "Seat_back_right",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4222,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_back_rightHandle",
+      "shortName": "Seat_back_rightHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4223,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_front_left",
+      "shortName": "Seat_front_left",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4224,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_front_leftHandle",
+      "shortName": "Seat_front_leftHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4225,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_front_right",
+      "shortName": "Seat_front_right",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4226,
+      "flags": 1
+    },
+    {
+      "fullName": "Seat_front_rightHandle",
+      "shortName": "Seat_front_rightHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4227,
+      "flags": 1
+    },
+    {
+      "fullName": "SirenLight",
+      "shortName": "SirenLight",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4238,
+      "flags": 1
+    },
+    {
+      "fullName": "SirenSounds",
+      "shortName": "SirenSounds",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4240,
+      "flags": 1
+    },
+    {
+      "fullName": "SpawnDestroyed",
+      "shortName": "SpawnDestroyed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4236,
+      "flags": 1
+    },
+    {
+      "fullName": "Thrusters",
+      "shortName": "Thrusters",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4241,
+      "flags": 1
+    },
+    {
+      "fullName": "Trunk",
+      "shortName": "Trunk",
+      "return": {
+        "type": "whandle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4230,
+      "flags": 1
+    },
+    {
+      "fullName": "TrunkHandle",
+      "shortName": "TrunkHandle",
+      "return": {
+        "type": "handle:gamedataSeatState_Record",
+        "flags": 64
+      },
+      "index": 4231,
+      "flags": 1
+    }
+  ]
+}

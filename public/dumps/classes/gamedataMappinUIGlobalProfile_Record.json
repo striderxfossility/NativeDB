@@ -1,0 +1,121 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataMappinUIGlobalProfile_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CompletedPOIOpacity",
+      "shortName": "CompletedPOIOpacity",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8852,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNameplateVisibleInTierCount",
+      "shortName": "GetNameplateVisibleInTierCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8845,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNameplateVisibleInTierItem",
+      "shortName": "GetNameplateVisibleInTierItem",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8846,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GpsPortalIconScale",
+      "shortName": "GpsPortalIconScale",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8851,
+      "flags": 1
+    },
+    {
+      "fullName": "NameplateVisibleInBraindance",
+      "shortName": "NameplateVisibleInBraindance",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8853,
+      "flags": 1
+    },
+    {
+      "fullName": "NameplateVisibleInTier",
+      "shortName": "NameplateVisibleInTier",
+      "return": {
+        "type": "array:Bool",
+        "flags": 64
+      },
+      "index": 8844,
+      "flags": 1
+    },
+    {
+      "fullName": "NameplateVisibleInTierContains",
+      "shortName": "NameplateVisibleInTierContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8847,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "VerticalRelationTolerance",
+      "shortName": "VerticalRelationTolerance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8849,
+      "flags": 1
+    },
+    {
+      "fullName": "VerticalRelationVisibleRangeMax",
+      "shortName": "VerticalRelationVisibleRangeMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8850,
+      "flags": 1
+    },
+    {
+      "fullName": "VerticalRelationVisibleRangeMin",
+      "shortName": "VerticalRelationVisibleRangeMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8848,
+      "flags": 1
+    }
+  ]
+}

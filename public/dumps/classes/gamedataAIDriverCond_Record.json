@@ -1,0 +1,27 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIDriverCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Driver",
+      "shortName": "Driver",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4828,
+      "flags": 1
+    },
+    {
+      "fullName": "DriverHandle",
+      "shortName": "DriverHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4829,
+      "flags": 1
+    }
+  ]
+}

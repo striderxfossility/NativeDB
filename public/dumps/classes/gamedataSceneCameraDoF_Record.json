@@ -1,0 +1,87 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataSceneCameraDoF_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DofFarBlur",
+      "shortName": "DofFarBlur",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5125,
+      "flags": 1
+    },
+    {
+      "fullName": "DofFarFocus",
+      "shortName": "DofFarFocus",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5127,
+      "flags": 1
+    },
+    {
+      "fullName": "DofIntensity",
+      "shortName": "DofIntensity",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5128,
+      "flags": 1
+    },
+    {
+      "fullName": "DofNearBlur",
+      "shortName": "DofNearBlur",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5126,
+      "flags": 1
+    },
+    {
+      "fullName": "DofNearFocus",
+      "shortName": "DofNearFocus",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5124,
+      "flags": 1
+    },
+    {
+      "fullName": "ProfileName",
+      "shortName": "ProfileName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5123,
+      "flags": 1
+    },
+    {
+      "fullName": "UseFarPlane",
+      "shortName": "UseFarPlane",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5130,
+      "flags": 1
+    },
+    {
+      "fullName": "UseNearPlane",
+      "shortName": "UseNearPlane",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5129,
+      "flags": 1
+    }
+  ]
+}

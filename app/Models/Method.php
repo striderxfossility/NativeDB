@@ -12,9 +12,6 @@ class Method extends Model
 
     public static function getArray(string $name, string $parameters, string $return, string $returnType, bool $static, string $code = '')
     {
-        if($code == '')
-            $code = '{main}.' . $name;
-
         return [
             'name'          => $name,
             'parameters'    => $parameters,

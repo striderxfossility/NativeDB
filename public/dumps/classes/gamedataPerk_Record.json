@@ -1,0 +1,181 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataPerk_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "BinkPath",
+      "shortName": "BinkPath",
+      "return": {
+        "type": "redResourceReferenceScriptToken",
+        "flags": 64
+      },
+      "index": 8868,
+      "flags": 1
+    },
+    {
+      "fullName": "DisplayName",
+      "shortName": "DisplayName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8856,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8857,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8866,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLevelsCount",
+      "shortName": "GetLevelsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8862,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLevelsItem",
+      "shortName": "GetLevelsItem",
+      "return": {
+        "type": "whandle:gamedataPerkLevelData_Record",
+        "flags": 64
+      },
+      "index": 8863,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetLevelsItemHandle",
+      "shortName": "GetLevelsItemHandle",
+      "return": {
+        "type": "whandle:gamedataPerkLevelData_Record",
+        "flags": 64
+      },
+      "index": 8864,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IconPath",
+      "shortName": "IconPath",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8867,
+      "flags": 1
+    },
+    {
+      "fullName": "Levels",
+      "shortName": "Levels",
+      "index": 8861,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataPerkLevelData_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "LevelsContains",
+      "shortName": "LevelsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8865,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataPerkLevelData_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Loc_desc_key",
+      "shortName": "Loc_desc_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8855,
+      "flags": 1
+    },
+    {
+      "fullName": "Loc_name_key",
+      "shortName": "Loc_name_key",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8858,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataPerkType",
+        "flags": 64
+      },
+      "index": 8869,
+      "flags": 1
+    },
+    {
+      "fullName": "Utility",
+      "shortName": "Utility",
+      "return": {
+        "type": "whandle:gamedataPerkUtility_Record",
+        "flags": 64
+      },
+      "index": 8859,
+      "flags": 1
+    },
+    {
+      "fullName": "UtilityHandle",
+      "shortName": "UtilityHandle",
+      "return": {
+        "type": "handle:gamedataPerkUtility_Record",
+        "flags": 64
+      },
+      "index": 8860,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataDevelopmentPoint_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5263,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5264,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataDevelopmentPointType",
+        "flags": 64
+      },
+      "index": 5265,
+      "flags": 1
+    }
+  ]
+}

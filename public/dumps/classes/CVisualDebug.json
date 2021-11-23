@@ -1,0 +1,103 @@
+{
+  "parent": "IScriptable",
+  "name": "CVisualDebug",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "AddArrow",
+      "shortName": "AddArrow",
+      "index": 2192,
+      "flags": 1
+    },
+    {
+      "fullName": "AddAxis",
+      "shortName": "AddAxis",
+      "index": 2187,
+      "flags": 1
+    },
+    {
+      "fullName": "AddBar",
+      "shortName": "AddBar",
+      "index": 2189,
+      "flags": 1
+    },
+    {
+      "fullName": "AddBarColorAreas",
+      "shortName": "AddBarColorAreas",
+      "index": 2191,
+      "flags": 1
+    },
+    {
+      "fullName": "AddBarColorSmooth",
+      "shortName": "AddBarColorSmooth",
+      "index": 2190,
+      "flags": 1
+    },
+    {
+      "fullName": "AddBox",
+      "shortName": "AddBox",
+      "index": 2186,
+      "flags": 1
+    },
+    {
+      "fullName": "AddLine",
+      "shortName": "AddLine",
+      "index": 2188,
+      "flags": 1
+    },
+    {
+      "fullName": "AddSphere",
+      "shortName": "AddSphere",
+      "index": 2185,
+      "flags": 1
+    },
+    {
+      "fullName": "AddText",
+      "shortName": "AddText",
+      "index": 2184,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveArrow",
+      "shortName": "RemoveArrow",
+      "index": 2199,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveAxis",
+      "shortName": "RemoveAxis",
+      "index": 2196,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveBar",
+      "shortName": "RemoveBar",
+      "index": 2198,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveBox",
+      "shortName": "RemoveBox",
+      "index": 2195,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveLine",
+      "shortName": "RemoveLine",
+      "index": 2197,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveSphere",
+      "shortName": "RemoveSphere",
+      "index": 2194,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveText",
+      "shortName": "RemoveText",
+      "index": 2193,
+      "flags": 1
+    }
+  ]
+}

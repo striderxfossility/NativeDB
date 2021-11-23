@@ -1,0 +1,47 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataItemPartConnection_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttachmentSlot",
+      "shortName": "AttachmentSlot",
+      "return": {
+        "type": "whandle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 6353,
+      "flags": 1
+    },
+    {
+      "fullName": "AttachmentSlotHandle",
+      "shortName": "AttachmentSlotHandle",
+      "return": {
+        "type": "handle:gamedataAttachmentSlot_Record",
+        "flags": 64
+      },
+      "index": 6354,
+      "flags": 1
+    },
+    {
+      "fullName": "Child",
+      "shortName": "Child",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6356,
+      "flags": 1
+    },
+    {
+      "fullName": "Parent",
+      "shortName": "Parent",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6355,
+      "flags": 1
+    }
+  ]
+}

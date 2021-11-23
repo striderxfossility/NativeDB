@@ -1,0 +1,477 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataCrowdSlotMovementSettingsBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AbsoluteFrontClamp",
+      "shortName": "AbsoluteFrontClamp",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5028,
+      "flags": 1
+    },
+    {
+      "fullName": "Acceleration",
+      "shortName": "Acceleration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5026,
+      "flags": 1
+    },
+    {
+      "fullName": "AccelerationFactor",
+      "shortName": "AccelerationFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5017,
+      "flags": 1
+    },
+    {
+      "fullName": "AvoidanceReserve",
+      "shortName": "AvoidanceReserve",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5003,
+      "flags": 1
+    },
+    {
+      "fullName": "BaseRadius",
+      "shortName": "BaseRadius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5016,
+      "flags": 1
+    },
+    {
+      "fullName": "BrakePressureFactor",
+      "shortName": "BrakePressureFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5025,
+      "flags": 1
+    },
+    {
+      "fullName": "BumpTriggerMaxDistanceNPC",
+      "shortName": "BumpTriggerMaxDistanceNPC",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5021,
+      "flags": 1
+    },
+    {
+      "fullName": "BumpTriggerMaxDistancePlayer",
+      "shortName": "BumpTriggerMaxDistancePlayer",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5014,
+      "flags": 1
+    },
+    {
+      "fullName": "BumpTriggerMinSpeed",
+      "shortName": "BumpTriggerMinSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5024,
+      "flags": 1
+    },
+    {
+      "fullName": "BumpTriggerRadiusFactor",
+      "shortName": "BumpTriggerRadiusFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5018,
+      "flags": 1
+    },
+    {
+      "fullName": "BumpTriggerSpeedFactor",
+      "shortName": "BumpTriggerSpeedFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5001,
+      "flags": 1
+    },
+    {
+      "fullName": "CurveFactor",
+      "shortName": "CurveFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4998,
+      "flags": 1
+    },
+    {
+      "fullName": "CurveLimit",
+      "shortName": "CurveLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5032,
+      "flags": 1
+    },
+    {
+      "fullName": "Deceleration",
+      "shortName": "Deceleration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5031,
+      "flags": 1
+    },
+    {
+      "fullName": "DirectionSmoothFactor",
+      "shortName": "DirectionSmoothFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4997,
+      "flags": 1
+    },
+    {
+      "fullName": "DirectionStage",
+      "shortName": "DirectionStage",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5034,
+      "flags": 1
+    },
+    {
+      "fullName": "DropItems",
+      "shortName": "DropItems",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5036,
+      "flags": 1
+    },
+    {
+      "fullName": "FenceGapReserve",
+      "shortName": "FenceGapReserve",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5013,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnoreCars",
+      "shortName": "IgnoreCars",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5040,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnoreLights",
+      "shortName": "IgnoreLights",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5037,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnorePedestrians",
+      "shortName": "IgnorePedestrians",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5039,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnorePlayer",
+      "shortName": "IgnorePlayer",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5035,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnoreRules",
+      "shortName": "IgnoreRules",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5041,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnoreSpeedLimitations",
+      "shortName": "IgnoreSpeedLimitations",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5038,
+      "flags": 1
+    },
+    {
+      "fullName": "IgnoreStatics",
+      "shortName": "IgnoreStatics",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5042,
+      "flags": 1
+    },
+    {
+      "fullName": "LaneObstacleBuffer",
+      "shortName": "LaneObstacleBuffer",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5030,
+      "flags": 1
+    },
+    {
+      "fullName": "Length",
+      "shortName": "Length",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5009,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxDeviationFromPath",
+      "shortName": "MaxDeviationFromPath",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5004,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxLightDelay",
+      "shortName": "MaxLightDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5008,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxSpeed",
+      "shortName": "MaxSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5002,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxSpeedTolerance",
+      "shortName": "MaxSpeedTolerance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5022,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxStopSpeed",
+      "shortName": "MaxStopSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4996,
+      "flags": 1
+    },
+    {
+      "fullName": "MinLightDelay",
+      "shortName": "MinLightDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4999,
+      "flags": 1
+    },
+    {
+      "fullName": "MinSpeed",
+      "shortName": "MinSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5015,
+      "flags": 1
+    },
+    {
+      "fullName": "MinStopSpeed",
+      "shortName": "MinStopSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5029,
+      "flags": 1
+    },
+    {
+      "fullName": "MoveSpeedType",
+      "shortName": "MoveSpeedType",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5006,
+      "flags": 1
+    },
+    {
+      "fullName": "OverlapTolerance",
+      "shortName": "OverlapTolerance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5007,
+      "flags": 1
+    },
+    {
+      "fullName": "RadiusBottomClamp",
+      "shortName": "RadiusBottomClamp",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5027,
+      "flags": 1
+    },
+    {
+      "fullName": "RadiusSmoothFactor",
+      "shortName": "RadiusSmoothFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5000,
+      "flags": 1
+    },
+    {
+      "fullName": "RadiusTopClamp",
+      "shortName": "RadiusTopClamp",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5023,
+      "flags": 1
+    },
+    {
+      "fullName": "ReachFactor",
+      "shortName": "ReachFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5012,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationSpeed",
+      "shortName": "RotationSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5019,
+      "flags": 1
+    },
+    {
+      "fullName": "SoftAdheranceMax",
+      "shortName": "SoftAdheranceMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5005,
+      "flags": 1
+    },
+    {
+      "fullName": "SoftAdheranceMin",
+      "shortName": "SoftAdheranceMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5011,
+      "flags": 1
+    },
+    {
+      "fullName": "SpeedStage",
+      "shortName": "SpeedStage",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5033,
+      "flags": 1
+    },
+    {
+      "fullName": "StopReserve",
+      "shortName": "StopReserve",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5010,
+      "flags": 1
+    },
+    {
+      "fullName": "SurroundDistance",
+      "shortName": "SurroundDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5020,
+      "flags": 1
+    }
+  ]
+}

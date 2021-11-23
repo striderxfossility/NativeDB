@@ -1,0 +1,161 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataWorldMapZoomLevel_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CanChangeFilters",
+      "shortName": "CanChangeFilters",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5696,
+      "flags": 1
+    },
+    {
+      "fullName": "Fov",
+      "shortName": "Fov",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5690,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMappinFilterGroupsCount",
+      "shortName": "GetMappinFilterGroupsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5685,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMappinFilterGroupsItem",
+      "shortName": "GetMappinFilterGroupsItem",
+      "return": {
+        "type": "whandle:gamedataMappinUIFilterGroup_Record",
+        "flags": 64
+      },
+      "index": 5686,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetMappinFilterGroupsItemHandle",
+      "shortName": "GetMappinFilterGroupsItemHandle",
+      "return": {
+        "type": "whandle:gamedataMappinUIFilterGroup_Record",
+        "flags": 64
+      },
+      "index": 5687,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IconScale",
+      "shortName": "IconScale",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5692,
+      "flags": 1
+    },
+    {
+      "fullName": "MappinFilterGroups",
+      "shortName": "MappinFilterGroups",
+      "index": 5684,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataMappinUIFilterGroup_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "MappinFilterGroupsContains",
+      "shortName": "MappinFilterGroupsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5688,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataMappinUIFilterGroup_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PanSpeed",
+      "shortName": "PanSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5693,
+      "flags": 1
+    },
+    {
+      "fullName": "Rotation",
+      "shortName": "Rotation",
+      "return": {
+        "type": "EulerAngles",
+        "flags": 64
+      },
+      "index": 5689,
+      "flags": 1
+    },
+    {
+      "fullName": "ShowDistricts",
+      "shortName": "ShowDistricts",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5694,
+      "flags": 1
+    },
+    {
+      "fullName": "ShowSubDistricts",
+      "shortName": "ShowSubDistricts",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5695,
+      "flags": 1
+    },
+    {
+      "fullName": "Zoom",
+      "shortName": "Zoom",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5691,
+      "flags": 1
+    }
+  ]
+}

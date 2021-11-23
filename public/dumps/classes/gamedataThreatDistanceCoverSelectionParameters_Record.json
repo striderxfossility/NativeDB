@@ -1,0 +1,97 @@
+{
+  "parent": "gamedataCoverSelectionParameters_Record",
+  "name": "gamedataThreatDistanceCoverSelectionParameters_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AllowNegativeThreatMaxDistanceScoring",
+      "shortName": "AllowNegativeThreatMaxDistanceScoring",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7074,
+      "flags": 1
+    },
+    {
+      "fullName": "CheckThreatDestination",
+      "shortName": "CheckThreatDestination",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7071,
+      "flags": 1
+    },
+    {
+      "fullName": "CheckThreatPath",
+      "shortName": "CheckThreatPath",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7072,
+      "flags": 1
+    },
+    {
+      "fullName": "DistanceToThreatMultiplier",
+      "shortName": "DistanceToThreatMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7066,
+      "flags": 1
+    },
+    {
+      "fullName": "ThreatMaxDistance",
+      "shortName": "ThreatMaxDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7069,
+      "flags": 1
+    },
+    {
+      "fullName": "ThreatMinDistance",
+      "shortName": "ThreatMinDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7068,
+      "flags": 1
+    },
+    {
+      "fullName": "ThreatPredictionTime",
+      "shortName": "ThreatPredictionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7070,
+      "flags": 1
+    },
+    {
+      "fullName": "ThreatPreferredDistance",
+      "shortName": "ThreatPreferredDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7067,
+      "flags": 1
+    },
+    {
+      "fullName": "UseThreatMaxDistanceFiltering",
+      "shortName": "UseThreatMaxDistanceFiltering",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7073,
+      "flags": 1
+    }
+  ]
+}

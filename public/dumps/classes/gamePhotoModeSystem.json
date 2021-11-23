@@ -1,0 +1,67 @@
+{
+  "parent": "gameIPhotoModeSystem",
+  "name": "gamePhotoModeSystem",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "CanPhotoModeBeEnabled",
+      "shortName": "CanPhotoModeBeEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12214,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCameraLocation",
+      "shortName": "GetCameraLocation",
+      "index": 12215,
+      "flags": 1,
+      "params": [
+        {
+          "type": "WorldPosition",
+          "name": "location",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsExitLocked",
+      "shortName": "IsExitLocked",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12212,
+      "flags": 1
+    },
+    {
+      "fullName": "IsPhotoModeActive",
+      "shortName": "IsPhotoModeActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12213,
+      "flags": 1
+    },
+    {
+      "fullName": "UnlockPhotoModeItem",
+      "shortName": "UnlockPhotoModeItem",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12211,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "stickerID",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

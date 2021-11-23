@@ -1,0 +1,87 @@
+{
+  "parent": "gameuiHUDGameController",
+  "name": "gameuiProjectedHUDGameController",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "ApplyProjectionMarginOnWidget",
+      "shortName": "ApplyProjectionMarginOnWidget",
+      "index": 12111,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:inkWidget",
+          "name": "widget",
+          "flags": 128
+        },
+        {
+          "type": "inkMargin",
+          "name": "margin",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "EnableSleeping",
+      "shortName": "EnableSleeping",
+      "index": 12109,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "enabled",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RegisterScreenProjection",
+      "shortName": "RegisterScreenProjection",
+      "return": {
+        "type": "handle:inkScreenProjection",
+        "flags": 64
+      },
+      "index": 12106,
+      "flags": 1,
+      "params": [
+        {
+          "type": "inkScreenProjectionData",
+          "name": "projectionData",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetShouldNotifyProjections",
+      "shortName": "SetShouldNotifyProjections",
+      "index": 12108,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "shouldNotify",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnregisterScreenProjection",
+      "shortName": "UnregisterScreenProjection",
+      "index": 12107,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:inkScreenProjection",
+          "name": "projection",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "WakeUp",
+      "shortName": "WakeUp",
+      "index": 12110,
+      "flags": 1
+    }
+  ]
+}

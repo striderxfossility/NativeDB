@@ -115,7 +115,8 @@ class PlayerPuppet extends BaseSchema
         ];
         $this->methods = 
         [
-            Method::getArray('CanApplyBreathingEffect', 'player : whandle:PlayerPuppet', 'Bool', 0, true)
+            Method::getArray('CanApplyBreathingEffect', 'player : whandle:PlayerPuppet', 'Bool', 0, true),
+            Method::getArray('GetLowHealthThreshold', '', 'Float', 0, true),
         ];
     }
 }

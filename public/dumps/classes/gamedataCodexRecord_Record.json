@@ -1,0 +1,155 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataCodexRecord_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetRecordContentCount",
+      "shortName": "GetRecordContentCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4141,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRecordContentItem",
+      "shortName": "GetRecordContentItem",
+      "return": {
+        "type": "whandle:gamedataCodexRecordPart_Record",
+        "flags": 64
+      },
+      "index": 4142,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRecordContentItemHandle",
+      "shortName": "GetRecordContentItemHandle",
+      "return": {
+        "type": "whandle:gamedataCodexRecordPart_Record",
+        "flags": 64
+      },
+      "index": 4143,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTagsCount",
+      "shortName": "GetTagsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4146,
+      "flags": 1
+    },
+    {
+      "fullName": "GetTagsItem",
+      "shortName": "GetTagsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4147,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RecordContent",
+      "shortName": "RecordContent",
+      "index": 4140,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataCodexRecordPart_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "RecordContentContains",
+      "shortName": "RecordContentContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4144,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataCodexRecordPart_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Tags",
+      "shortName": "Tags",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 4145,
+      "flags": 1
+    },
+    {
+      "fullName": "TagsContains",
+      "shortName": "TagsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4148,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnlockPrereq",
+      "shortName": "UnlockPrereq",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4149,
+      "flags": 1
+    },
+    {
+      "fullName": "UnlockedFromStart",
+      "shortName": "UnlockedFromStart",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4150,
+      "flags": 1
+    }
+  ]
+}

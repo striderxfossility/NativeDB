@@ -1,0 +1,157 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataSquadBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DefensiveBackyard",
+      "shortName": "DefensiveBackyard",
+      "return": {
+        "type": "whandle:gamedataSquadBackyardBase_Record",
+        "flags": 64
+      },
+      "index": 4209,
+      "flags": 1
+    },
+    {
+      "fullName": "DefensiveBackyardHandle",
+      "shortName": "DefensiveBackyardHandle",
+      "return": {
+        "type": "handle:gamedataSquadBackyardBase_Record",
+        "flags": 64
+      },
+      "index": 4210,
+      "flags": 1
+    },
+    {
+      "fullName": "DefensiveLeftFence",
+      "shortName": "DefensiveLeftFence",
+      "return": {
+        "type": "whandle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4207,
+      "flags": 1
+    },
+    {
+      "fullName": "DefensiveLeftFenceHandle",
+      "shortName": "DefensiveLeftFenceHandle",
+      "return": {
+        "type": "handle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4208,
+      "flags": 1
+    },
+    {
+      "fullName": "DefensiveRightFence",
+      "shortName": "DefensiveRightFence",
+      "return": {
+        "type": "whandle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4213,
+      "flags": 1
+    },
+    {
+      "fullName": "DefensiveRightFenceHandle",
+      "shortName": "DefensiveRightFenceHandle",
+      "return": {
+        "type": "handle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4214,
+      "flags": 1
+    },
+    {
+      "fullName": "HasActiveAlley",
+      "shortName": "HasActiveAlley",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4221,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveBackyard",
+      "shortName": "OffensiveBackyard",
+      "return": {
+        "type": "whandle:gamedataSquadBackyardBase_Record",
+        "flags": 64
+      },
+      "index": 4211,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveBackyardHandle",
+      "shortName": "OffensiveBackyardHandle",
+      "return": {
+        "type": "handle:gamedataSquadBackyardBase_Record",
+        "flags": 64
+      },
+      "index": 4212,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveLeftFence",
+      "shortName": "OffensiveLeftFence",
+      "return": {
+        "type": "whandle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4217,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveLeftFenceHandle",
+      "shortName": "OffensiveLeftFenceHandle",
+      "return": {
+        "type": "handle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4218,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveRightFence",
+      "shortName": "OffensiveRightFence",
+      "return": {
+        "type": "whandle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4215,
+      "flags": 1
+    },
+    {
+      "fullName": "OffensiveRightFenceHandle",
+      "shortName": "OffensiveRightFenceHandle",
+      "return": {
+        "type": "handle:gamedataSquadFenceBase_Record",
+        "flags": 64
+      },
+      "index": 4216,
+      "flags": 1
+    },
+    {
+      "fullName": "ScriptHandler",
+      "shortName": "ScriptHandler",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4219,
+      "flags": 1
+    },
+    {
+      "fullName": "SquadParams",
+      "shortName": "SquadParams",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4220,
+      "flags": 1
+    }
+  ]
+}

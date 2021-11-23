@@ -1,0 +1,201 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataWorldMapSettings_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CameraModeTransitionTime",
+      "shortName": "CameraModeTransitionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5806,
+      "flags": 1
+    },
+    {
+      "fullName": "CursorBoundaryMax",
+      "shortName": "CursorBoundaryMax",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 5802,
+      "flags": 1
+    },
+    {
+      "fullName": "CursorBoundaryMin",
+      "shortName": "CursorBoundaryMin",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 5801,
+      "flags": 1
+    },
+    {
+      "fullName": "EnableGroupTransitionAnimations",
+      "shortName": "EnableGroupTransitionAnimations",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5808,
+      "flags": 1
+    },
+    {
+      "fullName": "FreeCamera",
+      "shortName": "FreeCamera",
+      "return": {
+        "type": "whandle:gamedataWorldMapFreeCameraSettings_Record",
+        "flags": 64
+      },
+      "index": 5792,
+      "flags": 1
+    },
+    {
+      "fullName": "FreeCameraHandle",
+      "shortName": "FreeCameraHandle",
+      "return": {
+        "type": "handle:gamedataWorldMapFreeCameraSettings_Record",
+        "flags": 64
+      },
+      "index": 5793,
+      "flags": 1
+    },
+    {
+      "fullName": "GetZoomLevelsCount",
+      "shortName": "GetZoomLevelsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5797,
+      "flags": 1
+    },
+    {
+      "fullName": "GetZoomLevelsItem",
+      "shortName": "GetZoomLevelsItem",
+      "return": {
+        "type": "whandle:gamedataWorldMapZoomLevel_Record",
+        "flags": 64
+      },
+      "index": 5798,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetZoomLevelsItemHandle",
+      "shortName": "GetZoomLevelsItemHandle",
+      "return": {
+        "type": "whandle:gamedataWorldMapZoomLevel_Record",
+        "flags": 64
+      },
+      "index": 5799,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "MouseZoomTransitionTime",
+      "shortName": "MouseZoomTransitionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5803,
+      "flags": 1
+    },
+    {
+      "fullName": "TopDownCamera",
+      "shortName": "TopDownCamera",
+      "return": {
+        "type": "whandle:gamedataWorldMapFreeCameraSettings_Record",
+        "flags": 64
+      },
+      "index": 5794,
+      "flags": 1
+    },
+    {
+      "fullName": "TopDownCameraHandle",
+      "shortName": "TopDownCameraHandle",
+      "return": {
+        "type": "handle:gamedataWorldMapFreeCameraSettings_Record",
+        "flags": 64
+      },
+      "index": 5795,
+      "flags": 1
+    },
+    {
+      "fullName": "ZoomLevels",
+      "shortName": "ZoomLevels",
+      "index": 5796,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataWorldMapZoomLevel_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ZoomLevelsContains",
+      "shortName": "ZoomLevelsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5800,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataWorldMapZoomLevel_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ZoomToEnabledAtMinimumZoom",
+      "shortName": "ZoomToEnabledAtMinimumZoom",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5807,
+      "flags": 1
+    },
+    {
+      "fullName": "ZoomToZoomValue",
+      "shortName": "ZoomToZoomValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5805,
+      "flags": 1
+    },
+    {
+      "fullName": "ZoomTransitionTime",
+      "shortName": "ZoomTransitionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5804,
+      "flags": 1
+    }
+  ]
+}

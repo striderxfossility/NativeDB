@@ -1,0 +1,27 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionDroneModifyAltitude_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AltitudeOffset",
+      "shortName": "AltitudeOffset",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7136,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7135,
+      "flags": 1
+    }
+  ]
+}

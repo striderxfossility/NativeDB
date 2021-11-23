@@ -1,0 +1,87 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionMeleeAttackManager_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "FxDelay",
+      "shortName": "FxDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7784,
+      "flags": 1
+    },
+    {
+      "fullName": "Name",
+      "shortName": "Name",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7783,
+      "flags": 1
+    },
+    {
+      "fullName": "SendFriendlyFireWarning",
+      "shortName": "SendFriendlyFireWarning",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7790,
+      "flags": 1
+    },
+    {
+      "fullName": "SpawnTrail",
+      "shortName": "SpawnTrail",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7788,
+      "flags": 1
+    },
+    {
+      "fullName": "SpawnWeaponFX",
+      "shortName": "SpawnWeaponFX",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7789,
+      "flags": 1
+    },
+    {
+      "fullName": "TrailDelay",
+      "shortName": "TrailDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7786,
+      "flags": 1
+    },
+    {
+      "fullName": "TrailDuration",
+      "shortName": "TrailDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7785,
+      "flags": 1
+    },
+    {
+      "fullName": "WarningDelay",
+      "shortName": "WarningDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7787,
+      "flags": 1
+    }
+  ]
+}

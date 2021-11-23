@@ -1,0 +1,299 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataReactionPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AggressiveThreshold",
+      "shortName": "AggressiveThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8010,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 7992,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 8008,
+      "flags": 1
+    },
+    {
+      "fullName": "FearThreshold",
+      "shortName": "FearThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8009,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPresetMapperCount",
+      "shortName": "GetPresetMapperCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8004,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPresetMapperItem",
+      "shortName": "GetPresetMapperItem",
+      "return": {
+        "type": "whandle:gamedataPresetMapper_Record",
+        "flags": 64
+      },
+      "index": 8005,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPresetMapperItemHandle",
+      "shortName": "GetPresetMapperItemHandle",
+      "return": {
+        "type": "whandle:gamedataPresetMapper_Record",
+        "flags": 64
+      },
+      "index": 8006,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRulesCount",
+      "shortName": "GetRulesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7999,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRulesItem",
+      "shortName": "GetRulesItem",
+      "return": {
+        "type": "whandle:gamedataRule_Record",
+        "flags": 64
+      },
+      "index": 8000,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRulesItemHandle",
+      "shortName": "GetRulesItemHandle",
+      "return": {
+        "type": "whandle:gamedataRule_Record",
+        "flags": 64
+      },
+      "index": 8001,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersCount",
+      "shortName": "GetStatModifiersCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7994,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatModifiersItem",
+      "shortName": "GetStatModifiersItem",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 7995,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersItemHandle",
+      "shortName": "GetStatModifiersItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 7996,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsAggressive",
+      "shortName": "IsAggressive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8011,
+      "flags": 1
+    },
+    {
+      "fullName": "PresetMapper",
+      "shortName": "PresetMapper",
+      "index": 8003,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataPresetMapper_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "PresetMapperContains",
+      "shortName": "PresetMapperContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8007,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataPresetMapper_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ReactionGroup",
+      "shortName": "ReactionGroup",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 7991,
+      "flags": 1
+    },
+    {
+      "fullName": "Rules",
+      "shortName": "Rules",
+      "index": 7998,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataRule_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "RulesContains",
+      "shortName": "RulesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8002,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataRule_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiers",
+      "shortName": "StatModifiers",
+      "index": 7993,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatModifier_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiersContains",
+      "shortName": "StatModifiersContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7997,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatModifier_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataReactionPresetType",
+        "flags": 64
+      },
+      "index": 8012,
+      "flags": 1
+    }
+  ]
+}

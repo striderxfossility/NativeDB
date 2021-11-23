@@ -1,0 +1,127 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataStatPool_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Decay",
+      "shortName": "Decay",
+      "return": {
+        "type": "whandle:gamedataPoolValueModifier_Record",
+        "flags": 64
+      },
+      "index": 4778,
+      "flags": 1
+    },
+    {
+      "fullName": "DecayHandle",
+      "shortName": "DecayHandle",
+      "return": {
+        "type": "handle:gamedataPoolValueModifier_Record",
+        "flags": 64
+      },
+      "index": 4779,
+      "flags": 1
+    },
+    {
+      "fullName": "EnableDefeated",
+      "shortName": "EnableDefeated",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4782,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4773,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4780,
+      "flags": 1
+    },
+    {
+      "fullName": "InitialValue",
+      "shortName": "InitialValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4781,
+      "flags": 1
+    },
+    {
+      "fullName": "Regen",
+      "shortName": "Regen",
+      "return": {
+        "type": "whandle:gamedataPoolValueModifier_Record",
+        "flags": 64
+      },
+      "index": 4776,
+      "flags": 1
+    },
+    {
+      "fullName": "RegenHandle",
+      "shortName": "RegenHandle",
+      "return": {
+        "type": "handle:gamedataPoolValueModifier_Record",
+        "flags": 64
+      },
+      "index": 4777,
+      "flags": 1
+    },
+    {
+      "fullName": "Savable",
+      "shortName": "Savable",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4783,
+      "flags": 1
+    },
+    {
+      "fullName": "Stat",
+      "shortName": "Stat",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 4774,
+      "flags": 1
+    },
+    {
+      "fullName": "StatHandle",
+      "shortName": "StatHandle",
+      "return": {
+        "type": "handle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 4775,
+      "flags": 1
+    },
+    {
+      "fullName": "StatPoolType",
+      "shortName": "StatPoolType",
+      "return": {
+        "type": "gamedataStatPoolType",
+        "flags": 64
+      },
+      "index": 4784,
+      "flags": 1
+    }
+  ]
+}

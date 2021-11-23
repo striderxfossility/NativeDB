@@ -1,0 +1,131 @@
+{
+  "parent": "gamedataAttack_GameEffect_Record",
+  "name": "gamedataAttack_Melee_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttackDirection",
+      "shortName": "AttackDirection",
+      "return": {
+        "type": "whandle:gamedataAttackDirection_Record",
+        "flags": 64
+      },
+      "index": 6681,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackDirectionHandle",
+      "shortName": "AttackDirectionHandle",
+      "return": {
+        "type": "handle:gamedataAttackDirection_Record",
+        "flags": 64
+      },
+      "index": 6682,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackSubtype",
+      "shortName": "AttackSubtype",
+      "return": {
+        "type": "whandle:gamedataAttackSubtype_Record",
+        "flags": 64
+      },
+      "index": 6679,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackSubtypeHandle",
+      "shortName": "AttackSubtypeHandle",
+      "return": {
+        "type": "handle:gamedataAttackSubtype_Record",
+        "flags": 64
+      },
+      "index": 6680,
+      "flags": 1
+    },
+    {
+      "fullName": "BlockCostFactor",
+      "shortName": "BlockCostFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6688,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStaminaCostCount",
+      "shortName": "GetStaminaCostCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6684,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStaminaCostItem",
+      "shortName": "GetStaminaCostItem",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 6685,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStaminaCostItemHandle",
+      "shortName": "GetStaminaCostItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 6686,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StaminaCost",
+      "shortName": "StaminaCost",
+      "index": 6683,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatModifier_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StaminaCostContains",
+      "shortName": "StaminaCostContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6687,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatModifier_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

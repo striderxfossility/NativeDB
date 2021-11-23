@@ -1,0 +1,535 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataRewardBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Achievement",
+      "shortName": "Achievement",
+      "index": 8039,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAchievement_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "AchievementContains",
+      "shortName": "AchievementContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8043,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAchievement_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "CurrencyPackage",
+      "shortName": "CurrencyPackage",
+      "index": 8024,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataCurrencyReward_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "CurrencyPackageContains",
+      "shortName": "CurrencyPackageContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8028,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataCurrencyReward_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Experience",
+      "shortName": "Experience",
+      "index": 8029,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataXPPoints_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ExperienceContains",
+      "shortName": "ExperienceContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8033,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataXPPoints_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetAchievementCount",
+      "shortName": "GetAchievementCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8040,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAchievementItem",
+      "shortName": "GetAchievementItem",
+      "return": {
+        "type": "whandle:gamedataAchievement_Record",
+        "flags": 64
+      },
+      "index": 8041,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetAchievementItemHandle",
+      "shortName": "GetAchievementItemHandle",
+      "return": {
+        "type": "whandle:gamedataAchievement_Record",
+        "flags": 64
+      },
+      "index": 8042,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCurrencyPackageCount",
+      "shortName": "GetCurrencyPackageCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8025,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCurrencyPackageItem",
+      "shortName": "GetCurrencyPackageItem",
+      "return": {
+        "type": "whandle:gamedataCurrencyReward_Record",
+        "flags": 64
+      },
+      "index": 8026,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCurrencyPackageItemHandle",
+      "shortName": "GetCurrencyPackageItemHandle",
+      "return": {
+        "type": "whandle:gamedataCurrencyReward_Record",
+        "flags": 64
+      },
+      "index": 8027,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetExperienceCount",
+      "shortName": "GetExperienceCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8030,
+      "flags": 1
+    },
+    {
+      "fullName": "GetExperienceItem",
+      "shortName": "GetExperienceItem",
+      "return": {
+        "type": "whandle:gamedataXPPoints_Record",
+        "flags": 64
+      },
+      "index": 8031,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetExperienceItemHandle",
+      "shortName": "GetExperienceItemHandle",
+      "return": {
+        "type": "whandle:gamedataXPPoints_Record",
+        "flags": 64
+      },
+      "index": 8032,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetItemsCount",
+      "shortName": "GetItemsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8035,
+      "flags": 1
+    },
+    {
+      "fullName": "GetItemsItem",
+      "shortName": "GetItemsItem",
+      "return": {
+        "type": "whandle:gamedataInventoryItem_Record",
+        "flags": 64
+      },
+      "index": 8036,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetItemsItemHandle",
+      "shortName": "GetItemsItemHandle",
+      "return": {
+        "type": "whandle:gamedataInventoryItem_Record",
+        "flags": 64
+      },
+      "index": 8037,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPhotoModeItemCount",
+      "shortName": "GetPhotoModeItemCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8045,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPhotoModeItemItem",
+      "shortName": "GetPhotoModeItemItem",
+      "return": {
+        "type": "whandle:gamedataPhotoModeItem_Record",
+        "flags": 64
+      },
+      "index": 8046,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPhotoModeItemItemHandle",
+      "shortName": "GetPhotoModeItemItemHandle",
+      "return": {
+        "type": "whandle:gamedataPhotoModeItem_Record",
+        "flags": 64
+      },
+      "index": 8047,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRecipesCount",
+      "shortName": "GetRecipesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8015,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRecipesItem",
+      "shortName": "GetRecipesItem",
+      "return": {
+        "type": "whandle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 8016,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRecipesItemHandle",
+      "shortName": "GetRecipesItemHandle",
+      "return": {
+        "type": "whandle:gamedataItem_Record",
+        "flags": 64
+      },
+      "index": 8017,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersCount",
+      "shortName": "GetStatModifiersCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8020,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatModifiersItem",
+      "shortName": "GetStatModifiersItem",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 8021,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatModifiersItemHandle",
+      "shortName": "GetStatModifiersItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatModifier_Record",
+        "flags": 64
+      },
+      "index": 8022,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Items",
+      "shortName": "Items",
+      "index": 8034,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataInventoryItem_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "ItemsContains",
+      "shortName": "ItemsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8038,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataInventoryItem_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Name",
+      "shortName": "Name",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 8013,
+      "flags": 1
+    },
+    {
+      "fullName": "PhotoModeItem",
+      "shortName": "PhotoModeItem",
+      "index": 8044,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataPhotoModeItem_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "PhotoModeItemContains",
+      "shortName": "PhotoModeItemContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8048,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataPhotoModeItem_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Recipes",
+      "shortName": "Recipes",
+      "index": 8014,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataItem_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "RecipesContains",
+      "shortName": "RecipesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8018,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataItem_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiers",
+      "shortName": "StatModifiers",
+      "index": 8019,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatModifier_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatModifiersContains",
+      "shortName": "StatModifiersContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8023,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatModifier_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAttitudeGroup_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttitudeToSelf",
+      "shortName": "AttitudeToSelf",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5836,
+      "flags": 1
+    },
+    {
+      "fullName": "DefaultAttitude",
+      "shortName": "DefaultAttitude",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5835,
+      "flags": 1
+    },
+    {
+      "fullName": "IsState",
+      "shortName": "IsState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5840,
+      "flags": 1
+    },
+    {
+      "fullName": "Name",
+      "shortName": "Name",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5839,
+      "flags": 1
+    },
+    {
+      "fullName": "Parent",
+      "shortName": "Parent",
+      "return": {
+        "type": "whandle:gamedataAttitudeGroup_Record",
+        "flags": 64
+      },
+      "index": 5837,
+      "flags": 1
+    },
+    {
+      "fullName": "ParentHandle",
+      "shortName": "ParentHandle",
+      "return": {
+        "type": "handle:gamedataAttitudeGroup_Record",
+        "flags": 64
+      },
+      "index": 5838,
+      "flags": 1
+    }
+  ]
+}

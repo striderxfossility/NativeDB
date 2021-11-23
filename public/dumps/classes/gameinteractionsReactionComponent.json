@@ -1,0 +1,55 @@
+{
+  "parent": "entIComponent",
+  "name": "gameinteractionsReactionComponent",
+  "flags": 66,
+  "props": [
+    {
+      "type": "array:gameinteractionsReactionData",
+      "name": "reactions",
+      "flags": 6631211009
+    },
+    {
+      "type": "Bool",
+      "name": "triggerAutomatically",
+      "flags": 6627016705
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "GetReactionIndex",
+      "shortName": "GetReactionIndex",
+      "index": 10599,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRequiredItems",
+      "shortName": "GetRequiredItems",
+      "index": 10600,
+      "flags": 1
+    },
+    {
+      "fullName": "PerformReaction",
+      "shortName": "PerformReaction",
+      "index": 10601,
+      "flags": 1
+    },
+    {
+      "fullName": "PerformReactionWithIK",
+      "shortName": "PerformReactionWithIK",
+      "index": 10602,
+      "flags": 1
+    },
+    {
+      "fullName": "SetCanceled",
+      "shortName": "SetCanceled",
+      "index": 10598,
+      "flags": 1
+    },
+    {
+      "fullName": "SetFinished",
+      "shortName": "SetFinished",
+      "index": 10597,
+      "flags": 1
+    }
+  ]
+}

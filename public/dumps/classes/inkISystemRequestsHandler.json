@@ -1,0 +1,594 @@
+{
+  "parent": "IScriptable",
+  "name": "inkISystemRequestsHandler",
+  "flags": 67,
+  "props": [
+    {
+      "type": "inkSystemRequesResult",
+      "name": "SavesReady",
+      "flags": 6627016704
+    },
+    {
+      "type": "inkSaveMetadataRequestResult",
+      "name": "SaveMetadataReady",
+      "flags": 6627016704
+    },
+    {
+      "type": "inkDeleteRequestResult",
+      "name": "SaveDeleted",
+      "flags": 6627016704
+    },
+    {
+      "type": "inkSystemServerRequesResult",
+      "name": "ServersSearchResult",
+      "flags": 6627016704
+    },
+    {
+      "type": "inkUserIdResult",
+      "name": "UserChanged",
+      "flags": 6627016704
+    },
+    {
+      "type": "inkUserIdResult",
+      "name": "UserIdResult",
+      "flags": 6627016704
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "CancelSavedGameScreenshotRequests",
+      "shortName": "CancelSavedGameScreenshotRequests",
+      "index": 1642,
+      "flags": 1
+    },
+    {
+      "fullName": "CloudQuickmatch",
+      "shortName": "CloudQuickmatch",
+      "index": 1648,
+      "flags": 1,
+      "params": [
+        {
+          "type": "String",
+          "name": "groupToken",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "DeleteSavedGame",
+      "shortName": "DeleteSavedGame",
+      "index": 1638,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ExitGame",
+      "shortName": "ExitGame",
+      "index": 1607,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGameDefCategories",
+      "shortName": "GetGameDefCategories",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1623,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGameDefinitions",
+      "shortName": "GetGameDefinitions",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1624,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "categoryId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGameVersion",
+      "shortName": "GetGameVersion",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 1615,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGenders",
+      "shortName": "GetGenders",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1625,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLatestSaveMetadata",
+      "shortName": "GetLatestSaveMetadata",
+      "return": {
+        "type": "handle:inkLatestSaveMetadataInfo",
+        "flags": 64
+      },
+      "index": 1643,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMultiplayerWorlds",
+      "shortName": "GetMultiplayerWorlds",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1649,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPlayerRecordIds",
+      "shortName": "GetPlayerRecordIds",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1650,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRecords",
+      "shortName": "GetRecords",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1654,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSessionPlayersLimits",
+      "shortName": "GetSessionPlayersLimits",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1653,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSessionTimeLimits",
+      "shortName": "GetSessionTimeLimits",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1652,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSessionTypes",
+      "shortName": "GetSessionTypes",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1651,
+      "flags": 1
+    },
+    {
+      "fullName": "GetUserSettings",
+      "shortName": "GetUserSettings",
+      "return": {
+        "type": "handle:userSettingsUserSettings",
+        "flags": 64
+      },
+      "index": 1608,
+      "flags": 1
+    },
+    {
+      "fullName": "GetWorlds",
+      "shortName": "GetWorlds",
+      "return": {
+        "type": "array:String",
+        "flags": 64
+      },
+      "index": 1627,
+      "flags": 1
+    },
+    {
+      "fullName": "GotoMainMenu",
+      "shortName": "GotoMainMenu",
+      "index": 1621,
+      "flags": 1
+    },
+    {
+      "fullName": "HasFreeSaveSlot",
+      "shortName": "HasFreeSaveSlot",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1637,
+      "flags": 1,
+      "params": [
+        {
+          "type": "String",
+          "name": "saveName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasLastCheckpoint",
+      "shortName": "HasLastCheckpoint",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1633,
+      "flags": 1
+    },
+    {
+      "fullName": "IsGamePaused",
+      "shortName": "IsGamePaused",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1619,
+      "flags": 1
+    },
+    {
+      "fullName": "IsOnline",
+      "shortName": "IsOnline",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1644,
+      "flags": 1
+    },
+    {
+      "fullName": "IsPreGame",
+      "shortName": "IsPreGame",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1620,
+      "flags": 1
+    },
+    {
+      "fullName": "JoinServer",
+      "shortName": "JoinServer",
+      "index": 1647,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "serverId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LoadLastCheckpoint",
+      "shortName": "LoadLastCheckpoint",
+      "index": 1635,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "onlySamePlaythrough",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LoadSavedGame",
+      "shortName": "LoadSavedGame",
+      "index": 1634,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ManualSave",
+      "shortName": "ManualSave",
+      "index": 1636,
+      "flags": 1,
+      "params": [
+        {
+          "type": "String",
+          "name": "saveName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OverrideSave",
+      "shortName": "OverrideSave",
+      "index": 1640,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PauseGame",
+      "shortName": "PauseGame",
+      "index": 1617,
+      "flags": 1
+    },
+    {
+      "fullName": "PlayRecord",
+      "shortName": "PlayRecord",
+      "index": 1655,
+      "flags": 1,
+      "params": [
+        {
+          "type": "String",
+          "name": "filename",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "QuickSave",
+      "shortName": "QuickSave",
+      "index": 1639,
+      "flags": 1
+    },
+    {
+      "fullName": "RegisterToCallback",
+      "shortName": "RegisterToCallback",
+      "index": 1605,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "eventName",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "object",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "functionName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RequestDlcNotification",
+      "shortName": "RequestDlcNotification",
+      "index": 1616,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestInternetServers",
+      "shortName": "RequestInternetServers",
+      "index": 1646,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestLANServers",
+      "shortName": "RequestLANServers",
+      "index": 1645,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestLoadUserSettings",
+      "shortName": "RequestLoadUserSettings",
+      "index": 1609,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestLocalStorageSave",
+      "shortName": "RequestLocalStorageSave",
+      "index": 1614,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestSaveUserSettings",
+      "shortName": "RequestSaveUserSettings",
+      "index": 1610,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestSavedGameScreenshot",
+      "shortName": "RequestSavedGameScreenshot",
+      "index": 1641,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        },
+        {
+          "type": "whandle:inkImageWidget",
+          "name": "imageWidget",
+          "flags": 128
+        },
+        {
+          "type": "whandle:IScriptable",
+          "name": "callbackListener",
+          "flags": 1152
+        },
+        {
+          "type": "CName",
+          "name": "functionName",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "RequestSavesCountSync",
+      "shortName": "RequestSavesCountSync",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1630,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestSavesForLoad",
+      "shortName": "RequestSavesForLoad",
+      "index": 1631,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestSavesForSave",
+      "shortName": "RequestSavesForSave",
+      "index": 1632,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestTelemetryConsent",
+      "shortName": "RequestTelemetryConsent",
+      "index": 1612,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "fromSettings",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RunUiFunctionalTestWorld",
+      "shortName": "RunUiFunctionalTestWorld",
+      "index": 1622,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldDisplayGog",
+      "shortName": "ShouldDisplayGog",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 1613,
+      "flags": 1
+    },
+    {
+      "fullName": "StartGameDefinition",
+      "shortName": "StartGameDefinition",
+      "index": 1626,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "categoryId",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "gamedefId",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "genderId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StartNewGame",
+      "shortName": "StartNewGame",
+      "index": 1629,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:IScriptable",
+          "name": "state",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "StartWorld",
+      "shortName": "StartWorld",
+      "index": 1628,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "worldId",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "genderId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnpauseGame",
+      "shortName": "UnpauseGame",
+      "index": 1618,
+      "flags": 1
+    },
+    {
+      "fullName": "UnregisterFromCallback",
+      "shortName": "UnregisterFromCallback",
+      "index": 1606,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "eventName",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "object",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "functionName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateLaunchCounter",
+      "shortName": "UpdateLaunchCounter",
+      "index": 1611,
+      "flags": 1
+    }
+  ]
+}

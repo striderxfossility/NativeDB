@@ -1,0 +1,53 @@
+{
+  "parent": "vehicleWheeledBaseObject",
+  "name": "vehicleBikeBaseObject",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "EnableTiltControl",
+      "shortName": "EnableTiltControl",
+      "index": 11400,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "enable",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCustomTargetTilt",
+      "shortName": "GetCustomTargetTilt",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 11401,
+      "flags": 1
+    },
+    {
+      "fullName": "IsTiltControlEnabled",
+      "shortName": "IsTiltControlEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11399,
+      "flags": 1
+    },
+    {
+      "fullName": "SetCustomTargetTilt",
+      "shortName": "SetCustomTargetTilt",
+      "index": 11402,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "targetTilt",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

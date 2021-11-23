@@ -1,0 +1,127 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataDroneAnimationSetup_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Mass",
+      "shortName": "Mass",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6724,
+      "flags": 1
+    },
+    {
+      "fullName": "MassNormalizedCoefficient",
+      "shortName": "MassNormalizedCoefficient",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6726,
+      "flags": 1
+    },
+    {
+      "fullName": "PseudoAcceleration",
+      "shortName": "PseudoAcceleration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6728,
+      "flags": 1
+    },
+    {
+      "fullName": "SizeBack",
+      "shortName": "SizeBack",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6720,
+      "flags": 1
+    },
+    {
+      "fullName": "SizeFront",
+      "shortName": "SizeFront",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6719,
+      "flags": 1
+    },
+    {
+      "fullName": "SizeLeft",
+      "shortName": "SizeLeft",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6722,
+      "flags": 1
+    },
+    {
+      "fullName": "SizeRight",
+      "shortName": "SizeRight",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6723,
+      "flags": 1
+    },
+    {
+      "fullName": "SpeedIdleThreshold",
+      "shortName": "SpeedIdleThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6725,
+      "flags": 1
+    },
+    {
+      "fullName": "StartingRecoveryBalance",
+      "shortName": "StartingRecoveryBalance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6727,
+      "flags": 1
+    },
+    {
+      "fullName": "TiltAngleOnSpeed",
+      "shortName": "TiltAngleOnSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6718,
+      "flags": 1
+    },
+    {
+      "fullName": "TurnInertiaDamping",
+      "shortName": "TurnInertiaDamping",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6729,
+      "flags": 1
+    },
+    {
+      "fullName": "WalkTiltCoefficient",
+      "shortName": "WalkTiltCoefficient",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6721,
+      "flags": 1
+    }
+  ]
+}

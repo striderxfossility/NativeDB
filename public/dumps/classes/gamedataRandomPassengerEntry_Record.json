@@ -1,0 +1,155 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataRandomPassengerEntry_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CharacterRecords",
+      "shortName": "CharacterRecords",
+      "index": 6244,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataWeightedCharacter_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "CharacterRecordsContains",
+      "shortName": "CharacterRecordsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6248,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataWeightedCharacter_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCharacterRecordsCount",
+      "shortName": "GetCharacterRecordsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6245,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCharacterRecordsItem",
+      "shortName": "GetCharacterRecordsItem",
+      "return": {
+        "type": "whandle:gamedataWeightedCharacter_Record",
+        "flags": 64
+      },
+      "index": 6246,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCharacterRecordsItemHandle",
+      "shortName": "GetCharacterRecordsItemHandle",
+      "return": {
+        "type": "whandle:gamedataWeightedCharacter_Record",
+        "flags": 64
+      },
+      "index": 6247,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetValidSlotNamesCount",
+      "shortName": "GetValidSlotNamesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6241,
+      "flags": 1
+    },
+    {
+      "fullName": "GetValidSlotNamesItem",
+      "shortName": "GetValidSlotNamesItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6242,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Probability",
+      "shortName": "Probability",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6250,
+      "flags": 1
+    },
+    {
+      "fullName": "Role",
+      "shortName": "Role",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6249,
+      "flags": 1
+    },
+    {
+      "fullName": "ValidSlotNames",
+      "shortName": "ValidSlotNames",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 6240,
+      "flags": 1
+    },
+    {
+      "fullName": "ValidSlotNamesContains",
+      "shortName": "ValidSlotNamesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6243,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

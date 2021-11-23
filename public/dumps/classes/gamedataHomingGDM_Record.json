@@ -1,0 +1,107 @@
+{
+  "parent": "gamedataGrenadeDeliveryMethod_Record",
+  "name": "gamedataHomingGDM_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "FlyToTargetParameters",
+      "shortName": "FlyToTargetParameters",
+      "return": {
+        "type": "whandle:gamedataAccelerateTowardsParameters_Record",
+        "flags": 64
+      },
+      "index": 6931,
+      "flags": 1
+    },
+    {
+      "fullName": "FlyToTargetParametersHandle",
+      "shortName": "FlyToTargetParametersHandle",
+      "return": {
+        "type": "handle:gamedataAccelerateTowardsParameters_Record",
+        "flags": 64
+      },
+      "index": 6932,
+      "flags": 1
+    },
+    {
+      "fullName": "FlyUpParameters",
+      "shortName": "FlyUpParameters",
+      "return": {
+        "type": "whandle:gamedataAccelerateTowardsParameters_Record",
+        "flags": 64
+      },
+      "index": 6929,
+      "flags": 1
+    },
+    {
+      "fullName": "FlyUpParametersHandle",
+      "shortName": "FlyUpParametersHandle",
+      "return": {
+        "type": "handle:gamedataAccelerateTowardsParameters_Record",
+        "flags": 64
+      },
+      "index": 6930,
+      "flags": 1
+    },
+    {
+      "fullName": "FreezeDelay",
+      "shortName": "FreezeDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6933,
+      "flags": 1
+    },
+    {
+      "fullName": "FreezeDelayAfterBounce",
+      "shortName": "FreezeDelayAfterBounce",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6936,
+      "flags": 1
+    },
+    {
+      "fullName": "FreezeDuration",
+      "shortName": "FreezeDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6934,
+      "flags": 1
+    },
+    {
+      "fullName": "LockOnAltitude",
+      "shortName": "LockOnAltitude",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6938,
+      "flags": 1
+    },
+    {
+      "fullName": "LockOnDelay",
+      "shortName": "LockOnDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6935,
+      "flags": 1
+    },
+    {
+      "fullName": "LockOnFailDetonationDelay",
+      "shortName": "LockOnFailDetonationDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6937,
+      "flags": 1
+    }
+  ]
+}

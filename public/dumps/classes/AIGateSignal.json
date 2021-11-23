@@ -1,0 +1,186 @@
+{
+  "name": "AIGateSignal",
+  "flags": 2,
+  "props": [
+    {
+      "type": "static:4,CName",
+      "name": "tags",
+      "flags": 6627016704
+    },
+    {
+      "type": "AISignalFlags",
+      "name": "flags",
+      "flags": 6627016704
+    },
+    {
+      "type": "Float",
+      "name": "priority",
+      "flags": 6627016704
+    },
+    {
+      "type": "Float",
+      "name": "lifeTime",
+      "flags": 6627016704
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "AddFlag",
+      "shortName": "AddFlag",
+      "index": 9377,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "AISignalFlags",
+          "name": "flag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "AddTag",
+      "shortName": "AddTag",
+      "index": 9374,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTag",
+      "shortName": "GetTag",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 9372,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Uint32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTagCount",
+      "shortName": "GetTagCount",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 9371,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasAllTagsOf",
+      "shortName": "HasAllTagsOf",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9375,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "other",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasFlag",
+      "shortName": "HasFlag",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9376,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "AISignalFlags",
+          "name": "flag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasTag",
+      "shortName": "HasTag",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9373,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "tag",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsEmpty",
+      "shortName": "IsEmpty",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9370,
+      "flags": 3,
+      "params": [
+        {
+          "type": "script_ref:AIGateSignal",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

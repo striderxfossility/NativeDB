@@ -1,0 +1,81 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataCrowdSettingsPackageBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetSpecsCount",
+      "shortName": "GetSpecsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5845,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSpecsItem",
+      "shortName": "GetSpecsItem",
+      "return": {
+        "type": "whandle:gamedataCrowdSlotMovementPatternBase_Record",
+        "flags": 64
+      },
+      "index": 5846,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetSpecsItemHandle",
+      "shortName": "GetSpecsItemHandle",
+      "return": {
+        "type": "whandle:gamedataCrowdSlotMovementPatternBase_Record",
+        "flags": 64
+      },
+      "index": 5847,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Specs",
+      "shortName": "Specs",
+      "index": 5844,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataCrowdSlotMovementPatternBase_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "SpecsContains",
+      "shortName": "SpecsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5848,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataCrowdSlotMovementPatternBase_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

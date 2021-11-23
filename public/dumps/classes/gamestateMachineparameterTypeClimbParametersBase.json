@@ -1,0 +1,85 @@
+{
+  "parent": "IScriptable",
+  "name": "gamestateMachineparameterTypeClimbParametersBase",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "SetAnimationNameApproach",
+      "shortName": "SetAnimationNameApproach",
+      "index": 10994,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetObstacleFrontEdgeNormal",
+      "shortName": "SetObstacleFrontEdgeNormal",
+      "index": 10990,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetObstacleFrontEdgePosition",
+      "shortName": "SetObstacleFrontEdgePosition",
+      "index": 10989,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetObstacleHorizontalDestination",
+      "shortName": "SetObstacleHorizontalDestination",
+      "index": 10992,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetObstacleSurfaceNormal",
+      "shortName": "SetObstacleSurfaceNormal",
+      "index": 10993,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetObstacleVerticalDestination",
+      "shortName": "SetObstacleVerticalDestination",
+      "index": 10991,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

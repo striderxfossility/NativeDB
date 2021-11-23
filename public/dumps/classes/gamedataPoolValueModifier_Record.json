@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataPoolValueModifier_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DelayOnChange",
+      "shortName": "DelayOnChange",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4936,
+      "flags": 1
+    },
+    {
+      "fullName": "Enabled",
+      "shortName": "Enabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4934,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeBegin",
+      "shortName": "RangeBegin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4932,
+      "flags": 1
+    },
+    {
+      "fullName": "RangeEnd",
+      "shortName": "RangeEnd",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4933,
+      "flags": 1
+    },
+    {
+      "fullName": "StartDelay",
+      "shortName": "StartDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4930,
+      "flags": 1
+    },
+    {
+      "fullName": "UsingPointValues",
+      "shortName": "UsingPointValues",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4935,
+      "flags": 1
+    },
+    {
+      "fullName": "ValuePerSec",
+      "shortName": "ValuePerSec",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4931,
+      "flags": 1
+    }
+  ]
+}

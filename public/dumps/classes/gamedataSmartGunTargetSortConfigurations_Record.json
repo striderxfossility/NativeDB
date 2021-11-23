@@ -1,0 +1,47 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataSmartGunTargetSortConfigurations_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AdsConfig",
+      "shortName": "AdsConfig",
+      "return": {
+        "type": "whandle:gamedataSmartGunTargetSortData_Record",
+        "flags": 64
+      },
+      "index": 8386,
+      "flags": 1
+    },
+    {
+      "fullName": "AdsConfigHandle",
+      "shortName": "AdsConfigHandle",
+      "return": {
+        "type": "handle:gamedataSmartGunTargetSortData_Record",
+        "flags": 64
+      },
+      "index": 8387,
+      "flags": 1
+    },
+    {
+      "fullName": "HipConfig",
+      "shortName": "HipConfig",
+      "return": {
+        "type": "whandle:gamedataSmartGunTargetSortData_Record",
+        "flags": 64
+      },
+      "index": 8384,
+      "flags": 1
+    },
+    {
+      "fullName": "HipConfigHandle",
+      "shortName": "HipConfigHandle",
+      "return": {
+        "type": "handle:gamedataSmartGunTargetSortData_Record",
+        "flags": 64
+      },
+      "index": 8385,
+      "flags": 1
+    }
+  ]
+}

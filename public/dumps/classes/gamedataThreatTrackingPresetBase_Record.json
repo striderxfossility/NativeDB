@@ -1,0 +1,107 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataThreatTrackingPresetBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "BaseAccuracy",
+      "shortName": "BaseAccuracy",
+      "return": {
+        "type": "whandle:gamedataAccuracy_Record",
+        "flags": 64
+      },
+      "index": 5154,
+      "flags": 1
+    },
+    {
+      "fullName": "BaseAccuracyHandle",
+      "shortName": "BaseAccuracyHandle",
+      "return": {
+        "type": "handle:gamedataAccuracy_Record",
+        "flags": 64
+      },
+      "index": 5155,
+      "flags": 1
+    },
+    {
+      "fullName": "BaseDroppingThreatCooldown",
+      "shortName": "BaseDroppingThreatCooldown",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5156,
+      "flags": 1
+    },
+    {
+      "fullName": "BeliefAccuracy",
+      "shortName": "BeliefAccuracy",
+      "return": {
+        "type": "whandle:gamedataAccuracy_Record",
+        "flags": 64
+      },
+      "index": 5152,
+      "flags": 1
+    },
+    {
+      "fullName": "BeliefAccuracyHandle",
+      "shortName": "BeliefAccuracyHandle",
+      "return": {
+        "type": "handle:gamedataAccuracy_Record",
+        "flags": 64
+      },
+      "index": 5153,
+      "flags": 1
+    },
+    {
+      "fullName": "DroppingCooldownPerHit",
+      "shortName": "DroppingCooldownPerHit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5159,
+      "flags": 1
+    },
+    {
+      "fullName": "DroppingCooldownPerSecondWhileVisible",
+      "shortName": "DroppingCooldownPerSecondWhileVisible",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5157,
+      "flags": 1
+    },
+    {
+      "fullName": "MaximumDroppingCooldownValue",
+      "shortName": "MaximumDroppingCooldownValue",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5160,
+      "flags": 1
+    },
+    {
+      "fullName": "MoveBeliefOnlyIfVisible",
+      "shortName": "MoveBeliefOnlyIfVisible",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5161,
+      "flags": 1
+    },
+    {
+      "fullName": "VisibleBeliefSpeedMultiplier",
+      "shortName": "VisibleBeliefSpeedMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5158,
+      "flags": 1
+    }
+  ]
+}

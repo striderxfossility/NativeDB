@@ -1,0 +1,27 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataWorkspotReactionType_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7263,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataWorkspotReactionType",
+        "flags": 64
+      },
+      "index": 7264,
+      "flags": 1
+    }
+  ]
+}

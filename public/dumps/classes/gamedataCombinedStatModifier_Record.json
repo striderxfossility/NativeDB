@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataStatModifier_Record",
+  "name": "gamedataCombinedStatModifier_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "OpSymbol",
+      "shortName": "OpSymbol",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4307,
+      "flags": 1
+    },
+    {
+      "fullName": "RefObject",
+      "shortName": "RefObject",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4306,
+      "flags": 1
+    },
+    {
+      "fullName": "RefStat",
+      "shortName": "RefStat",
+      "return": {
+        "type": "whandle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 4304,
+      "flags": 1
+    },
+    {
+      "fullName": "RefStatHandle",
+      "shortName": "RefStatHandle",
+      "return": {
+        "type": "handle:gamedataStat_Record",
+        "flags": 64
+      },
+      "index": 4305,
+      "flags": 1
+    },
+    {
+      "fullName": "Value",
+      "shortName": "Value",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4308,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataChatterHelperRadius_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "MaxDistanceToOtherPlayer",
+      "shortName": "MaxDistanceToOtherPlayer",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6877,
+      "flags": 1
+    },
+    {
+      "fullName": "MinDistanceToOtherPlayer",
+      "shortName": "MinDistanceToOtherPlayer",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6876,
+      "flags": 1
+    }
+  ]
+}

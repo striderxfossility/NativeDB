@@ -1,0 +1,37 @@
+{
+  "parent": "gameISubtitleHandlerSystem",
+  "name": "gameuiSubtitleHandlerSystem",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "RegisterSubtitleController",
+      "shortName": "RegisterSubtitleController",
+      "return": {
+        "type": "gamePendingSubtitles",
+        "flags": 64
+      },
+      "index": 12135,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gameuiWidgetGameController",
+          "name": "gameController",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UnregisterSubtitleController",
+      "shortName": "UnregisterSubtitleController",
+      "index": 12136,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gameuiWidgetGameController",
+          "name": "gameController",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

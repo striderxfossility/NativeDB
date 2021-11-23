@@ -1,0 +1,27 @@
+{
+  "parent": "IScriptable",
+  "name": "gameinteractionsvisIVisualizerTimeProvider",
+  "flags": 3,
+  "funcs": [
+    {
+      "fullName": "GetCurrentProgress",
+      "shortName": "GetCurrentProgress",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9955,
+      "flags": 8193
+    },
+    {
+      "fullName": "GetDuration",
+      "shortName": "GetDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9956,
+      "flags": 8193
+    }
+  ]
+}

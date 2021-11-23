@@ -1,0 +1,155 @@
+{
+  "parent": "gamedataPhotoModeItem_Record",
+  "name": "gamedataPhotoModeFrame_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AtlasName",
+      "shortName": "AtlasName",
+      "return": {
+        "type": "redResourceReferenceScriptToken",
+        "flags": 64
+      },
+      "index": 7402,
+      "flags": 1
+    },
+    {
+      "fullName": "Color",
+      "shortName": "Color",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 7398,
+      "flags": 1
+    },
+    {
+      "fullName": "ColorContains",
+      "shortName": "ColorContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7401,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "FlipHorizontal",
+      "shortName": "FlipHorizontal",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7405,
+      "flags": 1
+    },
+    {
+      "fullName": "FlipVertical",
+      "shortName": "FlipVertical",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7404,
+      "flags": 1
+    },
+    {
+      "fullName": "GetColorCount",
+      "shortName": "GetColorCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7399,
+      "flags": 1
+    },
+    {
+      "fullName": "GetColorItem",
+      "shortName": "GetColorItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7400,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetImagePartsNamesCount",
+      "shortName": "GetImagePartsNamesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7395,
+      "flags": 1
+    },
+    {
+      "fullName": "GetImagePartsNamesItem",
+      "shortName": "GetImagePartsNamesItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7396,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ImagePartsNames",
+      "shortName": "ImagePartsNames",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 7394,
+      "flags": 1
+    },
+    {
+      "fullName": "ImagePartsNamesContains",
+      "shortName": "ImagePartsNamesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7397,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LibraryItemName",
+      "shortName": "LibraryItemName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7403,
+      "flags": 1
+    }
+  ]
+}

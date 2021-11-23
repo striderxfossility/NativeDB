@@ -1,0 +1,97 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionTriggerStim_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6859,
+      "flags": 1
+    },
+    {
+      "fullName": "Direct",
+      "shortName": "Direct",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6861,
+      "flags": 1
+    },
+    {
+      "fullName": "Radius",
+      "shortName": "Radius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6860,
+      "flags": 1
+    },
+    {
+      "fullName": "StimSource",
+      "shortName": "StimSource",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6855,
+      "flags": 1
+    },
+    {
+      "fullName": "StimSourceHandle",
+      "shortName": "StimSourceHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6856,
+      "flags": 1
+    },
+    {
+      "fullName": "StimType",
+      "shortName": "StimType",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 6853,
+      "flags": 1
+    },
+    {
+      "fullName": "StimTypeHandle",
+      "shortName": "StimTypeHandle",
+      "return": {
+        "type": "handle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 6854,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6857,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 6858,
+      "flags": 1
+    }
+  ]
+}

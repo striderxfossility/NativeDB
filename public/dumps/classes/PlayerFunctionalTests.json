@@ -1,0 +1,19 @@
+{
+  "parent": "IScriptable",
+  "name": "PlayerFunctionalTests",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "RemoveCollision",
+      "shortName": "RemoveCollision",
+      "index": 12383,
+      "flags": 1
+    },
+    {
+      "fullName": "SetCameraOrientation",
+      "shortName": "SetCameraOrientation",
+      "index": 12384,
+      "flags": 1
+    }
+  ]
+}

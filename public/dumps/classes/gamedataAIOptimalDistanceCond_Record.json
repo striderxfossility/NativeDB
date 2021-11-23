@@ -1,0 +1,191 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIOptimalDistanceCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CheckRings",
+      "shortName": "CheckRings",
+      "index": 7111,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIRingType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "CheckRingsContains",
+      "shortName": "CheckRingsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7115,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIRingType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "DistanceMult",
+      "shortName": "DistanceMult",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7117,
+      "flags": 1
+    },
+    {
+      "fullName": "DistanceOffset",
+      "shortName": "DistanceOffset",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7119,
+      "flags": 1
+    },
+    {
+      "fullName": "FailWhenCloserThanCurrentRing",
+      "shortName": "FailWhenCloserThanCurrentRing",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7121,
+      "flags": 1
+    },
+    {
+      "fullName": "FailWhenFurtherThantCurrentRing",
+      "shortName": "FailWhenFurtherThantCurrentRing",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7122,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCheckRingsCount",
+      "shortName": "GetCheckRingsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7112,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCheckRingsItem",
+      "shortName": "GetCheckRingsItem",
+      "return": {
+        "type": "whandle:gamedataAIRingType_Record",
+        "flags": 64
+      },
+      "index": 7113,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCheckRingsItemHandle",
+      "shortName": "GetCheckRingsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIRingType_Record",
+        "flags": 64
+      },
+      "index": 7114,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PredictionTime",
+      "shortName": "PredictionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7116,
+      "flags": 1
+    },
+    {
+      "fullName": "Source",
+      "shortName": "Source",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7107,
+      "flags": 1
+    },
+    {
+      "fullName": "SourceHandle",
+      "shortName": "SourceHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7108,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7109,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7110,
+      "flags": 1
+    },
+    {
+      "fullName": "ToleranceMult",
+      "shortName": "ToleranceMult",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7120,
+      "flags": 1
+    },
+    {
+      "fullName": "ToleranceOffset",
+      "shortName": "ToleranceOffset",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7118,
+      "flags": 1
+    }
+  ]
+}

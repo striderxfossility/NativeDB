@@ -1,0 +1,82 @@
+{
+  "parent": "gameuiWidgetGameController",
+  "name": "gameuiMenuGameController",
+  "flags": 2,
+  "props": [
+    {
+      "type": "whandle:inkMenuEventDispatcher",
+      "name": "baseEventDispatcher",
+      "flags": 4297130016
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "RefreshInputIcons",
+      "shortName": "RefreshInputIcons",
+      "index": 12070,
+      "flags": 1
+    },
+    {
+      "fullName": "RegisterToGlobalInputCallback",
+      "shortName": "RegisterToGlobalInputCallback",
+      "index": 12069,
+      "flags": 1
+    },
+    {
+      "fullName": "UnregisterFromGlobalInputCallback",
+      "shortName": "UnregisterFromGlobalInputCallback",
+      "index": 12068,
+      "flags": 1
+    },
+    {
+      "fullName": "OnBack",
+      "shortName": "OnBack",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "handle:IScriptable",
+          "name": "userData",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnInitialize",
+      "shortName": "OnInitialize",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 33032
+    },
+    {
+      "fullName": "OnSetMenuEventDispatcher",
+      "shortName": "OnSetMenuEventDispatcher",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264,
+      "params": [
+        {
+          "type": "whandle:inkMenuEventDispatcher",
+          "name": "menuEventDispatcher",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OnUninitialize",
+      "shortName": "OnUninitialize",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "flags": 264
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataMovementParam_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Acceleration",
+      "shortName": "Acceleration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3287,
+      "flags": 1
+    },
+    {
+      "fullName": "Deceleration",
+      "shortName": "Deceleration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3288,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 3284,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 3285,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxSpeed",
+      "shortName": "MaxSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3286,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationSpeed",
+      "shortName": "RotationSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3289,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataMovementType",
+        "flags": 64
+      },
+      "index": 3290,
+      "flags": 1
+    }
+  ]
+}

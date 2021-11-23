@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionApplyTimeDilation_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6188,
+      "flags": 1
+    },
+    {
+      "fullName": "EaseIn",
+      "shortName": "EaseIn",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6185,
+      "flags": 1
+    },
+    {
+      "fullName": "EaseOut",
+      "shortName": "EaseOut",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6186,
+      "flags": 1
+    },
+    {
+      "fullName": "Multiplier",
+      "shortName": "Multiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6189,
+      "flags": 1
+    },
+    {
+      "fullName": "OverrideMultiplerWhenPlayerInTimeDilation",
+      "shortName": "OverrideMultiplerWhenPlayerInTimeDilation",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6190,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6187,
+      "flags": 1
+    }
+  ]
+}

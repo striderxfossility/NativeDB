@@ -1,0 +1,97 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionSetWorldPosition_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CheckForNavmesh",
+      "shortName": "CheckForNavmesh",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4129,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomPositionTarget",
+      "shortName": "CustomPositionTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4121,
+      "flags": 1
+    },
+    {
+      "fullName": "CustomPositionTargetHandle",
+      "shortName": "CustomPositionTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4122,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxOffsetFromTarget",
+      "shortName": "MaxOffsetFromTarget",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 4126,
+      "flags": 1
+    },
+    {
+      "fullName": "MinOffsetFromTarget",
+      "shortName": "MinOffsetFromTarget",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 4125,
+      "flags": 1
+    },
+    {
+      "fullName": "RandomizePoint",
+      "shortName": "RandomizePoint",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4127,
+      "flags": 1
+    },
+    {
+      "fullName": "ReferenceTarget",
+      "shortName": "ReferenceTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4123,
+      "flags": 1
+    },
+    {
+      "fullName": "ReferenceTargetHandle",
+      "shortName": "ReferenceTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4124,
+      "flags": 1
+    },
+    {
+      "fullName": "UseLocalSpace",
+      "shortName": "UseLocalSpace",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4128,
+      "flags": 1
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataNetworkPingingParameteres_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AllowSimultanousPinging",
+      "shortName": "AllowSimultanousPinging",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7382,
+      "flags": 1
+    },
+    {
+      "fullName": "AmmountOfIntervals",
+      "shortName": "AmmountOfIntervals",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7380,
+      "flags": 1
+    },
+    {
+      "fullName": "DirectPingDuration",
+      "shortName": "DirectPingDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7372,
+      "flags": 1
+    },
+    {
+      "fullName": "ForceInstantBeamKill",
+      "shortName": "ForceInstantBeamKill",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7383,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxFreePingLinks",
+      "shortName": "MaxFreePingLinks",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7379,
+      "flags": 1
+    },
+    {
+      "fullName": "NetworkRevealDuration",
+      "shortName": "NetworkRevealDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7376,
+      "flags": 1
+    },
+    {
+      "fullName": "PingRange",
+      "shortName": "PingRange",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7373,
+      "flags": 1
+    },
+    {
+      "fullName": "PulseRange",
+      "shortName": "PulseRange",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7374,
+      "flags": 1
+    },
+    {
+      "fullName": "PulseRealObjects",
+      "shortName": "PulseRealObjects",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7390,
+      "flags": 1
+    },
+    {
+      "fullName": "QuickHacksExposedByDefaul",
+      "shortName": "QuickHacksExposedByDefaul",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7392,
+      "flags": 1
+    },
+    {
+      "fullName": "ReavealNetworkOnMaster",
+      "shortName": "ReavealNetworkOnMaster",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7391,
+      "flags": 1
+    },
+    {
+      "fullName": "RevealLinksAfterLeavingFocusDuration",
+      "shortName": "RevealLinksAfterLeavingFocusDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7377,
+      "flags": 1
+    },
+    {
+      "fullName": "RevealMaster",
+      "shortName": "RevealMaster",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7389,
+      "flags": 1
+    },
+    {
+      "fullName": "RevealMasterAfterLeavingFocusDuration",
+      "shortName": "RevealMasterAfterLeavingFocusDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7375,
+      "flags": 1
+    },
+    {
+      "fullName": "RevealSlave",
+      "shortName": "RevealSlave",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7385,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldNetworkElementsPersistAfterFocus",
+      "shortName": "ShouldNetworkElementsPersistAfterFocus",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7384,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldRevealNetworkAfterPulse",
+      "shortName": "ShouldRevealNetworkAfterPulse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7387,
+      "flags": 1
+    },
+    {
+      "fullName": "ShowOnlyTargetQuickHacks",
+      "shortName": "ShowOnlyTargetQuickHacks",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7393,
+      "flags": 1
+    },
+    {
+      "fullName": "SpacePingAppearModifier",
+      "shortName": "SpacePingAppearModifier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7381,
+      "flags": 1
+    },
+    {
+      "fullName": "SpacePingDuration",
+      "shortName": "SpacePingDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7378,
+      "flags": 1
+    },
+    {
+      "fullName": "SuppressPingIfBackdoorsFound",
+      "shortName": "SuppressPingIfBackdoorsFound",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7388,
+      "flags": 1
+    },
+    {
+      "fullName": "UsePulse",
+      "shortName": "UsePulse",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7386,
+      "flags": 1
+    },
+    {
+      "fullName": "VirtualNetwork",
+      "shortName": "VirtualNetwork",
+      "return": {
+        "type": "whandle:gamedataVirtualNetwork_Record",
+        "flags": 64
+      },
+      "index": 7370,
+      "flags": 1
+    },
+    {
+      "fullName": "VirtualNetworkHandle",
+      "shortName": "VirtualNetworkHandle",
+      "return": {
+        "type": "handle:gamedataVirtualNetwork_Record",
+        "flags": 64
+      },
+      "index": 7371,
+      "flags": 1
+    }
+  ]
+}

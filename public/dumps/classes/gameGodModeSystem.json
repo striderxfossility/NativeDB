@@ -1,0 +1,194 @@
+{
+  "parent": "gameIGodModeSystem",
+  "name": "gameGodModeSystem",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AddGodMode",
+      "shortName": "AddGodMode",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10389,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "sourceInfo",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ClearGodMode",
+      "shortName": "ClearGodMode",
+      "index": 10394,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "sourceInfo",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "DisableOverride",
+      "shortName": "DisableOverride",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10396,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "sourceInfo",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "EnableOverride",
+      "shortName": "EnableOverride",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10395,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "sourceInfo",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGodModeCount",
+      "shortName": "GetGodModeCount",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 10392,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGodModeSources",
+      "shortName": "GetGodModeSources",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 10393,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "HasGodMode",
+      "shortName": "HasGodMode",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10391,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveGodMode",
+      "shortName": "RemoveGodMode",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10390,
+      "flags": 1,
+      "params": [
+        {
+          "type": "entEntityID",
+          "name": "entID",
+          "flags": 128
+        },
+        {
+          "type": "gameGodModeType",
+          "name": "gmType",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "sourceInfo",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

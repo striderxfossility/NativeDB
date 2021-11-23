@@ -1,0 +1,145 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleDetachablePart_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Components",
+      "shortName": "Components",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 3588,
+      "flags": 1
+    },
+    {
+      "fullName": "ComponentsContains",
+      "shortName": "ComponentsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3591,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetComponentsCount",
+      "shortName": "GetComponentsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3589,
+      "flags": 1
+    },
+    {
+      "fullName": "GetComponentsItem",
+      "shortName": "GetComponentsItem",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 3590,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGridCellsCount",
+      "shortName": "GetGridCellsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3593,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGridCellsItem",
+      "shortName": "GetGridCellsItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3594,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GridCells",
+      "shortName": "GridCells",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 3592,
+      "flags": 1
+    },
+    {
+      "fullName": "GridCellsContains",
+      "shortName": "GridCellsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3595,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Name",
+      "shortName": "Name",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 3596,
+      "flags": 1
+    },
+    {
+      "fullName": "SpawnsExplosionEffect",
+      "shortName": "SpawnsExplosionEffect",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3598,
+      "flags": 1
+    },
+    {
+      "fullName": "Threshold",
+      "shortName": "Threshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3597,
+      "flags": 1
+    }
+  ]
+}

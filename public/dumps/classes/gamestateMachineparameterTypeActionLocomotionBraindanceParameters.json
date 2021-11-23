@@ -1,0 +1,33 @@
+{
+  "parent": "gamestateMachineparameterTypeActionLocomotionParameters",
+  "name": "gamestateMachineparameterTypeActionLocomotionBraindanceParameters",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "SetLowerMovementLimit",
+      "shortName": "SetLowerMovementLimit",
+      "index": 11004,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetUpperMovementLimit",
+      "shortName": "SetUpperMovementLimit",
+      "index": 11003,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "parent": "gameIGameSystem",
+  "name": "gameITelemetrySystem",
+  "flags": 3,
+  "funcs": [
+    {
+      "fullName": "LogInitialChoiceAttributeChanged",
+      "shortName": "LogInitialChoiceAttributeChanged",
+      "index": 9830,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gamedataStatType",
+          "name": "attribute",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceBodyGenderSelected",
+      "shortName": "LogInitialChoiceBodyGenderSelected",
+      "index": 9826,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isMale",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceBrainGenderSelected",
+      "shortName": "LogInitialChoiceBrainGenderSelected",
+      "index": 9827,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isMale",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceDifficultySelected",
+      "shortName": "LogInitialChoiceDifficultySelected",
+      "index": 9824,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gameDifficulty",
+          "name": "difficulty",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceLifePathSelected",
+      "shortName": "LogInitialChoiceLifePathSelected",
+      "index": 9825,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "lifePathID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceOptionSelected",
+      "shortName": "LogInitialChoiceOptionSelected",
+      "index": 9828,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameuiCharacterCustomizationOption",
+          "name": "option",
+          "flags": 128
+        },
+        {
+          "type": "Uint32",
+          "name": "value",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoicePresetSelected",
+      "shortName": "LogInitialChoicePresetSelected",
+      "index": 9829,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "presetName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "fromInit",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "LogInitialChoiceSetStatege",
+      "shortName": "LogInitialChoiceSetStatege",
+      "index": 9823,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gameInitalChoiceStage",
+          "name": "state",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LogNewGameStarted",
+      "shortName": "LogNewGameStarted",
+      "index": 9831,
+      "flags": 1
+    }
+  ]
+}

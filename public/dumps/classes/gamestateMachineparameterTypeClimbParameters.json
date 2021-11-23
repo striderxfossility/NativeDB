@@ -1,0 +1,46 @@
+{
+  "parent": "gamestateMachineparameterTypeClimbParametersBase",
+  "name": "gamestateMachineparameterTypeClimbParameters",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "SetClimbType",
+      "shortName": "SetClimbType",
+      "index": 10997,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetHorizontalDuration",
+      "shortName": "SetHorizontalDuration",
+      "index": 10995,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetVerticalDuration",
+      "shortName": "SetVerticalDuration",
+      "index": 10996,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "val",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

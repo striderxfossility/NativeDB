@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIExtendTargetCirclingCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DestinationTarget",
+      "shortName": "DestinationTarget",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4966,
+      "flags": 1
+    },
+    {
+      "fullName": "DestinationTargetHandle",
+      "shortName": "DestinationTargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4967,
+      "flags": 1
+    },
+    {
+      "fullName": "SpreadIncreaseAngle",
+      "shortName": "SpreadIncreaseAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4968,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4964,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4965,
+      "flags": 1
+    }
+  ]
+}

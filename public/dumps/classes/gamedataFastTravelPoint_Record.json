@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataFastTravelPoint_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Description",
+      "shortName": "Description",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 3741,
+      "flags": 1
+    },
+    {
+      "fullName": "DisplayName",
+      "shortName": "DisplayName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 3742,
+      "flags": 1
+    },
+    {
+      "fullName": "District",
+      "shortName": "District",
+      "return": {
+        "type": "whandle:gamedataDistrict_Record",
+        "flags": 64
+      },
+      "index": 3743,
+      "flags": 1
+    },
+    {
+      "fullName": "DistrictHandle",
+      "shortName": "DistrictHandle",
+      "return": {
+        "type": "handle:gamedataDistrict_Record",
+        "flags": 64
+      },
+      "index": 3744,
+      "flags": 1
+    },
+    {
+      "fullName": "ShowInWorld",
+      "shortName": "ShowInWorld",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3746,
+      "flags": 1
+    },
+    {
+      "fullName": "ShowOnWorldMap",
+      "shortName": "ShowOnWorldMap",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3745,
+      "flags": 1
+    }
+  ]
+}

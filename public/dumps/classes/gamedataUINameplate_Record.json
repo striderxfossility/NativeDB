@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataUINameplate_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Enabled",
+      "shortName": "Enabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7443,
+      "flags": 1
+    },
+    {
+      "fullName": "Position",
+      "shortName": "Position",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 7442,
+      "flags": 1
+    },
+    {
+      "fullName": "Slot",
+      "shortName": "Slot",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7441,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "whandle:gamedataUINameplateDisplayType_Record",
+        "flags": 64
+      },
+      "index": 7439,
+      "flags": 1
+    },
+    {
+      "fullName": "TypeHandle",
+      "shortName": "TypeHandle",
+      "return": {
+        "type": "handle:gamedataUINameplateDisplayType_Record",
+        "flags": 64
+      },
+      "index": 7440,
+      "flags": 1
+    }
+  ]
+}

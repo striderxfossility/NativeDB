@@ -1,0 +1,1460 @@
+{
+  "parent": "IScriptable",
+  "name": "gamestateMachineStateContextScript",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetBoolParameter",
+      "shortName": "GetBoolParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9993,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "isPermanent",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionBool",
+      "shortName": "GetConditionBool",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9998,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionBoolParameter",
+      "shortName": "GetConditionBoolParameter",
+      "return": {
+        "type": "gamestateMachineResultBool",
+        "flags": 64
+      },
+      "index": 9997,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionCNameParameter",
+      "shortName": "GetConditionCNameParameter",
+      "return": {
+        "type": "gamestateMachineResultCName",
+        "flags": 64
+      },
+      "index": 10004,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionFloat",
+      "shortName": "GetConditionFloat",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 10002,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionFloatParameter",
+      "shortName": "GetConditionFloatParameter",
+      "return": {
+        "type": "gamestateMachineResultFloat",
+        "flags": 64
+      },
+      "index": 10001,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionInt",
+      "shortName": "GetConditionInt",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 10000,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionIntParameter",
+      "shortName": "GetConditionIntParameter",
+      "return": {
+        "type": "gamestateMachineResultInt",
+        "flags": 64
+      },
+      "index": 9999,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionScriptableParameter",
+      "shortName": "GetConditionScriptableParameter",
+      "return": {
+        "type": "handle:IScriptable",
+        "flags": 64
+      },
+      "index": 10005,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionTweakDBIDParameter",
+      "shortName": "GetConditionTweakDBIDParameter",
+      "return": {
+        "type": "TweakDBID",
+        "flags": 64
+      },
+      "index": 10007,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionVectorParameter",
+      "shortName": "GetConditionVectorParameter",
+      "return": {
+        "type": "gamestateMachineResultVector",
+        "flags": 64
+      },
+      "index": 10003,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetConditionWeakScriptableParameter",
+      "shortName": "GetConditionWeakScriptableParameter",
+      "return": {
+        "type": "whandle:IScriptable",
+        "flags": 64
+      },
+      "index": 10006,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCurrentStates",
+      "shortName": "GetCurrentStates",
+      "return": {
+        "type": "array:CName",
+        "flags": 64
+      },
+      "index": 10008,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "gamestateMachineStateMachineIdentifier",
+          "name": "stateMachineIdentifier",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetCurrentStatesWithIdentifier",
+      "shortName": "GetCurrentStatesWithIdentifier",
+      "index": 10009,
+      "flags": 8193
+    },
+    {
+      "fullName": "GetFloatParameter",
+      "shortName": "GetFloatParameter",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 9994,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "isPermanent",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetIntParameter",
+      "shortName": "GetIntParameter",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9995,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "isPermanent",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentBoolParameter",
+      "shortName": "GetPermanentBoolParameter",
+      "return": {
+        "type": "gamestateMachineResultBool",
+        "flags": 64
+      },
+      "index": 9986,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentCNameParameter",
+      "shortName": "GetPermanentCNameParameter",
+      "return": {
+        "type": "gamestateMachineResultCName",
+        "flags": 64
+      },
+      "index": 9990,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentFloatParameter",
+      "shortName": "GetPermanentFloatParameter",
+      "return": {
+        "type": "gamestateMachineResultFloat",
+        "flags": 64
+      },
+      "index": 9988,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentIntParameter",
+      "shortName": "GetPermanentIntParameter",
+      "return": {
+        "type": "gamestateMachineResultInt",
+        "flags": 64
+      },
+      "index": 9987,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentScriptableParameter",
+      "shortName": "GetPermanentScriptableParameter",
+      "return": {
+        "type": "handle:IScriptable",
+        "flags": 64
+      },
+      "index": 9991,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentTweakDBIDParameter",
+      "shortName": "GetPermanentTweakDBIDParameter",
+      "return": {
+        "type": "TweakDBID",
+        "flags": 64
+      },
+      "index": 9992,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPermanentVectorParameter",
+      "shortName": "GetPermanentVectorParameter",
+      "return": {
+        "type": "gamestateMachineResultVector",
+        "flags": 64
+      },
+      "index": 9989,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStateMachineCurrentState",
+      "shortName": "GetStateMachineCurrentState",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 10012,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "stateMachineName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStateMachineCurrentStateWithIdentifier",
+      "shortName": "GetStateMachineCurrentStateWithIdentifier",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 10013,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "gamestateMachineStateMachineIdentifier",
+          "name": "stateMachineIdentifier",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryBoolParameter",
+      "shortName": "GetTemporaryBoolParameter",
+      "return": {
+        "type": "gamestateMachineResultBool",
+        "flags": 64
+      },
+      "index": 9979,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryCNameParameter",
+      "shortName": "GetTemporaryCNameParameter",
+      "return": {
+        "type": "gamestateMachineResultCName",
+        "flags": 64
+      },
+      "index": 9983,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryFloatParameter",
+      "shortName": "GetTemporaryFloatParameter",
+      "return": {
+        "type": "gamestateMachineResultFloat",
+        "flags": 64
+      },
+      "index": 9981,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryIntParameter",
+      "shortName": "GetTemporaryIntParameter",
+      "return": {
+        "type": "gamestateMachineResultInt",
+        "flags": 64
+      },
+      "index": 9980,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryScriptableParameter",
+      "shortName": "GetTemporaryScriptableParameter",
+      "return": {
+        "type": "handle:IScriptable",
+        "flags": 64
+      },
+      "index": 9984,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryTweakDBIDParameter",
+      "shortName": "GetTemporaryTweakDBIDParameter",
+      "return": {
+        "type": "TweakDBID",
+        "flags": 64
+      },
+      "index": 9985,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTemporaryVectorParameter",
+      "shortName": "GetTemporaryVectorParameter",
+      "return": {
+        "type": "gamestateMachineResultVector",
+        "flags": 64
+      },
+      "index": 9982,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetVectorParameter",
+      "shortName": "GetVectorParameter",
+      "return": {
+        "type": "Vector4",
+        "flags": 64
+      },
+      "index": 9996,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "isPermanent",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateActive",
+      "shortName": "IsStateActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10010,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "stateMachineName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "stateName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateActiveWithIdentifier",
+      "shortName": "IsStateActiveWithIdentifier",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10011,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "gamestateMachineStateMachineIdentifier",
+          "name": "stateMachineIdentifier",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "stateName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateJustBecomeActive",
+      "shortName": "IsStateJustBecomeActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10016,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "stateMachineName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "stateName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateJustBecomeActiveWithIdentifier",
+      "shortName": "IsStateJustBecomeActiveWithIdentifier",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10017,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "gamestateMachineStateMachineIdentifier",
+          "name": "stateMachineIdentifier",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "stateName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateMachineActive",
+      "shortName": "IsStateMachineActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10014,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "stateMachineName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStateMachineActiveWithIdentifier",
+      "shortName": "IsStateMachineActiveWithIdentifier",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10015,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "gamestateMachineStateMachineIdentifier",
+          "name": "stateMachineIdentifier",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionBoolParameter",
+      "shortName": "RemoveConditionBoolParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10047,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionCNameParameter",
+      "shortName": "RemoveConditionCNameParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10051,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionFloatParameter",
+      "shortName": "RemoveConditionFloatParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10049,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionIntParameter",
+      "shortName": "RemoveConditionIntParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10048,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionScriptableParameter",
+      "shortName": "RemoveConditionScriptableParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10052,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionTweakDBIDParameter",
+      "shortName": "RemoveConditionTweakDBIDParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10054,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionVectorParameter",
+      "shortName": "RemoveConditionVectorParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10050,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemoveConditionWeakScriptableParameter",
+      "shortName": "RemoveConditionWeakScriptableParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10053,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentBoolParameter",
+      "shortName": "RemovePermanentBoolParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10032,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentCNameParameter",
+      "shortName": "RemovePermanentCNameParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10036,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentFloatParameter",
+      "shortName": "RemovePermanentFloatParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10034,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentIntParameter",
+      "shortName": "RemovePermanentIntParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10033,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentScriptableParameter",
+      "shortName": "RemovePermanentScriptableParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10037,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentTweakDBIDParameter",
+      "shortName": "RemovePermanentTweakDBIDParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10038,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RemovePermanentVectorParameter",
+      "shortName": "RemovePermanentVectorParameter",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10035,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionBoolParameter",
+      "shortName": "SetConditionBoolParameter",
+      "index": 10039,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionCNameParameter",
+      "shortName": "SetConditionCNameParameter",
+      "index": 10043,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionFloatParameter",
+      "shortName": "SetConditionFloatParameter",
+      "index": 10041,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionIntParameter",
+      "shortName": "SetConditionIntParameter",
+      "index": 10040,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionScriptableParameter",
+      "shortName": "SetConditionScriptableParameter",
+      "index": 10044,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionTweakDBIDParameter",
+      "shortName": "SetConditionTweakDBIDParameter",
+      "index": 10046,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "TweakDBID",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionVectorParameter",
+      "shortName": "SetConditionVectorParameter",
+      "index": 10042,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Vector4",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetConditionWeakScriptableParameter",
+      "shortName": "SetConditionWeakScriptableParameter",
+      "index": 10045,
+      "flags": 8193,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "whandle:IScriptable",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentBoolParameter",
+      "shortName": "SetPermanentBoolParameter",
+      "index": 10025,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentCNameParameter",
+      "shortName": "SetPermanentCNameParameter",
+      "index": 10029,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentFloatParameter",
+      "shortName": "SetPermanentFloatParameter",
+      "index": 10027,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentIntParameter",
+      "shortName": "SetPermanentIntParameter",
+      "index": 10026,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentScriptableParameter",
+      "shortName": "SetPermanentScriptableParameter",
+      "index": 10030,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentTweakDBIDParameter",
+      "shortName": "SetPermanentTweakDBIDParameter",
+      "index": 10031,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "TweakDBID",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetPermanentVectorParameter",
+      "shortName": "SetPermanentVectorParameter",
+      "index": 10028,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Vector4",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryBoolParameter",
+      "shortName": "SetTemporaryBoolParameter",
+      "index": 10018,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryCNameParameter",
+      "shortName": "SetTemporaryCNameParameter",
+      "index": 10022,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryFloatParameter",
+      "shortName": "SetTemporaryFloatParameter",
+      "index": 10020,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryIntParameter",
+      "shortName": "SetTemporaryIntParameter",
+      "index": 10019,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryScriptableParameter",
+      "shortName": "SetTemporaryScriptableParameter",
+      "index": 10023,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "handle:IScriptable",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryTweakDBIDParameter",
+      "shortName": "SetTemporaryTweakDBIDParameter",
+      "index": 10024,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "TweakDBID",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTemporaryVectorParameter",
+      "shortName": "SetTemporaryVectorParameter",
+      "index": 10021,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Vector4",
+          "name": "value",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "force",
+          "flags": 1152
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataChannelData_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AudioEvent",
+      "shortName": "AudioEvent",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4138,
+      "flags": 1
+    },
+    {
+      "fullName": "ChannelWidget",
+      "shortName": "ChannelWidget",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4137,
+      "flags": 1
+    },
+    {
+      "fullName": "DynamicTexturePath",
+      "shortName": "DynamicTexturePath",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4135,
+      "flags": 1
+    },
+    {
+      "fullName": "LocalizedName",
+      "shortName": "LocalizedName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4134,
+      "flags": 1
+    },
+    {
+      "fullName": "OrderID",
+      "shortName": "OrderID",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4139,
+      "flags": 1
+    },
+    {
+      "fullName": "OverlayWidgetPath",
+      "shortName": "OverlayWidgetPath",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4136,
+      "flags": 1
+    }
+  ]
+}

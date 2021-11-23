@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataCoverSelectionParameters_Record",
+  "name": "gamedataFriendlyTargetAngleDistanceCoverSelectionParameters_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AngleDistanceScore",
+      "shortName": "AngleDistanceScore",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7302,
+      "flags": 1
+    },
+    {
+      "fullName": "CoverProtectionAngleMul",
+      "shortName": "CoverProtectionAngleMul",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7300,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxScoreIfInRange",
+      "shortName": "MaxScoreIfInRange",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7304,
+      "flags": 1
+    },
+    {
+      "fullName": "MinDot",
+      "shortName": "MinDot",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7301,
+      "flags": 1
+    },
+    {
+      "fullName": "PositionChangeThreshold",
+      "shortName": "PositionChangeThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7303,
+      "flags": 1
+    }
+  ]
+}

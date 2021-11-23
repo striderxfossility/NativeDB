@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataInteractionBase_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Action",
+      "shortName": "Action",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4903,
+      "flags": 1
+    },
+    {
+      "fullName": "Caption",
+      "shortName": "Caption",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4907,
+      "flags": 1
+    },
+    {
+      "fullName": "CaptionIcon",
+      "shortName": "CaptionIcon",
+      "return": {
+        "type": "whandle:gamedataChoiceCaptionIconPart_Record",
+        "flags": 64
+      },
+      "index": 4905,
+      "flags": 1
+    },
+    {
+      "fullName": "CaptionIconHandle",
+      "shortName": "CaptionIconHandle",
+      "return": {
+        "type": "handle:gamedataChoiceCaptionIconPart_Record",
+        "flags": 64
+      },
+      "index": 4906,
+      "flags": 1
+    },
+    {
+      "fullName": "Description",
+      "shortName": "Description",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 4908,
+      "flags": 1
+    },
+    {
+      "fullName": "Name",
+      "shortName": "Name",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4902,
+      "flags": 1
+    },
+    {
+      "fullName": "PrereqID",
+      "shortName": "PrereqID",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4904,
+      "flags": 1
+    }
+  ]
+}

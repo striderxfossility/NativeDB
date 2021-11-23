@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionModifyStatPool_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Amount",
+      "shortName": "Amount",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5249,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5248,
+      "flags": 1
+    },
+    {
+      "fullName": "Perc",
+      "shortName": "Perc",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5250,
+      "flags": 1
+    },
+    {
+      "fullName": "StatPool",
+      "shortName": "StatPool",
+      "return": {
+        "type": "whandle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 5246,
+      "flags": 1
+    },
+    {
+      "fullName": "StatPoolHandle",
+      "shortName": "StatPoolHandle",
+      "return": {
+        "type": "handle:gamedataStatPool_Record",
+        "flags": 64
+      },
+      "index": 5247,
+      "flags": 1
+    }
+  ]
+}

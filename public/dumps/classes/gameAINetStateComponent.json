@@ -1,0 +1,223 @@
+{
+  "parent": "gameScriptableComponent",
+  "name": "gameAINetStateComponent",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetReplicatedBehaviorState",
+      "shortName": "GetReplicatedBehaviorState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9456,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedDefenseMode",
+      "shortName": "GetReplicatedDefenseMode",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9460,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedHighLevelState",
+      "shortName": "GetReplicatedHighLevelState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9448,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedHitReactionModeState",
+      "shortName": "GetReplicatedHitReactionModeState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9454,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedLocomotionMode",
+      "shortName": "GetReplicatedLocomotionMode",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9462,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedPhaseState",
+      "shortName": "GetReplicatedPhaseState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9458,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedStanceState",
+      "shortName": "GetReplicatedStanceState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9452,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReplicatedUpperBodyState",
+      "shortName": "GetReplicatedUpperBodyState",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 9450,
+      "flags": 1
+    },
+    {
+      "fullName": "SetReplicatedBehaviorState",
+      "shortName": "SetReplicatedBehaviorState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9457,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedDefenseMode",
+      "shortName": "SetReplicatedDefenseMode",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9461,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedHighLevelState",
+      "shortName": "SetReplicatedHighLevelState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9449,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedHitReactionModeState",
+      "shortName": "SetReplicatedHitReactionModeState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9455,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedLocomotionMode",
+      "shortName": "SetReplicatedLocomotionMode",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9463,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedPhaseState",
+      "shortName": "SetReplicatedPhaseState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9459,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedStanceState",
+      "shortName": "SetReplicatedStanceState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9453,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetReplicatedUpperBodyState",
+      "shortName": "SetReplicatedUpperBodyState",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9451,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "newState",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

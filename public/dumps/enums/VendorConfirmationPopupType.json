@@ -1,0 +1,29 @@
+{
+  "name": "VendorConfirmationPopupType",
+  "members": [
+    {
+      "name": "Default",
+      "value": 0
+    },
+    {
+      "name": "ExpensiveItem",
+      "value": 1
+    },
+    {
+      "name": "EquippedItem",
+      "value": 2
+    },
+    {
+      "name": "BuyAndEquipCyberware",
+      "value": 3
+    },
+    {
+      "name": "BuyNotEquipableCyberware",
+      "value": 4
+    },
+    {
+      "name": "DisassembeIconic",
+      "value": 5
+    }
+  ]
+}

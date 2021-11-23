@@ -1,0 +1,67 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataRule_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Cooldown",
+      "shortName": "Cooldown",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7535,
+      "flags": 1
+    },
+    {
+      "fullName": "Output",
+      "shortName": "Output",
+      "return": {
+        "type": "whandle:gamedataOutput_Record",
+        "flags": 64
+      },
+      "index": 7532,
+      "flags": 1
+    },
+    {
+      "fullName": "OutputHandle",
+      "shortName": "OutputHandle",
+      "return": {
+        "type": "handle:gamedataOutput_Record",
+        "flags": 64
+      },
+      "index": 7533,
+      "flags": 1
+    },
+    {
+      "fullName": "Stimulus",
+      "shortName": "Stimulus",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 7530,
+      "flags": 1
+    },
+    {
+      "fullName": "StimulusHandle",
+      "shortName": "StimulusHandle",
+      "return": {
+        "type": "handle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 7531,
+      "flags": 1
+    },
+    {
+      "fullName": "WorkspotOutput",
+      "shortName": "WorkspotOutput",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7534,
+      "flags": 1
+    }
+  ]
+}

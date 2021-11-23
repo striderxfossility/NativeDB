@@ -1,0 +1,131 @@
+{
+  "parent": "gamedataAISubAction_Record",
+  "name": "gamedataAISubActionStatusEffect_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Apply",
+      "shortName": "Apply",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4991,
+      "flags": 1
+    },
+    {
+      "fullName": "Delay",
+      "shortName": "Delay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4989,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatusEffectsCount",
+      "shortName": "GetStatusEffectsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4985,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatusEffectsItem",
+      "shortName": "GetStatusEffectsItem",
+      "return": {
+        "type": "whandle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 4986,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatusEffectsItemHandle",
+      "shortName": "GetStatusEffectsItemHandle",
+      "return": {
+        "type": "whandle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 4987,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Remove",
+      "shortName": "Remove",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4990,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffects",
+      "shortName": "StatusEffects",
+      "index": 4984,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataStatusEffect_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StatusEffectsContains",
+      "shortName": "StatusEffectsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4988,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataStatusEffect_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4982,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 4983,
+      "flags": 1
+    }
+  ]
+}

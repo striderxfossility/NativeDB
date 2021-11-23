@@ -1,0 +1,195 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataLightPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ColorMax",
+      "shortName": "ColorMax",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 7511,
+      "flags": 1
+    },
+    {
+      "fullName": "ColorMaxContains",
+      "shortName": "ColorMaxContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7514,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ColorMin",
+      "shortName": "ColorMin",
+      "return": {
+        "type": "array:Int32",
+        "flags": 64
+      },
+      "index": 7507,
+      "flags": 1
+    },
+    {
+      "fullName": "ColorMinContains",
+      "shortName": "ColorMinContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7510,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Curve",
+      "shortName": "Curve",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7515,
+      "flags": 1
+    },
+    {
+      "fullName": "Duration",
+      "shortName": "Duration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7517,
+      "flags": 1
+    },
+    {
+      "fullName": "Force",
+      "shortName": "Force",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7522,
+      "flags": 1
+    },
+    {
+      "fullName": "GetColorMaxCount",
+      "shortName": "GetColorMaxCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7512,
+      "flags": 1
+    },
+    {
+      "fullName": "GetColorMaxItem",
+      "shortName": "GetColorMaxItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7513,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetColorMinCount",
+      "shortName": "GetColorMinCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7508,
+      "flags": 1
+    },
+    {
+      "fullName": "GetColorMinItem",
+      "shortName": "GetColorMinItem",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 7509,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Loop",
+      "shortName": "Loop",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7521,
+      "flags": 1
+    },
+    {
+      "fullName": "On",
+      "shortName": "On",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7520,
+      "flags": 1
+    },
+    {
+      "fullName": "OverrideColorMin",
+      "shortName": "OverrideColorMin",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 7519,
+      "flags": 1
+    },
+    {
+      "fullName": "Strength",
+      "shortName": "Strength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7516,
+      "flags": 1
+    },
+    {
+      "fullName": "Time",
+      "shortName": "Time",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 7518,
+      "flags": 1
+    }
+  ]
+}

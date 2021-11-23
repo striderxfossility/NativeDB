@@ -1,0 +1,116 @@
+{
+  "parent": "gameuiMenuGameController",
+  "name": "gameuiSaveHandlingController",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "DeleteSavedGame",
+      "shortName": "DeleteSavedGame",
+      "index": 12071,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsGameSavedNotificationActive",
+      "shortName": "IsGameSavedNotificationActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12075,
+      "flags": 1
+    },
+    {
+      "fullName": "IsSaveFailedNotificationActive",
+      "shortName": "IsSaveFailedNotificationActive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 12074,
+      "flags": 1
+    },
+    {
+      "fullName": "LoadSaveInGame",
+      "shortName": "LoadSaveInGame",
+      "index": 12076,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "OverrideSavedGame",
+      "shortName": "OverrideSavedGame",
+      "index": 12079,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "saveId",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "PreSpawnInitialLoadingScreen",
+      "shortName": "PreSpawnInitialLoadingScreen",
+      "index": 12078,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Uint64",
+          "name": "tweakID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RequestGameSavedNotification",
+      "shortName": "RequestGameSavedNotification",
+      "index": 12073,
+      "flags": 1
+    },
+    {
+      "fullName": "RequestSaveFailedNotification",
+      "shortName": "RequestSaveFailedNotification",
+      "index": 12072,
+      "flags": 1
+    },
+    {
+      "fullName": "SetNextInitialLoadingScreen",
+      "shortName": "SetNextInitialLoadingScreen",
+      "index": 12077,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Uint64",
+          "name": "tweakID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ShowSavingLockedNotification;script_ref<array<gameSaveLock>>",
+      "shortName": "ShowSavingLockedNotification",
+      "flags": 516,
+      "params": [
+        {
+          "type": "script_ref:array:gameSaveLock",
+          "name": "locks",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

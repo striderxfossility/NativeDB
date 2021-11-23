@@ -1,0 +1,37 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAIActionAnimDirection_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DirectionAngle",
+      "shortName": "DirectionAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3476,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3474,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3475,
+      "flags": 1
+    }
+  ]
+}

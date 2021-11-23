@@ -1,0 +1,211 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataDistrict_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "EnumComment",
+      "shortName": "EnumComment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5049,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5051,
+      "flags": 1
+    },
+    {
+      "fullName": "ExplosiveDeviceStimRangeMultiplier",
+      "shortName": "ExplosiveDeviceStimRangeMultiplier",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5064,
+      "flags": 1
+    },
+    {
+      "fullName": "Gangs",
+      "shortName": "Gangs",
+      "index": 5056,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAffiliation_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "GangsContains",
+      "shortName": "GangsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5060,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAffiliation_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGangsCount",
+      "shortName": "GetGangsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 5057,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGangsItem",
+      "shortName": "GetGangsItem",
+      "return": {
+        "type": "whandle:gamedataAffiliation_Record",
+        "flags": 64
+      },
+      "index": 5058,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetGangsItemHandle",
+      "shortName": "GetGangsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAffiliation_Record",
+        "flags": 64
+      },
+      "index": 5059,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GunShotStimRange",
+      "shortName": "GunShotStimRange",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5063,
+      "flags": 1
+    },
+    {
+      "fullName": "IsQuestDistrict",
+      "shortName": "IsQuestDistrict",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5065,
+      "flags": 1
+    },
+    {
+      "fullName": "LocalizedName",
+      "shortName": "LocalizedName",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 5050,
+      "flags": 1
+    },
+    {
+      "fullName": "ParentDistrict",
+      "shortName": "ParentDistrict",
+      "return": {
+        "type": "whandle:gamedataDistrict_Record",
+        "flags": 64
+      },
+      "index": 5054,
+      "flags": 1
+    },
+    {
+      "fullName": "ParentDistrictHandle",
+      "shortName": "ParentDistrictHandle",
+      "return": {
+        "type": "handle:gamedataDistrict_Record",
+        "flags": 64
+      },
+      "index": 5055,
+      "flags": 1
+    },
+    {
+      "fullName": "PreventionPreset",
+      "shortName": "PreventionPreset",
+      "return": {
+        "type": "whandle:gamedataDistrictPreventionData_Record",
+        "flags": 64
+      },
+      "index": 5052,
+      "flags": 1
+    },
+    {
+      "fullName": "PreventionPresetHandle",
+      "shortName": "PreventionPresetHandle",
+      "return": {
+        "type": "handle:gamedataDistrictPreventionData_Record",
+        "flags": 64
+      },
+      "index": 5053,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataDistrict",
+        "flags": 64
+      },
+      "index": 5066,
+      "flags": 1
+    },
+    {
+      "fullName": "UiIcon",
+      "shortName": "UiIcon",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5061,
+      "flags": 1
+    },
+    {
+      "fullName": "UiState",
+      "shortName": "UiState",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 5062,
+      "flags": 1
+    }
+  ]
+}

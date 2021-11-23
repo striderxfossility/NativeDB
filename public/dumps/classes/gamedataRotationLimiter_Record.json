@@ -1,0 +1,97 @@
+{
+  "parent": "gamedataDriveHelper_Record",
+  "name": "gamedataRotationLimiter_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DriftExceededAngle",
+      "shortName": "DriftExceededAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4618,
+      "flags": 1
+    },
+    {
+      "fullName": "DriftFullAngleBegin",
+      "shortName": "DriftFullAngleBegin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4615,
+      "flags": 1
+    },
+    {
+      "fullName": "DriftFullAngleEnd",
+      "shortName": "DriftFullAngleEnd",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4621,
+      "flags": 1
+    },
+    {
+      "fullName": "DriftLimit",
+      "shortName": "DriftLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4614,
+      "flags": 1
+    },
+    {
+      "fullName": "DriftLimitMaxVel",
+      "shortName": "DriftLimitMaxVel",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4616,
+      "flags": 1
+    },
+    {
+      "fullName": "DriftLimitStartVel",
+      "shortName": "DriftLimitStartVel",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4619,
+      "flags": 1
+    },
+    {
+      "fullName": "HandbrakeLimit",
+      "shortName": "HandbrakeLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4617,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxAngularSpeedRad",
+      "shortName": "MaxAngularSpeedRad",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4620,
+      "flags": 1
+    },
+    {
+      "fullName": "SmoothingTime",
+      "shortName": "SmoothingTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 4622,
+      "flags": 1
+    }
+  ]
+}

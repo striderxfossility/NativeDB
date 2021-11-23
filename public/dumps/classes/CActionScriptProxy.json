@@ -1,0 +1,42 @@
+{
+  "parent": "IScriptable",
+  "name": "CActionScriptProxy",
+  "flags": 3,
+  "funcs": [
+    {
+      "fullName": "Bind",
+      "shortName": "Bind",
+      "index": 11461,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "go",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStatus",
+      "shortName": "GetStatus",
+      "return": {
+        "type": "gameEActionStatus",
+        "flags": 64
+      },
+      "index": 11464,
+      "flags": 1
+    },
+    {
+      "fullName": "Launch",
+      "shortName": "Launch",
+      "index": 11462,
+      "flags": 1
+    },
+    {
+      "fullName": "Stop",
+      "shortName": "Stop",
+      "index": 11463,
+      "flags": 1
+    }
+  ]
+}

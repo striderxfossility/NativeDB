@@ -1,0 +1,87 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataAimAssistMelee_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AimSnapOnAim",
+      "shortName": "AimSnapOnAim",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3506,
+      "flags": 1
+    },
+    {
+      "fullName": "AimSnapOnAttack",
+      "shortName": "AimSnapOnAttack",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3504,
+      "flags": 1
+    },
+    {
+      "fullName": "AimSnapOnBlockHit",
+      "shortName": "AimSnapOnBlockHit",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3503,
+      "flags": 1
+    },
+    {
+      "fullName": "AimSnapOnHit",
+      "shortName": "AimSnapOnHit",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3507,
+      "flags": 1
+    },
+    {
+      "fullName": "AimSnapOnThrow",
+      "shortName": "AimSnapOnThrow",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3505,
+      "flags": 1
+    },
+    {
+      "fullName": "MoveToTargetDistanceIntoAttackRange",
+      "shortName": "MoveToTargetDistanceIntoAttackRange",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3502,
+      "flags": 1
+    },
+    {
+      "fullName": "MoveToTargetEnabledAttacks",
+      "shortName": "MoveToTargetEnabledAttacks",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3500,
+      "flags": 1
+    },
+    {
+      "fullName": "MoveToTargetSearchDistance",
+      "shortName": "MoveToTargetSearchDistance",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3501,
+      "flags": 1
+    }
+  ]
+}

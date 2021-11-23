@@ -1,0 +1,13 @@
+{
+  "parent": "inkEvent",
+  "name": "inkFocusEvent",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetCause",
+      "shortName": "GetCause",
+      "index": 1335,
+      "flags": 1
+    }
+  ]
+}

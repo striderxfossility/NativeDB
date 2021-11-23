@@ -1,0 +1,137 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataScannerModuleVisibilityPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ShoulShowName",
+      "shortName": "ShoulShowName",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4623,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowAttitude",
+      "shortName": "ShouldShowAttitude",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4631,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowBounty",
+      "shortName": "ShouldShowBounty",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4625,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowFaction",
+      "shortName": "ShouldShowFaction",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4626,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowHealth",
+      "shortName": "ShouldShowHealth",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4630,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowLevel",
+      "shortName": "ShouldShowLevel",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4624,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowNetworkStatus",
+      "shortName": "ShouldShowNetworkStatus",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4635,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowQuestClues",
+      "shortName": "ShouldShowQuestClues",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4634,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowRarity",
+      "shortName": "ShouldShowRarity",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4629,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowResistances",
+      "shortName": "ShouldShowResistances",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4633,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowSquadInfo",
+      "shortName": "ShouldShowSquadInfo",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4628,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowVulnerabilities",
+      "shortName": "ShouldShowVulnerabilities",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4632,
+      "flags": 1
+    },
+    {
+      "fullName": "ShouldShowWeaponData",
+      "shortName": "ShouldShowWeaponData",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4627,
+      "flags": 1
+    }
+  ]
+}

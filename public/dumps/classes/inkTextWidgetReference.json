@@ -1,0 +1,612 @@
+{
+  "parent": "inkLeafWidgetReference",
+  "name": "inkTextWidgetReference",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "EnableAutoScroll",
+      "shortName": "EnableAutoScroll",
+      "index": 1758,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "enableState",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetFontSize",
+      "shortName": "GetFontSize",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 1754,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetFontStyle",
+      "shortName": "GetFontStyle",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 1752,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetHorizontalAlignment",
+      "shortName": "GetHorizontalAlignment",
+      "return": {
+        "type": "textHorizontalAlignment",
+        "flags": 64
+      },
+      "index": 1749,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetLetterCase",
+      "shortName": "GetLetterCase",
+      "return": {
+        "type": "textLetterCase",
+        "flags": 64
+      },
+      "index": 1756,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetLocalizationKey",
+      "shortName": "GetLocalizationKey",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 1741,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetScrollDelay",
+      "shortName": "GetScrollDelay",
+      "index": 1763,
+      "flags": 3
+    },
+    {
+      "fullName": "GetScrollTextSpeed",
+      "shortName": "GetScrollTextSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 1761,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetText",
+      "shortName": "GetText",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 1736,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetTextParameters",
+      "shortName": "GetTextParameters",
+      "return": {
+        "type": "handle:textTextParameterSet",
+        "flags": 64
+      },
+      "index": 1745,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetVerticalAlignment",
+      "shortName": "GetVerticalAlignment",
+      "return": {
+        "type": "textVerticalAlignment",
+        "flags": 64
+      },
+      "index": 1747,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetDateTimeByTimestamp",
+      "shortName": "SetDateTimeByTimestamp",
+      "index": 1760,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Uint64",
+          "name": "timestamp",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetFontFamily",
+      "shortName": "SetFontFamily",
+      "index": 1751,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "fontFamilyPath",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "fontStyle",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetFontSize",
+      "shortName": "SetFontSize",
+      "index": 1755,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Int32",
+          "name": "textSize",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetFontStyle",
+      "shortName": "SetFontStyle",
+      "index": 1753,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "fontStyle",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetHorizontalAlignment",
+      "shortName": "SetHorizontalAlignment",
+      "index": 1750,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "textHorizontalAlignment",
+          "name": "horizontalAlignment",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetLetterCase",
+      "shortName": "SetLetterCase",
+      "index": 1757,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "textLetterCase",
+          "name": "letterCase",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetLocalizationKey",
+      "shortName": "SetLocalizationKey",
+      "index": 1742,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "displayText",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetLocalizationKeyString",
+      "shortName": "SetLocalizationKeyString",
+      "index": 1743,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "displayText",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetLocalizedText",
+      "shortName": "SetLocalizedText",
+      "index": 1739,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "locKey",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetLocalizedTextString",
+      "shortName": "SetLocalizedTextString",
+      "index": 1740,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "locKey",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetScrollDelay",
+      "shortName": "SetScrollDelay",
+      "index": 1764,
+      "flags": 3
+    },
+    {
+      "fullName": "SetScrollTextSpeed",
+      "shortName": "SetScrollTextSpeed",
+      "index": 1762,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "scrollTextSpeed",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetText",
+      "shortName": "SetText",
+      "index": 1737,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "displayText",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTextDirect",
+      "shortName": "SetTextDirect",
+      "index": 1738,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "displayText",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetTextFromParts",
+      "shortName": "SetTextFromParts",
+      "index": 1744,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "textpart1",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "textpart2",
+          "flags": 1152
+        },
+        {
+          "type": "String",
+          "name": "textpart3",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetTextParameters",
+      "shortName": "SetTextParameters",
+      "index": 1746,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetVerticalAlignment",
+      "shortName": "SetVerticalAlignment",
+      "index": 1748,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "textVerticalAlignment",
+          "name": "verticalAlignment",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateLanguageResources",
+      "shortName": "UpdateLanguageResources",
+      "index": 1759,
+      "flags": 3,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "applyFontModifiers",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "inkTextWidgetReference::GetHorizontalAlignmentEnumValue;inkTextRefCName",
+      "shortName": "GetHorizontalAlignmentEnumValue",
+      "return": {
+        "type": "textHorizontalAlignment",
+        "flags": 64
+      },
+      "flags": 518,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "nameValue",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "inkTextWidgetReference::GetVerticalAlignmentEnumValue;inkTextRefCName",
+      "shortName": "GetVerticalAlignmentEnumValue",
+      "return": {
+        "type": "textVerticalAlignment",
+        "flags": 64
+      },
+      "flags": 518,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "nameValue",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "inkTextWidgetReference::SetLocalizedTextScript;inkTextRefStringinkTextParams",
+      "shortName": "SetLocalizedTextScript",
+      "flags": 518,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "String",
+          "name": "locKey",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "inkTextWidgetReference::SetLocalizedTextScript;inkTextRefCNameinkTextParams",
+      "shortName": "SetLocalizedTextScript",
+      "flags": 518,
+      "params": [
+        {
+          "type": "inkTextWidgetReference",
+          "name": "self",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "locKey",
+          "flags": 128
+        },
+        {
+          "type": "handle:textTextParameterSet",
+          "name": "textParams",
+          "flags": 1152
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIValidCoversCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "CheckCurrentlyActiveRing",
+      "shortName": "CheckCurrentlyActiveRing",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8651,
+      "flags": 1
+    },
+    {
+      "fullName": "CoversWithLOS",
+      "shortName": "CoversWithLOS",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8650,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLimitToRingsCount",
+      "shortName": "GetLimitToRingsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 8646,
+      "flags": 1
+    },
+    {
+      "fullName": "GetLimitToRingsItem",
+      "shortName": "GetLimitToRingsItem",
+      "return": {
+        "type": "whandle:gamedataAIRingType_Record",
+        "flags": 64
+      },
+      "index": 8647,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetLimitToRingsItemHandle",
+      "shortName": "GetLimitToRingsItemHandle",
+      "return": {
+        "type": "whandle:gamedataAIRingType_Record",
+        "flags": 64
+      },
+      "index": 8648,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LimitToRings",
+      "shortName": "LimitToRings",
+      "index": 8645,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataAIRingType_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "LimitToRingsContains",
+      "shortName": "LimitToRingsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 8649,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataAIRingType_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8643,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 8644,
+      "flags": 1
+    }
+  ]
+}

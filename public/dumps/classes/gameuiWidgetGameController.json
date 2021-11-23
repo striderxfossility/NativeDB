@@ -1,0 +1,131 @@
+{
+  "parent": "worlduiIWidgetGameController",
+  "name": "gameuiWidgetGameController",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "GetBlackboardSystem",
+      "shortName": "GetBlackboardSystem",
+      "return": {
+        "type": "handle:gameBlackboardSystem",
+        "flags": 64
+      },
+      "index": 12160,
+      "flags": 1
+    },
+    {
+      "fullName": "GetOwnerEntity",
+      "shortName": "GetOwnerEntity",
+      "return": {
+        "type": "handle:entEntity",
+        "flags": 64
+      },
+      "index": 12158,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPSMBlackboard",
+      "shortName": "GetPSMBlackboard",
+      "return": {
+        "type": "handle:gameIBlackboard",
+        "flags": 64
+      },
+      "index": 12162,
+      "flags": 1,
+      "params": [
+        {
+          "type": "handle:gameObject",
+          "name": "playerPuppet",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetPlayerControlledObject",
+      "shortName": "GetPlayerControlledObject",
+      "return": {
+        "type": "handle:gameObject",
+        "flags": 64
+      },
+      "index": 12159,
+      "flags": 1
+    },
+    {
+      "fullName": "GetUIBlackboard",
+      "shortName": "GetUIBlackboard",
+      "return": {
+        "type": "handle:gameIBlackboard",
+        "flags": 64
+      },
+      "index": 12161,
+      "flags": 1
+    },
+    {
+      "fullName": "PlaySound",
+      "shortName": "PlaySound",
+      "index": 12163,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "widgetName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "eventName",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "actionKey",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "RegisterDebugCommand",
+      "shortName": "RegisterDebugCommand",
+      "index": 12164,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "debugFunctionName",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetCursorContext",
+      "shortName": "SetCursorContext",
+      "index": 12165,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "context",
+          "flags": 128
+        },
+        {
+          "type": "handle:inkUserData",
+          "name": "data",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "SetCursorOverWidget",
+      "shortName": "SetCursorOverWidget",
+      "index": 12166,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:inkWidget",
+          "name": "widget",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

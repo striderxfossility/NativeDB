@@ -1,0 +1,77 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAIStatusEffectCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GameplayTag",
+      "shortName": "GameplayTag",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 7762,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffect",
+      "shortName": "StatusEffect",
+      "return": {
+        "type": "whandle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 7758,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectHandle",
+      "shortName": "StatusEffectHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffect_Record",
+        "flags": 64
+      },
+      "index": 7759,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectType",
+      "shortName": "StatusEffectType",
+      "return": {
+        "type": "whandle:gamedataStatusEffectType_Record",
+        "flags": 64
+      },
+      "index": 7760,
+      "flags": 1
+    },
+    {
+      "fullName": "StatusEffectTypeHandle",
+      "shortName": "StatusEffectTypeHandle",
+      "return": {
+        "type": "handle:gamedataStatusEffectType_Record",
+        "flags": 64
+      },
+      "index": 7761,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7756,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 7757,
+      "flags": 1
+    }
+  ]
+}

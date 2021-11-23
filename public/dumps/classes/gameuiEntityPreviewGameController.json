@@ -1,0 +1,119 @@
+{
+  "parent": "gameuiMenuGameController",
+  "name": "gameuiEntityPreviewGameController",
+  "flags": 2,
+  "props": [
+    {
+      "type": "raRef:entEntityTemplate",
+      "name": "entityToPreview",
+      "group": "Entities",
+      "flags": 6627016709
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "DisableCamera",
+      "shortName": "DisableCamera",
+      "index": 11982,
+      "flags": 1
+    },
+    {
+      "fullName": "EnableCamera",
+      "shortName": "EnableCamera",
+      "index": 11981,
+      "flags": 1
+    },
+    {
+      "fullName": "GetCameraSettings",
+      "shortName": "GetCameraSettings",
+      "return": {
+        "type": "gameuiEntityPreviewCameraSettings",
+        "flags": 64
+      },
+      "index": 11980,
+      "flags": 1
+    },
+    {
+      "fullName": "Move",
+      "shortName": "Move",
+      "index": 11985,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "direction",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "strength",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ResetCamera",
+      "shortName": "ResetCamera",
+      "index": 11983,
+      "flags": 1
+    },
+    {
+      "fullName": "ResetTargetPosition",
+      "shortName": "ResetTargetPosition",
+      "index": 11984,
+      "flags": 1
+    },
+    {
+      "fullName": "RotatePitch",
+      "shortName": "RotatePitch",
+      "index": 11987,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "strength",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RotateYaw",
+      "shortName": "RotateYaw",
+      "index": 11986,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "strength",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ZoomIn",
+      "shortName": "ZoomIn",
+      "index": 11988,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "strength",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ZoomOut",
+      "shortName": "ZoomOut",
+      "index": 11989,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "strength",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

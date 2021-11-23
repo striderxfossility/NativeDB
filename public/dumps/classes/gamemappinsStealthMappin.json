@@ -1,0 +1,593 @@
+{
+  "parent": "gamemappinsRuntimeMappin",
+  "name": "gamemappinsStealthMappin",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "CanSeePlayer",
+      "shortName": "CanSeePlayer",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11923,
+      "flags": 1
+    },
+    {
+      "fullName": "DetectionProgressDecreases",
+      "shortName": "DetectionProgressDecreases",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11895,
+      "flags": 1
+    },
+    {
+      "fullName": "DetectionProgressIncreases",
+      "shortName": "DetectionProgressIncreases",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11894,
+      "flags": 1
+    },
+    {
+      "fullName": "GetArchetype",
+      "shortName": "GetArchetype",
+      "return": {
+        "type": "gamedataArchetypeType",
+        "flags": 64
+      },
+      "index": 11937,
+      "flags": 1
+    },
+    {
+      "fullName": "GetAttitudeTowardsPlayer",
+      "shortName": "GetAttitudeTowardsPlayer",
+      "return": {
+        "type": "EAIAttitude",
+        "flags": 64
+      },
+      "index": 11901,
+      "flags": 1
+    },
+    {
+      "fullName": "GetDetectionProgress",
+      "shortName": "GetDetectionProgress",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 11892,
+      "flags": 1
+    },
+    {
+      "fullName": "GetGameObject",
+      "shortName": "GetGameObject",
+      "return": {
+        "type": "whandle:gameObject",
+        "flags": 64
+      },
+      "index": 11891,
+      "flags": 1
+    },
+    {
+      "fullName": "GetHighLevelState",
+      "shortName": "GetHighLevelState",
+      "return": {
+        "type": "gamedataNPCHighLevelState",
+        "flags": 64
+      },
+      "index": 11914,
+      "flags": 1
+    },
+    {
+      "fullName": "GetHighestLootQuality",
+      "shortName": "GetHighestLootQuality",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 11929,
+      "flags": 1
+    },
+    {
+      "fullName": "GetIsDetectionGrowing",
+      "shortName": "GetIsDetectionGrowing",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11920,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNPCLevel",
+      "shortName": "GetNPCLevel",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 11936,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNumberOfCombatants",
+      "shortName": "GetNumberOfCombatants",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 11928,
+      "flags": 1
+    },
+    {
+      "fullName": "GetNumberOfShotAttempts",
+      "shortName": "GetNumberOfShotAttempts",
+      "return": {
+        "type": "Uint32",
+        "flags": 64
+      },
+      "index": 11919,
+      "flags": 1
+    },
+    {
+      "fullName": "GetObjectMarkersEnabled",
+      "shortName": "GetObjectMarkersEnabled",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11944,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPrevDetectionProgress",
+      "shortName": "GetPrevDetectionProgress",
+      "index": 11893,
+      "flags": 1
+    },
+    {
+      "fullName": "GetPrevThreatAccuracy",
+      "shortName": "GetPrevThreatAccuracy",
+      "index": 11898,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRarity",
+      "shortName": "GetRarity",
+      "return": {
+        "type": "gamedataNPCRarity",
+        "flags": 64
+      },
+      "index": 11913,
+      "flags": 1
+    },
+    {
+      "fullName": "GetReprimandAnimationState",
+      "shortName": "GetReprimandAnimationState",
+      "return": {
+        "type": "gameReprimandMappinAnimationState",
+        "flags": 64
+      },
+      "index": 11935,
+      "flags": 1
+    },
+    {
+      "fullName": "GetSenseCone",
+      "shortName": "GetSenseCone",
+      "return": {
+        "type": "gamemappinsSenseCone",
+        "flags": 64
+      },
+      "index": 11902,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatusEffectCurrentPriority",
+      "shortName": "GetStatusEffectCurrentPriority",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 11938,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatusEffectIconPath",
+      "shortName": "GetStatusEffectIconPath",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 11940,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStatusEffectTimeRemaining",
+      "shortName": "GetStatusEffectTimeRemaining",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 11939,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStealthAwarenessState",
+      "shortName": "GetStealthAwarenessState",
+      "return": {
+        "type": "gameEnemyStealthAwarenessState",
+        "flags": 64
+      },
+      "index": 11926,
+      "flags": 1
+    },
+    {
+      "fullName": "GetThreatAccuracy",
+      "shortName": "GetThreatAccuracy",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 11897,
+      "flags": 1
+    },
+    {
+      "fullName": "HasBeenSeen",
+      "shortName": "HasBeenSeen",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11921,
+      "flags": 1
+    },
+    {
+      "fullName": "HasHackingStatusEffect",
+      "shortName": "HasHackingStatusEffect",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11943,
+      "flags": 1
+    },
+    {
+      "fullName": "HasItems",
+      "shortName": "HasItems",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11911,
+      "flags": 1
+    },
+    {
+      "fullName": "IsAggressive",
+      "shortName": "IsAggressive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11904,
+      "flags": 1
+    },
+    {
+      "fullName": "IsAlive",
+      "shortName": "IsAlive",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11903,
+      "flags": 1
+    },
+    {
+      "fullName": "IsCrowdNPC",
+      "shortName": "IsCrowdNPC",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11909,
+      "flags": 1
+    },
+    {
+      "fullName": "IsFriendlyFromHack",
+      "shortName": "IsFriendlyFromHack",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11942,
+      "flags": 1
+    },
+    {
+      "fullName": "IsHiddenByQuestIn3D",
+      "shortName": "IsHiddenByQuestIn3D",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11934,
+      "flags": 1
+    },
+    {
+      "fullName": "IsHiddenByQuestOnMinimap",
+      "shortName": "IsHiddenByQuestOnMinimap",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11933,
+      "flags": 1
+    },
+    {
+      "fullName": "IsHighlighted",
+      "shortName": "IsHighlighted",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11924,
+      "flags": 1
+    },
+    {
+      "fullName": "IsNetrunner",
+      "shortName": "IsNetrunner",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11930,
+      "flags": 1
+    },
+    {
+      "fullName": "IsPlayerInHostileZone",
+      "shortName": "IsPlayerInHostileZone",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11931,
+      "flags": 1
+    },
+    {
+      "fullName": "IsPrevention",
+      "shortName": "IsPrevention",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11908,
+      "flags": 1
+    },
+    {
+      "fullName": "IsScanned",
+      "shortName": "IsScanned",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11905,
+      "flags": 1
+    },
+    {
+      "fullName": "IsSquadInCombat",
+      "shortName": "IsSquadInCombat",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11927,
+      "flags": 1
+    },
+    {
+      "fullName": "IsTagged",
+      "shortName": "IsTagged",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11907,
+      "flags": 1
+    },
+    {
+      "fullName": "IsTarget",
+      "shortName": "IsTarget",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11906,
+      "flags": 1
+    },
+    {
+      "fullName": "IsUsingSenseCone",
+      "shortName": "IsUsingSenseCone",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11910,
+      "flags": 1
+    },
+    {
+      "fullName": "SetIsPulsing",
+      "shortName": "SetIsPulsing",
+      "index": 11922,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isPulsing",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetStealthAwarenessState",
+      "shortName": "SetStealthAwarenessState",
+      "index": 11925,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gameEnemyStealthAwarenessState",
+          "name": "state",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetVisibleIn3D",
+      "shortName": "SetVisibleIn3D",
+      "index": 11916,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isVisible",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetVisibleOnMinimap",
+      "shortName": "SetVisibleOnMinimap",
+      "index": 11915,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isVisible",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ThreatAccuracyDecreases",
+      "shortName": "ThreatAccuracyDecreases",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11900,
+      "flags": 1
+    },
+    {
+      "fullName": "ThreatAccuracyIncreases",
+      "shortName": "ThreatAccuracyIncreases",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11899,
+      "flags": 1
+    },
+    {
+      "fullName": "UnregisterMappin",
+      "shortName": "UnregisterMappin",
+      "index": 11917,
+      "flags": 1
+    },
+    {
+      "fullName": "UpdateCombatToAwareThreshold",
+      "shortName": "UpdateCombatToAwareThreshold",
+      "index": 11946,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "threshold",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateCombatantState",
+      "shortName": "UpdateCombatantState",
+      "index": 11918,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "isCombatant",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateObjectMarkerThreshold",
+      "shortName": "UpdateObjectMarkerThreshold",
+      "index": 11945,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "threshold",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateObjectMarkerVisibility",
+      "shortName": "UpdateObjectMarkerVisibility",
+      "index": 11941,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "canHaveObjectMarker",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "isVisible",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateSenseCone",
+      "shortName": "UpdateSenseCone",
+      "index": 11912,
+      "flags": 1
+    },
+    {
+      "fullName": "UpdateSenseConeAvailable",
+      "shortName": "UpdateSenseConeAvailable",
+      "index": 11947,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "available",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "WasDetectionAboveZero",
+      "shortName": "WasDetectionAboveZero",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11896,
+      "flags": 1
+    },
+    {
+      "fullName": "WillReprimand",
+      "shortName": "WillReprimand",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 11932,
+      "flags": 1
+    }
+  ]
+}

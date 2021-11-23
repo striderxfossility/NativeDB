@@ -1,0 +1,120 @@
+{
+  "name": "gamedataTDBIDHelper",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Append",
+      "shortName": "Append",
+      "index": 2211,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "tdbID",
+          "flags": 640
+        },
+        {
+          "type": "TweakDBID",
+          "name": "toAppend",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Create",
+      "shortName": "Create",
+      "return": {
+        "type": "TweakDBID",
+        "flags": 64
+      },
+      "index": 2208,
+      "flags": 1,
+      "params": [
+        {
+          "type": "String",
+          "name": "str",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsValid",
+      "shortName": "IsValid",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 2209,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "tdbID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "None",
+      "shortName": "None",
+      "return": {
+        "type": "TweakDBID",
+        "flags": 64
+      },
+      "index": 2213,
+      "flags": 1
+    },
+    {
+      "fullName": "Prepend",
+      "shortName": "Prepend",
+      "index": 2210,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "tdbID",
+          "flags": 640
+        },
+        {
+          "type": "TweakDBID",
+          "name": "toPrepend",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ToNumber",
+      "shortName": "ToNumber",
+      "return": {
+        "type": "Uint64",
+        "flags": 64
+      },
+      "index": 2212,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "tdbID",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ToStringDEBUG",
+      "shortName": "ToStringDEBUG",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 2214,
+      "flags": 1,
+      "params": [
+        {
+          "type": "TweakDBID",
+          "name": "tdbID",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

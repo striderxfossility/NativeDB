@@ -1,0 +1,427 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleTPPCameraParams_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AirFlowDistortion",
+      "shortName": "AirFlowDistortion",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5787,
+      "flags": 1
+    },
+    {
+      "fullName": "AutoCenterMaxSpeedThreshold",
+      "shortName": "AutoCenterMaxSpeedThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5749,
+      "flags": 1
+    },
+    {
+      "fullName": "AutoCenterSpeed",
+      "shortName": "AutoCenterSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5760,
+      "flags": 1
+    },
+    {
+      "fullName": "AutoCenterStartTimeGamepad",
+      "shortName": "AutoCenterStartTimeGamepad",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5765,
+      "flags": 1
+    },
+    {
+      "fullName": "AutoCenterStartTimeMouse",
+      "shortName": "AutoCenterStartTimeMouse",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5766,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraBoomExtensionSpeed",
+      "shortName": "CameraBoomExtensionSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5757,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraMaxPitch",
+      "shortName": "CameraMaxPitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5770,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraMinPitch",
+      "shortName": "CameraMinPitch",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5752,
+      "flags": 1
+    },
+    {
+      "fullName": "CameraSphereRadius",
+      "shortName": "CameraSphereRadius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5750,
+      "flags": 1
+    },
+    {
+      "fullName": "CollisionDetection",
+      "shortName": "CollisionDetection",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5782,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensation",
+      "shortName": "DrivingDirectionCompensation",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5785,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationAngle",
+      "shortName": "DrivingDirectionCompensationAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5758,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationAngleSmooth",
+      "shortName": "DrivingDirectionCompensationAngleSmooth",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5767,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationAngularVelocityMin",
+      "shortName": "DrivingDirectionCompensationAngularVelocityMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5761,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationSpeedCoef",
+      "shortName": "DrivingDirectionCompensationSpeedCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5751,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationSpeedMax",
+      "shortName": "DrivingDirectionCompensationSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5772,
+      "flags": 1
+    },
+    {
+      "fullName": "DrivingDirectionCompensationSpeedMin",
+      "shortName": "DrivingDirectionCompensationSpeedMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5774,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomAcceleration",
+      "shortName": "ElasticBoomAcceleration",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5784,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomAccelerationExpansionLength",
+      "shortName": "ElasticBoomAccelerationExpansionLength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5768,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomForwardAccelerationCoef",
+      "shortName": "ElasticBoomForwardAccelerationCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5756,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomSpeedExpansionLength",
+      "shortName": "ElasticBoomSpeedExpansionLength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5776,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomSpeedExpansionSpeedMax",
+      "shortName": "ElasticBoomSpeedExpansionSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5775,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomSpeedExpansionSpeedMin",
+      "shortName": "ElasticBoomSpeedExpansionSpeedMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5763,
+      "flags": 1
+    },
+    {
+      "fullName": "ElasticBoomVelocity",
+      "shortName": "ElasticBoomVelocity",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5783,
+      "flags": 1
+    },
+    {
+      "fullName": "Fov",
+      "shortName": "Fov",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5747,
+      "flags": 1
+    },
+    {
+      "fullName": "HeadLookAtCenterYawThreshold",
+      "shortName": "HeadLookAtCenterYawThreshold",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5778,
+      "flags": 1
+    },
+    {
+      "fullName": "HeadLookAtMaxPitchDown",
+      "shortName": "HeadLookAtMaxPitchDown",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5780,
+      "flags": 1
+    },
+    {
+      "fullName": "HeadLookAtMaxPitchUp",
+      "shortName": "HeadLookAtMaxPitchUp",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5779,
+      "flags": 1
+    },
+    {
+      "fullName": "HeadLookAtMaxYaw",
+      "shortName": "HeadLookAtMaxYaw",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5777,
+      "flags": 1
+    },
+    {
+      "fullName": "HeadLookAtRotationSpeed",
+      "shortName": "HeadLookAtRotationSpeed",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5781,
+      "flags": 1
+    },
+    {
+      "fullName": "LockedCamera",
+      "shortName": "LockedCamera",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5788,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeAdjustement",
+      "shortName": "SlopeAdjustement",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 5786,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirDampFactor",
+      "shortName": "SlopeCorrectionInAirDampFactor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5754,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirFallCoef",
+      "shortName": "SlopeCorrectionInAirFallCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5769,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirPitchMax",
+      "shortName": "SlopeCorrectionInAirPitchMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5755,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirPitchMin",
+      "shortName": "SlopeCorrectionInAirPitchMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5753,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirRaiseCoef",
+      "shortName": "SlopeCorrectionInAirRaiseCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5764,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirSpeedMax",
+      "shortName": "SlopeCorrectionInAirSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5762,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionInAirStrength",
+      "shortName": "SlopeCorrectionInAirStrength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5771,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionOnGroundPitchMax",
+      "shortName": "SlopeCorrectionOnGroundPitchMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5773,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionOnGroundPitchMin",
+      "shortName": "SlopeCorrectionOnGroundPitchMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5748,
+      "flags": 1
+    },
+    {
+      "fullName": "SlopeCorrectionOnGroundStrength",
+      "shortName": "SlopeCorrectionOnGroundStrength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5759,
+      "flags": 1
+    }
+  ]
+}

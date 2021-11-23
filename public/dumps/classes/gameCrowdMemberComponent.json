@@ -1,0 +1,144 @@
+{
+  "parent": "entIComponent",
+  "name": "gameCrowdMemberComponent",
+  "flags": 2,
+  "funcs": [
+    {
+      "fullName": "AllowWorkspotsUsage",
+      "shortName": "AllowWorkspotsUsage",
+      "index": 10229,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Bool",
+          "name": "allowUsage",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ChangeFearStage",
+      "shortName": "ChangeFearStage",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10226,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gameFearStage",
+          "name": "stage",
+          "flags": 128
+        },
+        {
+          "type": "Bool",
+          "name": "playInitAniation",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "ChangeMoveType",
+      "shortName": "ChangeMoveType",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10220,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "name",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "CheckEmptyPath",
+      "shortName": "CheckEmptyPath",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10227,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "distance",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "CheckIsMoving",
+      "shortName": "CheckIsMoving",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10228,
+      "flags": 1
+    },
+    {
+      "fullName": "GetMovementDirection",
+      "shortName": "GetMovementDirection",
+      "return": {
+        "type": "Vector4",
+        "flags": 64
+      },
+      "index": 10225,
+      "flags": 1
+    },
+    {
+      "fullName": "IsInCrowd",
+      "shortName": "IsInCrowd",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10221,
+      "flags": 1
+    },
+    {
+      "fullName": "OnCrowdReaction",
+      "shortName": "OnCrowdReaction",
+      "index": 10230,
+      "flags": 1,
+      "params": [
+        {
+          "type": "gamedataStimType",
+          "name": "stimType",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "SetThreatLastKnownPosition",
+      "shortName": "SetThreatLastKnownPosition",
+      "index": 10222,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Vector4",
+          "name": "position",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "TryChangeMovementDirection",
+      "shortName": "TryChangeMovementDirection",
+      "index": 10223,
+      "flags": 1
+    },
+    {
+      "fullName": "TryStopTrafficMovement",
+      "shortName": "TryStopTrafficMovement",
+      "index": 10224,
+      "flags": 1
+    }
+  ]
+}

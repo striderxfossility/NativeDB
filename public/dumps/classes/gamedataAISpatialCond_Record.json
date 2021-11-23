@@ -1,0 +1,137 @@
+{
+  "parent": "gamedataAIActionSubCondition_Record",
+  "name": "gamedataAISpatialCond_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AngleDirection",
+      "shortName": "AngleDirection",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 3878,
+      "flags": 1
+    },
+    {
+      "fullName": "ConeAngle",
+      "shortName": "ConeAngle",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 3876,
+      "flags": 1
+    },
+    {
+      "fullName": "Distance",
+      "shortName": "Distance",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 3877,
+      "flags": 1
+    },
+    {
+      "fullName": "PredictionTime",
+      "shortName": "PredictionTime",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3879,
+      "flags": 1
+    },
+    {
+      "fullName": "Source",
+      "shortName": "Source",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3870,
+      "flags": 1
+    },
+    {
+      "fullName": "SourceHandle",
+      "shortName": "SourceHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3871,
+      "flags": 1
+    },
+    {
+      "fullName": "SpatialHintMults",
+      "shortName": "SpatialHintMults",
+      "return": {
+        "type": "Vector3",
+        "flags": 64
+      },
+      "index": 3874,
+      "flags": 1
+    },
+    {
+      "fullName": "Target",
+      "shortName": "Target",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3872,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetHandle",
+      "shortName": "TargetHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3873,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetOpt",
+      "shortName": "TargetOpt",
+      "return": {
+        "type": "whandle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3868,
+      "flags": 1
+    },
+    {
+      "fullName": "TargetOptHandle",
+      "shortName": "TargetOptHandle",
+      "return": {
+        "type": "handle:gamedataAIActionTarget_Record",
+        "flags": 64
+      },
+      "index": 3869,
+      "flags": 1
+    },
+    {
+      "fullName": "UseTargetPOV",
+      "shortName": "UseTargetPOV",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3880,
+      "flags": 1
+    },
+    {
+      "fullName": "ZDiff",
+      "shortName": "ZDiff",
+      "return": {
+        "type": "Vector2",
+        "flags": 64
+      },
+      "index": 3875,
+      "flags": 1
+    }
+  ]
+}

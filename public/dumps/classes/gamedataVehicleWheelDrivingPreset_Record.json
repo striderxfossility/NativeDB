@@ -1,0 +1,237 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleWheelDrivingPreset_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "ExtremeCompressionEventScalor",
+      "shortName": "ExtremeCompressionEventScalor",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5930,
+      "flags": 1
+    },
+    {
+      "fullName": "FrictionMulLateral",
+      "shortName": "FrictionMulLateral",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5935,
+      "flags": 1
+    },
+    {
+      "fullName": "FrictionMulLongitudinal",
+      "shortName": "FrictionMulLongitudinal",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5934,
+      "flags": 1
+    },
+    {
+      "fullName": "LogicalSuspensionCompressionLength",
+      "shortName": "LogicalSuspensionCompressionLength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5940,
+      "flags": 1
+    },
+    {
+      "fullName": "Mass",
+      "shortName": "Mass",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5922,
+      "flags": 1
+    },
+    {
+      "fullName": "MaxBrakingTorque",
+      "shortName": "MaxBrakingTorque",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5926,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringBoundDampingLowRate",
+      "shortName": "SpringBoundDampingLowRate",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5929,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringDamping",
+      "shortName": "SpringDamping",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5933,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringDampingHighRateCompression",
+      "shortName": "SpringDampingHighRateCompression",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5931,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringDampingLowRateCompression",
+      "shortName": "SpringDampingLowRateCompression",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5927,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringReboundDamping",
+      "shortName": "SpringReboundDamping",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5928,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringReboundDampingLowRate",
+      "shortName": "SpringReboundDampingLowRate",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5937,
+      "flags": 1
+    },
+    {
+      "fullName": "SpringStiffness",
+      "shortName": "SpringStiffness",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5938,
+      "flags": 1
+    },
+    {
+      "fullName": "SwaybarDisplacementLimit",
+      "shortName": "SwaybarDisplacementLimit",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5923,
+      "flags": 1
+    },
+    {
+      "fullName": "SwaybarLengthScalar",
+      "shortName": "SwaybarLengthScalar",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5936,
+      "flags": 1
+    },
+    {
+      "fullName": "SwaybarStiffness",
+      "shortName": "SwaybarStiffness",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5932,
+      "flags": 1
+    },
+    {
+      "fullName": "TireFrictionCoef",
+      "shortName": "TireFrictionCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5924,
+      "flags": 1
+    },
+    {
+      "fullName": "TireLateralSlipEffectsMul",
+      "shortName": "TireLateralSlipEffectsMul",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5925,
+      "flags": 1
+    },
+    {
+      "fullName": "TireLongitudinalSlipEffectsMul",
+      "shortName": "TireLongitudinalSlipEffectsMul",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5920,
+      "flags": 1
+    },
+    {
+      "fullName": "TireRollingResistanceCoef",
+      "shortName": "TireRollingResistanceCoef",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5921,
+      "flags": 1
+    },
+    {
+      "fullName": "VisualSuspensionCompressionLength",
+      "shortName": "VisualSuspensionCompressionLength",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5941,
+      "flags": 1
+    },
+    {
+      "fullName": "VisualSuspensionDroop",
+      "shortName": "VisualSuspensionDroop",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5939,
+      "flags": 1
+    },
+    {
+      "fullName": "WheelsVerticalOffset",
+      "shortName": "WheelsVerticalOffset",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 5942,
+      "flags": 1
+    }
+  ]
+}

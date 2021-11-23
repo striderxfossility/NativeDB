@@ -1,0 +1,185 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataWidgetDefinition_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "GetRatiosCount",
+      "shortName": "GetRatiosCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4662,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRatiosItem",
+      "shortName": "GetRatiosItem",
+      "return": {
+        "type": "whandle:gamedataWidgetRatio_Record",
+        "flags": 64
+      },
+      "index": 4663,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRatiosItemHandle",
+      "shortName": "GetRatiosItemHandle",
+      "return": {
+        "type": "whandle:gamedataWidgetRatio_Record",
+        "flags": 64
+      },
+      "index": 4664,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStylesCount",
+      "shortName": "GetStylesCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 4657,
+      "flags": 1
+    },
+    {
+      "fullName": "GetStylesItem",
+      "shortName": "GetStylesItem",
+      "return": {
+        "type": "whandle:gamedataWidgetStyle_Record",
+        "flags": 64
+      },
+      "index": 4658,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetStylesItemHandle",
+      "shortName": "GetStylesItemHandle",
+      "return": {
+        "type": "whandle:gamedataWidgetStyle_Record",
+        "flags": 64
+      },
+      "index": 4659,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "LibraryID",
+      "shortName": "LibraryID",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 4655,
+      "flags": 1
+    },
+    {
+      "fullName": "LibraryPath",
+      "shortName": "LibraryPath",
+      "return": {
+        "type": "redResourceReferenceScriptToken",
+        "flags": 64
+      },
+      "index": 4666,
+      "flags": 1
+    },
+    {
+      "fullName": "Ratios",
+      "shortName": "Ratios",
+      "index": 4661,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataWidgetRatio_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "RatiosContains",
+      "shortName": "RatiosContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4665,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataWidgetRatio_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "Styles",
+      "shortName": "Styles",
+      "index": 4656,
+      "flags": 1,
+      "params": [
+        {
+          "type": "array:whandle:gamedataWidgetStyle_Record",
+          "name": "outList",
+          "flags": 640
+        }
+      ]
+    },
+    {
+      "fullName": "StylesContains",
+      "shortName": "StylesContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4660,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:gamedataWidgetStyle_Record",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UseContentRatio",
+      "shortName": "UseContentRatio",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 4667,
+      "flags": 1
+    }
+  ]
+}

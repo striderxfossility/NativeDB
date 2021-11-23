@@ -1,0 +1,463 @@
+{
+  "parent": "gamedataGadget_Record",
+  "name": "gamedataGrenade_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AdditionalAttack",
+      "shortName": "AdditionalAttack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6896,
+      "flags": 1
+    },
+    {
+      "fullName": "AdditionalAttackHandle",
+      "shortName": "AdditionalAttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6897,
+      "flags": 1
+    },
+    {
+      "fullName": "Attack",
+      "shortName": "Attack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6894,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackDuration",
+      "shortName": "AttackDuration",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6920,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackHandle",
+      "shortName": "AttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6895,
+      "flags": 1
+    },
+    {
+      "fullName": "AttackRadius",
+      "shortName": "AttackRadius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6919,
+      "flags": 1
+    },
+    {
+      "fullName": "DeliveryMethod",
+      "shortName": "DeliveryMethod",
+      "return": {
+        "type": "whandle:gamedataGrenadeDeliveryMethod_Record",
+        "flags": 64
+      },
+      "index": 6898,
+      "flags": 1
+    },
+    {
+      "fullName": "DeliveryMethodHandle",
+      "shortName": "DeliveryMethodHandle",
+      "return": {
+        "type": "handle:gamedataGrenadeDeliveryMethod_Record",
+        "flags": 64
+      },
+      "index": 6899,
+      "flags": 1
+    },
+    {
+      "fullName": "DetonationSound",
+      "shortName": "DetonationSound",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6889,
+      "flags": 1
+    },
+    {
+      "fullName": "DetonationStimRadius",
+      "shortName": "DetonationStimRadius",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6924,
+      "flags": 1
+    },
+    {
+      "fullName": "DetonationStimType",
+      "shortName": "DetonationStimType",
+      "return": {
+        "type": "whandle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 6890,
+      "flags": 1
+    },
+    {
+      "fullName": "DetonationStimTypeHandle",
+      "shortName": "DetonationStimTypeHandle",
+      "return": {
+        "type": "handle:gamedataStimType_Record",
+        "flags": 64
+      },
+      "index": 6891,
+      "flags": 1
+    },
+    {
+      "fullName": "EnemyAttack",
+      "shortName": "EnemyAttack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6900,
+      "flags": 1
+    },
+    {
+      "fullName": "EnemyAttackHandle",
+      "shortName": "EnemyAttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6901,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRotationAxesSpeedsCount",
+      "shortName": "GetRotationAxesSpeedsCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6915,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRotationAxesSpeedsItem",
+      "shortName": "GetRotationAxesSpeedsItem",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6916,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRotationAxesXCount",
+      "shortName": "GetRotationAxesXCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6903,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRotationAxesXItem",
+      "shortName": "GetRotationAxesXItem",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6904,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRotationAxesYCount",
+      "shortName": "GetRotationAxesYCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6907,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRotationAxesYItem",
+      "shortName": "GetRotationAxesYItem",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6908,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetRotationAxesZCount",
+      "shortName": "GetRotationAxesZCount",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6911,
+      "flags": 1
+    },
+    {
+      "fullName": "GetRotationAxesZItem",
+      "shortName": "GetRotationAxesZItem",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6912,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Int32",
+          "name": "index",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "NpcHitReactionAttack",
+      "shortName": "NpcHitReactionAttack",
+      "return": {
+        "type": "whandle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6892,
+      "flags": 1
+    },
+    {
+      "fullName": "NpcHitReactionAttackHandle",
+      "shortName": "NpcHitReactionAttackHandle",
+      "return": {
+        "type": "handle:gamedataAttack_Record",
+        "flags": 64
+      },
+      "index": 6893,
+      "flags": 1
+    },
+    {
+      "fullName": "RandomRotationAxes",
+      "shortName": "RandomRotationAxes",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6921,
+      "flags": 1
+    },
+    {
+      "fullName": "ReleaseOnDetonation",
+      "shortName": "ReleaseOnDetonation",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6926,
+      "flags": 1
+    },
+    {
+      "fullName": "RemoveMeshOnDetonation",
+      "shortName": "RemoveMeshOnDetonation",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6927,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationAxesSpeeds",
+      "shortName": "RotationAxesSpeeds",
+      "return": {
+        "type": "array:Float",
+        "flags": 64
+      },
+      "index": 6914,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationAxesSpeedsContains",
+      "shortName": "RotationAxesSpeedsContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6917,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RotationAxesX",
+      "shortName": "RotationAxesX",
+      "return": {
+        "type": "array:Float",
+        "flags": 64
+      },
+      "index": 6902,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationAxesXContains",
+      "shortName": "RotationAxesXContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6905,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RotationAxesY",
+      "shortName": "RotationAxesY",
+      "return": {
+        "type": "array:Float",
+        "flags": 64
+      },
+      "index": 6906,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationAxesYContains",
+      "shortName": "RotationAxesYContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6909,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RotationAxesZ",
+      "shortName": "RotationAxesZ",
+      "return": {
+        "type": "array:Float",
+        "flags": 64
+      },
+      "index": 6910,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationAxesZContains",
+      "shortName": "RotationAxesZContains",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6913,
+      "flags": 1,
+      "params": [
+        {
+          "type": "Float",
+          "name": "item",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "RotationSpeedMax",
+      "shortName": "RotationSpeedMax",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6923,
+      "flags": 1
+    },
+    {
+      "fullName": "RotationSpeedMin",
+      "shortName": "RotationSpeedMin",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6922,
+      "flags": 1
+    },
+    {
+      "fullName": "Seed",
+      "shortName": "Seed",
+      "return": {
+        "type": "Int32",
+        "flags": 64
+      },
+      "index": 6918,
+      "flags": 1
+    },
+    {
+      "fullName": "ShootCollisionEnableDelay",
+      "shortName": "ShootCollisionEnableDelay",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 6925,
+      "flags": 1
+    },
+    {
+      "fullName": "UseSeed",
+      "shortName": "UseSeed",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 6928,
+      "flags": 1
+    }
+  ]
+}

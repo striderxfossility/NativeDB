@@ -1,0 +1,37 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataChoiceCaptionPartType_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Comment",
+      "shortName": "Comment",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 6884,
+      "flags": 1
+    },
+    {
+      "fullName": "EnumName",
+      "shortName": "EnumName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 6885,
+      "flags": 1
+    },
+    {
+      "fullName": "Type",
+      "shortName": "Type",
+      "return": {
+        "type": "gamedataChoiceCaptionPartType",
+        "flags": 64
+      },
+      "index": 6886,
+      "flags": 1
+    }
+  ]
+}

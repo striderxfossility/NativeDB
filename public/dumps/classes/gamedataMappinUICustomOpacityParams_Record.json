@@ -1,0 +1,57 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataMappinUICustomOpacityParams_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "DistanceWhenFullyHidden",
+      "shortName": "DistanceWhenFullyHidden",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8366,
+      "flags": 1
+    },
+    {
+      "fullName": "DistanceWhenFullyVisible",
+      "shortName": "DistanceWhenFullyVisible",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8364,
+      "flags": 1
+    },
+    {
+      "fullName": "VisibilityConeEndAngle",
+      "shortName": "VisibilityConeEndAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8367,
+      "flags": 1
+    },
+    {
+      "fullName": "VisibilityConeMaximumOpacity",
+      "shortName": "VisibilityConeMaximumOpacity",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8368,
+      "flags": 1
+    },
+    {
+      "fullName": "VisibilityConeStartAngle",
+      "shortName": "VisibilityConeStartAngle",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 8365,
+      "flags": 1
+    }
+  ]
+}

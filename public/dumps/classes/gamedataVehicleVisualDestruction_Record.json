@@ -1,0 +1,107 @@
+{
+  "parent": "gamedataTweakDBRecord",
+  "name": "gamedataVehicleVisualDestruction_Record",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "Back",
+      "shortName": "Back",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3846,
+      "flags": 1
+    },
+    {
+      "fullName": "BackLeft",
+      "shortName": "BackLeft",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3843,
+      "flags": 1
+    },
+    {
+      "fullName": "BackRight",
+      "shortName": "BackRight",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3841,
+      "flags": 1
+    },
+    {
+      "fullName": "Front",
+      "shortName": "Front",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3844,
+      "flags": 1
+    },
+    {
+      "fullName": "FrontLeft",
+      "shortName": "FrontLeft",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3842,
+      "flags": 1
+    },
+    {
+      "fullName": "FrontRight",
+      "shortName": "FrontRight",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3847,
+      "flags": 1
+    },
+    {
+      "fullName": "Left",
+      "shortName": "Left",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3840,
+      "flags": 1
+    },
+    {
+      "fullName": "Right",
+      "shortName": "Right",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3845,
+      "flags": 1
+    },
+    {
+      "fullName": "Roof",
+      "shortName": "Roof",
+      "return": {
+        "type": "Float",
+        "flags": 64
+      },
+      "index": 3848,
+      "flags": 1
+    },
+    {
+      "fullName": "SetVisualDestruction",
+      "shortName": "SetVisualDestruction",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 3849,
+      "flags": 1
+    }
+  ]
+}

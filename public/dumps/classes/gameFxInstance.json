@@ -1,0 +1,129 @@
+{
+  "parent": "IScriptable",
+  "name": "gameFxInstance",
+  "flags": 66,
+  "funcs": [
+    {
+      "fullName": "AttachToComponent",
+      "shortName": "AttachToComponent",
+      "index": 10288,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:entEntity",
+          "name": "entity",
+          "flags": 128
+        },
+        {
+          "type": "entAttachmentTarget",
+          "name": "targetType",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "componentName",
+          "flags": 128
+        },
+        {
+          "type": "WorldTransform",
+          "name": "localTransform",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "AttachToSlot",
+      "shortName": "AttachToSlot",
+      "index": 10287,
+      "flags": 1,
+      "params": [
+        {
+          "type": "whandle:entEntity",
+          "name": "entity",
+          "flags": 128
+        },
+        {
+          "type": "entAttachmentTarget",
+          "name": "targetType",
+          "flags": 128
+        },
+        {
+          "type": "CName",
+          "name": "slotName",
+          "flags": 128
+        },
+        {
+          "type": "WorldTransform",
+          "name": "localTransform",
+          "flags": 1152
+        }
+      ]
+    },
+    {
+      "fullName": "BreakLoop",
+      "shortName": "BreakLoop",
+      "index": 10283,
+      "flags": 1
+    },
+    {
+      "fullName": "IsValid",
+      "shortName": "IsValid",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 10289,
+      "flags": 1
+    },
+    {
+      "fullName": "Kill",
+      "shortName": "Kill",
+      "index": 10282,
+      "flags": 1
+    },
+    {
+      "fullName": "SetBlackboardValue",
+      "shortName": "SetBlackboardValue",
+      "index": 10286,
+      "flags": 1,
+      "params": [
+        {
+          "type": "CName",
+          "name": "parameterName",
+          "flags": 128
+        },
+        {
+          "type": "Float",
+          "name": "clampedValue",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateTargetPosition",
+      "shortName": "UpdateTargetPosition",
+      "index": 10285,
+      "flags": 1,
+      "params": [
+        {
+          "type": "WorldPosition",
+          "name": "position",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "UpdateTransform",
+      "shortName": "UpdateTransform",
+      "index": 10284,
+      "flags": 1,
+      "params": [
+        {
+          "type": "WorldTransform",
+          "name": "transform",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}

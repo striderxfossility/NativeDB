@@ -1,0 +1,154 @@
+{
+  "name": "gamePersistentID",
+  "flags": 66,
+  "props": [
+    {
+      "type": "Uint64",
+      "name": "entityHash",
+      "flags": 6895452160
+    },
+    {
+      "type": "CName",
+      "name": "componentName",
+      "flags": 6895452160
+    }
+  ],
+  "funcs": [
+    {
+      "fullName": "ExtractEntityID",
+      "shortName": "ExtractEntityID",
+      "return": {
+        "type": "entEntityID",
+        "flags": 64
+      },
+      "index": 9800,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "GetComponentName",
+      "shortName": "GetComponentName",
+      "return": {
+        "type": "CName",
+        "flags": 64
+      },
+      "index": 9798,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsComponent",
+      "shortName": "IsComponent",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9797,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsDefined",
+      "shortName": "IsDefined",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9793,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsDynamic",
+      "shortName": "IsDynamic",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9794,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsEntity",
+      "shortName": "IsEntity",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9796,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "IsStatic",
+      "shortName": "IsStatic",
+      "return": {
+        "type": "Bool",
+        "flags": 64
+      },
+      "index": 9795,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    },
+    {
+      "fullName": "ToDebugString",
+      "shortName": "ToDebugString",
+      "return": {
+        "type": "String",
+        "flags": 64
+      },
+      "index": 9799,
+      "flags": 3,
+      "params": [
+        {
+          "type": "gamePersistentID",
+          "name": "id",
+          "flags": 128
+        }
+      ]
+    }
+  ]
+}
