@@ -16,12 +16,10 @@ class CreatePropsTable extends Migration
         Schema::create('props', function (Blueprint $table) {
             $table->id();
             $table->integer('type_id');
-            $table->boolean('private')->default(false);
             $table->string('name');
             $table->string('return');
-            $table->integer('return_type');
+            $table->string('return_type');
             $table->integer('flags');
-            $table->text('code');
             $table->timestamps();
         });
     }
