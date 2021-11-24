@@ -57,8 +57,72 @@
         </div>
         
         <h2 class="mb-4 border-b border-gray-200">Methods</h2>
-        <div id="BroadcastLandingStim;StateContextStateGameScriptInterfacegamedataStimType" class="flex flex-col xl:flex-row mb-3 rounded bg-gray-100 overflow-hidden">
-            
+        <div class="mb-3 rounded overflow-hidden">
+            @foreach (\App\Models\Method::whereTypeId($type->id)->get() as $method)
+                <div class="grid grid-cols-4 hover:bg-gray-100 px-10 py-2">
+                    <div class="col-span-2">
+                        @if($method->params == '')
+                        {{ $method->shortName }}()
+                        @else
+                            {{ $method->shortName }}(<br />
+                            @php
+                                if($method->params != '') {
+                                    $json = json_decode($method->params);
+
+                                    for ($i=0; $i < count($json); $i++) { 
+                                        echo '<div class="px-10">';
+                                            echo $json[$i]->name . ' : ' . $json[$i]->type . '';
+
+                                            if($i != count($json) - 1)
+                                                echo ',';
+
+                                        echo '</div>';
+                                    }
+                                }
+                            @endphp
+                            )
+                        @endif
+                    </div>
+                    <div class="">
+                        : 
+                        @if(str_contains($method->return, 'array'))
+                            <span class="text-green-700">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                                </svg>
+                                {{ explode(':', $method->return)[0] }}</span>
+                                : 
+                                @if(explode(':', $method->return)[1] == 'handle' || explode(':', $method->return)[1] == 'whandle')
+                                    <span class="text-pink-600">   
+                                        {{ explode(':', $method->return)[1] }}
+                                    </span>
+                                @else
+                                {{ explode(':', $method->return)[1] }}
+                                @endif
+                        @elseif(str_contains($method->return, 'handle') || str_contains($method->return, 'whandle'))
+                            <span class="text-pink-600">   
+                                {{ explode(':', $method->return)[0] }}
+                            </span>
+                        @else
+                            {{ $method->return }}
+                        @endif
+                    </div>
+                    <div>
+                        @if(str_contains($method->return, 'handle') || str_contains($method->return, 'whandle'))
+
+                            @dump(explode(':', $method->return)[1])
+
+                            @php($id = \App\Models\Type::find(explode(':', $method->return)[1]) != null ? \App\Models\Type::find(explode(':', $method->return)[1])->id : '')
+                            @php($name = \App\Models\Type::find(explode(':', $method->return)[1]) != null ? \App\Models\Type::find(explode(':', $method->return)[1])->name : '')
+
+                            <<a class="text-pink-600 hover:text-pink-300" href="/classes/'{{ $id }}'/show">{{ $name }}</a>>'
+                            
+                        @else
+                            {!! $method->return_type != 0 ? '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . \App\Models\Type::find($method->return_type)->id . '/show">' . \App\Models\Type::find($method->return_type)->name . '</a>>' : '' !!}
+                        @endif
+                    </div>
+                </div>
+            @endforeach
         </div>
     </main>
 
