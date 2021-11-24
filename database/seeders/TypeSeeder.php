@@ -11,14 +11,14 @@ class TypeSeeder extends Seeder
 {
     public function run()
     {
-        $files = scandir(base_path('public/dumps/classes/'));
+        $files      = scandir(base_path('public/dumps/classes/'));
         $countFiles = count($files);
+        $timestamp  = now()->toDateTimeString();
 
         dump("Start importing classes");
 
         for ($i=0; $i < $countFiles; $i++) { 
             try {
-                $start = microtime(true);
                 $fp = fopen(base_path('public/dumps/classes/' . $files[$i]), 'r');
                 
                 $parent = '';
@@ -61,8 +61,8 @@ class TypeSeeder extends Seeder
                     "parent"        => $parent,
                     "name"          => $name,
                     "flags"         => $flags,
-                    "created_at"    => now()->toDateTimeString(),
-                    "updated_at"    => now()->toDateTimeString(),
+                    "created_at"    => $timestamp,
+                    "updated_at"    => $timestamp,
                 ];
 
                 /*
@@ -118,7 +118,7 @@ class TypeSeeder extends Seeder
             }
         }
 
-        $chunks = array_chunk($dataTypes, 1000);
+        $chunks = array_chunk($dataTypes, 10000);
         foreach($chunks as $chunk)
         {
             Type::insert($chunk);
