@@ -69,15 +69,20 @@
                                 if($method->params != '') {
                                     $json = json_decode($method->params);
 
-                                    for ($i=0; $i < count($json); $i++) { 
-                                        echo '<div class="px-10">';
-                                            echo $json[$i]->name . ' : ' . $json[$i]->type . '';
+                                    echo '<div class="grid grid-cols-3 px-10">';
+                                        for ($i=0; $i < count($json); $i++) { 
 
-                                            if($i != count($json) - 1)
-                                                echo ',';
+                                            echo '<div>' . $json[$i]->name . '</div>';
 
-                                        echo '</div>';
-                                    }
+                                            if(str_contains($json[$i]->type, 'handle')) {
+                                                echo '<div>' . explode(":", $json[$i]->type)[0] . ' &#60;' . explode(":", $json[$i]->type)[1] . '&#62;</div>';
+                                            } else {
+                                                echo '<div>' . $json[$i]->type . '</div>';
+                                            }
+
+                                            echo '<div></div>';
+                                        }
+                                    echo '</div>';
                                 }
                             @endphp
                             )
