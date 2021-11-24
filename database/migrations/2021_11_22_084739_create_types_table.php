@@ -19,6 +19,7 @@ class CreateTypesTable extends Migration
             $table->string('parent')->nullable();
             $table->string('name');
             $table->integer('flags');
+            $table->boolean('cached')->default(false);
             $table->timestamps();
         });
     }

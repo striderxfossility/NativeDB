@@ -11,6 +11,8 @@ class Type extends Model
 {
     use HasFactory;
 
+    protected $guarded = ['id'];
+
     public static function getType(string $name)
     {
         if($name == '')

@@ -118,7 +118,7 @@ class TypeSeeder extends Seeder
             }
         }
 
-        $chunks = array_chunk($dataTypes, 10000);
+        $chunks = array_chunk($dataTypes, 5000);
         foreach($chunks as $chunk)
         {
             Type::insert($chunk);
