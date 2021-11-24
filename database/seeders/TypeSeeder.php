@@ -25,7 +25,7 @@ class TypeSeeder extends Seeder
         {
             $explode = explode(":", $prop['type']);
 
-            $dataProp[] = [
+            $dataProps[] = [
                 "type_id"     => $type->id,
                 "name"        => $prop['name'],
                 "return"      => isset($explode[0]) ? $explode[0] : '',
@@ -36,10 +36,31 @@ class TypeSeeder extends Seeder
             ];
         }
 
-        $chunks = array_chunk($dataProp, 1000);
+        $chunks = array_chunk($dataProps, 1000);
         foreach($chunks as $chunk)
         {
             Prop::insert($chunk);
+        }
+
+        foreach($data['funcs'] as $methods)
+        {
+            $dataMethods[] = [
+                "type_id"      => $type->id,
+                "fullName"     => $methods['fullName'],
+                "shortName"    => $methods['shortName'],
+                "return"       => isset($methods['return']) ? $methods['return']['type'] : '',
+                "return_flags" => isset($methods['return']) ? $methods['return']['flags'] : '',
+                "flags"        => $prop['flags'],
+                "params"       => isset($methods['params']) ? json_encode($methods['params']) : '',
+                'created_at'   => now()->toDateTimeString(),
+                'updated_at'   => now()->toDateTimeString(),
+            ];
+        }
+
+        $chunks = array_chunk($dataMethods, 1000);
+        foreach($chunks as $chunk)
+        {
+            Method::insert($chunk);
         }
     }
 }

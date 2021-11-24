@@ -16,12 +16,12 @@ class CreateMethodsTable extends Migration
         Schema::create('methods', function (Blueprint $table) {
             $table->id();
             $table->integer('type_id');
-            $table->boolean('static')->default(false);
-            $table->string('parameters')->default('');
-            $table->string('name');
+            $table->string('fullName');
+            $table->string('shortName');
+            $table->text('params');
             $table->string('return');
-            $table->integer('return_type');
-            $table->text('code');
+            $table->integer('return_flags');
+            $table->integer('flags');
             $table->timestamps();
         });
     }
