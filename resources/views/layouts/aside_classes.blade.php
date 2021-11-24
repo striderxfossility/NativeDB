@@ -4,13 +4,15 @@
             <div>
                 
                 @php
-                    \App\Models\Type::chunk(1000, function ($classTypes) use ($type) {
+                    \App\Models\Type::chunk(500, function ($classTypes) use ($type) {
                         echo '<div style="content-visibility: auto">';
                             foreach ($classTypes as $classType) {
 
                                 $color = $classType->id == $type->id ?  "text-purple-500 font-bold" : "";
+                                $colorHead = '';
 
-                                $colorHead = $classType->id == $type->id ?  "text-yellow-500 font-bold" : "";
+                                if(isset($type->type))
+                                    $colorHead = $classType->id == $type->type->id ?  "text-yellow-500 font-bold" : "";
 
                                 echo '<a id="class-' . $classType->id . '" class="' . $colorHead . ' ' . $color . ' flex items-center py-1 px-4 hover:bg-gray-200 transition duration-100" href="/classes/'.$classType->id.'/show">';
                                 echo $classType->name;
