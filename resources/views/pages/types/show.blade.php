@@ -109,13 +109,11 @@
                     </div>
                     <div>
                         @if(str_contains($method->return, 'handle') || str_contains($method->return, 'whandle'))
+                            
+                            @php($id = \App\Models\Type::whereName(explode(':', $method->return)[1])->first() != null ? \App\Models\Type::whereName(explode(':', $method->return)[1])->first()->id : '')
+                            @php($name = \App\Models\Type::whereName(explode(':', $method->return)[1])->first() != null ? \App\Models\Type::whereName(explode(':', $method->return)[1])->first()->name : '')
 
-                            @dump(explode(':', $method->return)[1])
-
-                            @php($id = \App\Models\Type::find(explode(':', $method->return)[1]) != null ? \App\Models\Type::find(explode(':', $method->return)[1])->id : '')
-                            @php($name = \App\Models\Type::find(explode(':', $method->return)[1]) != null ? \App\Models\Type::find(explode(':', $method->return)[1])->name : '')
-
-                            <<a class="text-pink-600 hover:text-pink-300" href="/classes/'{{ $id }}'/show">{{ $name }}</a>>'
+                            <<a class="text-pink-600 hover:text-pink-300" href="/classes/{{ $id }}/show">{{ $name }}</a>>
                             
                         @else
                             {!! $method->return_type != 0 ? '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . \App\Models\Type::find($method->return_type)->id . '/show">' . \App\Models\Type::find($method->return_type)->name . '</a>>' : '' !!}
