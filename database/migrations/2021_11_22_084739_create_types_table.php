@@ -15,6 +15,7 @@ class CreateTypesTable extends Migration
     {
         Schema::create('types', function (Blueprint $table) {
             $table->id();
+            $table->integer('type_id')->default(0);
             $table->string('parent')->nullable();
             $table->string('name');
             $table->integer('flags');
