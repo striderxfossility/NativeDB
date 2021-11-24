@@ -21,6 +21,7 @@ class CreateMethodsTable extends Migration
             $table->text('params');
             $table->string('return');
             $table->integer('return_flags');
+            $table->integer('return_type');
             $table->integer('flags');
             $table->timestamps();
         });

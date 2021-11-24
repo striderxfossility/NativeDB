@@ -70,12 +70,24 @@ class ImportService
         if(isset($data['props'])) {
             foreach($data['funcs'] as $methods)
             {
+                $return_type = 0;
+
+                if(isset($methods['return'])) {
+                    if(str_contains($methods['return']['type'], 'array')) {
+                        $explode = explode(":", $methods['return']['type']);
+                        $return_type = Type::getType($explode[1]);
+                    } else {
+                        $return_type = Type::getType($methods['return']['type']);
+                    }
+                }
+
                 $dataMethods[] = [
                     "type_id"      => $type->id,
                     "fullName"     => $methods['fullName'],
                     "shortName"    => $methods['shortName'],
                     "return"       => isset($methods['return']) ? $methods['return']['type'] : '',
                     "return_flags" => isset($methods['return']) ? $methods['return']['flags'] : '',
+                    "return_type"  => $return_type,
                     "flags"        => $prop['flags'],
                     "params"       => isset($methods['params']) ? json_encode($methods['params']) : '',
                     'created_at'   => now()->toDateTimeString(),
