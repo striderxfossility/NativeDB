@@ -17,6 +17,6 @@ class TypeController extends Controller
     {
         $type = ImportService::get($type);
 
-        dump($type);
+        return view('pages.types.show')->with('type', $type);
     }
 }

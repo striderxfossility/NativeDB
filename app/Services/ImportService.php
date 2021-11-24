@@ -13,11 +13,6 @@ class ImportService
         if($type->cached)
             return $type;
 
-        $type->type_id  = Type::getType($type->parent);
-        $type->cached   = true;
-
-        $type->save();
-
         $jsonString = file_get_contents(base_path('public/dumps/classes/'. $type->name .'.json'));
 
         $data = json_decode($jsonString, true);
@@ -67,7 +62,7 @@ class ImportService
             }
         }
 
-        if(isset($data['props'])) {
+        if(isset($data['funcs'])) {
             foreach($data['funcs'] as $methods)
             {
                 $return_type = 0;
@@ -88,7 +83,7 @@ class ImportService
                     "return"       => isset($methods['return']) ? $methods['return']['type'] : '',
                     "return_flags" => isset($methods['return']) ? $methods['return']['flags'] : '',
                     "return_type"  => $return_type,
-                    "flags"        => $prop['flags'],
+                    "flags"        => $methods['flags'],
                     "params"       => isset($methods['params']) ? json_encode($methods['params']) : '',
                     'created_at'   => now()->toDateTimeString(),
                     'updated_at'   => now()->toDateTimeString(),
@@ -101,6 +96,11 @@ class ImportService
                 Method::insert($chunk);
             }
         }
+
+        $type->type_id  = Type::getType($type->parent);
+        $type->cached   = true;
+
+        $type->save();
 
         return $type;
     }
