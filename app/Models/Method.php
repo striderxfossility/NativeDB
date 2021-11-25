@@ -21,7 +21,7 @@ class Method extends Model
         return $this->belongsTo(Type::class, 'return_type');
     }
 
-    public function param()
+    public function paramsArr()
     {
         return $this->hasMany(Param::class);
     }
@@ -84,18 +84,20 @@ class Method extends Model
         } else {
             $strBuilder .= $this->shortName . '(<br />';
             
-            if($this->params != '') {
-                $json = json_decode($this->params);
-
+            if($this->params != '')
+            {
                 $strBuilder .= '<div class="grid grid-cols-3 px-10">';
-                    for ($i=0; $i < count($json); $i++) { 
+                    foreach($this->paramsArr as $param)
+                    {
 
-                        $strBuilder .= '<div>' . $json[$i]->name . '</div>';
+                        $strBuilder .= '<div>' . $param->name . '</div>';
 
-                        if(str_contains($json[$i]->type, 'handle')) {
-                            $strBuilder .= '<div>' . explode(":", $json[$i]->type)[0] . ' &#60;' . explode(":", $json[$i]->type)[1] . '&#62;</div>';
+                        if(str_contains($param->type, 'handle')) {
+                            $typeBuild = '<a class="text-pink-600 hover:text-pink-300" href="/classes/' . $param->typeHead->id . '/show">' . $param->typeHead->name . '</a>';
+
+                            $strBuilder .= '<div>' . explode(":", $param->type)[0] . ' &#60;' . $typeBuild . '&#62;</div>';
                         } else {
-                            $strBuilder .= '<div>' . $json[$i]->type . '</div>';
+                            $strBuilder .= '<div>' . $param->type . '</div>';
                         }
 
                         $strBuilder .= '<div></div>';
