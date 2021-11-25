@@ -38,28 +38,12 @@ class ImportService
         if(isset($data['props'])) {
             foreach($data['props'] as $prop)
             {
-                $explode = explode(":", $prop['type']);
+                $explodeArr = explode(":", $prop['type']);
                 $return_type = '';
 
-                if(isset($explode[1])) {
-                    
-                    if($explode[0] == 'array') {
-                        $rem = $explode[1];
-                        $explode[0] = $explode[0] . ':' .  $rem;
-                        if(isset($explode[2])) 
-                            $explode[1] = $explode[2];
-                        else {
-                            if(self::getType($rem) != 0)
-                                $explode[1] = self::getType($rem);
-                            else
-                                $explode[1] = '';
-                        }
-                    }
-
-                    $return_type = self::getType($explode[1]);
-
-                    if($return_type == '0')
-                        $return_type = $explode[1];
+                foreach($explodeArr as $explode)
+                {
+                    self::getType($explode);
                 }
 
                 $dataProps[] = [
