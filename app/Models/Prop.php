@@ -32,26 +32,15 @@ class Prop extends Model
 
     public function getReturnNiceAttribute()
     {
-        if(str_contains($this->return, 'array')) {
-            
-            $strBuilder = '<span class="text-green-700">';
+        $strBuilder = '<span class="text-green-700">';
 
-            $strBuilder .= '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                            </svg> ';
+        $strBuilder .= '<svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+                        </svg> ';
 
-            $strBuilder .= explode(':', $this->return)[0] . '</span>';
-            
+        $strBuilder .= $this->return . '</span>';
+        
 
-            return $strBuilder;
-
-        } elseif($this->return == 'handle') {
-            return 
-            '<span class="text-pink-600">   
-                ' . $this->return . '
-            </span>';
-        } 
-
-        return $this->return;
+        return $strBuilder;
     }
 }
