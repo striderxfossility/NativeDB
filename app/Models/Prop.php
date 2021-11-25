@@ -5,10 +5,12 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
+use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Prop extends Model
 {
     use HasFactory;
+    use Cachable;
 
     public function type()
     {

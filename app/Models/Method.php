@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
 use App\Models\Param;
+use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Method extends Model
 {
     use HasFactory;
+    use Cachable;
 
     public function type()
     {
@@ -93,14 +95,14 @@ class Method extends Model
                         $strBuilder .= '<div>' . $param->name . '</div>';
 
                         if(str_contains($param->type, 'handle')) {
-                            $typeBuild = '<a class="text-pink-600 hover:text-pink-300" href="/classes/' . $param->typeHead->id . '/show">' . $param->typeHead->name . '</a>';
+                            $typeBuild = '<a class="inline text-pink-600 hover:text-pink-300" href="/classes/' . $param->typeHead->id . '/show">' . $param->typeHead->name . '</a>';
 
-                            $strBuilder .= '<div>' . explode(":", $param->type)[0] . ' &#60;' . $typeBuild . '&#62;</div>';
+                            $strBuilder .= '<div>' . explode(":", $param->type)[0] . '</div>';
+                            $strBuilder .= '<div>&#60;' . $typeBuild . '&#62</div>';
                         } else {
                             $strBuilder .= '<div>' . $param->type . '</div>';
+                            $strBuilder .= '<div></div>';
                         }
-
-                        $strBuilder .= '<div></div>';
                     }
                     $strBuilder .= '</div>';
             }

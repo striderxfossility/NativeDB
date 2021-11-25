@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Prop;
 use App\Models\Method;
+use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Type extends Model
 {
     use HasFactory;
+    use Cachable;
 
     protected $guarded = ['id'];
 
