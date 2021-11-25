@@ -53,7 +53,9 @@
         </div>
     </main>
 
-    @include('layouts.aside_classes')
+    @if(!env('APP_TESTS '))
+        @include('layouts.aside_classes')
+    @endif
     
 
 @include('layouts.footer')
