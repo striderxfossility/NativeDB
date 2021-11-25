@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
+use App\Models\Param;
 
 class Method extends Model
 {
@@ -18,6 +19,11 @@ class Method extends Model
     public function returnType()
     {
         return $this->belongsTo(Type::class, 'return_type');
+    }
+
+    public function param()
+    {
+        return $this->hasMany(Param::class);
     }
 
     public function getReturnNiceAttribute()

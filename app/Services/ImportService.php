@@ -5,9 +5,24 @@ namespace App\Services;
 use App\Models\Type;
 use App\Models\Prop;
 use App\Models\Method;
+use App\Models\Param;
 
 class ImportService 
 {
+    public static $chachedTypes = [];
+
+    private static function getType(string $name) {
+        if(isset(self::$chachedTypes[$name])) {
+            return self::$chachedTypes[$name];
+        }
+
+        $type = Type::getType($name);
+
+        self::$chachedTypes[$name] = $type;
+
+        return $type;
+    }
+
     public static function get(Type $type) {
 
         if($type->cached)
@@ -16,6 +31,7 @@ class ImportService
         $jsonString = file_get_contents(base_path('public/dumps/classes/'. $type->name .'.json'));
 
         $data = json_decode($jsonString, true);
+        $time = now()->toDateTimeString();
 
         if(isset($data['props'])) {
             foreach($data['props'] as $prop)
@@ -31,14 +47,14 @@ class ImportService
                         if(isset($explode[2])) 
                             $explode[1] = $explode[2];
                         else {
-                            if(Type::getType($rem) != 0)
-                                $explode[1] = Type::getType($rem);
+                            if(self::getType($rem) != 0)
+                                $explode[1] = self::getType($rem);
                             else
                                 $explode[1] = '';
                         }
                     }
 
-                    $return_type = Type::getType($explode[1]);
+                    $return_type = self::getType($explode[1]);
 
                     if($return_type == '0')
                         $return_type = $explode[1];
@@ -50,8 +66,8 @@ class ImportService
                     "return"      => isset($explode[0]) ? $explode[0] : '',
                     "return_type" => $return_type,
                     "flags"       => $prop['flags'],
-                    'created_at'  => now()->toDateTimeString(),
-                    'updated_at'  => now()->toDateTimeString(),
+                    'created_at'  => $time,
+                    'updated_at'  => $time,
                 ];
             }
 
@@ -70,14 +86,14 @@ class ImportService
                 if(isset($methods['return'])) {
                     if(str_contains($methods['return']['type'], 'array')) {
                         $explode = explode(":", $methods['return']['type']);
-                        $return_type = Type::getType($explode[1]);
+                        $return_type = self::getType($explode[1]);
                     } else {
-                        $return_type = Type::getType($methods['return']['type']);
+                        $return_type = self::getType($methods['return']['type']);
                     }
 
                     if(str_contains($methods['return']['type'], 'handle')) {
                         $explode = explode(":", $methods['return']['type']);
-                        $return_type = Type::getType($explode[1]);
+                        $return_type = self::getType($explode[1]);
                     }
                 }
 
@@ -90,8 +106,8 @@ class ImportService
                     "return_type"  => $return_type,
                     "flags"        => $methods['flags'],
                     "params"       => isset($methods['params']) ? json_encode($methods['params']) : '',
-                    'created_at'   => now()->toDateTimeString(),
-                    'updated_at'   => now()->toDateTimeString(),
+                    'created_at'   => $time,
+                    'updated_at'   => $time,
                 ];
             }
 
@@ -100,9 +116,50 @@ class ImportService
             {
                 Method::insert($chunk);
             }
+
+            foreach(Method::whereTypeId($type->id)->get() as $method) 
+            {
+                if($method->params != "") {
+                    $jsonArr = json_decode($method->params);
+
+                    if($jsonArr != null) {
+                        foreach ($jsonArr as $json)
+                        {
+                            $typeF = self::getType($json->type);
+
+                            if(str_contains($json->type, ':')) {
+                                $explodeArr = explode(':', $json->type);
+
+                                foreach($explodeArr as $explode) 
+                                {
+                                    $typeF = self::getType($explode);
+                                }
+                            }
+
+                            $dataParams[] = [
+                                'method_id'     => $method->id,
+                                'name'          => $json->name,
+                                'flags'         => $json->flags,
+                                'type'          => $json->type,
+                                'type_id'       => $typeF,
+                                'created_at'    => $time,
+                                'updated_at'    => $time,
+                            ];
+                        }
+                    }
+                }
+            }
+
+            if(isset($dataParams)) {
+                $chunks = array_chunk($dataParams, 1000);
+                foreach($chunks as $chunk)
+                {
+                    Param::insert($chunk);
+                }
+            }
         }
 
-        $type->type_id  = Type::getType($type->parent);
+        $type->type_id  = self::getType($type->parent);
         $type->cached   = true;
 
         $type->save();

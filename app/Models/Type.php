@@ -18,7 +18,11 @@ class Type extends Model
         if($name == '')
             return 0;
 
-        return self::whereName($name)->first() ? self::whereName($name)->first()->id : 0;
+        $typeID = \Cache::rememberForever('type-' . $name, function() use ($name) {
+            return self::whereName($name)->first() ? self::whereName($name)->first()->id : 0;
+        });
+
+        return $typeID;
     }
 
     public function type()
