@@ -7,13 +7,14 @@ use App\Models\Type;
 use App\Models\Prop;
 use App\Models\Method;
 use App\Models\Enum;
+use App\Models\Member;
 use App\Services\ImportService;
 
 class TypeSeeder extends Seeder
 {
     public function run()
     {
-        $this->command()->down();
+        $this->command->call('down');
 
         $this->command->comment("Start importing classes");
 
@@ -70,7 +71,7 @@ class TypeSeeder extends Seeder
                 ];
 
             } catch (\Exception $e) {
-                $this->command->error($e->getMessage());
+                $this->command->warn($e->getMessage());
             }
         }
 
@@ -84,7 +85,6 @@ class TypeSeeder extends Seeder
 
         $files      = scandir(base_path('public/dumps/enums/'));
         $countFiles = count($files);
-        $timestamp  = now()->toDateTimeString();
 
         $this->command->comment("Start importing enums");
 
@@ -119,7 +119,7 @@ class TypeSeeder extends Seeder
                 ];
 
             } catch (\Exception $e) {
-                $this->command->error($e->getMessage());
+                $this->command->warn($e->getMessage());
             }
         }
 
@@ -131,7 +131,47 @@ class TypeSeeder extends Seeder
 
         $this->command->comment("Done importing enums");
 
+        $count = Enum::count();
+        $i = 0;
+
+        $chachedEnums = [];
+
+        foreach(Enum::all() as $enum)
+        {
+            $jsonString = file_get_contents(base_path('public/dumps/enums/'. $enum->name .'.json'));
+            $data = json_decode($jsonString, true);
+            $time = now()->toDateTimeString();
+
+            foreach($data['members'] as $member)
+            {
+                $dataMembers[] = [
+                    "enum_id"     => $enum->id,
+                    "name"        => $member['name'],
+                    "value"       => $member['value'],
+                    "created_at"  => $timestamp,
+                    "updated_at"  => $timestamp,
+                ];
+            }
+
+            $this->command->info($i . '/' . $count . ' enums extracted, (' . $enum->name . ')');
+         
+            $i++;
+        }
+
+        $this->command->comment("Start uploading " . count($dataMembers) . " members.. should not take long");
+
+        $chunks = array_chunk($dataMembers, 1000);
+        foreach($chunks as $chunk)
+        {
+            Member::insert($chunk);
+        }
+
+        $this->command->comment("Done uploading members");
+
         $count = Type::count();
+
+        $this->command->comment("Start extracting " . Type::count() . " classes..");
+
         $i = 0;
 
         $chachedTypes = [];
@@ -140,12 +180,12 @@ class TypeSeeder extends Seeder
         {
             $chachedTypes = ImportService::get($type, $chachedTypes, true);
 
-            $this->command->info($i . '/' . $count . ' classes extracted, chached ' . count($chachedTypes) . ' classes');
+            $this->command->info($i . '/' . $count . ' classes extracted, chached ' . count($chachedTypes) . ' classes, (' . $type->name . ')');
          
             $i++;
         }
 
         $this->command->comment('Finished');
-        $this->command->up();
+        $this->command->call('up');
     }
 }
