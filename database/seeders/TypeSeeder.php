@@ -8,6 +8,7 @@ use App\Models\Prop;
 use App\Models\Method;
 use App\Models\Enum;
 use App\Models\Member;
+use App\Models\Bitfield;
 use App\Services\ImportService;
 
 class TypeSeeder extends Seeder
@@ -161,6 +162,89 @@ class TypeSeeder extends Seeder
         $this->command->comment("Start uploading " . count($dataMembers) . " members.. should not take long");
 
         $chunks = array_chunk($dataMembers, 1000);
+        foreach($chunks as $chunk)
+        {
+            Member::insert($chunk);
+        }
+
+        $this->command->comment("Done uploading members");
+
+        $files      = scandir(base_path('public/dumps/bitfields/'));
+        $countFiles = count($files);
+
+        $this->command->comment("Start importing bitfields");
+
+        for ($i=0; $i < $countFiles; $i++) { 
+            try {
+                $fp = fopen(base_path('public/dumps/bitfields/' . $files[$i]), 'r');
+                
+                $name = '';
+
+                for ($x = 0; $x < 2; $x++) {
+                    if (feof($fp)) {
+                        echo 'EOF reached';
+                        break;
+                    }
+
+                    $line = fgets($fp);
+
+                    if(str_contains($line, 'name')) {
+                        $line = explode(':', $line)[1];
+                        $line = str_replace('"', '', $line);
+                        $line = str_replace(',', '', $line);
+                        $name = trim($line);
+                    }
+                }
+
+                fclose($fp);
+
+                $dataBitfields[] = [
+                    "name"          => $name,
+                    "created_at"    => $timestamp,
+                    "updated_at"    => $timestamp,
+                ];
+
+            } catch (\Exception $e) {
+                $this->command->warn($e->getMessage());
+            }
+        }
+
+        $chunks = array_chunk($dataBitfields, 5000);
+        foreach($chunks as $chunk)
+        {
+            Bitfield::insert($chunk);
+        }
+
+        $this->command->comment("Done importing bitfields");
+
+        $count = Bitfield::count();
+        $i = 0;
+
+        foreach(Bitfield::all() as $bitfield)
+        {
+            $jsonString = file_get_contents(base_path('public/dumps/bitfields/'. $bitfield->name .'.json'));
+            $data = json_decode($jsonString, true);
+            $time = now()->toDateTimeString();
+
+            foreach($data['members'] as $member)
+            {
+                $dataMembersBitfield[] = [
+                    "bitfield_id" => $bitfield->id,
+                    "name"        => $member['name'],
+                    "value"       => $member['bit'],
+                    "created_at"  => $timestamp,
+                    "updated_at"  => $timestamp,
+                ];
+            }
+
+            $this->command->info($i . '/' . $count . ' bitfields extracted, (' . $bitfield->name . ')');
+         
+            $i++;
+        }
+
+        $this->command->comment("Start uploading " . count($dataMembersBitfield) . " members.. should not take long");
+
+        $chunks = array_chunk($dataMembersBitfield, 1000);
         foreach($chunks as $chunk)
         {
             Member::insert($chunk);
