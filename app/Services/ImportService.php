@@ -40,16 +40,22 @@ class ImportService
             {
                 $explodeArr = explode(":", $prop['type']);
                 $return_type = '';
+                $return = $prop['type'];
 
                 foreach($explodeArr as $explode)
                 {
-                    self::getType($explode);
+                    $return_type = self::getType($explode);
+
+                    //if ($return_type != 0) {
+                    //    $return = str_replace(':' . $explode, '', $return);
+                    //    $return = str_replace($explode, '', $return);
+                    //}
                 }
 
                 $dataProps[] = [
                     "type_id"     => $type->id,
                     "name"        => $prop['name'],
-                    "return"      => isset($explode[0]) ? $explode[0] : '',
+                    "return"      => $return,
                     "return_type" => $return_type,
                     "flags"       => $prop['flags'],
                     'created_at'  => $time,
