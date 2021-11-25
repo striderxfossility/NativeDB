@@ -8,9 +8,9 @@ use App\Services\ImportService;
 
 class TypeController extends Controller
 {
-    public function all()
+    public function index()
     {
-        dump("test");
+        return view('pages.types.index');
     }
 
     public function show(Type $type)

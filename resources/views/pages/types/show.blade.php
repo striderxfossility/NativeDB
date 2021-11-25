@@ -1,6 +1,11 @@
 @include('layouts.header')
 
 <div class="flex-auto lg:flex lg:flex-row">
+
+    @if(!env('APP_TESTS '))
+        @include('layouts.aside_classes')
+    @endif
+    
     <main class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 py-7 bg-white overflow-auto">
         <div class="mb-3 border-b border-gray-200 pb-1">
             <h1 class="text-xl text-purple-500">{{ $type->name }}</h1>
@@ -52,10 +57,5 @@
             @endforeach
         </div>
     </main>
-
-    @if(!env('APP_TESTS '))
-        @include('layouts.aside_classes')
-    @endif
     
-
 @include('layouts.footer')

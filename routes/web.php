@@ -12,13 +12,13 @@ Route::view('/', 'welcome');
 
 Broadcast::routes();
 
-Route::get('classes',                   [TypeController::class, "all"])->name('types.all');
+Route::get('classes',                   [TypeController::class, "index"])->name('types.all');
 Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
 
-Route::get('enums',                     [EnumController::class, "all"])->name('enums.all');
+Route::get('enums',                     [EnumController::class, "index"])->name('enums.all');
 Route::get('enums/{enum}/show',         [EnumController::class, "show"])->name('enums.show');
 
-Route::get('bitfields',                 [BitfieldController::class, "all"])->name('bitfields.all');
+Route::get('bitfields',                 [BitfieldController::class, "index"])->name('bitfields.all');
 Route::get('bitfields/{bitfield}/show', [BitfieldController::class, "show"])->name('bitfields.show');
 
 Route::middleware(['auth'])->group(function () 

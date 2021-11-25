@@ -7,9 +7,9 @@ use App\Models\Bitfield;
 
 class BitfieldController extends Controller
 {
-    public function all()
+    public function index()
     {
-        dump("test");
+        return view('pages.bitfields.index');
     }
 
     public function show(Bitfield $bitfield)

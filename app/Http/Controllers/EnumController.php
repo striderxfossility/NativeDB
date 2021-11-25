@@ -7,9 +7,9 @@ use App\Models\Enum;
 
 class EnumController extends Controller
 {
-    public function all()
+    public function index()
     {
-        dump("test");
+        return view('pages.enums.index');
     }
 
     public function show(Enum $enum)

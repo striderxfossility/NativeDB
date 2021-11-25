@@ -33,13 +33,13 @@
                     
                     <div class="lg:flex flex-shrink-0 w-full h-8 px-4 bg-gray-100 border-b hidden">
                         <span class="flex items-center h-8 mr-0.5 text-xs text-gray-500">Type:</span>
-                        <button class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 bg-gray-200">
+                        <a href="/classes" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'types') ? 'bg-gray-200' : '' }}">
                             Class
-                        </button>
-                        <button class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
+                        </a>
+                        <a href="/enums" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'enums') ? 'bg-gray-200' : '' }}">
                             Enum
-                        </button>
-                        <button class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
+                        </a>
+                        <a href="/bitfields" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'bitfields') ? 'bg-gray-200' : '' }}">
                             Bitfield
-                        </button>
+                        </a>
                     </div>
