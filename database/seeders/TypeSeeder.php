@@ -6,16 +6,18 @@ use Illuminate\Database\Seeder;
 use App\Models\Type;
 use App\Models\Prop;
 use App\Models\Method;
+use App\Services\ImportService;
 
 class TypeSeeder extends Seeder
 {
     public function run()
     {
+        $this->command()->down();
         $files      = scandir(base_path('public/dumps/classes/'));
         $countFiles = count($files);
         $timestamp  = now()->toDateTimeString();
 
-        dump("Start importing classes");
+        $this->command->comment("Start importing classes");
 
         for ($i=0; $i < $countFiles; $i++) { 
             try {
@@ -66,7 +68,7 @@ class TypeSeeder extends Seeder
                 ];
 
             } catch (\Exception $e) {
-                dump($e->getMessage());
+                $this->command->error($e->getMessage());
             }
         }
 
@@ -76,6 +78,23 @@ class TypeSeeder extends Seeder
             Type::insert($chunk);
         }
 
-        dump("Finished");
+        $this->command->comment("Done importing classes");
+
+        $count = Type::count();
+        $i = 0;
+
+        $chachedTypes = [];
+
+        foreach(Type::all() as $type)
+        {
+            $chachedTypes = ImportService::get($type, $chachedTypes, true);
+
+            $this->command->info($i . '/' . $count . ' classes extracted, chached ' . count($chachedTypes) . ' classes');
+         
+            $i++;
+        }
+
+        $this->command->comment('Finished');
+        $this->command->up();
     }
 }

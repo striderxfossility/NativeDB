@@ -38,7 +38,7 @@
         <h2 class="mb-4 border-b border-gray-200">Methods</h2>
         <div class="mb-3 rounded overflow-hidden">
             @foreach ($type->methods as $method)
-                <div class="grid grid-cols-4 hover:bg-gray-100 px-10 py-2">
+                <div class="grid grid-cols-4 hover:bg-gray-100 px-10 py-4">
                     <div class="col-span-2">
                         {!! $method->functionNice !!}
                     </div>

@@ -23,7 +23,9 @@ class ImportService
         return $type;
     }
 
-    public static function get(Type $type) {
+    public static function get(Type $type, array $chachedTypes = [], bool $returnArray = false) {
+
+        self::$chachedTypes = $chachedTypes;
 
         if($type->cached)
             return $type;
@@ -164,6 +166,9 @@ class ImportService
 
         $type->save();
 
+        if($returnArray)
+            return self::$chachedTypes;
+        
         return $type;
     }
 }

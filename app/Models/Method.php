@@ -88,11 +88,11 @@ class Method extends Model
             
             if($this->params != '')
             {
-                $strBuilder .= '<div class="grid grid-cols-3 px-10">';
+                $strBuilder .= '<div class="grid grid-cols-3 mx-10 bg-pink-50 p-2">';
                     foreach($this->paramsArr as $param)
                     {
 
-                        $strBuilder .= '<div>' . $param->name . '</div>';
+                        $strBuilder .= '<div><span class="text-red-400">param</span> ' . $param->name . '</div>';
 
                         if(str_contains($param->type, 'handle')) {
                             $typeBuild = '<a class="inline text-pink-600 hover:text-pink-300" href="/classes/' . $param->typeHead->id . '/show">' . $param->typeHead->name . '</a>';
