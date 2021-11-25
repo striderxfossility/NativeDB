@@ -17,6 +17,8 @@ class TypeController extends Controller
     {
         $type = ImportService::get($type);
 
+        $type = Type::whereId($type->id)->with('type')->with('props.returnType')->with('methods.returnType')->firstOrFail();
+
         return view('pages.types.show')->with('type', $type);
     }
 }

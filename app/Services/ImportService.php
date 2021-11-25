@@ -74,6 +74,11 @@ class ImportService
                     } else {
                         $return_type = Type::getType($methods['return']['type']);
                     }
+
+                    if(str_contains($methods['return']['type'], 'handle')) {
+                        $explode = explode(":", $methods['return']['type']);
+                        $return_type = Type::getType($explode[1]);
+                    }
                 }
 
                 $dataMethods[] = [

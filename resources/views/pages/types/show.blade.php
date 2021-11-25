@@ -18,38 +18,17 @@
                 Fields
             </h2>
             <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
-                @foreach (\App\Models\Prop::whereTypeId($type->id)->get() as $prop)
+                @foreach ($type->props as $prop)
                     <div class="grid grid-cols-3 hover:bg-gray-100 px-10">
                         <div class="">
                             <span class="text-red-400">var</span> 
                             {{ $prop->name }} 
                         </div>
                         <div class="">
-                            return :
-                            @if(str_contains($prop->return, 'array'))
-                                <span class="text-green-700">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                    </svg>
-                                    {{ explode(':', $prop->return)[0] }}</span>
-                                    : 
-                                    @if(explode(':', $prop->return)[1] == 'handle' || explode(':', $prop->return)[1] == 'whandle')
-                                        <span class="text-pink-600">   
-                                            {{ explode(':', $prop->return)[1] }}
-                                        </span>
-                                    @else
-                                    {{ explode(':', $prop->return)[1] }}
-                                    @endif
-                            @elseif($prop->return == 'handle' || $prop->return == 'whandle')
-                                <span class="text-pink-600">   
-                                    {{ $prop->return }}
-                                </span>
-                            @else
-                                {{ $prop->return }}
-                            @endif
+                            return : {!! $prop->returnNice !!}
                         </div>
                         <div>
-                            {!! $prop->return_type != '' ? '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . \App\Models\Type::find($prop->return_type)->id . '/show">' . \App\Models\Type::find($prop->return_type)->name . '</a>>' : '' !!}
+                            {!! $prop->returnTypeNice !!}
                         </div>
                     </div>
                 @endforeach
@@ -58,81 +37,16 @@
         
         <h2 class="mb-4 border-b border-gray-200">Methods</h2>
         <div class="mb-3 rounded overflow-hidden">
-            @foreach (\App\Models\Method::whereTypeId($type->id)->get() as $method)
+            @foreach ($type->methods as $method)
                 <div class="grid grid-cols-4 hover:bg-gray-100 px-10 py-2">
                     <div class="col-span-2">
-                        @if($method->params == '')
-                        {{ $method->shortName }}()
-                        @else
-                            {{ $method->shortName }}(<br />
-                            @php
-                                if($method->params != '') {
-                                    $json = json_decode($method->params);
-
-                                    echo '<div class="grid grid-cols-3 px-10">';
-                                        for ($i=0; $i < count($json); $i++) { 
-
-                                            echo '<div>' . $json[$i]->name . '</div>';
-
-                                            if(str_contains($json[$i]->type, 'handle')) {
-                                                echo '<div>' . explode(":", $json[$i]->type)[0] . ' &#60;' . explode(":", $json[$i]->type)[1] . '&#62;</div>';
-                                            } else {
-                                                echo '<div>' . $json[$i]->type . '</div>';
-                                            }
-
-                                            echo '<div></div>';
-                                        }
-                                    echo '</div>';
-                                }
-                            @endphp
-                            )
-                        @endif
+                        {!! $method->functionNice !!}
                     </div>
                     <div class="">
-                        @if($method->return == '')
-                            <div class="text-yellow-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" />
-                                </svg>    
-                                void
-                            </div>
-                        @else
-                            return : 
-                        @endif
-                        
-                        @if(str_contains($method->return, 'array'))
-                            <span class="text-green-700">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 inline" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
-                                </svg>
-                                {{ explode(':', $method->return)[0] }}</span>
-                                : 
-                                @if(explode(':', $method->return)[1] == 'handle' || explode(':', $method->return)[1] == 'whandle')
-                                    <span class="text-pink-600">   
-                                        {{ explode(':', $method->return)[1] }}
-                                    </span>
-                                @else
-                                {{ explode(':', $method->return)[1] }}
-                                @endif
-                        @elseif(str_contains($method->return, 'handle') || str_contains($method->return, 'whandle'))
-                            <span class="text-pink-600">   
-                                {{ explode(':', $method->return)[0] }}
-                            </span>
-                        @else
-                            {{ $method->return }}
-                        @endif
+                        {!! $method->returnNice !!}
                     </div>
                     <div>
-                        @if(str_contains($method->return, 'handle') || str_contains($method->return, 'whandle'))
-                            
-                            @php($id = \App\Models\Type::whereName(explode(':', $method->return)[1])->first() != null ? \App\Models\Type::whereName(explode(':', $method->return)[1])->first()->id : '')
-                            @php($name = \App\Models\Type::whereName(explode(':', $method->return)[1])->first() != null ? \App\Models\Type::whereName(explode(':', $method->return)[1])->first()->name : '')
-
-                            <<a class="text-pink-600 hover:text-pink-300" href="/classes/{{ $id }}/show">{{ $name }}</a>>
-                            
-                        @else
-                            {!! $method->return_type != 0 ? '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . \App\Models\Type::find($method->return_type)->id . '/show">' . \App\Models\Type::find($method->return_type)->name . '</a>>' : '' !!}
-                        @endif
+                        {!! $method->returnTypeNice !!}
                     </div>
                 </div>
             @endforeach
