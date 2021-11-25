@@ -6,10 +6,12 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Enum;
 use App\Models\Bitfield;
+use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Member extends Model
 {
     use HasFactory;
+    use Cachable;
 
     public function enum()
     {
