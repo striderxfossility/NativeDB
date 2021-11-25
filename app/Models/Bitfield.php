@@ -11,7 +11,9 @@ class Bitfield extends Model
 {
     use HasFactory;
     use Cachable;
-    
+
+    protected $guarded = ['id'];
+
     public function members()
     {
         return $this->hasMany(Member::class);

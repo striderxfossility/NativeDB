@@ -4,14 +4,22 @@ use Illuminate\Support\Facades\Route;
 
 use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 use App\Http\Controllers\TypeController;
+use App\Http\Controllers\EnumController;
+use App\Http\Controllers\BitfieldController;
 
 
 Route::view('/', 'welcome');
 
 Broadcast::routes();
 
-Route::get('classes',               [TypeController::class, "all"])->name('types.all');
-Route::get('classes/{type}/show',   [TypeController::class, "show"])->name('types.show');
+Route::get('classes',                   [TypeController::class, "all"])->name('types.all');
+Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
+
+Route::get('enums',                     [EnumController::class, "all"])->name('enums.all');
+Route::get('enums/{enum}/show',         [EnumController::class, "show"])->name('enums.show');
+
+Route::get('bitfields',                 [BitfieldController::class, "all"])->name('bitfields.all');
+Route::get('bitfields/{bitfield}/show', [BitfieldController::class, "show"])->name('bitfields.show');
 
 Route::middleware(['auth'])->group(function () 
 {
