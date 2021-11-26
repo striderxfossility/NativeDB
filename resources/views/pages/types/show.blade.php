@@ -7,7 +7,14 @@
     @endif
     
     <main class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 py-7 bg-white overflow-auto">
-        <div class="mb-3 border-b border-gray-200 pb-1">
+        <div class="mb-3 border-b border-gray-200 pb-1 pb-2">
+
+            <div class="lg:flex flex-shrink-0 w-full h-8 px-4 border-b hidden mb-2">
+                <a href="/search/{{ $type->id }}/access" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
+                    Find wich class returns this class
+                </a>
+            </div>
+
             <h1 class="text-xl text-purple-500">{{ $type->name }}</h1>
 
             @php ($headType = $type->type)

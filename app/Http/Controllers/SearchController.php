@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Type;
 use App\Models\Enum;
+use App\Models\Prop;
+use App\Models\Method;
 use App\Models\Bitfield;
 
 class SearchController extends Controller
@@ -22,5 +24,16 @@ class SearchController extends Controller
             ->with('types', $types)
             ->with('enums', $enums)
             ->with('bitfields', $bitfields);
+    }
+
+    public function access(Type $type)
+    {
+        $types = Prop::where('return_type', $type->id)->with('type')->get()->pluck('type');
+
+        $methods = Method::where('return_type', $type->id)->with('type')->get()->pluck('type');
+
+        $types = $types->toBase()->merge($methods);
+
+        return view('pages.search.access')->with('types', $types->unique());
     }
 }

@@ -23,7 +23,9 @@ class TypeController extends Controller
             ->with('props.returnEnum')
             ->with('methods.returnType')
             ->with('methods.returnEnum')
+            ->with('methods.returnBitfield')
             ->with('methods.paramsArr.typeHead')
+            ->with('methods.paramsArr.enumHead')
             ->firstOrFail();
 
         return view('pages.types.show')->with('type', $type);

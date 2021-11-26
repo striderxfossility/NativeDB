@@ -13,6 +13,7 @@ Route::view('/', 'welcome');
 Broadcast::routes();
 
 Route::post('search',                   [SearchController::class, 'search'])->name('search');
+Route::get('search/{type}/access',      [SearchController::class, 'access'])->name('search.access');
 
 Route::get('classes',                   [TypeController::class, "index"])->name('types.all');
 Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
