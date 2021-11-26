@@ -143,6 +143,8 @@ class ImportService
                         foreach ($jsonArr as $json)
                         {
                             $typeF = self::getType($json->type);
+                            $typeE = self::getEnum($json->type);
+                            $typeB = self::getBitfield($json->type);
 
                             if(str_contains($json->type, ':')) {
                                 $explodeArr = explode(':', $json->type);
@@ -150,6 +152,8 @@ class ImportService
                                 foreach($explodeArr as $explode) 
                                 {
                                     $typeF = self::getType($explode);
+                                    $typeE = self::getEnum($explode);
+                                    $typeB = self::getBitfield($explode);
                                 }
                             }
 
@@ -159,6 +163,8 @@ class ImportService
                                 'flags'         => $json->flags,
                                 'type'          => $json->type,
                                 'type_id'       => $typeF,
+                                'enum_id'       => $typeE,
+                                'bitfield_id'   => $typeB,
                                 'created_at'    => $time,
                                 'updated_at'    => $time,
                             ];

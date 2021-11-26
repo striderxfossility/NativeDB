@@ -20,6 +20,8 @@ class CreateParamsTable extends Migration
             $table->integer('flags');
             $table->string('type');
             $table->integer('type_id')->default(0);
+            $table->integer('enum_id')->default(0);
+            $table->integer('bitfield_id')->default(0);
             $table->timestamps();
         });
     }

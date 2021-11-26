@@ -117,6 +117,16 @@ class Method extends Model
 
                             $strBuilder .= '<div>' . explode(":", $param->type)[0] . '</div>';
                             $strBuilder .= '<div class="col-span-4">&#60;' . $typeBuild . '&#62</div>';
+                        } elseif($param->enumHead != null) {
+                            $enumBuild = '<a class="inline text-purple-600 hover:text-purple-300" href="/enums/' . $param->enumHead->id . '/show">' . $param->enumHead->name . '</a>';
+
+                            $strBuilder .= '<div>' . explode(":", $param->enum)[0] . '</div>';
+                            $strBuilder .= '<div class="col-span-4">&#60;' . $enumBuild . '&#62</div>';
+                        } elseif($param->bitfieldHead != null) {
+                            $bitfieldBuild = '<a class="inline text-yellow-600 hover:text-yellow-300" href="/bitfields/' . $param->bitfieldHead->id . '/show">' . $param->bitfieldHead->name . '</a>';
+
+                            $strBuilder .= '<div>' . explode(":", $param->bitfield)[0] . '</div>';
+                            $strBuilder .= '<div class="col-span-4">&#60;' . $bitfieldBuild . '&#62</div>';
                         } else {
                             $strBuilder .= '<div>' . $param->type . '</div>';
                             $strBuilder .= '<div class="col-span-4"></div>';
