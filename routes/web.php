@@ -6,11 +6,13 @@ use Rap2hpoutre\LaravelLogViewer\LogViewerController;
 use App\Http\Controllers\TypeController;
 use App\Http\Controllers\EnumController;
 use App\Http\Controllers\BitfieldController;
-
+use App\Http\Controllers\SearchController;
 
 Route::view('/', 'welcome');
 
 Broadcast::routes();
+
+Route::post('search',                   [SearchController::class, 'search'])->name('search');
 
 Route::get('classes',                   [TypeController::class, "index"])->name('types.all');
 Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
