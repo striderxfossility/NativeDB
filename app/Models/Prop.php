@@ -5,6 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
+use App\Models\Bitfield;
+use App\Models\Enum;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Prop extends Model
@@ -22,12 +24,28 @@ class Prop extends Model
         return $this->belongsTo(Type::class, 'return_type');
     }
 
+    public function returnBitfield()
+    {
+        return $this->belongsTo(Bitfield::class, 'return_bitfield');
+    }
+
+    public function returnEnum()
+    {
+        return $this->belongsTo(Enum::class, 'return_enum');
+    }
+
     public function getReturnTypeNiceAttribute()
     {
-        if($this->returnType == null)
-            return '';
+        if($this->returnType != null)
+            return '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . $this->returnType->id . '/show">' . $this->returnType->name . '</a>>';
 
-        return '<<a class="text-pink-600 hover:text-pink-300" href="/classes/' . $this->returnType->id . '/show">' . $this->returnType->name . '</a>>';
+        if($this->returnEnum != null)
+            return '<<a class="text-purple-600 hover:text-purple-300" href="/enums/' . $this->returnEnum->id . '/show">' . $this->returnEnum->name . '</a>>';
+
+        if($this->returnBitfield != null)
+            return '<<a class="text-yellow-600 hover:text-yellow-300" href="/bitfields/' . $this->returnBitfield->id . '/show">' . $this->returnBitfield->name . '</a>>';
+        
+        return '';
     }
 
     public function getReturnNiceAttribute()
@@ -43,8 +61,15 @@ class Prop extends Model
         $strBuilder = $this->return;
 
         $strBuilder = str_replace("array:", $replace, $strBuilder);
+
         $strBuilder = str_replace(':' . $this->returnType?->name, '', $strBuilder);
         $strBuilder = str_replace($this->returnType?->name, '', $strBuilder);
+
+        $strBuilder = str_replace(':' . $this->returnEnum?->name, '', $strBuilder);
+        $strBuilder = str_replace($this->returnEnum?->name, '', $strBuilder);
+
+        $strBuilder = str_replace(':' . $this->returnBitfield?->name, '', $strBuilder);
+        $strBuilder = str_replace($this->returnBitfield?->name, '', $strBuilder);
 
         return $strBuilder;
     }
