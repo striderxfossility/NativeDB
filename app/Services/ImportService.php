@@ -52,10 +52,11 @@ class ImportService
         if(isset($data['props'])) {
             foreach($data['props'] as $prop)
             {
-                $explodeArr = explode(":", $prop['type']);
-                $return_type = '';
-                $return_enum = '';
-                $return = $prop['type'];
+                $explodeArr         = explode(":", $prop['type']);
+                $return_type        = '';
+                $return_enum        = '';
+                $return_bitfield    = '';
+                $return             = $prop['type'];
 
                 foreach($explodeArr as $explode)
                 {
@@ -66,11 +67,6 @@ class ImportService
 
                     if($return_type == 0 && $return_enum == 0)
                         $return_bitfield = self::getBitfield($explode);
-
-                    //if ($return_type != 0) {
-                    //    $return = str_replace(':' . $explode, '', $return);
-                    //    $return = str_replace($explode, '', $return);
-                    //}
                 }
 
                 $dataProps[] = [
@@ -96,33 +92,39 @@ class ImportService
         if(isset($data['funcs'])) {
             foreach($data['funcs'] as $methods)
             {
-                $return_type = 0;
+                $return_type        = 0;
+                $return_enum        = 0;
+                $return_bitfield    = 0;
 
                 if(isset($methods['return'])) {
-                    if(str_contains($methods['return']['type'], 'array')) {
-                        $explode = explode(":", $methods['return']['type']);
-                        $return_type = self::getType($explode[1]);
-                    } else {
-                        $return_type = self::getType($methods['return']['type']);
-                    }
 
-                    if(str_contains($methods['return']['type'], 'handle')) {
-                        $explode = explode(":", $methods['return']['type']);
-                        $return_type = self::getType($explode[1]);
+                    $explodeArr = explode(":", $methods['return']['type']);
+
+                    foreach($explodeArr as $explode)
+                    {
+                        $return_type = self::getType($explode);
+
+                        if($return_type == 0)
+                            $return_enum = self::getEnum($explode);
+
+                        if($return_type == 0 && $return_enum == 0)
+                            $return_bitfield = self::getBitfield($explode);
                     }
                 }
 
                 $dataMethods[] = [
-                    "type_id"      => $type->id,
-                    "fullName"     => $methods['fullName'],
-                    "shortName"    => $methods['shortName'],
-                    "return"       => isset($methods['return']) ? $methods['return']['type'] : '',
-                    "return_flags" => isset($methods['return']) ? $methods['return']['flags'] : '',
-                    "return_type"  => $return_type,
-                    "flags"        => $methods['flags'],
-                    "params"       => isset($methods['params']) ? json_encode($methods['params']) : '',
-                    'created_at'   => $time,
-                    'updated_at'   => $time,
+                    "type_id"           => $type->id,
+                    "fullName"          => $methods['fullName'],
+                    "shortName"         => $methods['shortName'],
+                    "return"            => isset($methods['return']) ? $methods['return']['type'] : '',
+                    "return_flags"      => isset($methods['return']) ? $methods['return']['flags'] : '',
+                    "return_type"       => $return_type,
+                    "return_enum"       => $return_enum,
+                    "return_bitfield"   => $return_bitfield,
+                    "flags"             => $methods['flags'],
+                    "params"            => isset($methods['params']) ? json_encode($methods['params']) : '',
+                    'created_at'        => $time,
+                    'updated_at'        => $time,
                 ];
             }
 

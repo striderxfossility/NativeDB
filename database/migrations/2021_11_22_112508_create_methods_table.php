@@ -22,6 +22,8 @@ class CreateMethodsTable extends Migration
             $table->string('return');
             $table->integer('return_flags');
             $table->integer('return_type');
+            $table->integer('return_enum');
+            $table->integer('return_bitfield');
             $table->integer('flags');
             $table->timestamps();
         });
