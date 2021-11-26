@@ -43,6 +43,8 @@ class Prop extends Model
         $strBuilder = $this->return;
 
         $strBuilder = str_replace("array:", $replace, $strBuilder);
+        $strBuilder = str_replace(':' . $this->returnType?->name, '', $strBuilder);
+        $strBuilder = str_replace($this->returnType?->name, '', $strBuilder);
 
         return $strBuilder;
     }

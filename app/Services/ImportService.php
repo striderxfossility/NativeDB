@@ -4,6 +4,8 @@ namespace App\Services;
 
 use App\Models\Type;
 use App\Models\Prop;
+use App\Models\Enum;
+use App\Models\Bitfield;
 use App\Models\Method;
 use App\Models\Param;
 
@@ -23,6 +25,18 @@ class ImportService
         return $type;
     }
 
+    private static function getEnum(string $name) {
+        $enum = Enum::getEnum($name);
+
+        return $enum;
+    }
+
+    private static function getBitfield(string $name) {
+        $bitfield = Bitfield::getBitfield($name);
+
+        return $bitfield;
+    }
+
     public static function get(Type $type, array $chachedTypes = [], bool $returnArray = false) {
 
         self::$chachedTypes = $chachedTypes;
@@ -40,11 +54,18 @@ class ImportService
             {
                 $explodeArr = explode(":", $prop['type']);
                 $return_type = '';
+                $return_enum = '';
                 $return = $prop['type'];
 
                 foreach($explodeArr as $explode)
                 {
                     $return_type = self::getType($explode);
+
+                    if($return_type == 0)
+                        $return_enum = self::getEnum($explode);
+
+                    if($return_type == 0 && $return_enum == 0)
+                        $return_bitfield = self::getBitfield($explode);
 
                     //if ($return_type != 0) {
                     //    $return = str_replace(':' . $explode, '', $return);
@@ -53,13 +74,15 @@ class ImportService
                 }
 
                 $dataProps[] = [
-                    "type_id"     => $type->id,
-                    "name"        => $prop['name'],
-                    "return"      => $return,
-                    "return_type" => $return_type,
-                    "flags"       => $prop['flags'],
-                    'created_at'  => $time,
-                    'updated_at'  => $time,
+                    "type_id"           => $type->id,
+                    "name"              => $prop['name'],
+                    "return"            => $return,
+                    "return_type"       => $return_type,
+                    "return_enum"       => $return_enum,
+                    "return_bitfield"   => $return_bitfield,
+                    "flags"             => $prop['flags'],
+                    'created_at'        => $time,
+                    'updated_at'        => $time,
                 ];
             }
 

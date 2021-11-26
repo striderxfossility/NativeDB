@@ -14,6 +14,18 @@ class Enum extends Model
 
     protected $guarded = ['id'];
 
+    public static function getEnum(string $name)
+    {
+        if($name == '')
+            return 0;
+
+        $enumID = \Cache::rememberForever('enum-' . $name, function() use ($name) {
+            return self::whereName($name)->first() ? self::whereName($name)->first()->id : 0;
+        });
+
+        return $enumID;
+    }
+
     public function members()
     {
         return $this->hasMany(Member::class);

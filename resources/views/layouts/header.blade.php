@@ -42,4 +42,7 @@
                         <a href="/bitfields" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'bitfields') ? 'bg-gray-200' : '' }}">
                             Bitfield
                         </a>
+                        <a href="/tweakdb" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'tweakdb') ? 'bg-gray-200' : '' }}">
+                            TweakDB
+                        </a>
                     </div>

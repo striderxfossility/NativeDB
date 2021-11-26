@@ -14,6 +14,18 @@ class Bitfield extends Model
 
     protected $guarded = ['id'];
 
+    public static function getBitfield(string $name)
+    {
+        if($name == '')
+            return 0;
+
+        $bitfieldID = \Cache::rememberForever('bitfield-' . $name, function() use ($name) {
+            return self::whereName($name)->first() ? self::whereName($name)->first()->id : 0;
+        });
+
+        return $bitfieldID;
+    }
+
     public function members()
     {
         return $this->hasMany(Member::class);

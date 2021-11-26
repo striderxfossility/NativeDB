@@ -84,7 +84,7 @@ class Method extends Model
         if($this->params == '') {
             return $this->shortName . '() => ' . $this->returnNice . $this->returnTypeNice;
         } else {
-            $strBuilder .= $this->shortName . '(<br />';
+            $strBuilder .= $this->shortName . ' (<br />';
             
             if($this->params != '')
             {

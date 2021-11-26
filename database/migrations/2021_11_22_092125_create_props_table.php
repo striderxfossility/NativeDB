@@ -19,6 +19,8 @@ class CreatePropsTable extends Migration
             $table->string('name');
             $table->string('return');
             $table->string('return_type');
+            $table->string('return_enum');
+            $table->string('return_bitfield');
             $table->integer('flags');
             $table->timestamps();
         });
