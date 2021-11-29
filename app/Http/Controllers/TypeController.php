@@ -21,6 +21,7 @@ class TypeController extends Controller
             ->with('type.type')
             ->with('props.returnType')
             ->with('props.returnEnum')
+            ->with('props.returnBitfield')
             ->with('methods.returnType')
             ->with('methods.returnEnum')
             ->with('methods.returnBitfield')
