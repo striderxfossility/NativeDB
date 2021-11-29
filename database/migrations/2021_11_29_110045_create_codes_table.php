@@ -6,6 +6,8 @@ use Illuminate\Support\Facades\Schema;
 
 class CreateCodesTable extends Migration
 {
+    protected $connection = 'mysql2';
+
     /**
      * Run the migrations.
      *
@@ -13,7 +15,7 @@ class CreateCodesTable extends Migration
      */
     public function up()
     {
-        if (!Schema::connection('mysql2')->hasTable('codes')) {
+        if(!Schema::connection('mysql2')->hasTable('codes')){
             Schema::connection('mysql2')->create('codes', function (Blueprint $table) {
                 $table->id();
                 $table->string('type');
@@ -30,6 +32,6 @@ class CreateCodesTable extends Migration
      */
     public function down()
     {
-        //Schema::connection('mysql2')->dropIfExists('codes');
+        Schema::connection('mysql2')->dropIfExists('codes');
     }
 }

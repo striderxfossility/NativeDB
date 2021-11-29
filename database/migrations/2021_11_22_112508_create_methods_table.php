@@ -16,6 +16,7 @@ class CreateMethodsTable extends Migration
         Schema::create('methods', function (Blueprint $table) {
             $table->id();
             $table->integer('type_id');
+            $table->string('type_name');
             $table->string('fullName');
             $table->string('shortName');
             $table->text('params');

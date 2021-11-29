@@ -71,6 +71,7 @@ class ImportService
 
                 $dataProps[] = [
                     "type_id"           => $type->id,
+                    "type_name"         => $type->name,
                     "name"              => $prop['name'],
                     "return"            => $return,
                     "return_type"       => $return_type,
@@ -114,6 +115,7 @@ class ImportService
 
                 $dataMethods[] = [
                     "type_id"           => $type->id,
+                    "type_name"         => $type->name,
                     "fullName"          => $methods['fullName'],
                     "shortName"         => $methods['shortName'],
                     "return"            => isset($methods['return']) ? $methods['return']['type'] : '',

@@ -16,6 +16,7 @@ class CreatePropsTable extends Migration
         Schema::create('props', function (Blueprint $table) {
             $table->id();
             $table->integer('type_id');
+            $table->string('type_name');
             $table->string('name');
             $table->string('return');
             $table->string('return_type');

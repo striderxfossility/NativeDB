@@ -7,12 +7,17 @@ use Illuminate\Database\Eloquent\Model;
 use App\Models\Type;
 use App\Models\Bitfield;
 use App\Models\Enum;
+use App\Models\Code;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
+use Awobaz\Compoships\Compoships;
 
 class Prop extends Model
 {
     use HasFactory;
     use Cachable;
+    use Compoships;
+
+    protected $with = ['type'];
 
     public function type()
     {
@@ -32,6 +37,11 @@ class Prop extends Model
     public function returnEnum()
     {
         return $this->belongsTo(Enum::class, 'return_enum');
+    }
+
+    public function code()
+    {
+        return $this->belongsTo(Code::class, ['name', 'type_name'], ['prop', 'type']);
     }
 
     public function getReturnTypeNiceAttribute()

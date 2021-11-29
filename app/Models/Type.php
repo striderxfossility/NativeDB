@@ -6,6 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use App\Models\Prop;
 use App\Models\Method;
+use App\Models\Code;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
 
 class Type extends Model
@@ -25,6 +26,11 @@ class Type extends Model
         });
 
         return $typeID;
+    }
+
+    public function code()
+    {
+        return $this->belongsTo(Code::class, 'name', 'type');
     }
 
     public function type()
