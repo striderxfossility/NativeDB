@@ -7,6 +7,7 @@ use App\Http\Controllers\TypeController;
 use App\Http\Controllers\EnumController;
 use App\Http\Controllers\BitfieldController;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\CodeController;
 
 Route::view('/', 'welcome');
 Route::view('/dashboard', 'welcome');
@@ -27,6 +28,9 @@ Route::get('bitfields/{bitfield}/show', [BitfieldController::class, "show"])->na
 
 Route::middleware(['auth'])->group(function () 
 {
+    Route::get('codes/{code}/edit',     [CodeController::class, "edit"])->name('codes.edit');
+    Route::post('codes/{code}/update',  [CodeController::class, "update"])->name('codes.update');
+
     Route::prefix('jobs')->group(function () {
         Route::queueMonitor();
     });
