@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-    <main class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 pt-7 pb-100 bg-white overflow-auto">
+    <main style="padding-bottom:100px;" class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 pt-7 pb-100 bg-white overflow-auto">
         <div class="mb-4">
             <h2 class="mb-4 border-b border-gray-200">
                 Classes
