@@ -13,7 +13,7 @@
                 <a href="/search/{{ $type->id }}/access" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
                     Find wich class returns this class
                 </a> | 
-                <button onclick="showAllCode()" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
+                <button id="codeButton" onclick="showAllCode()" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
                     CODE
                 </button>
             </div>
@@ -146,6 +146,11 @@
 
 <script>
     let displayed = false
+    
+    if(document.getElementsByClassName("code").length == 0) {
+        document.getElementById('codeButton').style.display = 'none';
+    }
+    
 
     function showAllCode() {
         const codes = document.getElementsByClassName("code");
