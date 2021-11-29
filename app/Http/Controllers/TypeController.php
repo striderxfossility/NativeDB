@@ -27,6 +27,7 @@ class TypeController extends Controller
             ->with('methods.returnType')
             ->with('methods.returnEnum')
             ->with('methods.returnBitfield')
+            ->with('methods.code')
             ->with('methods.paramsArr.typeHead')
             ->with('methods.paramsArr.enumHead')
             ->with('methods.paramsArr.bitfieldHead')

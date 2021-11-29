@@ -115,6 +115,30 @@
                     <div class="absolute top-2 right-2 text-xs text-gray-400">
                         {{ $method->fullName }}
                     </div>
+
+                    @if($method->code != null)
+                            <div class="col-span-3 code pb-2 pt-2 w-auto" style="position:relative; display:none">
+                                <button onclick="copyCode{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                    </svg>
+                                </button>
+
+                                <script>
+                                    function copyCode{{ $method->code->id }}() {
+                                        var copyText = document.getElementById("copy-{{ $method->code->id }}")
+                                        navigator.clipboard.writeText(copyText.innerHTML)
+                                    }
+                                </script>
+                                
+                                <div style="display:none" id="copy-{{ $method->code->id }}">{{ $method->code->code }}</div>
+                                    <x-markdown class="show-code">
+```lua
+{{ $method->code->code }}
+```
+                                    </x-markdown>
+                                </div>
+                        @endif
                 </div>
             @endforeach
         </div>

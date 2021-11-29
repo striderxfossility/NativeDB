@@ -8,12 +8,15 @@ use App\Models\Type;
 use App\Models\Param;
 use App\Models\Enum;
 use App\Models\Bitfield;
+use App\Models\Code;
 use GeneaLabs\LaravelModelCaching\Traits\Cachable;
+use Awobaz\Compoships\Compoships;
 
 class Method extends Model
 {
     use HasFactory;
     use Cachable;
+    use Compoships;
 
     public function type()
     {
@@ -38,6 +41,11 @@ class Method extends Model
     public function paramsArr()
     {
         return $this->hasMany(Param::class);
+    }
+
+    public function code()
+    {
+        return $this->belongsTo(Code::class, ['shortName', 'type_name'], ['method', 'type']);
     }
 
     public function getReturnNiceAttribute()
