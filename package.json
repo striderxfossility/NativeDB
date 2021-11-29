@@ -23,6 +23,7 @@
         "tailwindcss": "^2.0.2"
     },
     "dependencies": {
+        "shiki": "^0.9.13",
         "tailwindcss": "^2.2.17"
     }
 }

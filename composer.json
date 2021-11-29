@@ -22,7 +22,8 @@
         "psr/log": "^1.0",
         "pusher/pusher-php-server": "^7.0",
         "renatomarinho/laravel-page-speed": "^2.0",
-        "romanzipp/laravel-queue-monitor": "^2.2"
+        "romanzipp/laravel-queue-monitor": "^2.2",
+        "spatie/laravel-markdown": "^2.0"
     },
     "require-dev": {
         "barryvdh/laravel-debugbar": "^3.6",

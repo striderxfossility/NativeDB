@@ -12,8 +12,36 @@
             <div class="lg:flex flex-shrink-0 w-full h-8 px-4 border-b hidden mb-2">
                 <a href="/search/{{ $type->id }}/access" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
                     Find wich class returns this class
-                </a>
+                </a> | 
+                <button onclick="showAllCode()" class="text-gray-600 flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100">
+                    CODE
+                </button>
             </div>
+
+@if(\App\Models\Code::whereType($type->name)->count() != 0)
+    @php ($code = \App\Models\Code::whereType($type->name)->first())
+            <div class="code pb-2 pt-2 w-auto" style="position:relative; display:none">
+                <button onclick="copyCode{{ $code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                    </svg>
+                </button>
+
+                <script>
+                    function copyCode{{ $code->id }}() {
+                        var copyText = document.getElementById("copy-{{ $code->id }}")
+                        navigator.clipboard.writeText(copyText.innerHTML)
+                    }
+                </script>
+                
+                <div style="display:none" id="copy-{{ $code->id }}">{{ $code->code }}</div>
+                            <x-markdown class="show-code">
+```lua
+{{ $code->code }}
+```
+                            </x-markdown>
+            </div>
+@endif
 
             <h1 class="text-xl text-purple-500">{{ $type->name }}</h1>
 
@@ -69,5 +97,25 @@
             @endforeach
         </div>
     </main>
+
+<script>
+    let displayed = false
+
+    function showAllCode() {
+        const codes = document.getElementsByClassName("code");
+
+        for (let index = 0; index < codes.length; index++) {
+            const element = codes[index];
+
+            if (displayed == false) {
+                element.style.display = 'block'
+                displayed = true
+            } else {
+                element.style.display = 'none'
+                displayed = false
+            }
+        }
+    }
+</script>
     
 @include('layouts.footer')

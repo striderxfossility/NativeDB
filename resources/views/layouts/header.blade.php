@@ -5,6 +5,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MOO</title>
         <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <style>
+            .shiki {
+                padding: 5px;
+            }
+        </style>
     </head>
     <body class="relative antialiased text-base text-black font-mono">
         <div id="__next">

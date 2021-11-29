@@ -145,4 +145,11 @@
       0 => 'romanzipp\\QueueMonitor\\Providers\\QueueMonitorProvider',
     ),
   ),
+  'spatie/laravel-markdown' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Spatie\\LaravelMarkdown\\MarkdownServiceProvider',
+    ),
+  ),
 );

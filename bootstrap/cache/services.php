@@ -41,10 +41,11 @@
     37 => 'Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider',
     38 => 'RenatoMarinho\\LaravelPageSpeed\\ServiceProvider',
     39 => 'romanzipp\\QueueMonitor\\Providers\\QueueMonitorProvider',
-    40 => 'App\\Providers\\AppServiceProvider',
-    41 => 'App\\Providers\\AuthServiceProvider',
-    42 => 'App\\Providers\\EventServiceProvider',
-    43 => 'App\\Providers\\RouteServiceProvider',
+    40 => 'Spatie\\LaravelMarkdown\\MarkdownServiceProvider',
+    41 => 'App\\Providers\\AppServiceProvider',
+    42 => 'App\\Providers\\AuthServiceProvider',
+    43 => 'App\\Providers\\EventServiceProvider',
+    44 => 'App\\Providers\\RouteServiceProvider',
   ),
   'eager' => 
   array (
@@ -73,10 +74,11 @@
     22 => 'Rap2hpoutre\\LaravelLogViewer\\LaravelLogViewerServiceProvider',
     23 => 'RenatoMarinho\\LaravelPageSpeed\\ServiceProvider',
     24 => 'romanzipp\\QueueMonitor\\Providers\\QueueMonitorProvider',
-    25 => 'App\\Providers\\AppServiceProvider',
-    26 => 'App\\Providers\\AuthServiceProvider',
-    27 => 'App\\Providers\\EventServiceProvider',
-    28 => 'App\\Providers\\RouteServiceProvider',
+    25 => 'Spatie\\LaravelMarkdown\\MarkdownServiceProvider',
+    26 => 'App\\Providers\\AppServiceProvider',
+    27 => 'App\\Providers\\AuthServiceProvider',
+    28 => 'App\\Providers\\EventServiceProvider',
+    29 => 'App\\Providers\\RouteServiceProvider',
   ),
   'deferred' => 
   array (
