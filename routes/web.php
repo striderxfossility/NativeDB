@@ -9,6 +9,7 @@ use App\Http\Controllers\BitfieldController;
 use App\Http\Controllers\SearchController;
 
 Route::view('/', 'welcome');
+Route::view('/dashboard', 'welcome');
 
 Broadcast::routes();
 
@@ -34,3 +35,5 @@ Route::middleware(['auth'])->group(function ()
 });
 
 require __DIR__.'/channels.php';
+
+Auth::routes();

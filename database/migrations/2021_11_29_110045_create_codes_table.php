@@ -15,7 +15,7 @@ class CreateCodesTable extends Migration
      */
     public function up()
     {
-        if(!Schema::connection('mysql2')->hasTable('codes')){
+        if(!Schema::connection('mysql2')->hasTable('codes')) {
             Schema::connection('mysql2')->create('codes', function (Blueprint $table) {
                 $table->id();
                 $table->string('type');
