@@ -4,7 +4,7 @@
             <div>
                 @if(isset($type))
                     @php
-                        \App\Models\Type::chunk(500, function ($classTypes) use ($type) {
+                        \App\Models\Type::chunk(200, function ($classTypes) use ($type) {
                             echo '<div style="content-visibility: auto">';
                                 foreach ($classTypes as $classType) {
 
@@ -27,7 +27,7 @@
                     </script>
                 @else
                     @php
-                        \App\Models\Type::chunk(500, function ($classTypes) {
+                        \App\Models\Type::chunk(300, function ($classTypes) {
                             echo '<div style="content-visibility: auto">';
                                 foreach ($classTypes as $classType) {
                                     echo '<a id="class-' . $classType->id . '" class="flex items-center py-1 px-4 hover:bg-gray-200 transition duration-100" href="/classes/'.$classType->id.'/show">';

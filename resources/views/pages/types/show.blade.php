@@ -38,7 +38,7 @@
             </h2>
             <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
                 @foreach ($type->props as $prop)
-                    <div class="grid grid-cols-3 hover:bg-gray-100 px-10">
+                    <div style="content-visibility: auto" class="grid grid-cols-3 hover:bg-gray-100 px-10">
                         <div class="">
                             <span class="text-red-400">var</span> 
                             {{ $prop->name }} 
@@ -54,15 +54,15 @@
             </div>
         </div>
         
-        <h2 class="mb-4 border-b border-gray-200">Methods</h2>
-        <div class="mb-3 rounded overflow-hidden">
+        <h2 style="content-visibility: auto" class="mb-4 border-b border-gray-200">Methods</h2>
+        <div style="content-visibility: auto" class="mb-3 rounded overflow-hidden">
             @foreach ($type->methods as $method)
-                <div class="hover:bg-gray-100 px-10 py-4 relative">
-                    <div class="">
+                <div style="content-visibility: auto" class="hover:bg-gray-100 px-10 py-4 relative">
+                    <div style="content-visibility: auto" class="">
                         {!! $method->functionNice !!}
                     </div>
 
-                    <div class="absolute top-2 right-2 text-xs text-gray-400">
+                    <div style="content-visibility: auto" class="absolute top-2 right-2 text-xs text-gray-400">
                         {{ $method->fullName }}
                     </div>
                 </div>
