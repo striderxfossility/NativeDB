@@ -15,8 +15,12 @@ class CodeController extends Controller
 
     public function update(Code $code, Request $request)
     {
-        $code->update(['code' => $request->code]);
-
+        if($request->code == "") {
+            $code->delete();
+        } else {
+            $code->update(['code' => $request->code]);
+        }
+        
         return redirect()->route('types.show', Type::find(Type::getType($code->type))->id);
     }
 }
