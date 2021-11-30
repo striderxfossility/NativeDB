@@ -4,10 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class AddPropAndMethodsToCodes extends Migration
+class AddNameToCodes extends Migration
 {
-    protected $connection = 'mysql2';
-
     /**
      * Run the migrations.
      *
@@ -15,10 +13,9 @@ class AddPropAndMethodsToCodes extends Migration
      */
     public function up()
     {
-        if (!Schema::connection('mysql2')->hasColumn('codes', 'prop')) {
+        if (!Schema::connection('mysql2')->hasColumn('codes', 'name')) {
             Schema::connection('mysql2')->table('codes', function (Blueprint $table) {
-                $table->string('prop')->after('type');
-                $table->string('method')->after('prop');
+                $table->string('name')->after('id');
             });
         }
     }
@@ -26,14 +23,13 @@ class AddPropAndMethodsToCodes extends Migration
     /**
      * Reverse the migrations.
      *
-     * @return void
+     * @return void 
      */
     public function down()
     {
-        if (Schema::connection('mysql2')->hasColumn('codes', 'prop')) {
+        if (Schema::connection('mysql2')->hasColumn('codes', 'name')) {
             Schema::connection('mysql2')->table('codes', function (Blueprint $table) {
-                $table->dropColumn('prop');
-                $table->dropColumn('method');
+                $table->dropColumn('name');
             });
         }
     }
