@@ -53,7 +53,7 @@ class CodeController extends Controller
             'type'      => $type,
             'prop'      => $prop,
             'method'    => $method,
-            'code'      => "print('hello world');"
+            'code'      => ""
         ]);
 
         if ($name == '0') 
