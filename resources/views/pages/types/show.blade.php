@@ -364,8 +364,8 @@
     </main>
 
 <script>
-
-    if(getCookie("displayed") == "") {
+    console.log(getCookie("displayed"))
+    if(getCookie("displayed") == null) {
         setCookie("displayed","false",30);
     }
     
