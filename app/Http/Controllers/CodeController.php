@@ -27,16 +27,16 @@ class CodeController extends Controller
 
     public function update(Code $code, Request $request)
     {
-        if($request->code == "") {
+        if($request->code == "" && $request->native == "") {
             $code->delete();
 
             if($code->type == 0)
                 return redirect()->route('codes.index');
         } else {
             if(isset($request->name))
-                $code->update(['code' => $request->code, 'name' => $request->name]);
+                $code->update(['native' => $request->native, 'code' => $request->code, 'name' => $request->name]);
             else
-                $code->update(['code' => $request->code]);
+                $code->update(['native' => $request->native, 'code' => $request->code]);
         }
         
         if($code->type != 0)

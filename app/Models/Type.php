@@ -30,7 +30,7 @@ class Type extends Model
 
     public function code()
     {
-        return $this->belongsTo(Code::class, 'name', 'type');
+        return $this->belongsTo(Code::class, 'name', 'type')->whereProp('0')->whereMethod('0');
     }
 
     public function type()

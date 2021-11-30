@@ -19,12 +19,31 @@
             </div>
 
             @if($type->code != null)
-                <div class="code pb-2 pt-2 w-auto" style="position:relative; display:none">
-                    <button onclick="copyCode{{ $type->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                        </svg>
-                    </button>
+                <div class="code pb-2 pt-2 mt-6 w-auto" style="position:relative; display:none">
+
+                    <script>
+                        function ShowCode{{ $type->code->id }}(id) {
+                            if (id == 0) {
+                                document.getElementById('luacode-{{ $type->code->id }}').style.display = "block";
+                                document.getElementById('nativecode-{{ $type->code->id }}').style.display = "none";
+                            } else {
+                                document.getElementById('luacode-{{ $type->code->id }}').style.display = "none";
+                                document.getElementById('nativecode-{{ $type->code->id }}').style.display = "block";
+                            }
+                        }
+                    </script>
+
+                    @if($type->code->code != "")
+                        <button onclick="ShowCode{{ $type->code->id }}(0)"  class="rounded-t-md px-2 absolute -top-4 left-0" style="background-color: #0d1117;">
+                            <span class="text-white">lua</span>
+                        </button>
+                    @endif
+
+                    @if($type->code->native != "")
+                        <button onclick="ShowCode{{ $type->code->id }}(1)"  class="rounded-t-md px-2 absolute -top-4 left-12" style="background-color: #0d1117;">
+                            <span class="text-white">native</span>
+                        </button>
+                    @endif
 
                     @auth
                         <a href="/codes/{{ $type->code->id }}/edit" title="Copy" class="cursor-pointer p-2 absolute top-2 right-10" style="background-color: #0d1117;">
@@ -34,20 +53,58 @@
                         </a>
                     @endauth
 
-                    <script>
-                        function copyCode{{ $type->code->id }}() {
-                            var copyText = document.getElementById("copy-{{ $type->code->id }}")
-                            navigator.clipboard.writeText(copyText.innerHTML)
-                        }
-                    </script>
-                    
-                    <div style="display:none" id="copy-{{ $type->code->id }}">{{ $type->code->code }}</div>
-                        <x-markdown class="show-code">
+                    <div id="luacode-{{ $type->code->id }}" style="display:block;">
+
+                        <button onclick="copyCodelua{{ $type->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </button>
+
+                        <script>
+                            function copyCodelua{{ $type->code->id }}() {
+                                var copyText = document.getElementById("copylua-{{ $type->code->id }}")
+                                navigator.clipboard.writeText(copyText.innerHTML)
+                            }
+                        </script>
+                        
+                        <div style="display:none" id="copylua-{{ $type->code->id }}">{{ $type->code->code }}</div>
+                            <x-markdown class="show-code">
 ```lua
 {!! $type->code->code !!}
 ```
-                        </x-markdown>
+                            </x-markdown>
                     </div>
+
+                    <div id="nativecode-{{ $type->code->id }}" style="display:none;">
+
+                        <button onclick="copyCodeNative{{ $type->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                            </svg>
+                        </button>
+
+                        <script>
+                            function copyCodeNative{{ $type->code->id }}() {
+                                var copyText = document.getElementById("copynative-{{ $type->code->id }}")
+                                navigator.clipboard.writeText(copyText.innerHTML)
+                            }
+                        </script>
+                        
+                        <div style="display:none" id="copynative-{{ $type->code->id }}">{{ $type->code->native }}</div>
+                            <x-markdown class="show-code">
+```lua
+{!! $type->code->native !!}
+```
+                            </x-markdown>
+                    </div>
+                </div>
+                <script>
+                    if(document.getElementById('copylua-{{ $type->code->id }}').innerHTML == "") {
+                        document.getElementById('luacode-{{ $type->code->id }}').style.display = "none";
+                        document.getElementById('nativecode-{{ $type->code->id }}').style.display = "block";
+                    }
+                </script>
             @else
                 @auth
                     <a href="/codes/0/{{ $type->name }}/0/0/store" title="Add new lua" class="cursor-pointer" style="background-color: #0d1117;">
@@ -93,12 +150,31 @@
                             {!! $prop->returnTypeNice !!}
                         </div>
                         @if($prop->code != null)
-                            <div class="col-span-3 code pb-2 pt-2 w-auto" style="position:relative; display:none">
-                                <button onclick="copyCode{{ $prop->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                    </svg>
-                                </button>
+                            <div class="code pb-2 pt-2 mt-6 w-auto" style="position:relative; display:none">
+
+                                <script>
+                                    function ShowCode{{ $prop->code->id }}(id) {
+                                        if (id == 0) {
+                                            document.getElementById('luacode-{{ $prop->code->id }}').style.display = "block";
+                                            document.getElementById('nativecode-{{ $prop->code->id }}').style.display = "none";
+                                        } else {
+                                            document.getElementById('luacode-{{ $prop->code->id }}').style.display = "none";
+                                            document.getElementById('nativecode-{{ $prop->code->id }}').style.display = "block";
+                                        }
+                                    }
+                                </script>
+
+                                @if($prop->code->code != "")
+                                    <button onclick="ShowCode{{ $prop->code->id }}(0)"  class="rounded-t-md px-2 absolute -top-4 left-0" style="background-color: #0d1117;">
+                                        <span class="text-white">lua</span>
+                                    </button>
+                                @endif
+
+                                @if($prop->code->native != "")
+                                    <button onclick="ShowCode{{ $prop->code->id }}(1)"  class="rounded-t-md px-2 absolute -top-4 left-12" style="background-color: #0d1117;">
+                                        <span class="text-white">native</span>
+                                    </button>
+                                @endif
 
                                 @auth
                                     <a href="/codes/{{ $prop->code->id }}/edit" title="Copy" class="cursor-pointer p-2 absolute top-2 right-10" style="background-color: #0d1117;">
@@ -108,31 +184,61 @@
                                     </a>
                                 @endauth
 
-                                @auth
-                                    <button onclick="copyCode{{ $type->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                <div id="luacode-{{ $prop->code->id }}" style="display:block;">
+
+                                    <button onclick="copyCodelua{{ $prop->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
                                         <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
                                         </svg>
                                     </button>
-                                @endauth
 
-                                <script>
-                                    function copyCode{{ $prop->code->id }}() {
-                                        var copyText = document.getElementById("copy-{{ $prop->code->id }}")
-                                        navigator.clipboard.writeText(copyText.innerHTML)
-                                    }
-                                </script>
-                                
-                                <div style="display:none" id="copy-{{ $prop->code->id }}">{{ $prop->code->code }}</div>
-                                    <x-markdown class="show-code">
+                                    <script>
+                                        function copyCodelua{{ $prop->code->id }}() {
+                                            var copyText = document.getElementById("copylua-{{ $prop->code->id }}")
+                                            navigator.clipboard.writeText(copyText.innerHTML)
+                                        }
+                                    </script>
+                                    
+                                    <div style="display:none" id="copylua-{{ $prop->code->id }}">{{ $prop->code->code }}</div>
+                                        <x-markdown class="show-code">
 ```lua
-{!! $prop->code->code !!}
+{!! $type->code->code !!}
 ```
-                                    </x-markdown>
+                                        </x-markdown>
                                 </div>
+
+                                <div id="nativecode-{{ $prop->code->id }}" style="display:none;">
+
+                                    <button onclick="copyCodeNative{{ $prop->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                        </svg>
+                                    </button>
+
+                                    <script>
+                                        function copyCodeNative{{ $prop->code->id }}() {
+                                            var copyText = document.getElementById("copynative-{{ $prop->code->id }}")
+                                            navigator.clipboard.writeText(copyText.innerHTML)
+                                        }
+                                    </script>
+                                    
+                                    <div style="display:none" id="copynative-{{ $prop->code->id }}">{{ $prop->code->native }}</div>
+                                        <x-markdown class="show-code">
+```lua
+{!! $prop->code->native !!}
+```
+                                        </x-markdown>
+                                </div>
+                            </div>
+                            <script>
+                                if(document.getElementById('copylua-{{ $prop->code->id }}').innerHTML == "") {
+                                    document.getElementById('luacode-{{ $prop->code->id }}').style.display = "none";
+                                    document.getElementById('nativecode-{{ $prop->code->id }}').style.display = "block";
+                                }
+                            </script>
                         @else
                             @auth
-                                <a href="/codes/0/{{ $type->name }}/{{ $prop->name }}/0/store" title="Add new lua" class="cursor-pointer absolute -left-0">
+                                <a href="/codes/0/{{ $type->name }}/{{ $prop->name }}/0/store" title="Add new lua" class="cursor-pointer absolute top-0 left-2">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
                                     </svg>
@@ -157,12 +263,31 @@
                     </div>
 
                     @if($method->code != null)
-                        <div class="col-span-3 code pb-2 pt-2 w-auto" style="position:relative; display:none">
-                            <button onclick="copyCode{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
-                                </svg>
-                            </button>
+                        <div class="code pb-2 pt-2 mt-6 w-auto" style="position:relative; display:none">
+
+                            <script>
+                                function ShowCode{{ $method->code->id }}(id) {
+                                    if (id == 0) {
+                                        document.getElementById('luacode-{{ $method->code->id }}').style.display = "block";
+                                        document.getElementById('nativecode-{{ $method->code->id }}').style.display = "none";
+                                    } else {
+                                        document.getElementById('luacode-{{ $method->code->id }}').style.display = "none";
+                                        document.getElementById('nativecode-{{ $method->code->id }}').style.display = "block";
+                                    }
+                                }
+                            </script>
+
+                            @if($method->code->code != "")
+                                <button onclick="ShowCode{{ $method->code->id }}(0)"  class="rounded-t-md px-2 absolute -top-4 left-0" style="background-color: #0d1117;">
+                                    <span class="text-white">lua</span>
+                                </button>
+                            @endif
+
+                            @if($method->code->native != "")
+                                <button onclick="ShowCode{{ $method->code->id }}(1)"  class="rounded-t-md px-2 absolute -top-4 left-12" style="background-color: #0d1117;">
+                                    <span class="text-white">native</span>
+                                </button>
+                            @endif
 
                             @auth
                                 <a href="/codes/{{ $method->code->id }}/edit" title="Copy" class="cursor-pointer p-2 absolute top-2 right-10" style="background-color: #0d1117;">
@@ -172,20 +297,58 @@
                                 </a>
                             @endauth
 
-                            <script>
-                                function copyCode{{ $method->code->id }}() {
-                                    var copyText = document.getElementById("copy-{{ $method->code->id }}")
-                                    navigator.clipboard.writeText(copyText.innerHTML)
-                                }
-                            </script>
-                            
-                            <div style="display:none" id="copy-{{ $method->code->id }}">{{ $method->code->code }}</div>
-                            <x-markdown class="show-code">
+                            <div id="luacode-{{ $method->code->id }}" style="display:block;">
+
+                                <button onclick="copyCodelua{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                    </svg>
+                                </button>
+
+                                <script>
+                                    function copyCodelua{{ $method->code->id }}() {
+                                        var copyText = document.getElementById("copylua-{{ $method->code->id }}")
+                                        navigator.clipboard.writeText(copyText.innerHTML)
+                                    }
+                                </script>
+                                
+                                <div style="display:none" id="copylua-{{ $method->code->id }}">{{ $method->code->code }}</div>
+                                    <x-markdown class="show-code">
 ```lua
 {!! $method->code->code !!}
 ```
-                            </x-markdown>
+                                    </x-markdown>
+                            </div>
+
+                            <div id="nativecode-{{ $method->code->id }}" style="display:none;">
+
+                                <button onclick="copyCodeNative{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                    </svg>
+                                </button>
+
+                                <script>
+                                    function copyCodeNative{{ $method->code->id }}() {
+                                        var copyText = document.getElementById("copynative-{{ $method->code->id }}")
+                                        navigator.clipboard.writeText(copyText.innerHTML)
+                                    }
+                                </script>
+                                
+                                <div style="display:none" id="copynative-{{ $method->code->id }}">{{ $method->code->native }}</div>
+                                    <x-markdown class="show-code">
+```lua
+{!! $method->code->native !!}
+```
+                                    </x-markdown>
+                            </div>
                         </div>
+                        <script>
+                            if(document.getElementById('copylua-{{ $method->code->id }}').innerHTML == "") {
+                                document.getElementById('luacode-{{ $method->code->id }}').style.display = "none";
+                                document.getElementById('nativecode-{{ $method->code->id }}').style.display = "block";
+                            }
+                        </script>
                     @else
                     @auth
                         <a href="/codes/0/{{ $type->name }}/0/{{ $method->fullName }}/store" title="Add new lua" class="cursor-pointer absolute top-4 left-2">
