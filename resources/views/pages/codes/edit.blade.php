@@ -2,6 +2,10 @@
 
 <form method="POST" class="m-10" action="{{ route('codes.update', $code) }}">
     @csrf
+
+    @if($code->name == "0")
+        {{ $code->prop == 0 ? $code->method : $code->prop }}
+    @endif 
     
     @if($code->name != "0")
         <div class="mt-4">
