@@ -57,4 +57,7 @@
                         <a href="/tweakdb" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'tweakdb') ? 'bg-gray-200' : '' }}">
                             TweakDB
                         </a>
+                        <a href="/scripts" class="flex items-center h-8 px-2 py-1 hover:bg-gray-200 text-xs transition duration-100 {{ str_contains(Route::currentRouteName(), 'code') ? 'bg-gray-200' : '' }}">
+                            Scripts
+                        </a>
                     </div>

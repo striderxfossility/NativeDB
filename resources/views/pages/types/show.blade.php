@@ -44,10 +44,18 @@
                     <div style="display:none" id="copy-{{ $type->code->id }}">{{ $type->code->code }}</div>
                         <x-markdown class="show-code">
 ```lua
-{{ $type->code->code }}
+{!! $type->code->code !!}
 ```
                         </x-markdown>
                     </div>
+            @else
+                @auth
+                    <a href="/codes/0/{{ $type->name }}/0/0/store" title="Add new lua" class="cursor-pointer" style="background-color: #0d1117;">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                        </svg>
+                    </a>
+                @endauth
             @endif
 
             <h1 class="text-xl text-purple-500">{{ $type->name }}</h1>
@@ -73,7 +81,7 @@
             </h2>
             <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
                 @foreach ($type->props as $prop)
-                    <div class="grid grid-cols-3 hover:bg-gray-100 px-10">
+                    <div class="grid grid-cols-3 hover:bg-gray-100 px-10 relative">
                         <div class="">
                             <span class="text-red-400">var</span> 
                             {{ $prop->name }} 
@@ -118,10 +126,18 @@
                                 <div style="display:none" id="copy-{{ $prop->code->id }}">{{ $prop->code->code }}</div>
                                     <x-markdown class="show-code">
 ```lua
-{{ $prop->code->code }}
+{!! $prop->code->code !!}
 ```
                                     </x-markdown>
                                 </div>
+                        @else
+                            @auth
+                                <a href="/codes/0/{{ $type->name }}/{{ $prop->name }}/0/store" title="Add new lua" class="cursor-pointer absolute -left-0">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                                    </svg>
+                                </a>
+                            @endauth
                         @endif
                     </div>
                 @endforeach
@@ -141,36 +157,44 @@
                     </div>
 
                     @if($method->code != null)
-                            <div class="col-span-3 code pb-2 pt-2 w-auto" style="position:relative; display:none">
-                                <button onclick="copyCode{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                        <div class="col-span-3 code pb-2 pt-2 w-auto" style="position:relative; display:none">
+                            <button onclick="copyCode{{ $method->code->id }}()" title="Copy" class="p-2 absolute top-2 right-0" style="background-color: #0d1117;">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                </svg>
+                            </button>
+
+                            @auth
+                                <a href="/codes/{{ $method->code->id }}/edit" title="Copy" class="cursor-pointer p-2 absolute top-2 right-10" style="background-color: #0d1117;">
                                     <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2" />
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
                                     </svg>
-                                </button>
+                                </a>
+                            @endauth
 
-                                @auth
-                                    <a href="/codes/{{ $method->code->id }}/edit" title="Copy" class="cursor-pointer p-2 absolute top-2 right-10" style="background-color: #0d1117;">
-                                        <svg xmlns="http://www.w3.org/2000/svg" class="text-white h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
-                                        </svg>
-                                    </a>
-                                @endauth
-
-                                <script>
-                                    function copyCode{{ $method->code->id }}() {
-                                        var copyText = document.getElementById("copy-{{ $method->code->id }}")
-                                        navigator.clipboard.writeText(copyText.innerHTML)
-                                    }
-                                </script>
-                                
-                                <div style="display:none" id="copy-{{ $method->code->id }}">{{ $method->code->code }}</div>
-                                    <x-markdown class="show-code">
+                            <script>
+                                function copyCode{{ $method->code->id }}() {
+                                    var copyText = document.getElementById("copy-{{ $method->code->id }}")
+                                    navigator.clipboard.writeText(copyText.innerHTML)
+                                }
+                            </script>
+                            
+                            <div style="display:none" id="copy-{{ $method->code->id }}">{{ $method->code->code }}</div>
+                            <x-markdown class="show-code">
 ```lua
-{{ $method->code->code }}
+{!! $method->code->code !!}
 ```
-                                    </x-markdown>
-                                </div>
-                        @endif
+                            </x-markdown>
+                        </div>
+                    @else
+                    @auth
+                        <a href="/codes/0/{{ $type->name }}/0/{{ $method->fullName }}/store" title="Add new lua" class="cursor-pointer absolute top-4 left-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 13h6m-3-3v6m5 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                            </svg>
+                        </a>
+                    @endauth
+                    @endif
                 </div>
             @endforeach
         </div>

@@ -45,7 +45,7 @@ class Method extends Model
 
     public function code()
     {
-        return $this->belongsTo(Code::class, ['shortName', 'type_name'], ['method', 'type']);
+        return $this->belongsTo(Code::class, ['fullName', 'type_name'], ['method', 'type']);
     }
 
     public function getReturnNiceAttribute()
