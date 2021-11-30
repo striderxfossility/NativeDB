@@ -149,7 +149,6 @@
                         <div>
                             {!! $prop->returnTypeNice !!}
                         </div>
-                        @dump($prop->code)
                         @if($prop->code != null)
                             <div class="code pb-2 pt-2 mt-6 w-auto" style="position:relative; display:none">
 
