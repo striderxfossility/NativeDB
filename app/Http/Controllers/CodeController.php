@@ -48,7 +48,7 @@ class CodeController extends Controller
     public function store(string $name, string $type, string $prop, string $method)
     {
 
-        Code::create([
+        $code = Code::create([
             'name'      => $name,
             'type'      => $type,
             'prop'      => $prop,
@@ -57,7 +57,7 @@ class CodeController extends Controller
         ]);
 
         if ($name == '0') 
-            return redirect()->route('types.show', Type::find(Type::getType($type))->id);
+            return redirect()->route('codes.edit', $code);
         
         return redirect()->route('codes.index');
     }
