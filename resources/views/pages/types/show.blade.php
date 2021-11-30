@@ -364,12 +364,14 @@
     </main>
 
 <script>
-    let displayed = false
+
+    if(getCookie("displayed") == "") {
+        setCookie("displayed","false",30);
+    }
     
     if(document.getElementsByClassName("code").length == 0) {
         document.getElementById('codeButton').style.display = 'none';
     }
-    
 
     function showAllCode() {
         const codes = document.getElementsByClassName("code");
@@ -377,19 +379,30 @@
         for (let index = 0; index < codes.length; index++) {
             const element = codes[index];
 
-            if (displayed == false) {
+            if (getCookie("displayed") == "false") {
                 element.style.display = 'block'
             } else {
                 element.style.display = 'none'
             }
         }
 
-        if (displayed == false) {
-            displayed = true
+        if (getCookie("displayed") == "false") {
+            setCookie("displayed","true",30);
         } else {
-            displayed = false
+            setCookie("displayed","false",30);
         }
     }
+
+    document.addEventListener("DOMContentLoaded", function() {
+        if (getCookie("displayed") == "true") {
+            const codes = document.getElementsByClassName("code");
+
+            for (let index = 0; index < codes.length; index++) {
+                const element = codes[index];
+                element.style.display = 'block'
+            }
+        }
+    })
 </script>
     
 @include('layouts.footer')
