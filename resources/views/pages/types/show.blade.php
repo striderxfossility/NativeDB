@@ -18,6 +18,12 @@
                 </button>
             </div>
 
+            @auth
+                <a href="/code/{{ $type->id }}/create" class="p-2 pl-5 pr-5 bg-blue-500 text-gray-100 text-lg rounded-lg focus:border-4 border-blue-300">
+                    upload entire swift
+                </a>
+            @endauth
+
             @if($type->code != null)
                 <div class="code pb-2 pt-2 mt-6 w-auto" style="position:relative; display:none">
 

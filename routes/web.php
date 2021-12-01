@@ -18,6 +18,7 @@ Route::post('search',                   [SearchController::class, 'search'])->na
 Route::get('search/{type}/access',      [SearchController::class, 'access'])->name('search.access');
 
 Route::get('scripts',                   [CodeController::class, "index"])->name('codes.index');
+Route::get('codes/{code}/show',         [CodeController::class, "show"])->name('codes.show');
 
 Route::get('classes',                   [TypeController::class, "index"])->name('types.all');
 Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
@@ -31,9 +32,10 @@ Route::get('bitfields/{bitfield}/show', [BitfieldController::class, "show"])->na
 Route::middleware(['auth'])->group(function () 
 {
     Route::get('codes/{name}/{type}/{prop}/{method}/store',     [CodeController::class, "store"])->name('codes.store');
-    Route::get('codes/{code}/edit',     [CodeController::class, "edit"])->name('codes.edit');
-    Route::get('codes/{code}/show',     [CodeController::class, "show"])->name('codes.show');
-    Route::post('codes/{code}/update',  [CodeController::class, "update"])->name('codes.update');
+    Route::get('codes/{code}/edit',         [CodeController::class, "edit"])->name('codes.edit');
+    Route::post('codes/{code}/update',      [CodeController::class, "update"])->name('codes.update');
+    Route::get('code/{type}/create',        [CodeController::class, "create"])->name('codes.create');
+    Route::post('code/{type}/storeSwift',   [CodeController::class, "storeSwift"])->name('codes.storeSwift');
 
     Route::prefix('jobs')->group(function () {
         Route::queueMonitor();

@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Models\Code;
 use App\Models\Type;
+use App\Services\SwiftService;
 
 class CodeController extends Controller
 {
@@ -13,6 +14,18 @@ class CodeController extends Controller
         $codes = Code::where("name", "!=", "0")->get();
 
         return view('pages.codes.index')->with('codes', $codes);
+    }
+
+    public function storeSwift(Type $type, Request $request)
+    {
+        SwiftService::get($request->swift);
+
+        dump("finished");
+    }
+
+    public function create(Type $type)
+    {
+        return view('pages.codes.create')->with('type', $type);
     }
 
     public function show(Code $code)
