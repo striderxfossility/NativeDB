@@ -8,6 +8,7 @@ use App\Models\Enum;
 use App\Models\Prop;
 use App\Models\Method;
 use App\Models\Bitfield;
+use App\Models\Code;
 
 class SearchController extends Controller
 {
@@ -20,10 +21,13 @@ class SearchController extends Controller
         $enums      = Enum::where('name', 'like', '%' . $request->q . '%')->get();
         $bitfields  = Bitfield::where('name', 'like', '%' . $request->q . '%')->get();
 
+        $natives    = Code::where('native', 'like', '%' . $request->q . '%')->get();
+
         return view('pages.search.index')
             ->with('types', $types)
             ->with('enums', $enums)
-            ->with('bitfields', $bitfields);
+            ->with('bitfields', $bitfields)
+            ->with('natives', $natives);
     }
 
     public function access(Type $type)
