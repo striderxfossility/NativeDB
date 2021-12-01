@@ -15,10 +15,9 @@
         </h2>
         <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
             @foreach ($codes as $code)
-                <div onclick="window.location.href = '{{ route('codes.show', $code) }}';" class="grid grid-cols-3 hover:bg-gray-100 px-10 cursor-pointer">
-                    <div class="">
-                        {{ $code->name }} 
-                    </div>
+                <div onclick="window.location.href = '{{ route('codes.show', $code) }}';" class="hover:bg-gray-100 px-10 cursor-pointer">
+                    <span class="text-yellow-600">LUA</span> 
+                    {{ $code->name }} 
                 </div>
             @endforeach
         </div>

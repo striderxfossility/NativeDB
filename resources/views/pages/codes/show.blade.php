@@ -5,7 +5,7 @@
         {{ $code->name }}
     </h1>
 
-    @if($code->code != "")
+    
         <h2 class="mb-4 border-b border-gray-200">
             lua
         </h2>
@@ -39,7 +39,6 @@
 ```
             </x-markdown>
         </div>
-    @endif
 
     @if($code->native != "")
         <h2 class="mb-4 border-b border-gray-200 mt-10">

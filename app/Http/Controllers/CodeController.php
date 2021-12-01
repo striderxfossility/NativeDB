@@ -11,7 +11,7 @@ class CodeController extends Controller
 {
     public function index()
     {
-        $codes = Code::where("name", "!=", "0")->get();
+        $codes = Code::where("name", "!=", "0")->where("name", "!=", "")->get();
 
         return view('pages.codes.index')->with('codes', $codes);
     }
