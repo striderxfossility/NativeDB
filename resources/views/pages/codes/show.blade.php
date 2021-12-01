@@ -1,6 +1,6 @@
 @include('layouts.header')
 
-<main class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 py-7 bg-white overflow-auto">
+<main class="flex-grow min-w-0 h-full min-h-full max-h-0 px-4 sm:px-6 xl:px-8 py-7 pb-40 bg-white overflow-auto">
     <h1 class="mb-4 border-b border-gray-200 text-lg">
         {{ $code->name }}
     </h1>
