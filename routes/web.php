@@ -8,9 +8,69 @@ use App\Http\Controllers\EnumController;
 use App\Http\Controllers\BitfieldController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CodeController;
+use App\Models\TweakGroup;
+use App\Models\TweakValue;
 
 Route::view('/', 'welcome');
 Route::view('/dashboard', 'welcome');
+
+Route::get('/test', function() {
+    //if (!file_exists('public/tweakdb.json')) {
+    //    dump("Cannot find tweakdb.json, upload it to public dir");
+        //$this->command->error("Cannot find tweakdb.json, upload it to public dir");
+    //} else {
+        $string         = file_get_contents(base_path('public/tweakdb.json'));
+        $string         = preg_replace('/([0-9^]+):/', '"$1":', $string);
+        $string         = str_replace('\\', '/', $string);
+        $arr            = json_decode($string, true);
+        $amountOfFlats  = 21;
+        $timestamp  = now()->toDateTimeString();
+
+        if($arr == null) {
+            //$this->command->error("tweakdb.json is not a valid json file");
+            dump(json_last_error());
+        } else {
+            for ($i=0; $i < $amountOfFlats; $i++) { 
+                foreach($arr['flat']['keys' . $i] as $key => $value)
+                {
+                    $groups = explode('.', $key);
+                    $headGroup = 0;
+                    for ($x=0; $x < count($groups) - 1; $x++) { 
+                        $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
+
+                        if($tweakGroup != null) {
+                            $headGroup = $tweakGroup->id;
+                        } else {
+                            $headGroup = TweakGroup::insertGetId([
+                                'tweak_group_id' => $headGroup,
+                                'name'           => $groups[$x],
+                                "created_at"     => $timestamp,
+                                "updated_at"     => $timestamp,
+                            ]);
+                        }
+                    }
+
+                    $value = json_encode($arr['flat']['values' . $i][$value]);
+                    $tweakValue = TweakValue::whereTweakGroupId($headGroup)->whereName($key)->whereValue($value)->first();
+
+                    if ($tweakValue == null) {
+                        TweakValue::create([
+                            'tweak_group_id'    => $headGroup,
+                            'name'              => $key,
+                            'value'             => $value
+                        ]);
+                    } else {
+                        $tweakValue->value = $value;
+                        $tweakValue->update();
+                    }
+                    //dump($key);
+                    //dump($arr['flat']['values' . $i][$value]);
+                    
+                }
+            }
+        }
+    //}
+});
 
 Broadcast::routes();
 
