@@ -16,16 +16,16 @@ class TweakGroup extends Model
 
     public function tweakGroup()
     {
-        return $this->belongsTo(TweakGroup::class);
+        return $this->belongsTo(TweakGroup::class, 'tweak_group_name', 'name');
     }
 
     public function tweakGroups()
     {
-        return $this->hasMany(TweakGroup::class);
+        return $this->hasMany(TweakGroup::class, 'tweak_group_name', 'name');
     }
 
-    public function tweakValues()
-    {
-        return $this->hasMany(TweakValue::class);
-    }
+    //public function tweakValues()
+    //{
+    //    return $this->hasMany(TweakValue::class);
+    //}
 }

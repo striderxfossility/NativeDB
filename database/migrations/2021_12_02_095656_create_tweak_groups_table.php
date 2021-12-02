@@ -16,7 +16,7 @@ class CreateTweakGroupsTable extends Migration
         if(!Schema::connection('mysql2')->hasTable('tweak_groups')) {
             Schema::connection('mysql2')->create('tweak_groups', function (Blueprint $table) {
                 $table->id();
-                $table->integer('tweak_group_id')->default(0);
+                $table->string('tweak_group_name')->default('');
                 $table->string('name');
                 $table->timestamps();
             });

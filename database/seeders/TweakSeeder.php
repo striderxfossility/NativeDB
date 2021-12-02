@@ -36,57 +36,65 @@ class TweakSeeder extends Seeder
             $string         = preg_replace('/([0-9^]+):/', '"$1":', $string);
             $string         = str_replace('\\', '/', $string);
             $arr            = json_decode($string, true);
-            $FlatToExtract  = 5;
+            $amountOfFlats  = 21;
             $timestamp      = now()->toDateTimeString();
 
             if($arr == null) {
                 $this->command->error("tweakdb.json is not a valid json file");
                 dump(json_last_error());
             } else {
-                $y = 0;
-                $countAmounts = count($arr['flat']['keys' . $FlatToExtract]);
-                foreach($arr['flat']['keys' . $FlatToExtract] as $key => $value)
-                {
-                    $value      = json_encode($arr['flat']['values' . $FlatToExtract][$value]);
-                    $headGroup  = 0;
-                    $tweakValue = TweakValue::whereName($key)->first();
+                for ($i=0; $i < $amountOfFlats; $i++) { 
+                    $this->command->info('Start ' . $i . '/' . $amountOfFlats . ' tweakFlats extracting');
+                    $y = 0;
+                    $countAmounts = count($arr['flat']['keys' . $i]);
+                    foreach($arr['flat']['keys' . $i] as $key => $value)
+                    {
+                        $value      = json_encode($arr['flat']['values' . $i][$value]);
+                        $headGroup  = '';
+                        //$tweakValue = TweakValue::whereName($key)->first();
 
-                    if ($tweakValue == null) {
-                        $this->command->info('Extracting => ' . $y . '/' . $countAmounts . ' tweak');
+                        //if ($tweakValue == null) {
+                        $this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                         $groups = explode('.', $key);
                         for ($x=0; $x < count($groups) - 1; $x++) { 
-                            $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
-
-                            if($tweakGroup != null) {
-                                $headGroup = $tweakGroup->id;
-                            } else {
-                                $headGroup = TweakGroup::insertGetId([
-                                    'tweak_group_id' => $headGroup,
-                                    'name'           => $groups[$x],
-                                    "created_at"     => $timestamp,
-                                    "updated_at"     => $timestamp,
-                                ]);
-                            }
+                            $dataGroups[] = [
+                                'tweak_group_name'  => $headGroup,
+                                'name'              => $groups[$x],
+                                "created_at"        => $timestamp,
+                                "updated_at"        => $timestamp,
+                            ];
+                            $headGroup = $groups[$x];
                         }
 
                         $dataTweaks[] = [
-                            'tweak_group_id'    => $headGroup,
-                            'name'              => $key,
-                            'value'             => $value
+                            "name"              => $key,
+                            "value"             => $value,
+                            "created_at"        => $timestamp,
+                            "updated_at"        => $timestamp,
                         ];
-                    } else {
-                        $this->command->warn('Skipped => ' . $y . '/' . $countAmounts . ' tweak');
-                        $tweakValue->value = $value;
-                        $tweakValue->update();
-                    }
+                        //} else {
+                        //    $this->command->warn('Skipped (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
+                        //    $tweakValue->value = $value;
+                        //    $tweakValue->update();
+                        //}
 
-                    $y++;
+                        $y++;
+                    }
+                    break;
                 }
 
                 $chunks = array_chunk($dataTweaks, 5000);
                 foreach($chunks as $chunk)
                 {
                     TweakValue::insert($chunk);
+                }
+
+                $dataGroups = array_unique($dataGroups, SORT_REGULAR);
+
+                $chunks = array_chunk($dataGroups, 5000);
+                foreach($chunks as $chunk)
+                {
+                    TweakGroup::insert($chunk);
                 }
             }
         }

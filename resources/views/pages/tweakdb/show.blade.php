@@ -19,20 +19,22 @@
                 @endforeach
             </div>
         </div>
-        <div class="mb-4">
-            <h2 class="mb-4 border-b border-gray-200">
-                Values
-            </h2>
-            <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
-                <x-markdown class="show-code">     
+        @if($tweakGroup->tweakGroup != null)
+            <div class="mb-4">
+                <h2 class="mb-4 border-b border-gray-200">
+                    Values
+                </h2>
+                <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
+                    <x-markdown class="show-code">     
 ```lua
-@foreach ($tweakGroup->tweakValues as $tweakValue)
+@foreach (\App\Models\TweakValue::where('name', 'like', '%'.$tweakGroup->tweakGroup->name.'.'. $tweakGroup->name .'.%')->get() as $tweakValue)
 '{{ $tweakValue->name }}' => {!! $tweakValue->value !!}
 @endforeach
 ```
-                </x-markdown>
+                    </x-markdown>
+                </div>
             </div>
-        </div>
+        @endif
     </main>
 
 @include('layouts.footer')

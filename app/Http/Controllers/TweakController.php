@@ -9,7 +9,13 @@ class TweakController extends Controller
 {
     public function index() 
     {
-        $tweakgroups = TweakGroup::whereTweakGroupId(0)->get();
+        $tweakgroups = TweakGroup::whereTweakGroupName('')->get()->filter(function ($value, $key) {
+            if (TweakGroup::whereName($value->name)->count() == 1) {
+                return true;
+            } else {
+                return false;
+            }
+        });
 
         return view('pages.tweakdb.index')->with('tweakgroups', $tweakgroups);
     }

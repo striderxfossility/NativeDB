@@ -14,8 +14,8 @@ class TweakValue extends Model
     protected $guarded = ['id'];
     protected $connection = 'mysql2';
 
-    public function tweakGroup()
-    {
-        return $this->belongsTo(TweakGroup::class);
-    }
+    //public function tweakGroup()
+    //{
+    //    return $this->belongsTo(TweakGroup::class);
+    //}
 }
