@@ -8,6 +8,7 @@ use App\Http\Controllers\EnumController;
 use App\Http\Controllers\BitfieldController;
 use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CodeController;
+use App\Http\Controllers\TweakController;
 use App\Models\TweakGroup;
 use App\Models\TweakValue;
 
@@ -25,6 +26,9 @@ Route::get('search/{type}/access',      [SearchController::class, 'access'])->na
 
 Route::get('scripts',                   [CodeController::class, "index"])->name('codes.index');
 Route::get('codes/{code}/show',         [CodeController::class, "show"])->name('codes.show');
+
+Route::get('tweakdb',                   [TweakController::class, "index"])->name('tweakdb.all');
+Route::get('tweakdb/{tweakGroup}/show', [TweakController::class, "show"])->name('tweakdb.show');
 
 Route::get('classes',                   [TypeController::class, "index"])->name('types.all');
 Route::get('classes/{type}/show',       [TypeController::class, "show"])->name('types.show');
