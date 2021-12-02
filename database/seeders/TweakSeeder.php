@@ -54,7 +54,7 @@ class TweakSeeder extends Seeder
                         $tweakValue = TweakValue::whereName($key)->first();
 
                         if ($tweakValue == null) {
-                            $this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
+                            //$this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                             $groups = explode('.', $key);
                             for ($x=0; $x < count($groups) - 1; $x++) { 
                                 $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
@@ -77,7 +77,7 @@ class TweakSeeder extends Seeder
                                 'value'             => $value
                             ];
                         } else {
-                            $this->command->warn('Skipped (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
+                            //$this->command->warn('Skipped (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                             $tweakValue->value = $value;
                             $tweakValue->update();
                         }
