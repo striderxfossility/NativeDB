@@ -49,14 +49,12 @@ class TweakSeeder extends Seeder
                     $countAmounts = count($arr['flat']['keys' . $i]);
                     foreach($arr['flat']['keys' . $i] as $key => $value)
                     {
-                        $this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
-                        $y++;
-
                         $value      = json_encode($arr['flat']['values' . $i][$value]);
                         $headGroup  = 0;
-                        $tweakValue = TweakValue::whereTweakGroupId($headGroup)->whereName($key)->whereValue($value)->first();
+                        $tweakValue = TweakValue::whereName($key)->first();
 
                         if ($tweakValue == null) {
+                            $this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                             $groups = explode('.', $key);
                             for ($x=0; $x < count($groups) - 1; $x++) { 
                                 $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
@@ -79,9 +77,12 @@ class TweakSeeder extends Seeder
                                 'value'             => $value
                             ];
                         } else {
+                            $this->command->warn('Skipped (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                             $tweakValue->value = $value;
                             $tweakValue->update();
                         }
+
+                        $y++;
                     }
                 }
 
