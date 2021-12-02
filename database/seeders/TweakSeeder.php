@@ -51,27 +51,28 @@ class TweakSeeder extends Seeder
                     {
                         $this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
                         $y++;
-                        $groups = explode('.', $key);
-                        $headGroup = 0;
-                        for ($x=0; $x < count($groups) - 1; $x++) { 
-                            $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
 
-                            if($tweakGroup != null) {
-                                $headGroup = $tweakGroup->id;
-                            } else {
-                                $headGroup = TweakGroup::insertGetId([
-                                    'tweak_group_id' => $headGroup,
-                                    'name'           => $groups[$x],
-                                    "created_at"     => $timestamp,
-                                    "updated_at"     => $timestamp,
-                                ]);
-                            }
-                        }
-
-                        $value = json_encode($arr['flat']['values' . $i][$value]);
+                        $value      = json_encode($arr['flat']['values' . $i][$value]);
+                        $headGroup  = 0;
                         $tweakValue = TweakValue::whereTweakGroupId($headGroup)->whereName($key)->whereValue($value)->first();
 
                         if ($tweakValue == null) {
+                            $groups = explode('.', $key);
+                            for ($x=0; $x < count($groups) - 1; $x++) { 
+                                $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
+
+                                if($tweakGroup != null) {
+                                    $headGroup = $tweakGroup->id;
+                                } else {
+                                    $headGroup = TweakGroup::insertGetId([
+                                        'tweak_group_id' => $headGroup,
+                                        'name'           => $groups[$x],
+                                        "created_at"     => $timestamp,
+                                        "updated_at"     => $timestamp,
+                                    ]);
+                                }
+                            }
+
                             $dataTweaks[] = [
                                 'tweak_group_id'    => $headGroup,
                                 'name'              => $key,
