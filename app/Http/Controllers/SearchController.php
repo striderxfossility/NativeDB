@@ -9,6 +9,7 @@ use App\Models\Prop;
 use App\Models\Method;
 use App\Models\Bitfield;
 use App\Models\Code;
+use App\Models\TweakValue;
 
 class SearchController extends Controller
 {
@@ -17,17 +18,18 @@ class SearchController extends Controller
         if($request->q == "")
             return redirect()->route('/');
 
-        $types      = Type::where('name', 'like', '%' . $request->q . '%')->get();
-        $enums      = Enum::where('name', 'like', '%' . $request->q . '%')->get();
-        $bitfields  = Bitfield::where('name', 'like', '%' . $request->q . '%')->get();
-
-        $natives    = Code::where('native', 'like', '%' . $request->q . '%')->get();
+        $types          = Type::where('name', 'like', '%' . $request->q . '%')->get();
+        $enums          = Enum::where('name', 'like', '%' . $request->q . '%')->get();
+        $bitfields      = Bitfield::where('name', 'like', '%' . $request->q . '%')->get();
+        $natives        = Code::where('native', 'like', '%' . $request->q . '%')->get();
+        $tweakvalues    = TweakValue::where('name', 'like', '%' . $request->q . '%')->get();
 
         return view('pages.search.index')
             ->with('types', $types)
             ->with('enums', $enums)
             ->with('bitfields', $bitfields)
-            ->with('natives', $natives);
+            ->with('natives', $natives)
+            ->with('tweakvalues', $tweakvalues);
     }
 
     public function access(Type $type)

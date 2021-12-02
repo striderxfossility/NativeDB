@@ -36,7 +36,7 @@ class TweakSeeder extends Seeder
             $string         = preg_replace('/([0-9^]+):/', '"$1":', $string);
             $string         = str_replace('\\', '/', $string);
             $arr            = json_decode($string, true);
-            $FlatToExtract  = 2;
+            $FlatToExtract  = 3;
             $timestamp      = now()->toDateTimeString();
 
             if($arr == null) {
