@@ -80,7 +80,6 @@ class TweakSeeder extends Seeder
 
                         $y++;
                     }
-                    break;
                 }
 
                 $chunks = array_chunk($dataTweaks, 5000);
