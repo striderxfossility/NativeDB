@@ -36,54 +36,51 @@ class TweakSeeder extends Seeder
             $string         = preg_replace('/([0-9^]+):/', '"$1":', $string);
             $string         = str_replace('\\', '/', $string);
             $arr            = json_decode($string, true);
-            $amountOfFlats  = 21;
-            $timestamp  = now()->toDateTimeString();
+            $FlatToExtract  = 0;
+            $timestamp      = now()->toDateTimeString();
 
             if($arr == null) {
                 $this->command->error("tweakdb.json is not a valid json file");
                 dump(json_last_error());
             } else {
-                for ($i=0; $i < $amountOfFlats; $i++) { 
-                    $this->command->info('Start ' . $i . '/' . $amountOfFlats . ' tweakFlats extracting');
-                    $y = 0;
-                    $countAmounts = count($arr['flat']['keys' . $i]);
-                    foreach($arr['flat']['keys' . $i] as $key => $value)
-                    {
-                        $value      = json_encode($arr['flat']['values' . $i][$value]);
-                        $headGroup  = 0;
-                        $tweakValue = TweakValue::whereName($key)->first();
+                $y = 0;
+                $countAmounts = count($arr['flat']['keys' . $FlatToExtract]);
+                foreach($arr['flat']['keys' . $FlatToExtract] as $key => $value)
+                {
+                    $value      = json_encode($arr['flat']['values' . $FlatToExtract][$value]);
+                    $headGroup  = 0;
+                    $tweakValue = TweakValue::whereName($key)->first();
 
-                        if ($tweakValue == null) {
-                            //$this->command->info('Start (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
-                            $groups = explode('.', $key);
-                            for ($x=0; $x < count($groups) - 1; $x++) { 
-                                $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
+                    if ($tweakValue == null) {
+                        $this->command->info('Extracting => ' . $y . '/' . $countAmounts . ' tweak');
+                        $groups = explode('.', $key);
+                        for ($x=0; $x < count($groups) - 1; $x++) { 
+                            $tweakGroup = TweakGroup::whereName($groups[$x])->whereTweakGroupId($headGroup)->first();
 
-                                if($tweakGroup != null) {
-                                    $headGroup = $tweakGroup->id;
-                                } else {
-                                    $headGroup = TweakGroup::insertGetId([
-                                        'tweak_group_id' => $headGroup,
-                                        'name'           => $groups[$x],
-                                        "created_at"     => $timestamp,
-                                        "updated_at"     => $timestamp,
-                                    ]);
-                                }
+                            if($tweakGroup != null) {
+                                $headGroup = $tweakGroup->id;
+                            } else {
+                                $headGroup = TweakGroup::insertGetId([
+                                    'tweak_group_id' => $headGroup,
+                                    'name'           => $groups[$x],
+                                    "created_at"     => $timestamp,
+                                    "updated_at"     => $timestamp,
+                                ]);
                             }
-
-                            $dataTweaks[] = [
-                                'tweak_group_id'    => $headGroup,
-                                'name'              => $key,
-                                'value'             => $value
-                            ];
-                        } else {
-                            //$this->command->warn('Skipped (' . $i . '/' . $amountOfFlats . ') => ' . $y . '/' . $countAmounts . ' tweaks extracting');
-                            $tweakValue->value = $value;
-                            $tweakValue->update();
                         }
 
-                        $y++;
+                        $dataTweaks[] = [
+                            'tweak_group_id'    => $headGroup,
+                            'name'              => $key,
+                            'value'             => $value
+                        ];
+                    } else {
+                        $this->command->warn('Skipped => ' . $y . '/' . $countAmounts . ' tweak');
+                        $tweakValue->value = $value;
+                        $tweakValue->update();
                     }
+
+                    $y++;
                 }
 
                 $chunks = array_chunk($dataTweaks, 5000);
