@@ -72,16 +72,22 @@ class TweakSeeder extends Seeder
                         $tweakValue = TweakValue::whereTweakGroupId($headGroup)->whereName($key)->whereValue($value)->first();
 
                         if ($tweakValue == null) {
-                            TweakValue::create([
+                            $dataTweaks[] = [
                                 'tweak_group_id'    => $headGroup,
                                 'name'              => $key,
                                 'value'             => $value
-                            ]);
+                            ];
                         } else {
                             $tweakValue->value = $value;
                             $tweakValue->update();
                         }
                     }
+                }
+
+                $chunks = array_chunk($dataTweaks, 5000);
+                foreach($chunks as $chunk)
+                {
+                    TweakValue::insert($chunk);
                 }
             }
         }
