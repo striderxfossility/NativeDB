@@ -24,16 +24,13 @@
                 Values
             </h2>
             <div id="blockLandingStimBroadcasting" class="mb-3 rounded overflow-hidden">
-                @foreach ($tweakGroup->tweakValues as $tweakValue)
-                    <div class="hover:bg-gray-100 px-10 cursor-pointer">
-                        {{ $tweakValue->name }}
-<x-markdown class="show-code">
-```json
-{!! $tweakValue->value !!}
+                <x-markdown class="show-code">     
+```lua
+@foreach ($tweakGroup->tweakValues as $tweakValue)
+'{{ $tweakValue->name }}' => {!! $tweakValue->value !!}
+@endforeach
 ```
-                            </x-markdown>
-                    </div>
-                @endforeach
+                </x-markdown>
             </div>
         </div>
     </main>
