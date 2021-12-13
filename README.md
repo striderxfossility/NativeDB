@@ -52,6 +52,16 @@ set php.ini: ``memory_limit = 1024M``
 
 ``php artisan migrate:fresh --seed``
 
+OR
+
+``php artisan migrate``
+
+``php artisan db:seed --class=TypeSeeder`` for dump
+
+``php artisan db:seed --class=SwiftSeeder`` for native adam smasher code
+
+``php artisan db:seed --class=TweakSeeder`` requires tweakdb.json
+
 
 ## Server
 
