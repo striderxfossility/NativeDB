@@ -36,7 +36,7 @@ MODEL_CACHE_ENABLED=false
 
 ## Starting
 
-``create these folders under storage/framework:``
+``create these folders under storage/framework:`` or create them
 
 sessions
 views
@@ -47,6 +47,8 @@ cache
 ``php artisan key:generate``
 
 upload the tweakdb.json to ``public/tweakdb.json``
+
+set php.ini: ``memory_limit = 1024M``
 
 ``php artisan migrate:fresh --seed``
 
