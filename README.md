@@ -48,7 +48,7 @@ cache
 
 upload the tweakdb.json to ``public/tweakdb.json``
 
-set php.ini: ``memory_limit = 1024M``
+set php.ini: ``memory_limit = Very High ``
 
 ``php artisan migrate:fresh --seed``
 
@@ -61,6 +61,10 @@ OR
 ``php artisan db:seed --class=SwiftSeeder`` for native adam smasher code
 
 ``php artisan db:seed --class=TweakSeeder`` requires tweakdb.json
+
+The Tweakseeder requires a lot of memory limit, because of the big file (100MB). if it breaks you can run the seed again with higer limit.
+
+if it break you can run ``php artisan up`` to put the site back online
 
 
 ## Server
